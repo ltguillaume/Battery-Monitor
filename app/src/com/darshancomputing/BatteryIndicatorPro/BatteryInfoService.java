@@ -39,12 +39,15 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
+import android.util.Log;
 import android.widget.RemoteViews;
 
 import java.util.Date;
 import java.util.HashSet;
 
 public class BatteryInfoService extends Service {
+    private static final String LOG_TAG = "BatteryInfoService";
+
     private final IntentFilter batteryChanged = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
     //private final IntentFilter userPresent    = new IntentFilter(Intent.ACTION_USER_PRESENT);
     private PendingIntent currentInfoPendingIntent, updatePredictorPendingIntent, alarmsPendingIntent, alarmsCancelPendingIntent;
@@ -429,11 +432,7 @@ public class BatteryInfoService extends Service {
             handleUpdateWithSameStatus();
 
         prepareNotification();
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
-            startForeground(NOTIFICATION_PRIMARY, mainNotificationB.build(), ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
-        } else {
-            startForeground(NOTIFICATION_PRIMARY, mainNotificationB.build());
-        }
+        startForegroundWithRetry();
 
         if (alarms.anyActiveAlarms())
             handleAlarms();
@@ -450,6 +449,30 @@ public class BatteryInfoService extends Service {
         try { // Some reports on Developer console, don't make much sense.  Better not to crash and live without predictor update.
             alarmManager.set(AlarmManager.ELAPSED_REALTIME, android.os.SystemClock.elapsedRealtime() + (2 * 60 * 1000), updatePredictorPendingIntent);
         } catch (Exception e) {}
+    }
+
+    private void startForegroundWithRetry() {
+        try {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                startForeground(NOTIFICATION_PRIMARY, mainNotificationB.build(), ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+            } else {
+                startForeground(NOTIFICATION_PRIMARY, mainNotificationB.build());
+            }
+        } catch (RuntimeException e) {
+            // Channel state may have changed under us; rebuild channels and try once more.
+            try {
+                setUpChannels();
+                prepareNotification();
+
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                    startForeground(NOTIFICATION_PRIMARY, mainNotificationB.build(), ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+                } else {
+                    startForeground(NOTIFICATION_PRIMARY, mainNotificationB.build());
+                }
+            } catch (RuntimeException retryError) {
+                Log.e(LOG_TAG, "Unable to enter foreground mode", retryError);
+            }
+        }
     }
 
     private void updateWidgets(BatteryInfo info) {
@@ -885,7 +908,10 @@ public class BatteryInfoService extends Service {
                 } catch (Exception ignored) {
                 }
             } else {
-                throw e;
+                try {
+                    context.startService(serviceIntent);
+                } catch (Exception ignored) {
+                }
             }
         }
     }

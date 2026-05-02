@@ -14,6 +14,7 @@
 
 package com.darshancomputing.BatteryIndicatorPro;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
@@ -248,6 +249,11 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
         updateSummary(lp);
     }
 
+    private boolean isChannelDisabled(String channelId) {
+        NotificationChannel channel = mNotificationManager.getNotificationChannel(channelId);
+        return channel == null || channel.getImportance() == NotificationManager.IMPORTANCE_NONE;
+    }
+
     private class AlarmAdapter {
         public int id;
         String type, threshold;
@@ -263,7 +269,7 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
                threshold = mCursor.getString(mCursor.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
                  enabled = (mCursor.getInt(mCursor.getColumnIndex(AlarmDatabase.KEY_ENABLED)) == 1);
 
-            chanDisabled = mNotificationManager.getNotificationChannel(type).getImportance() == 0;
+            chanDisabled = isChannelDisabled(type);
          }
 
         public void setEnabled(Boolean b) {
@@ -273,7 +279,7 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
 
         public void setType(String s) {
             type = s;
-            chanDisabled = mNotificationManager.getNotificationChannel(type).getImportance() == 0;
+            chanDisabled = isChannelDisabled(type);
             alarms.setType(id, type);
         }
 

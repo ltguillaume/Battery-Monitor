@@ -212,10 +212,14 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public void onResume() {
         super.onResume();
 
-        mainChan = mNotificationManager.getNotificationChannel(BatteryInfoService.CHAN_ID_MAIN);
+        if (mNotificationManager == null)
+            mNotificationManager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
 
-        if (appNotifsEnabled != mNotificationManager.areNotificationsEnabled() ||
-            mainNotifsEnabled != mainChan.getImportance() > 0) { // Doesn't seem worth checking which screen
+        boolean currentAppNotifsEnabled = mNotificationManager.areNotificationsEnabled();
+        boolean currentMainNotifsEnabled = getMainNotifsEnabled();
+
+        if (appNotifsEnabled != currentAppNotifsEnabled ||
+            mainNotifsEnabled != currentMainNotifsEnabled) { // Doesn't seem worth checking which screen
             resetService();
             setPreferences();
         }
@@ -257,10 +261,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     //   we still want to "be on" whichever page we're on.
     private void setPreferences() {
         mNotificationManager = (NotificationManager) getActivity().getSystemService(Context.NOTIFICATION_SERVICE);
-        mainChan = mNotificationManager.getNotificationChannel(BatteryInfoService.CHAN_ID_MAIN);
 
         appNotifsEnabled = mNotificationManager.areNotificationsEnabled();
-        mainNotifsEnabled = mainChan.getImportance() > 0;
+        mainNotifsEnabled = getMainNotifsEnabled();
 
         int pref_res = pref_screen;
 
@@ -530,7 +533,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
 
     public void enableNotifsButtonClick() {
         Intent intent;
-        if (!appNotifsEnabled) {
+        if (!appNotifsEnabled || mainChan == null) {
             intent = new Intent(android.provider.Settings.ACTION_APP_NOTIFICATION_SETTINGS);
         } else {
             intent = new Intent(android.provider.Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS);
@@ -541,5 +544,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
         startActivity(intent);
+    }
+
+    private boolean getMainNotifsEnabled() {
+        mainChan = mNotificationManager.getNotificationChannel(BatteryInfoService.CHAN_ID_MAIN);
+        return mainChan != null && mainChan.getImportance() > 0;
     }
 }
