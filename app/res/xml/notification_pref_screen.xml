@@ -38,5 +38,12 @@
        android:summary="@string/pref_status_duration_in_vital_signs_summary"
        android:defaultValue="false"
     />
+
+    <CheckBoxPreference
+       android:key="enable_live_updates"
+       android:title="@string/pref_enable_live_updates"
+       android:summary="@string/pref_enable_live_updates_summary"
+       android:defaultValue="true"
+    />
   </PreferenceCategory>
 </PreferenceScreen>

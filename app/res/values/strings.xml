@@ -397,6 +397,9 @@
     and more.
   </string>
 
+  <string name="pref_enable_live_updates">Use Status Bar Chip</string>
+  <string name="pref_enable_live_updates_summary">Show percentage as a chip in the status bar (Android 16+)</string>
+
   <string formatted="false" name="add_alarm">Add alarm</string>
   <string formatted="false" name="menu_alarm_channel">Alarm Channel Settings</string>
 

@@ -83,8 +83,9 @@ public class BatteryInfoService extends Service {
 
     public static final String CHAN_ID_OLD_MAIN = "main";
     public static final String CHAN_ID_OLD_ALARM = "alarm";
+    public static final String CHAN_ID_OLD_MAIN_2 = "main_002";
 
-    public static final String CHAN_ID_MAIN = "main_002";
+    public static final String CHAN_ID_MAIN = "main_003";
 
     // Important: Make sure alarm notification channel IDs and alarm type database values always match
     public static final String CHAN_ID_A_CHARGED = "fully_charged";
@@ -147,12 +148,14 @@ public class BatteryInfoService extends Service {
             mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN);
+        mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN_2);
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_ALARM);
 
-        int main_importance = NotificationManager.IMPORTANCE_MIN;
-        if (android.os.Build.VERSION.SDK_INT < 28) {
-            main_importance = NotificationManager.IMPORTANCE_LOW;
-        }
+        boolean useLiveUpdates = supportsLiveUpdates() && settings.getBoolean(SettingsFragment.KEY_ENABLE_LIVE_UPDATES, true);
+
+        int main_importance = (android.os.Build.VERSION.SDK_INT < 28 || useLiveUpdates)
+                              ? NotificationManager.IMPORTANCE_LOW
+                              : NotificationManager.IMPORTANCE_MIN;
         CharSequence main_notif_chan_name = getString(R.string.main_notif_chan_name);
         NotificationChannel ch = new NotificationChannel(CHAN_ID_MAIN, main_notif_chan_name, main_importance);
         ch.setSound(null, null);
@@ -205,9 +208,9 @@ public class BatteryInfoService extends Service {
         mainNotificationForegroundStarted = false;
         alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
 
+        loadSettingsFiles();
         setUpChannels();
 
-        loadSettingsFiles();
         sdkVersioning();
 
         CurrentHack.setContext(this);
@@ -392,7 +395,9 @@ public class BatteryInfoService extends Service {
             mainNotificationForegroundStarted = false;
         }
 
+        setUpChannels();
         registerReceiver(mBatteryInfoReceiver, batteryChanged);
+        update(null);
     }
 
     private final BroadcastReceiver mBatteryInfoReceiver = new BroadcastReceiver() {
@@ -583,6 +588,20 @@ public class BatteryInfoService extends Service {
 
         mainNotificationB.setContentTitle(mainNotificationTopLine)
             .setContentText(mainNotificationBottomLine);
+
+        if (supportsLiveUpdates() && settings.getBoolean(SettingsFragment.KEY_ENABLE_LIVE_UPDATES, true)) {
+            try {
+                java.lang.reflect.Method setRequestPromotedOngoing = Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
+                java.lang.reflect.Method setShortCriticalText = Notification.Builder.class.getMethod("setShortCriticalText", String.class);
+                setRequestPromotedOngoing.invoke(mainNotificationB, true);
+                setShortCriticalText.invoke(mainNotificationB, info.percent + "%");
+            } catch (Throwable ignored) {}
+        } else if (supportsLiveUpdates()) {
+            try {
+                java.lang.reflect.Method setRequestPromotedOngoing = Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
+                setRequestPromotedOngoing.invoke(mainNotificationB, false);
+            } catch (Throwable ignored) {}
+        }
     }
 
     // Since alpha values aren't permitted, return 0 for default
@@ -699,6 +718,10 @@ public class BatteryInfoService extends Service {
     }
 
     private int iconFor(int percent) {
+        if (supportsLiveUpdates() && settings.getBoolean(SettingsFragment.KEY_ENABLE_LIVE_UPDATES, true)) {
+            return R.drawable.battery;
+        }
+
         String default_set = "builtin.plain_number";
 
         String icon_set = settings.getString(SettingsFragment.KEY_ICON_SET, "null");
@@ -959,6 +982,17 @@ public class BatteryInfoService extends Service {
     public static void onWidgetDeleted(Context context, int[] appWidgetIds) {
         for (int i = 0; i < appWidgetIds.length; i++) {
             widgetIds.remove(appWidgetIds[i]);
+        }
+    }
+
+    public static boolean supportsLiveUpdates() {
+        if (android.os.Build.VERSION.SDK_INT < 36) return false;
+        try {
+            Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
+            Notification.Builder.class.getMethod("setShortCriticalText", String.class);
+            return true;
+        } catch (Throwable e) {
+            return false;
         }
     }
 }

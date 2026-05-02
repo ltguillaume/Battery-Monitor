@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -57,6 +58,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_PREDICTION_TYPE = "prediction_type";
     public static final String KEY_CLASSIC_COLOR_MODE = "classic_color_mode";
     public static final String KEY_STATUS_DUR_EST = "status_dur_est";
+    public static final String KEY_ENABLE_LIVE_UPDATES = "enable_live_updates";
     public static final String KEY_CAT_CLASSIC_COLOR_MODE = "category_classic_color_mode";
     public static final String KEY_CAT_COLOR = "category_color";
     public static final String KEY_CAT_CHARGING_INDICATOR = "category_charging_indicator";
@@ -275,6 +277,19 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
         setPreferencesFromResource(pref_res, null);
         mPreferenceScreen = getPreferenceScreen();
 
+        boolean liveUpdateSupported = BatteryInfoService.supportsLiveUpdates();
+        boolean liveUpdateEnabled = mSharedPreferences.getBoolean(KEY_ENABLE_LIVE_UPDATES, liveUpdateSupported);
+
+        if (pref_screen == R.xml.main_pref_screen && liveUpdateSupported && liveUpdateEnabled) {
+            Preference p = mPreferenceScreen.findPreference(KEY_STATUS_BAR_ICON_SETTINGS);
+            if (p != null) mPreferenceScreen.removePreference(p);
+        }
+
+        if (pref_screen == R.xml.notification_pref_screen && !liveUpdateSupported) {
+            Preference p = mPreferenceScreen.findPreference(KEY_ENABLE_LIVE_UPDATES);
+            if (p != null) mPreferenceScreen.removePreference(p);
+        }
+
         PreferenceCategory cat;
 
         if (pref_res == R.xml.main_notifs_disabled_pref_screen) {
@@ -374,7 +389,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
             //setPreferences(); // To show/hide icon-set/plugin settings
         }
 
-        if (key.equals(KEY_ICON_SET)) {
+        if (key.equals(KEY_ENABLE_LIVE_UPDATES)) {
+            resetService(true);
+            setPreferences();
+        } else if (key.equals(KEY_ICON_SET)) {
             resetService();
             setPreferences(); // To show/hide icon-set/plugin settings
         }
