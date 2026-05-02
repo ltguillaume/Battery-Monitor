@@ -151,7 +151,7 @@ public class BatteryInfoService extends Service {
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN_2);
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_ALARM);
 
-        boolean useLiveUpdates = supportsLiveUpdates() && settings.getBoolean(SettingsFragment.KEY_ENABLE_LIVE_UPDATES, true);
+        boolean useLiveUpdates = supportsLiveUpdates();
 
         int main_importance = (android.os.Build.VERSION.SDK_INT < 28 || useLiveUpdates)
                               ? NotificationManager.IMPORTANCE_LOW
@@ -589,17 +589,18 @@ public class BatteryInfoService extends Service {
         mainNotificationB.setContentTitle(mainNotificationTopLine)
             .setContentText(mainNotificationBottomLine);
 
-        if (supportsLiveUpdates() && settings.getBoolean(SettingsFragment.KEY_ENABLE_LIVE_UPDATES, true)) {
+        if (supportsLiveUpdates()) {
             try {
                 java.lang.reflect.Method setRequestPromotedOngoing = Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
                 java.lang.reflect.Method setShortCriticalText = Notification.Builder.class.getMethod("setShortCriticalText", String.class);
                 setRequestPromotedOngoing.invoke(mainNotificationB, true);
-                setShortCriticalText.invoke(mainNotificationB, info.percent + "%");
-            } catch (Throwable ignored) {}
-        } else if (supportsLiveUpdates()) {
-            try {
-                java.lang.reflect.Method setRequestPromotedOngoing = Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
-                setRequestPromotedOngoing.invoke(mainNotificationB, false);
+
+                String text = info.percent + "%";
+                if (info.status == BatteryInfo.STATUS_CHARGING && settings.getBoolean(SettingsFragment.KEY_INDICATE_CHARGING, true)) {
+                    text = "⚡" + text;
+                }
+
+                setShortCriticalText.invoke(mainNotificationB, text);
             } catch (Throwable ignored) {}
         }
     }
@@ -718,7 +719,7 @@ public class BatteryInfoService extends Service {
     }
 
     private int iconFor(int percent) {
-        if (supportsLiveUpdates() && settings.getBoolean(SettingsFragment.KEY_ENABLE_LIVE_UPDATES, true)) {
+        if (supportsLiveUpdates()) {
             return R.drawable.battery;
         }
 
@@ -993,6 +994,17 @@ public class BatteryInfoService extends Service {
             return true;
         } catch (Throwable e) {
             return false;
+        }
+    }
+
+    public static boolean isLiveUpdateEnabledInSystem(Context context) {
+        if (android.os.Build.VERSION.SDK_INT < 36) return true;
+        NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        try {
+            Object result = nm.getClass().getMethod("canPostPromotedNotifications").invoke(nm);
+            return result != null && (boolean) result;
+        } catch (Throwable ignored) {
+            return true;
         }
     }
 }

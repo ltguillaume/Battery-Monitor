@@ -29,6 +29,7 @@ import android.os.Message;
 import android.os.Messenger;
 
 
+import androidx.preference.CheckBoxPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 //import androidx.preference.Preference.OnPreferenceClickListener;
@@ -36,6 +37,7 @@ import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.TwoStatePreference;
 
 public class SettingsFragment extends PreferenceFragmentCompat implements OnSharedPreferenceChangeListener {
     public static final String SETTINGS_FILE = "com.darshancomputing.BatteryIndicatorPro_preferences";
@@ -58,7 +60,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_PREDICTION_TYPE = "prediction_type";
     public static final String KEY_CLASSIC_COLOR_MODE = "classic_color_mode";
     public static final String KEY_STATUS_DUR_EST = "status_dur_est";
-    public static final String KEY_ENABLE_LIVE_UPDATES = "enable_live_updates";
     public static final String KEY_CAT_CLASSIC_COLOR_MODE = "category_classic_color_mode";
     public static final String KEY_CAT_COLOR = "category_color";
     public static final String KEY_CAT_CHARGING_INDICATOR = "category_charging_indicator";
@@ -166,6 +167,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     private NotificationChannel mainChan;
     private boolean appNotifsEnabled;
     private boolean mainNotifsEnabled;
+    private boolean systemPromotedEnabled;
 
     private int pref_screen;
 
@@ -219,9 +221,11 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
 
         boolean currentAppNotifsEnabled = mNotificationManager.areNotificationsEnabled();
         boolean currentMainNotifsEnabled = getMainNotifsEnabled();
+        boolean currentLiveUpdateEnabledInSystem = BatteryInfoService.isLiveUpdateEnabledInSystem(getActivity());
 
         if (appNotifsEnabled != currentAppNotifsEnabled ||
-            mainNotifsEnabled != currentMainNotifsEnabled) { // Doesn't seem worth checking which screen
+            mainNotifsEnabled != currentMainNotifsEnabled ||
+            systemPromotedEnabled != currentLiveUpdateEnabledInSystem) { // Doesn't seem worth checking which screen
             resetService();
             setPreferences();
         }
@@ -266,6 +270,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
 
         appNotifsEnabled = mNotificationManager.areNotificationsEnabled();
         mainNotifsEnabled = getMainNotifsEnabled();
+        systemPromotedEnabled = BatteryInfoService.isLiveUpdateEnabledInSystem(getActivity());
 
         int pref_res = pref_screen;
 
@@ -278,15 +283,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
         mPreferenceScreen = getPreferenceScreen();
 
         boolean liveUpdateSupported = BatteryInfoService.supportsLiveUpdates();
-        boolean liveUpdateEnabled = mSharedPreferences.getBoolean(KEY_ENABLE_LIVE_UPDATES, liveUpdateSupported);
+        boolean liveUpdateEnabledInSystem = BatteryInfoService.isLiveUpdateEnabledInSystem(getActivity());
 
-        if (pref_screen == R.xml.main_pref_screen && liveUpdateSupported && liveUpdateEnabled) {
+        if (pref_screen == R.xml.main_pref_screen && liveUpdateSupported && liveUpdateEnabledInSystem) {
             Preference p = mPreferenceScreen.findPreference(KEY_STATUS_BAR_ICON_SETTINGS);
-            if (p != null) mPreferenceScreen.removePreference(p);
-        }
-
-        if (pref_screen == R.xml.notification_pref_screen && !liveUpdateSupported) {
-            Preference p = mPreferenceScreen.findPreference(KEY_ENABLE_LIVE_UPDATES);
             if (p != null) mPreferenceScreen.removePreference(p);
         }
 
@@ -389,10 +389,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
             //setPreferences(); // To show/hide icon-set/plugin settings
         }
 
-        if (key.equals(KEY_ENABLE_LIVE_UPDATES)) {
-            resetService(true);
-            setPreferences();
-        } else if (key.equals(KEY_ICON_SET)) {
+        if (key.equals(KEY_ICON_SET)) {
             resetService();
             setPreferences(); // To show/hide icon-set/plugin settings
         }

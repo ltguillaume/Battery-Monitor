@@ -136,10 +136,42 @@ public class PersistentFragment extends Fragment {
         super.onResume();
 
         if (sp_main.getBoolean(SettingsFragment.KEY_FIRST_RUN, true)) {
-            // If you ever need a first-run dialog again, this is when you would show it
+            if (BatteryInfoService.supportsLiveUpdates()) {
+                showLiveUpdatesOnboarding();
+            }
 
             sp_main.edit().putBoolean(SettingsFragment.KEY_FIRST_RUN, false).apply();
         }
+    }
+
+    private void showLiveUpdatesOnboarding() {
+        boolean enabled = BatteryInfoService.isLiveUpdateEnabledInSystem(getActivity());
+
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(getActivity());
+        builder.setTitle(R.string.live_updates_onboarding_title);
+
+        if (enabled) {
+            builder.setMessage(R.string.live_updates_onboarding_message_on)
+                   .setPositiveButton(R.string.live_updates_onboarding_positive_on, null);
+        } else {
+            builder.setMessage(R.string.live_updates_onboarding_message_off)
+                   .setPositiveButton(R.string.live_updates_onboarding_positive_off, new android.content.DialogInterface.OnClickListener() {
+                       @Override
+                       public void onClick(android.content.DialogInterface dialog, int which) {
+                           try {
+                               String action = "android.settings.MANAGE_APP_PROMOTED_NOTIFICATIONS";
+                               try {
+                                   action = (String) android.provider.Settings.class.getField("ACTION_MANAGE_APP_PROMOTED_NOTIFICATIONS").get(null);
+                               } catch (Throwable ignored) {}
+                               Intent intent = new Intent(action);
+                               intent.putExtra(android.provider.Settings.EXTRA_APP_PACKAGE, getActivity().getPackageName());
+                               startActivity(intent);
+                           } catch (Throwable ignored) {}
+                       }
+                   })
+                   .setNegativeButton(R.string.live_updates_onboarding_negative_off, null);
+        }
+        builder.show();
     }
 
     @Override

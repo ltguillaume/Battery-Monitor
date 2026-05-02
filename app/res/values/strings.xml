@@ -399,6 +399,14 @@
 
   <string name="pref_enable_live_updates">Use Status Bar Chip</string>
   <string name="pref_enable_live_updates_summary">Show percentage as a chip in the status bar (Android 16+)</string>
+  <string name="pref_live_updates_system_disabled">Disabled in Android settings. Tap to fix.</string>
+
+  <string name="live_updates_onboarding_title">Status Bar Battery Chip</string>
+  <string name="live_updates_onboarding_message_on">Your device supports showing the battery percentage as a chip in the status bar. This is enabled by default.\n\nIf you prefer a traditional notification icon, you can turn off \"Live Updates\" in Android\'s system settings for this app.</string>
+  <string name="live_updates_onboarding_message_off">Your device supports showing the battery percentage as a chip in the status bar, but it is currently disabled in system settings.\n\nWe recommend enabling it for the best experience. If you prefer a traditional notification icon, you can leave it disabled.</string>
+  <string name="live_updates_onboarding_positive_on">Got it</string>
+  <string name="live_updates_onboarding_positive_off">Go to Settings</string>
+  <string name="live_updates_onboarding_negative_off">Dismiss</string>
 
   <string formatted="false" name="add_alarm">Add alarm</string>
   <string formatted="false" name="menu_alarm_channel">Alarm Channel Settings</string>
