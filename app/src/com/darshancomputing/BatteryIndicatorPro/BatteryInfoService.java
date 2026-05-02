@@ -43,7 +43,9 @@ import android.util.Log;
 import android.widget.RemoteViews;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Locale;
 
 public class BatteryInfoService extends Service {
     private static final String LOG_TAG = "BatteryInfoService";
@@ -128,6 +130,7 @@ public class BatteryInfoService extends Service {
     private String mainNotificationTopLine, mainNotificationBottomLine;
     private RemoteViews notificationRV;
     private boolean mainNotificationForegroundStarted;
+    private final HashMap<String, Integer> iconResCache = new HashMap<String, Integer>();
 
     private Predictor predictor;
 
@@ -695,7 +698,6 @@ public class BatteryInfoService extends Service {
         return line;
     }
 
-    // I take advantage of (count on) R.java having resources alphabetical and incrementing by one.
     private int iconFor(int percent) {
         String default_set = "builtin.plain_number";
 
@@ -710,16 +712,39 @@ public class BatteryInfoService extends Service {
         }
 
         Boolean indicate_charging = settings.getBoolean(SettingsFragment.KEY_INDICATE_CHARGING, true);
+        int clampedPercent = Math.max(0, Math.min(100, percent));
 
         if (icon_set.equals("builtin.plain_number")) {
-            return ((info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? chargingIcon0 : plainIcon0) + info.percent;
+            String prefix = (info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? "charging" : "plain";
+            return iconByName(prefix, clampedPercent, R.drawable.plain000);
         } else if (icon_set.equals("builtin.smaller_number")) {
-            return ((info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? small_chargingIcon0 : small_plainIcon0) + info.percent;
+            String prefix = (info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? "small_charging" : "small_plain";
+            return iconByName(prefix, clampedPercent, R.drawable.small_plain000);
         } else if (!settings.getBoolean(SettingsFragment.KEY_CLASSIC_COLOR_MODE, false)) {
-            return R.drawable.w000 + info.percent;
+            return iconByName("w", clampedPercent, R.drawable.w000);
         } else {
-            return R.drawable.b000 + info.percent;
+            return iconByName("b", clampedPercent, R.drawable.b000);
         }
+    }
+
+    // Resource IDs are not guaranteed to be contiguous; resolve by name and cache.
+    private int iconByName(String prefix, int percent, int fallbackResId) {
+        String key = prefix + percent;
+        Integer cachedResId = iconResCache.get(key);
+        if (cachedResId != null) return cachedResId;
+
+        String iconName = String.format(Locale.US, "%s%03d", prefix, percent);
+        int resId = res.getIdentifier(iconName, "drawable", getPackageName());
+
+        if (resId == 0) {
+            String zeroName = String.format(Locale.US, "%s000", prefix);
+            resId = res.getIdentifier(zeroName, "drawable", getPackageName());
+        }
+
+        if (resId == 0) resId = fallbackResId;
+
+        iconResCache.put(key, resId);
+        return resId;
     }
 
     private boolean statusHasChanged() {

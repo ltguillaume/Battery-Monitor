@@ -57,7 +57,7 @@ public class HelpActivity extends AppCompatActivity {
 
         tv = (TextView) findViewById(R.id.version);
         try {
-            tv.setText(getResources().getString(R.string.app_full_name) + " " +
+            tv.setText(getResources().getString(R.string.app_full_name) + " test1 " +
                        getPackageManager().getPackageInfo(getPackageName(), 0).versionName);
         } catch (Exception e) {
             tv.setText("...");
