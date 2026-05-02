@@ -398,7 +398,7 @@
   </string>
 
   <string name="pref_enable_live_updates">Use Status Bar Chip</string>
-  <string name="pref_enable_live_updates_summary">Show percentage as a chip in the status bar (Android 16+)</string>
+  <string name="pref_enable_live_updates_summary">Show battery info as a chip in the status bar (Android 16+)</string>
   <string name="pref_live_updates_system_disabled">Disabled in Android settings. Tap to fix.</string>
 
   <string name="live_updates_onboarding_title">Status Bar Battery Chip</string>
@@ -418,6 +418,17 @@
   <string formatted="false" name="pref_manage_main_channel">Manage Main Channel</string>
 
   <string formatted="false" name="pref_cat_notification_content">Content</string>
+  <string formatted="false" name="pref_cat_status_bar_chip">Status Bar Chip (Android 16+)</string>
+  <string formatted="false" name="pref_chip_content">Chip Content</string>
+  <string formatted="false" name="pref_chip_content_help">
+    Choose what value to show in the Android 16+ promoted-notification chip.
+  </string>
+  <string formatted="false" name="pref_chip_indicate_charging">Show Charging Emoji</string>
+  <string formatted="false" name="pref_chip_indicate_charging_summary">Show a lightning emoji when charging or fully charged?</string>
+  <string formatted="false" name="pref_chip_indicate_charging_help">
+    If enabled, the status bar chip will show a lightning emoji next to
+    the chip value while charging or when fully charged.
+  </string>
   <string formatted="false" name="pref_top_line_content">Top Line Content</string>
   <string formatted="false" name="pref_top_line_content_help">
     Configure what goes in the top line of the notification: estimated
@@ -462,6 +473,11 @@
 
   <string formatted="false" name="pref_cat_icon_set">Icon Set</string>
   <string formatted="false" name="pref_icon_set">Icon Set</string>
+  <string formatted="false" name="pref_icon_content">Icon Content</string>
+  <string formatted="false" name="pref_icon_content_help">
+    Choose whether the status bar icon shows battery percentage or
+    battery temperature. Temperature follows your selected unit.
+  </string>
   <string formatted="false" name="pref_icon_set_help">
     Android comes in many flavors, so there is no one perfect icon set
     that works well on every device.  There are three built-in icon sets
@@ -796,4 +812,6 @@
   <string formatted="false" name="icon_set_classic">Classic</string>
   <string formatted="false" name="icon_set_plain">Plain Number</string>
   <string formatted="false" name="icon_set_smaller">Smaller Number</string>
+  <string formatted="false" name="pref_content_percent">Battery Percentage</string>
+  <string formatted="false" name="pref_content_temperature">Battery Temperature</string>
 </resources>

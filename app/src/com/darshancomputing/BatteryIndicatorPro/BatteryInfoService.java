@@ -132,6 +132,8 @@ public class BatteryInfoService extends Service {
     private RemoteViews notificationRV;
     private boolean mainNotificationForegroundStarted;
     private final HashMap<String, Integer> iconResCache = new HashMap<String, Integer>();
+    private static final String CONTENT_PERCENTAGE = "percentage";
+    private static final String CONTENT_TEMPERATURE = "temperature";
 
     private Predictor predictor;
 
@@ -578,7 +580,7 @@ public class BatteryInfoService extends Service {
         mainNotificationTopLine = lineFor(SettingsFragment.KEY_TOP_LINE);
         mainNotificationBottomLine = lineFor(SettingsFragment.KEY_BOTTOM_LINE);
 
-        mainNotificationB.setSmallIcon(iconFor(info.percent))
+        mainNotificationB.setSmallIcon(iconFor())
             .setOngoing(true)
             .setWhen(0)
             .setShowWhen(false)
@@ -595,14 +597,52 @@ public class BatteryInfoService extends Service {
                 java.lang.reflect.Method setShortCriticalText = Notification.Builder.class.getMethod("setShortCriticalText", String.class);
                 setRequestPromotedOngoing.invoke(mainNotificationB, true);
 
-                String text = info.percent + "%";
-                if (info.status == BatteryInfo.STATUS_CHARGING && settings.getBoolean(SettingsFragment.KEY_INDICATE_CHARGING, true)) {
+                String text = chipContentText();
+                if (shouldShowChipChargingIndicator()) {
                     text = "⚡" + text;
                 }
 
                 setShortCriticalText.invoke(mainNotificationB, text);
             } catch (Throwable ignored) {}
         }
+    }
+
+    private String contentPreference(String key, String defaultValue) {
+        String content = settings.getString(key, defaultValue);
+        return CONTENT_TEMPERATURE.equals(content) ? CONTENT_TEMPERATURE : CONTENT_PERCENTAGE;
+    }
+
+    private int roundedTemperatureValue() {
+        boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                               res.getBoolean(R.bool.default_convert_to_fahrenheit));
+        double temp = info.temperature / 10.0;
+        if (convertF) temp = temp * 9.0 / 5.0 + 32.0;
+        return (int) Math.round(temp);
+    }
+
+    private int iconContentValue() {
+        String content = contentPreference(SettingsFragment.KEY_ICON_CONTENT,
+                                           res.getString(R.string.default_icon_content));
+        if (CONTENT_TEMPERATURE.equals(content)) {
+            return roundedTemperatureValue();
+        }
+        return info.percent;
+    }
+
+    private String chipContentText() {
+        String content = contentPreference(SettingsFragment.KEY_CHIP_CONTENT,
+                                           res.getString(R.string.default_chip_content));
+        if (CONTENT_TEMPERATURE.equals(content)) {
+            boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                                   res.getBoolean(R.bool.default_convert_to_fahrenheit));
+            return Str.formatTemp(info.temperature, convertF, false);
+        }
+        return info.percent + "%";
+    }
+
+    private boolean shouldShowChipChargingIndicator() {
+        if (!settings.getBoolean(SettingsFragment.KEY_CHIP_INDICATE_CHARGING, true)) return false;
+        return info.status == BatteryInfo.STATUS_CHARGING || info.status == BatteryInfo.STATUS_FULLY_CHARGED;
     }
 
     // Since alpha values aren't permitted, return 0 for default
@@ -718,7 +758,7 @@ public class BatteryInfoService extends Service {
         return line;
     }
 
-    private int iconFor(int percent) {
+    private int iconFor() {
         if (supportsLiveUpdates()) {
             return R.drawable.battery;
         }
@@ -736,7 +776,7 @@ public class BatteryInfoService extends Service {
         }
 
         Boolean indicate_charging = settings.getBoolean(SettingsFragment.KEY_INDICATE_CHARGING, true);
-        int clampedPercent = Math.max(0, Math.min(100, percent));
+        int clampedPercent = Math.max(0, Math.min(100, iconContentValue()));
 
         if (icon_set.equals("builtin.plain_number")) {
             String prefix = (info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? "charging" : "plain";

@@ -54,6 +54,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_MAX_LOG_AGE = "max_log_age";
     public static final String KEY_ICON_PLUGIN = "icon_plugin";
     public static final String KEY_ICON_SET = "icon_set";
+    public static final String KEY_ICON_CONTENT = "icon_content";
     public static final String KEY_CONVERT_F = "convert_to_fahrenheit";
     public static final String KEY_NOTIFY_STATUS_DURATION = "notify_status_duration";
     public static final String KEY_AUTOSTART = "autostart";
@@ -66,6 +67,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_CAT_PLUGIN_SETTINGS = "category_plugin_settings";
     public static final String KEY_PLUGIN_SETTINGS = "plugin_settings";
     public static final String KEY_INDICATE_CHARGING = "indicate_charging";
+    public static final String KEY_CAT_STATUS_BAR_CHIP = "category_status_bar_chip";
+    public static final String KEY_CHIP_CONTENT = "chip_content";
+    public static final String KEY_CHIP_INDICATE_CHARGING = "chip_indicate_charging";
     public static final String KEY_RED = "use_red";
     public static final String KEY_RED_THRESH = "red_threshold";
     public static final String KEY_AMBER = "use_amber";
@@ -126,7 +130,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
 
     private static final String[] LIST_PREFS = {KEY_AUTOSTART, KEY_STATUS_DUR_EST,
                                                 KEY_RED_THRESH, KEY_AMBER_THRESH, KEY_GREEN_THRESH,
-                                                KEY_ICON_SET,
+                                                 KEY_ICON_SET, KEY_ICON_CONTENT, KEY_CHIP_CONTENT,
                                                 KEY_CURRENT_HACK_MULTIPLIER,
                                                 KEY_MAX_LOG_AGE, KEY_TOP_LINE, KEY_BOTTOM_LINE,
                                                 KEY_TIME_REMAINING_VERBOSITY,
@@ -138,6 +142,9 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
                                                    KEY_AMBER, KEY_AMBER_THRESH, KEY_GREEN, KEY_GREEN_THRESH,
                                                    KEY_ICON_SET,
                                                    KEY_INDICATE_CHARGING,
+                                                    KEY_ICON_CONTENT,
+                                                    KEY_CHIP_CONTENT,
+                                                    KEY_CHIP_INDICATE_CHARGING,
                                                    KEY_TOP_LINE, KEY_BOTTOM_LINE,
                                                    KEY_ENABLE_LOGGING,
                                                    KEY_TIME_REMAINING_VERBOSITY,
@@ -329,6 +336,14 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
             //prefb.setOnPreferenceClickListener(notifChanBListener);
 
             prefb.setSummary(R.string.pref_manage_main_channel);
+
+            if (!liveUpdateSupported) {
+                PreferenceCategory chipCat = (PreferenceCategory) mPreferenceScreen.findPreference(KEY_CAT_STATUS_BAR_CHIP);
+                if (chipCat != null) {
+                    chipCat.removeAll();
+                    chipCat.setLayoutResource(R.layout.none);
+                }
+            }
         } else if (pref_screen == R.xml.current_hack_pref_screen) {
             if (CurrentHack.getCurrent() == null) {
                 cat = (PreferenceCategory) mPreferenceScreen.findPreference(KEY_CAT_CURRENT_HACK_MAIN);

@@ -520,6 +520,19 @@
     <item>@string/icon_set_smaller</item>
   </string-array>
 
+  <string-array name="icon_content_entries">
+    <item>@string/pref_content_percent</item>
+    <item>@string/pref_content_temperature</item>
+  </string-array>
+
+  <string-array name="icon_content_values">
+    <item>percentage</item>
+    <item>temperature</item>
+  </string-array>
+
+  <string name="default_icon_content">percentage</string>
+  <string name="default_chip_content">percentage</string>
+
   <bool name="long_notification_okay">false</bool>
 
   <string-array name="notification_line_content_entries">
