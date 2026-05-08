@@ -70,6 +70,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_INDICATE_CHARGING = "indicate_charging";
     public static final String KEY_CAT_STATUS_BAR_CHIP = "category_status_bar_chip";
     public static final String KEY_CHIP_CONTENT = "chip_content";
+    public static final String KEY_CHIP_SWITCHING_INTERVAL = "chip_switching_interval";
     public static final String KEY_CHIP_INDICATE_CHARGING = "chip_indicate_charging";
     public static final String KEY_RED = "use_red";
     public static final String KEY_RED_THRESH = "red_threshold";
@@ -132,6 +133,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     private static final String[] LIST_PREFS = {KEY_AUTOSTART, KEY_STATUS_DUR_EST,
                                                 KEY_RED_THRESH, KEY_AMBER_THRESH, KEY_GREEN_THRESH,
                                                  KEY_ICON_SET, KEY_ICON_CONTENT, KEY_CHIP_CONTENT,
+                                                KEY_CHIP_SWITCHING_INTERVAL,
                                                 KEY_CURRENT_HACK_MULTIPLIER,
                                                 KEY_MAX_LOG_AGE, KEY_TOP_LINE, KEY_BOTTOM_LINE,
                                                 KEY_TIME_REMAINING_VERBOSITY,
@@ -145,6 +147,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
                                                    KEY_INDICATE_CHARGING,
                                                     KEY_ICON_CONTENT,
                                                     KEY_CHIP_CONTENT,
+                                                    KEY_CHIP_SWITCHING_INTERVAL,
                                                     KEY_CHIP_INDICATE_CHARGING,
                                                    KEY_TOP_LINE, KEY_BOTTOM_LINE,
                                                    KEY_ENABLE_LOGGING,
@@ -348,11 +351,15 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
             //prefb.setOnPreferenceClickListener(notifChanBListener);
 
             prefb.setSummary(R.string.pref_manage_main_channel);
-        } else if (pref_screen == R.xml.status_bar_chip_pref_screen && !liveUpdateSupported) {
-            PreferenceCategory chipCat = (PreferenceCategory) mPreferenceScreen.findPreference(KEY_CAT_STATUS_BAR_CHIP);
-            if (chipCat != null) {
-                chipCat.removeAll();
-                chipCat.setLayoutResource(R.layout.none);
+        } else if (pref_screen == R.xml.status_bar_chip_pref_screen) {
+            if (!liveUpdateSupported) {
+                PreferenceCategory chipCat = (PreferenceCategory) mPreferenceScreen.findPreference(KEY_CAT_STATUS_BAR_CHIP);
+                if (chipCat != null) {
+                    chipCat.removeAll();
+                    chipCat.setLayoutResource(R.layout.none);
+                }
+            } else {
+                updateChipIntervalVisibility();
             }
         } else if (pref_screen == R.xml.current_hack_pref_screen) {
             if (CurrentHack.getCurrent() == null) {
@@ -419,6 +426,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
         if (key.equals(KEY_ICON_SET)) {
             resetService();
             setPreferences(); // To show/hide icon-set/plugin settings
+        }
+
+        if (key.equals(KEY_CHIP_CONTENT)) {
+            updateChipIntervalVisibility();
         }
 
         for (int i=0; i < PARENTS.length; i++) {
@@ -538,6 +549,14 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     //         pref2.setEnabled(true);
     //     }
     // }
+
+    private void updateChipIntervalVisibility() {
+        Preference p = mPreferenceScreen.findPreference(KEY_CHIP_SWITCHING_INTERVAL);
+        if (p == null) return;
+
+        boolean isSwitching = "switching".equals(mSharedPreferences.getString(KEY_CHIP_CONTENT, ""));
+        p.setVisible(isSwitching);
+    }
 
     private void updateListPrefSummary(String key) {
         ListPreference pref;

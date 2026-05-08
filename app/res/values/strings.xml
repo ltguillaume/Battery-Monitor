@@ -426,6 +426,10 @@
   <string formatted="false" name="pref_cat_notification_content">Content</string>
   <string formatted="false" name="pref_cat_status_bar_chip">Status Bar Chip (Android 16+)</string>
   <string formatted="false" name="pref_chip_content">Chip Content</string>
+  <string formatted="false" name="pref_chip_content_switching">Switch between battery and temperature</string>
+  <string formatted="false" name="pref_chip_content_switching_summary">Cycle the display between battery percentage and temperature</string>
+  <string formatted="false" name="pref_chip_switching_interval">Switching interval</string>
+  <string formatted="false" name="pref_chip_switching_interval_summary">How often to switch the display</string>
   <string formatted="false" name="pref_chip_content_help">
     Choose what value to show in the Android 16+ promoted-notification chip.
   </string>
@@ -820,4 +824,5 @@
   <string formatted="false" name="icon_set_smaller">Smaller Number</string>
   <string formatted="false" name="pref_content_percent">Battery Percentage</string>
   <string formatted="false" name="pref_content_temperature">Battery Temperature</string>
+  <string formatted="false" name="pref_content_switching">Switch between both</string>
 </resources>

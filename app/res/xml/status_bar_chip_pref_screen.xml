@@ -6,9 +6,17 @@
     <ListPreference
        android:key="chip_content"
        android:title="@string/pref_chip_content"
-       android:entries="@array/icon_content_entries"
-       android:entryValues="@array/icon_content_values"
+       android:entries="@array/chip_content_entries"
+       android:entryValues="@array/chip_content_values"
        android:defaultValue="@string/default_chip_content"
+    />
+
+    <ListPreference
+       android:key="chip_switching_interval"
+       android:title="@string/pref_chip_switching_interval"
+       android:entries="@array/chip_switching_interval_entries"
+       android:entryValues="@array/chip_switching_interval_values"
+       android:defaultValue="5"
     />
 
     <CheckBoxPreference

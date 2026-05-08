@@ -139,6 +139,26 @@ public class BatteryInfoService extends Service {
 
     private final Handler mHandler = new Handler();
 
+    private boolean chipShowingTemperature = false;
+    private final Runnable runChipSwitch = new Runnable() {
+        @Override
+        public void run() {
+            chipShowingTemperature = !chipShowingTemperature;
+            prepareNotification();
+            if (mainNotificationForegroundStarted) {
+                mNotificationManager.notify(NOTIFICATION_PRIMARY, mainNotificationB.build());
+            }
+
+            int interval;
+            try {
+                interval = Integer.parseInt(settings.getString(SettingsFragment.KEY_CHIP_SWITCHING_INTERVAL, "5"));
+            } catch (NumberFormatException e) {
+                interval = 5;
+            }
+            mHandler.postDelayed(this, interval * 1000L);
+        }
+    };
+
     private final Runnable runRenotify = new Runnable() {
         public void run() {
             registerReceiver(mBatteryInfoReceiver, batteryChanged);
@@ -266,6 +286,7 @@ public class BatteryInfoService extends Service {
         alarms.close();
         unregisterReceiver(mBatteryInfoReceiver);
         mHandler.removeCallbacks(runRenotify);
+        mHandler.removeCallbacks(runChipSwitch);
         mNotificationManager.cancelAll();
         log_db.close();
         updateWidgets(null);
@@ -404,9 +425,21 @@ public class BatteryInfoService extends Service {
             mainNotificationForegroundStarted = false;
         }
 
+        chipShowingTemperature = false;
         setUpChannels();
         registerReceiver(mBatteryInfoReceiver, batteryChanged);
         update(null);
+
+        mHandler.removeCallbacks(runChipSwitch);
+        if (supportsLiveUpdates() && "switching".equals(settings.getString(SettingsFragment.KEY_CHIP_CONTENT, ""))) {
+            int interval;
+            try {
+                interval = Integer.parseInt(settings.getString(SettingsFragment.KEY_CHIP_SWITCHING_INTERVAL, "5"));
+            } catch (NumberFormatException e) {
+                interval = 5;
+            }
+            mHandler.postDelayed(runChipSwitch, interval * 1000L);
+        }
     }
 
     private final BroadcastReceiver mBatteryInfoReceiver = new BroadcastReceiver() {
@@ -647,8 +680,16 @@ public class BatteryInfoService extends Service {
     }
 
     private String chipContentText() {
-        String content = contentPreference(SettingsFragment.KEY_CHIP_CONTENT,
-                                           res.getString(R.string.default_chip_content));
+        String content = settings.getString(SettingsFragment.KEY_CHIP_CONTENT,
+                                            res.getString(R.string.default_chip_content));
+
+        if ("switching".equals(content)) {
+            content = chipShowingTemperature ? CONTENT_TEMPERATURE : CONTENT_PERCENTAGE;
+        } else {
+            content = contentPreference(SettingsFragment.KEY_CHIP_CONTENT,
+                                        res.getString(R.string.default_chip_content));
+        }
+
         if (CONTENT_TEMPERATURE.equals(content)) {
             boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
                                                    res.getBoolean(R.bool.default_convert_to_fahrenheit));

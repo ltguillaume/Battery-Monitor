@@ -318,6 +318,22 @@
     <item>600</item>
   </string-array>
 
+  <string-array name="chip_switching_interval_entries">
+    <item>2 seconds</item>
+    <item>5 seconds</item>
+    <item>10 seconds</item>
+    <item>15 seconds</item>
+    <item>30 seconds</item>
+  </string-array>
+
+  <string-array name="chip_switching_interval_values">
+    <item>2</item>
+    <item>5</item>
+    <item>10</item>
+    <item>15</item>
+    <item>30</item>
+  </string-array>
+
   <string name="default_usb_charge_time">360</string>
   <string name="default_ac_charge_time">180</string>
   <string name="default_light_usage_time">2160</string>
@@ -528,6 +544,18 @@
   <string-array name="icon_content_values">
     <item>percentage</item>
     <item>temperature</item>
+  </string-array>
+
+  <string-array name="chip_content_entries">
+    <item>@string/pref_content_percent</item>
+    <item>@string/pref_content_temperature</item>
+    <item>@string/pref_content_switching</item>
+  </string-array>
+
+  <string-array name="chip_content_values">
+    <item>percentage</item>
+    <item>temperature</item>
+    <item>switching</item>
   </string-array>
 
   <string name="default_icon_content">percentage</string>
