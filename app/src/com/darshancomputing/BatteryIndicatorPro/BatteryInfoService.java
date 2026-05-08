@@ -250,7 +250,14 @@ public class BatteryInfoService extends Service {
         }
 
         Intent bc_intent = registerReceiver(mBatteryInfoReceiver, batteryChanged);
-        info.load(bc_intent, sp_service);
+        if (bc_intent != null)
+            info.load(bc_intent, sp_service);
+    }
+
+    @Override
+    public void onTimeout(int startId, int fgsType) {
+        Log.w(LOG_TAG, "Foreground service timeout reached for type: " + fgsType);
+        stopSelf();
     }
 
     @Override
@@ -432,8 +439,12 @@ public class BatteryInfoService extends Service {
         sps_editor = sp_service.edit();
         updated_lasts = false;
 
-        if (intent != null)
-            info.load(intent, sp_service);
+        Intent batteryIntent = intent;
+        if (batteryIntent == null)
+            batteryIntent = registerReceiver(null, batteryChanged);
+
+        if (batteryIntent != null)
+            info.load(batteryIntent, sp_service);
 
         predictor.setPredictionType(settings.getString(SettingsFragment.KEY_PREDICTION_TYPE,
                                                        Str.default_prediction_type));
@@ -471,6 +482,9 @@ public class BatteryInfoService extends Service {
         try {
             if (mainNotificationForegroundStarted) {
                 mNotificationManager.notify(NOTIFICATION_PRIMARY, mainNotification);
+            } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+                mainNotificationForegroundStarted = true;
             } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
                 startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
                 mainNotificationForegroundStarted = true;
@@ -487,6 +501,9 @@ public class BatteryInfoService extends Service {
 
                 if (mainNotificationForegroundStarted) {
                     mNotificationManager.notify(NOTIFICATION_PRIMARY, mainNotification);
+                } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                    startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+                    mainNotificationForegroundStarted = true;
                 } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
                     startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
                     mainNotificationForegroundStarted = true;

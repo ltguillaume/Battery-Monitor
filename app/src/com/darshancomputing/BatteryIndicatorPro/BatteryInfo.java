@@ -147,6 +147,7 @@ class BatteryInfo {
     }
 
     void load(Intent intent) {
+        if (intent == null) return;
         int level = intent.getIntExtra(EXTRA_LEVEL, 50);
         int scale = intent.getIntExtra(EXTRA_SCALE, 100);
 
