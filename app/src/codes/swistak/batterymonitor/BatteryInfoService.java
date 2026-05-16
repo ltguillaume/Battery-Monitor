@@ -84,8 +84,9 @@ public class BatteryInfoService extends Service {
     public static final String CHAN_ID_OLD_MAIN = "main";
     public static final String CHAN_ID_OLD_ALARM = "alarm";
     public static final String CHAN_ID_OLD_MAIN_2 = "main_002";
+    public static final String CHAN_ID_OLD_MAIN_3 = "main_003";
 
-    public static final String CHAN_ID_MAIN = "main_003";
+    public static final String CHAN_ID_MAIN = "main_004";
 
     // Important: Make sure alarm notification channel IDs and alarm type database values always match
     public static final String CHAN_ID_A_CHARGED = "fully_charged";
@@ -171,13 +172,10 @@ public class BatteryInfoService extends Service {
 
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN);
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN_2);
+        mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN_3);
         mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_ALARM);
 
-        boolean useLiveUpdates = supportsLiveUpdates();
-
-        int main_importance = (android.os.Build.VERSION.SDK_INT < 28 || useLiveUpdates)
-                              ? NotificationManager.IMPORTANCE_LOW
-                              : NotificationManager.IMPORTANCE_MIN;
+        int main_importance = NotificationManager.IMPORTANCE_LOW;
         CharSequence main_notif_chan_name = getString(R.string.main_notif_chan_name);
         NotificationChannel ch = new NotificationChannel(CHAN_ID_MAIN, main_notif_chan_name, main_importance);
         ch.setSound(null, null);
