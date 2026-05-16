@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Instellingen</string>
   <string name="help_activity_subtitle" formatted="false">Help</string>
   <string name="log_view_activity_subtitle" formatted="false">Logboeken</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Batterijgebruik bekijken</string>
   <string name="upgrade_donate_b" formatted="false">Upgraden of doneren</string>
   <string name="confirm_disable_hint" formatted="false">(Je kunt deze bevestiging uitzetten bij de instellingen)</string>
   <string name="yes" formatted="false">Ja</string>
   <string name="cancel" formatted="false">Annuleren</string>
   <string name="confirm_close" formatted="false">Sluiten?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator zal volledig worden afgesloten, en het statusbalkicoon zal ook weggaan.\n\nWil je alleen dit venster sluiten en de indicator actief houden, druk dan op \'Annuleren\' en druk op de TERUG knop om het venster te sluiten.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor zal volledig worden afgesloten, en het statusbalkicoon zal ook weggaan.\n\nWil je alleen dit venster sluiten en de indicator actief houden, druk dan op \'Annuleren\' en druk op de TERUG knop om het venster te sluiten.</string>
   <string name="confirm_clear_logs" formatted="false">Alle logboeken verwijderen?</string>
   <string name="configure_log_filter" formatted="false">Welke logitems laten zien?</string>
   <string name="okay" formatted="false">OK</string>
@@ -174,7 +173,7 @@
   <string name="pref_cat_autostart" formatted="false">Automatisch starten</string>
   <string name="pref_autostart_at_boot" formatted="false">Automatisch starten bij inschakelen</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Starten als het apparaat wordt ingeschakeld:</string>
-  <string name="pref_autostart_at_boot_help" formatted="false">Deze optie verandert of Battery Indicator automatisch opstart wanneer het systeem opstart.</string>
+  <string name="pref_autostart_at_boot_help" formatted="false">Deze optie verandert of Battery Monitor automatisch opstart wanneer het systeem opstart.</string>
   <string name="lang_system_selected" formatted="false">Geselecteerd door systeem</string>
   <string name="pref_cat_language" formatted="false">Taal</string>
   <string name="pref_language_override" formatted="false">Andere taal gebruiken</string>
@@ -235,7 +234,7 @@
   <string name="help_cat_open_source" formatted="false">Open source</string>
   <string name="help_open_source" formatted="false">Dit
     project is open source. U kunt de broncode raadplegen op
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_cat_donate" formatted="false">Doneren</string>
   <string name="help_donate" formatted="false">Overweeg om te doneren door te upgraden naar de <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro-versie</a>.</string>
   <string name="help_cat_privacy" formatted="false">Privacy</string>

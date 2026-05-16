@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Einstellungen</string>
   <string name="help_activity_subtitle" formatted="false">Hilfe</string>
   <string name="log_view_activity_subtitle" formatted="false">Protokoll</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Akkuverbrauch anzeigen</string>
   <string name="upgrade_donate_b" formatted="false">Upgrade/Spenden...</string>
-  <string name="circle_widget" formatted="false">BatteryBot Kreis</string>
-  <string name="full_widget" formatted="false">BatteryBot Voll</string>
+  <string name="circle_widget" formatted="false">Battery Monitor Kreis</string>
+  <string name="full_widget" formatted="false">Battery Monitor Voll</string>
   <string name="confirm_disable_hint" formatted="false">Tipp: Sie können den Bestätigung Dialog in den Einstellungen ausschalten...</string>
   <string name="yes" formatted="false">Ja</string>
   <string name="cancel" formatted="false">Abbrechen</string>
   <string name="confirm_close" formatted="false">Wirklich schließen?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator wird komplett beendet, somit wird auch die Anzeige im Statusbalken verschwinden.\n\nWenn Sie nur das Fenster schließen wollen und die Anzeige im Statusbalken behalten, dann drücken Sie \"Abbrechen\" und benutzen Sie die \"ZURÜCK\"-Schaltfläche ihres Gerätes.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor wird komplett beendet, somit wird auch die Anzeige im Statusbalken verschwinden.\n\nWenn Sie nur das Fenster schließen wollen und die Anzeige im Statusbalken behalten, dann drücken Sie \"Abbrechen\" und benutzen Sie die \"ZURÜCK\"-Schaltfläche ihres Gerätes.</string>
   <string name="confirm_clear_logs" formatted="false">Wirklich alle Protokolle löschen?</string>
   <string name="configure_log_filter" formatted="false">Welche Elemente sollen angezeigt werden?</string>
   <string name="okay" formatted="false">Okay</string>
@@ -104,7 +103,7 @@
   <string name="help_cat_version" formatted="false">Version</string>
   <string name="help_open_source" formatted="false">Dies
     Das Projekt ist Open Source. Den Quellcode finden Sie unter
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_cat_donate" formatted="false">Spenden</string>
   <string name="help_cat_no_warranty" formatted="false">Keine Garantie</string>
   <string name="help_no_warranty" formatted="false">Diese Software ist in der Hoffnung erstellt, dass sie nützlich sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTGÄNGIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.\n\nWährend ich mein Bestes gebe, um sicherzustellen, dass sie gut funktioniert und sie keine Probleme erzeugt, bin ich keinen Umständen verantwortlich für jegliche Schäden oder Unannehmlichkeiten.</string>
@@ -140,7 +139,7 @@
   <string name="pref_convert_to_fahrenheit" formatted="false">Umrechnen in Fahrenheit</string>
   <string name="pref_cat_autostart" formatted="false">Autostart</string>
   <string name="pref_autostart_at_boot" formatted="false">Autostart beim Gerätestart</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">Battery Indicator starten wenn Gerät startet:</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">Battery Monitor starten wenn Gerät startet:</string>
   <string name="pref_cat_device_specific" formatted="false">Geräte abhängige Einstellungen</string>
   <string name="alarms_overview" formatted="false">Übersicht Alarme</string>
   <string name="pref_alarm_enabled" formatted="false">Alarm einschalten</string>

@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Nastavenia</string>
   <string name="help_activity_subtitle" formatted="false">Pomocník</string>
   <string name="log_view_activity_subtitle" formatted="false">Záznamy</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Pozrieť používanie batérie</string>
   <string name="upgrade_donate_b" formatted="false">Aktualizácia/Podporiť...</string>
   <string name="confirm_disable_hint" formatted="false">Pomôcka: Vypnite tento potvrdzovací dialóg v nastaveniach...</string>
   <string name="yes" formatted="false">Áno</string>
   <string name="cancel" formatted="false">Zrušiť</string>
   <string name="confirm_close" formatted="false">Naozaj zavrieť?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator bude úplne zatvorený a nebudete ho viac vidieť ani v notifikačnej lište.\n\nAk len chcete odísť z hlavného okna a nechať indikátor spustený, stlačte Zrušiť a potom stlačte na vašom telefóne tlačidlo späť pre odídenie z hlavného okna.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor bude úplne zatvorený a nebudete ho viac vidieť ani v notifikačnej lište.\n\nAk len chcete odísť z hlavného okna a nechať indikátor spustený, stlačte Zrušiť a potom stlačte na vašom telefóne tlačidlo späť pre odídenie z hlavného okna.</string>
   <string name="confirm_clear_logs" formatted="false">Naozaj odstrániť všetky záznamy?</string>
   <string name="okay" formatted="false">OK</string>
   <string name="none" formatted="false">Nič</string>
@@ -117,7 +116,7 @@
   <string name="pref_convert_to_fahrenheit" formatted="false">Premeniť na Fahrenheity</string>
   <string name="pref_cat_autostart" formatted="false">Automatické spustenie</string>
   <string name="pref_autostart_at_boot" formatted="false">Spustiť automaticky po zapnutí</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">Spustiť Battery Indicator keď zariadenie štartuje:</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">Spustiť Battery Monitor keď zariadenie štartuje:</string>
   <string name="pref_cat_device_specific" formatted="false">Nastavenia špecifické pre konkrétne zariadenia</string>
   <string name="alarms_overview" formatted="false">Prehľad upozornení</string>
   <string name="pref_alarm_enabled" formatted="false">Zapnúť upozornenie</string>
@@ -217,7 +216,7 @@
   <string formatted="false" name="help_cat_open_source">Open Source</string>
   <string formatted="false" name="help_open_source">Toto
     projekt je open source. K zdrojovému kódu sa môžete dostať na adrese
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Darovať</string>
   <string formatted="false" name="help_donate">Prosím
     zvážte darovanie inováciou na Pro

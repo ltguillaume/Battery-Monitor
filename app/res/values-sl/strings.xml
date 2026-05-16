@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Nastavitve</string>
   <string name="help_activity_subtitle" formatted="false">Pomoč</string>
   <string name="log_view_activity_subtitle" formatted="false">Poročila</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Poglej porabo baterije</string>
   <string name="upgrade_donate_b" formatted="false">Nadgradi/doniraj...</string>
   <string name="confirm_disable_hint" formatted="false">Namig: Onemogočite to vprašanje v nastavitvah...</string>
   <string name="yes" formatted="false">Da</string>
   <string name="cancel" formatted="false">Prekliči</string>
   <string name="confirm_close" formatted="false">Ste prepričani da želite zapreti?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator bo popolnoma zaprt in ga ne boste več videli v statusni vrstici.\n\nČe bi radi zaprli le glavno okno in pustili indikator zagnan, pritisnite Prekliči in nato samo pritisnite tipko NAZAJ na napravi da zapustite glavno okno.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor bo popolnoma zaprt in ga ne boste več videli v statusni vrstici.\n\nČe bi radi zaprli le glavno okno in pustili indikator zagnan, pritisnite Prekliči in nato samo pritisnite tipko NAZAJ na napravi da zapustite glavno okno.</string>
   <string name="confirm_clear_logs" formatted="false">Ste prepričani da želite izbrisati vsa poročila?</string>
   <string name="okay" formatted="false">Vredu</string>
   <string name="none" formatted="false">Noben</string>
@@ -94,7 +93,7 @@
   <string name="alarm_settings_subtitle" formatted="false">Nastavitve alarma</string>
   <string name="alarm_settings" formatted="false">Alarmi</string>
   <string name="alarm_settings_summary" formatted="false">Nadzoruj obvestila za slabo/polno baterijo</string>
-  <string name="alarm_settings_help" formatted="false">Battery Indicator lahko nastavite tako, da vas obvesti ko baterija doseže določeno točko (npr., baterija se popolnoma napolni, baterija pade pod 20%).</string>
+  <string name="alarm_settings_help" formatted="false">Battery Monitor lahko nastavite tako, da vas obvesti ko baterija doseže določeno točko (npr., baterija se popolnoma napolni, baterija pade pod 20%).</string>
   <string name="other_settings" formatted="false">Druge nastavitve</string>
   <string name="pref_cat_more_settings_in_pro" formatted="false">Več nastavitev v Pro različici</string>
   <string name="add_alarm" formatted="false">Dodaj alarm</string>
@@ -107,7 +106,7 @@
   <string name="pref_convert_to_fahrenheit" formatted="false">Pretvori v Fahrenheit</string>
   <string name="pref_cat_autostart" formatted="false">Samodejni zagon</string>
   <string name="pref_autostart_at_boot" formatted="false">Samodejni zagon ob zagonu</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">Zaženi Battery Indicator ko se naprava zažene:</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">Zaženi Battery Monitor ko se naprava zažene:</string>
   <string name="pref_cat_language" formatted="false">Jezik</string>
   <string name="pref_language_override_summary" formatted="false">Izberi jezik:</string>
   <string name="pref_cat_device_specific" formatted="false">Nastavitve za specifično napravo</string>
@@ -192,7 +191,7 @@
   <string formatted="false" name="help_cat_open_source">Odprta koda</string>
   <string formatted="false" name="help_open_source">to
     projekt je odprtokoden. Do izvorne kode lahko dostopate na
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Donirajte</string>
   <string formatted="false" name="help_donate">prosim
     razmislite o donaciji z nadgradnjo na Pro

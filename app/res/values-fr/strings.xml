@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Paramètres</string>
   <string name="help_activity_subtitle" formatted="false">Aide</string>
   <string name="log_view_activity_subtitle" formatted="false">Journaux</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Utilisation de la batterie</string>
   <string name="upgrade_donate_b" formatted="false">Mettre à niveau/Faire un don...</string>
   <string name="confirm_disable_hint" formatted="false">Conseil : Vous pouvez désactiver ce message dans les paramètres...</string>
   <string name="yes" formatted="false">Oui</string>
   <string name="cancel" formatted="false">Annuler</string>
   <string name="confirm_close" formatted="false">Fermer l\'application ?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator va être complètement fermé et l\'indicateur de batterie va être retiré de la barre d\'état.\n\nSi vous souhaitez juste fermer la fenêtre principale et garder l\'indicateur de batterie affiché, appuyez sur Annuler et pressez simplement le bouton retour de votre téléphone.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor va être complètement fermé et l\'indicateur de batterie va être retiré de la barre d\'état.\n\nSi vous souhaitez juste fermer la fenêtre principale et garder l\'indicateur de batterie affiché, appuyez sur Annuler et pressez simplement le bouton retour de votre téléphone.</string>
   <string name="confirm_clear_logs" formatted="false">Voulez-vous vraiment vider les journaux ?</string>
   <string name="okay" formatted="false">Ok</string>
   <string name="none" formatted="false">Aucun</string>
@@ -103,7 +102,7 @@
   <string name="alarm_settings_subtitle" formatted="false">Paramètres des alarmes</string>
   <string name="alarm_settings" formatted="false">Alarmes</string>
   <string name="alarm_settings_summary" formatted="false">Paramétrez les notifications de batterie faible/chargée</string>
-  <string name="alarm_settings_help" formatted="false">Vous pouvez configurer Battery Indicator pour qu\'il vous informe dès que la batterie a atteint un certain point (exemple : La batterie est complètement chargée, le niveau de charge a atteint 20%, etc...).</string>
+  <string name="alarm_settings_help" formatted="false">Vous pouvez configurer Battery Monitor pour qu\'il vous informe dès que la batterie a atteint un certain point (exemple : La batterie est complètement chargée, le niveau de charge a atteint 20%, etc...).</string>
   <string name="other_settings" formatted="false">Autres paramètres</string>
   <string name="other_settings_help" formatted="false">Tous les autres paramètres sont dans cette partie, y compris la journalisation, la gestion de l\'écran de verrouillage, l\'unité de température, le démarrage automatique, etc...</string>
   <string name="pref_cat_more_settings_in_pro" formatted="false">Autres paramètres (version Pro)</string>
@@ -112,7 +111,7 @@
   <string name="pref_cat_logging" formatted="false">Journalisation</string>
   <string name="pref_enable_logging" formatted="false">Activer la journalisation</string>
   <string name="pref_enable_logging_summary" formatted="false">Enregistrer les états de la batterie ?</string>
-  <string name="pref_enable_logging_help" formatted="false">Si l\'option est active, Battery Indicator enregistre tous les changements d\'état de la batterie (comme quand le téléphone est débranché ou a fini sa charge). Vous pouvez consulter les journaux depuis la fenêtre principale (en appuyant sur MENU et en sélectionnant Journaux).</string>
+  <string name="pref_enable_logging_help" formatted="false">Si l\'option est active, Battery Monitor enregistre tous les changements d\'état de la batterie (comme quand le téléphone est débranché ou a fini sa charge). Vous pouvez consulter les journaux depuis la fenêtre principale (en appuyant sur MENU et en sélectionnant Journaux).</string>
   <string name="pref_max_log_age" formatted="false">Âge maximal du journal</string>
   <string name="pref_max_log_age_summary" formatted="false">Supprimer les journaux plus ancients que :</string>
   <string name="pref_max_log_age_help" formatted="false">Lorsque la journalisation est activée que vous branchez votre téléphone les journaux les plus vieux sont supprimés.</string>
@@ -121,7 +120,7 @@
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android donne la température de la batterie en degrés Celsius. Si vous préférez avoir la température en degrés Fahrenheit, cochez cette option et l\'application changera l\'unité pour vous.</string>
   <string name="pref_cat_autostart" formatted="false">Démarrage automatique</string>
   <string name="pref_autostart_at_boot" formatted="false">Démarrage automatique au lancement</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">Démarrer Battery Indicator lorsque le téléphone s\'allume ?</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">Démarrer Battery Monitor lorsque le téléphone s\'allume ?</string>
   <string name="pref_autostart_at_boot_help" formatted="false">Choisissez si l\'application doit démarrer automatiquement lorsque le téléphone démarre.\n\nL\'option \"Si lancé à l\'extinction\" est active l\'application démarrera automatiquement au démarrage de l\'appareil si elle était lancée lors de l\'extinction. Si vous quittez l\'application par un autre moyen que par elle-même (comme par exemple grâce à un task killer) elle se relancera automatiquement lors du prochain démarrage du téléphone.</string>
   <string name="lang_system_selected" formatted="false">Déterminée par le système</string>
   <string name="pref_cat_language" formatted="false">Langue</string>
@@ -190,7 +189,7 @@
   <string name="help_cat_open_source" formatted="false">Open source</string>
   <string name="help_open_source" formatted="false">Ceci
     le projet est open source. Vous pouvez accéder au code source sur
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_cat_donate" formatted="false">Don</string>
   <string name="help_donate" formatted="false">Vous pouvez soutenir le projet en passant à la <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">version Pro</a>.</string>
   <string name="help_cat_privacy" formatted="false">Confidentialité</string>

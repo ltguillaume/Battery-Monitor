@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">مؤشر البطارية الإحترافي</string>
-  <string name="app_launcher_name" formatted="false">مؤشر البطارية الإحترافي</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">الخيارات</string>
   <string name="help_activity_subtitle" formatted="false">المساعدة</string>
   <string name="log_view_activity_subtitle" formatted="false">السجلات</string>
-  <string name="app_full_name_free" formatted="false">مؤشر البطارية</string>
   <string name="battery_use_b" formatted="false">عرض استخدام البطارية</string>
   <string name="upgrade_donate_b" formatted="false">ترقية/تبرع</string>
   <string name="circle_widget" formatted="false">دائرةالمؤشر</string>
@@ -107,7 +106,7 @@
   <string name="help_cat_open_source" formatted="false">مفتوح المصدر</string>
   <string name="help_open_source" formatted="false">هذا
     المشروع مفتوح المصدر. يمكنك الوصول إلى الكود المصدري على
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_cat_donate" formatted="false">تبرع</string>
   <string name="help_donate" formatted="false">ارجوك كن من المتبرعين بشرائك النسخة الكاملة <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">النسخة الكاملة</a>.</string>
   <string name="help_cat_no_warranty" formatted="false">لا ضمان</string>

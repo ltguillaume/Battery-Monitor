@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string formatted="false" name="app_full_name">BatteryBot Pro</string>
-  <string formatted="false" name="app_launcher_name">BatteryBot</string>
+  <string formatted="false" name="app_full_name">Battery Monitor</string>
+  <string formatted="false" name="app_launcher_name">Battery Monitor</string>
   <string formatted="false" name="settings_activity_subtitle">Ρυθμίσεις</string>
   <string formatted="false" name="help_activity_subtitle">Βοήθεια</string>
   <string formatted="false" name="log_view_activity_subtitle">Λίστες Καταγραφής Δεδομένων</string>
-  <string formatted="false" name="app_full_name_free">BatteryBot</string>
-  <string formatted="false" name="battery_use_b">Χρήση Μπαταρίας</string>
+    <string formatted="false" name="battery_use_b">Χρήση Μπαταρίας</string>
   <string formatted="false" name="upgrade_donate_b">Αναβάθμιση/Δωρεά</string>
   <string formatted="false" name="circle_widget">Κύκλος παρακολούθησης μπαταρίας</string>
   <string formatted="false" name="full_widget">Οθόνη μπαταρίας πλήρης</string>
@@ -14,7 +13,7 @@
   <string formatted="false" name="yes">Ναι</string>
   <string formatted="false" name="cancel">Ακύρωση</string>
   <string formatted="false" name="confirm_close">Θέλετε να Κλείσετε την εφαρμογή;</string>
-  <string formatted="false" name="confirm_close_hint">Ο Battery Indicator θα κλείσει εντελώς, και δε θα υπάρχει στην μπάρα κατάστασης πλέον.\n\nΑν επιθυμείτε να φύγετε από το κυρίως παράθυρο και να αφήσετε το πρόγραμμα να τρέχει, πατήστε Ακύρωση και μετά πατήστε το κουμπί BACK της συσκευής σας για να φύγετε από το κυρίως παράθυρο.</string>
+  <string formatted="false" name="confirm_close_hint">Ο Battery Monitor θα κλείσει εντελώς, και δε θα υπάρχει στην μπάρα κατάστασης πλέον.\n\nΑν επιθυμείτε να φύγετε από το κυρίως παράθυρο και να αφήσετε το πρόγραμμα να τρέχει, πατήστε Ακύρωση και μετά πατήστε το κουμπί BACK της συσκευής σας για να φύγετε από το κυρίως παράθυρο.</string>
   <string formatted="false" name="notifications_disabled">Οι ειδοποιήσεις είναι απενεργοποιημένες!</string>
   <string formatted="false" name="notifications_disabled_message">
     Έχετε αποκλείσει όλες τις ειδοποιήσεις για το Battery Monitor.  Αυτό θα
@@ -149,7 +148,7 @@
     <string formatted="false" name="help_cat_open_source">Ανοιχτού κώδικα</string>
   <string formatted="false" name="help_open_source">Αυτό
     το έργο είναι ανοιχτού κώδικα. Μπορείτε να αποκτήσετε πρόσβαση στον πηγαίο κώδικα στη διεύθυνση
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Προσφέρω</string>
   <string formatted="false" name="help_donate">
     Παρακαλώ
@@ -209,7 +208,7 @@
   <string formatted="false" name="alarm_settings_subtitle">Ρυθμίσεις Ειδοποιήσεων</string>
   <string formatted="false" name="alarm_settings">Ειδοποιήσεις</string>
   <string formatted="false" name="alarm_settings_summary">Έλεγχος ειδοποιήσεων για χαμηλή/πλήρη μπαταρία</string>
-  <string formatted="false" name="alarm_settings_help">Μπορείτε να ρυθμίσετε τον Battery Indicator να σας ενημερώνει όταν το επίπεδο της μπαταρίας φτάνει σε ένα συγκεκριμένο επίπεδο (π.χ, όταν η μπαταρία φορτίζεται πλήρως ή όταν το επίπεδο της μπαταρίας πέφτει κάτω από 20%)</string>
+  <string formatted="false" name="alarm_settings_help">Μπορείτε να ρυθμίσετε τον Battery Monitor να σας ενημερώνει όταν το επίπεδο της μπαταρίας φτάνει σε ένα συγκεκριμένο επίπεδο (π.χ, όταν η μπαταρία φορτίζεται πλήρως ή όταν το επίπεδο της μπαταρίας πέφτει κάτω από 20%)</string>
   <string formatted="false" name="other_settings">Άλλες Ρυθμίσεις</string>
   <string formatted="false" name="other_settings_help">Όλες οι άλλες ρυθμίσεις βρίσκονται σε αυτή τη σελίδα, συμπεριλαμβανομένων της καταγραφής δεδομένων, του κλειδώματος της οθόνης, των μονάδων θερμοκρασίας, της αυτόματης έναρξης, και άλλα ακόμη.</string>
   <string formatted="false" name="pref_cat_more_settings_in_pro">Επιπλέον Ρυθμίσεις στο Pro</string>
@@ -410,7 +409,7 @@
   <string formatted="false" name="pref_cat_logging">Καταγραφή</string>
   <string formatted="false" name="pref_enable_logging">Ενεργοποίηση Καταγραφής</string>
   <string formatted="false" name="pref_enable_logging_summary">Καταγραφή αλλαγής κατάστασης μπαταρίας;</string>
-  <string formatted="false" name="pref_enable_logging_help">Αν ενεργοποιηθεί, ο Battery Indicator, θα καταγράφει τις μεταβολές κατάστασης της μπαταρίας (π.χ αν η συσκευή αποσυνδεθεί από το ρεύμα ή έχει φορτιστεί πλήρως). Μπορείτε να δείτε τα κατεγραμμένα δεδομένα από το κυρίως παράθυρο (πατήστε MENU και μετά επιλέξτε Λίστα Καταγραφής, στα tablets, το MENU δε είναι απαραίτητο.)</string>
+  <string formatted="false" name="pref_enable_logging_help">Αν ενεργοποιηθεί, ο Battery Monitor, θα καταγράφει τις μεταβολές κατάστασης της μπαταρίας (π.χ αν η συσκευή αποσυνδεθεί από το ρεύμα ή έχει φορτιστεί πλήρως). Μπορείτε να δείτε τα κατεγραμμένα δεδομένα από το κυρίως παράθυρο (πατήστε MENU και μετά επιλέξτε Λίστα Καταγραφής, στα tablets, το MENU δε είναι απαραίτητο.)</string>
   <string formatted="false" name="pref_max_log_age">Μέγιστη Περίοδος Καταγραφής</string>
   <string formatted="false" name="pref_max_log_age_summary">Διαγραφή λίστας δεδομένων παλαιότερης από:</string>
   <string formatted="false" name="pref_max_log_age_help">Αν η καταγραφή είναι ενεργοποιημένη, τότε όποτε συνδέετε τη συσκευή στην πρίζα, όλες οι παλαιότερες καταγραφές θα διαγραφούν.</string>
@@ -427,8 +426,8 @@
   <string formatted="false" name="pref_convert_to_fahrenheit_help">Το Android αναφέρει τη θερμοκρασία της μπαταρίας σε βαθμούς Κελσίου. Αν προτιμάτε να τη βλέπετε σε Φάρεναϊτ, επιλέξετε αυτήν την επιλογή και η εφαρμογή θα σας τη μετατρέπει.</string>
   <string formatted="false" name="pref_cat_autostart">Αυτόματη Ενεργοποίηση</string>
   <string formatted="false" name="pref_autostart_at_boot">Αυτόματη Ενεργοποίηση μετά από Επανεκκίνηση</string>
-  <string formatted="false" name="pref_autostart_at_boot_summary">Εκκίνηση Battery Indicator όταν η συσκευή επανεκκινά:</string>
-  <string formatted="false" name="pref_autostart_at_boot_help">Ελέγχει κατά πόσο ο Battery Indicator θα ξεκινά από μόνος του αυτόματα όποτε η συσκευή εκκινά.\n\nΗ \"Αν Τρέχει κατά το Σβήσιμο\" επιλογή εργάζεται σε σχέση με το κατά πόσο έχετε πρόσφατα εκκινήσει ή κλείσει το Battery Indicator. Άρα αν έχετε κλείσει αναγκαστικά το Battery Indicator , όπως με ένα Task Killer, το πρόγραμμα δε θα γνωρίζει ότι το σταματήσατε και έτσι θα εκκινήσει αυτόματα αν το έχετε ρυθμίσει έτσι.</string>
+  <string formatted="false" name="pref_autostart_at_boot_summary">Εκκίνηση Battery Monitor όταν η συσκευή επανεκκινά:</string>
+  <string formatted="false" name="pref_autostart_at_boot_help">Ελέγχει κατά πόσο ο Battery Monitor θα ξεκινά από μόνος του αυτόματα όποτε η συσκευή εκκινά.\n\nΗ \"Αν Τρέχει κατά το Σβήσιμο\" επιλογή εργάζεται σε σχέση με το κατά πόσο έχετε πρόσφατα εκκινήσει ή κλείσει το Battery Monitor. Άρα αν έχετε κλείσει αναγκαστικά το Battery Monitor , όπως με ένα Task Killer, το πρόγραμμα δε θα γνωρίζει ότι το σταματήσατε και έτσι θα εκκινήσει αυτόματα αν το έχετε ρυθμίσει έτσι.</string>
   <string formatted="false" name="predictor_sensitive">Ευαίσθητος</string>
   <string formatted="false" name="predictor_conservative">Συντηρητικός</string>
   <string formatted="false" name="predictor_since_status_change">Από την Αλλαγή Κατάστασης</string>

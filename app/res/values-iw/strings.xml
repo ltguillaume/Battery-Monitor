@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_launcher_name" formatted="false">בוט-סוללה</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">הגדרות</string>
   <string name="help_activity_subtitle" formatted="false">עזרה</string>
   <string name="log_view_activity_subtitle" formatted="false">יומן-רישום</string>
-  <string name="app_full_name_free" formatted="false">בוט-סוללה</string>
   <string name="battery_use_b" formatted="false">הצגת השימוש בסוללה</string>
   <string name="upgrade_donate_b" formatted="false">שדרוג/תרומה</string>
-  <string name="circle_widget" formatted="false">עיגול בוט-סוללה</string>
-  <string name="full_widget" formatted="false">בוט-סוללה מלא</string>
+  <string name="circle_widget" formatted="false">עיגול Battery Monitor</string>
+  <string name="full_widget" formatted="false">Battery Monitor מלא</string>
   <string name="confirm_disable_hint" formatted="false">טיפ: ניתן לבטל את הודעת האישור בהגדרות</string>
   <string name="yes" formatted="false">כן</string>
   <string name="cancel" formatted="false">ביטול</string>
@@ -113,22 +112,22 @@
   <string name="pref_icon_set" formatted="false">ערכת סמלים</string>
   <string name="pref_cat_current_hack_main" formatted="false">בקרה ראשית</string>
 
-  <string formatted="false" name="app_full_name">צג סוללה</string>
+  <string formatted="false" name="app_full_name">Battery Monitor</string>
   <string formatted="false" name="confirm_close_hint">אישור סגירה של האפליקציה.</string>
-  <string formatted="false" name="notifications_disabled_message">חסמת את כל ההתראות עבור צג הסוללה.  צוואה זו
-    למנוע מצג הסוללה להציג הודעות כלשהן: הראשי
+  <string formatted="false" name="notifications_disabled_message">חסמת את כל ההתראות עבור Battery Monitor.  צוואה זו
+    למנוע מBattery Monitor להציג הודעות כלשהן: הראשי
     התראה וכל האזעקה שהגדרת ייחסמו כולם.\n
 
-    \nSince צג הסוללה מאפשר לך להפעיל או לכבות את ההתראה הראשית
+    \nSince Battery Monitor מאפשר לך להפעיל או לכבות את ההתראה הראשית
     בנפרד, כמו גם להשבית זמנית כל אזעקה
     שיצרת, מומלץ בחום לבטל את החסימה של
-    התראות צג סוללה.  בזמן שהם חסומים, זה יופיע
-    שצג הסוללה מקולקל.\n
+    התראות Battery Monitor.  בזמן שהם חסומים, זה יופיע
+    שBattery Monitor מקולקל.\n
 
     \n אנא לחץ על אישור כדי לעבור להגדרות המערכת שבהן תוכל
-    בטל את חסימת ההתראות עבור צג הסוללה.</string>
-  <string formatted="false" name="battery_optimized">צג הסוללה מוגבל!</string>
-  <string formatted="false" name="battery_optimized_message">צג הסוללה מוגבל לפעול כהלכה.  זה \"אופטימיזציה של סוללה\"
+    בטל את חסימת ההתראות עבור Battery Monitor.</string>
+  <string formatted="false" name="battery_optimized">Battery Monitor מוגבל!</string>
+  <string formatted="false" name="battery_optimized_message">Battery Monitor מוגבל לפעול כהלכה.  זה \"אופטימיזציה של סוללה\"
     היא תכונת אנדרואיד שנועדה להגביל אפליקציות מעוצבות בצורה גרועה כדי למנוע אותן
     משימוש ביותר מדי סוללה ברקע.\n
 
@@ -137,7 +136,7 @@
     לא יקטין את חיי הסוללה שלך.\n
 
     \n אנא לחץ על אישור כדי לעבור להגדרות המערכת שבהן תוכל
-    השבת את אופטימיזציית הסוללה עבור צג הסוללה.</string>
+    השבת את אופטימיזציית הסוללה עבור Battery Monitor.</string>
   <string formatted="false" name="main_notif_chan_name">הודעה ראשית</string>
   <string formatted="false" name="channel_group_name_alarms">אַזעָקָה</string>
   <string formatted="false" name="menu_show_seconds">הצג שניות</string>
@@ -167,11 +166,11 @@
   <string formatted="false" name="after_nm_ms_plugged_in">לאחר %1$dm %2$ds מחוברים</string>
   <string formatted="false" name="help_open_source">זה
     הפרויקט הוא קוד פתוח. אתה יכול לגשת לקוד המקור בכתובת
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_donate">בבקשה
     שקול לתרום על ידי שדרוג ל-Pro
     גרסה.</string>
-  <string formatted="false" name="help_privacy">צג הסוללה אינו אוסף, מאחסן או מעביר מידע אישי.</string>
+  <string formatted="false" name="help_privacy">Battery Monitor אינו אוסף, מאחסן או מעביר מידע אישי.</string>
   <string formatted="false" name="help_cat_no_warranty">אין אחריות</string>
   <string formatted="false" name="help_no_warranty">תוכנה זו מופצת בתקווה שהיא תהיה שימושית, אבל
     ללא כל אחריות; אפילו ללא האחריות המשתמעת של
@@ -189,7 +188,7 @@
     יש לך שאלה, בעיה או הערה, בבקשה
     מייל לי.</string>
   <string formatted="false" name="settings_overview">סקירה כללית</string>
-  <string formatted="false" name="settings_overview_help">ההגדרות של צג הסוללה מאורגנות בדפים נפרדים כמתואר
+  <string formatted="false" name="settings_overview_help">ההגדרות של Battery Monitor מאורגנות בדפים נפרדים כמתואר
     למטה.  לכל דף הגדרות יש דף עזרה משלו המתאר את
     ההגדרות הזמינות שם.</string>
   <string formatted="false" name="notifications_disabled_cat">הודעות מושבתות</string>
@@ -386,7 +385,7 @@
   <string formatted="false" name="pref_cat_logging">רישום</string>
   <string formatted="false" name="pref_enable_logging">אפשר רישום</string>
   <string formatted="false" name="pref_enable_logging_summary">לרשום שינויים במצב הסוללה?</string>
-  <string formatted="false" name="pref_enable_logging_help">אם מופעל, צג הסוללה ירשום שינויים במצב הסוללה.</string>
+  <string formatted="false" name="pref_enable_logging_help">אם מופעל, Battery Monitor ירשום שינויים במצב הסוללה.</string>
   <string formatted="false" name="pref_max_log_age">גיל יומן מקסימלי</string>
   <string formatted="false" name="pref_max_log_age_summary">מחק יומנים ישנים יותר מ:</string>
   <string formatted="false" name="pref_max_log_age_help">אם רישום מופעל, אז בכל פעם שאתה מחבר את המכשיר שלך, יומן
@@ -404,7 +403,7 @@
     סמן אפשרות זו, והאפליקציה תמיר עבורך.</string>
   <string formatted="false" name="pref_cat_autostart">הפעלה אוטומטית</string>
   <string formatted="false" name="pref_autostart_at_boot">הפעלה אוטומטית באתחול</string>
-  <string formatted="false" name="pref_autostart_at_boot_summary">הפעל את צג הסוללה בעת אתחול המכשיר:</string>
+  <string formatted="false" name="pref_autostart_at_boot_summary">הפעל את Battery Monitor בעת אתחול המכשיר:</string>
   <string formatted="false" name="pref_autostart_at_boot_help">קובע אם האפליקציה תופעל אוטומטית בעת אתחול המכשיר.</string>
   <string formatted="false" name="predictor_sensitive">רָגִישׁ</string>
   <string formatted="false" name="predictor_conservative">שַׁמְרָנִי</string>
@@ -412,7 +411,7 @@
   <string formatted="false" name="predictor_long_term_ave">ממוצע לטווח ארוך</string>
   <string formatted="false" name="pref_cat_predictor">הערכות שנותר זמן</string>
   <string formatted="false" name="pref_prediction_type">סוג הערכה</string>
-  <string formatted="false" name="pref_prediction_type_help">כאן תוכל לבחור כיצד צג הסוללה יחזה את השאריות שלך
+  <string formatted="false" name="pref_prediction_type_help">כאן תוכל לבחור כיצד Battery Monitor יחזה את השאריות שלך
     חיי סוללה/זמן עד לטעינה מלאה.\n
 
     \nאלגוריתם \"רגיש\" מבוסס אך ורק על חמשת האחרונים שלך

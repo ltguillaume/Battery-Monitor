@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">电量指示器专业版</string>
-  <string name="app_launcher_name" formatted="false">电量指示器</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">设置</string>
   <string name="help_activity_subtitle" formatted="false">帮助</string>
   <string name="log_view_activity_subtitle" formatted="false">日志</string>
-  <string name="app_full_name_free" formatted="false">电量指示器</string>
   <string name="battery_use_b" formatted="false">查看电量使用情况</string>
   <string name="upgrade_donate_b" formatted="false">升级/捐助...</string>
   <string name="confirm_disable_hint" formatted="false">提示：可在“设置项”中关闭此提示信息。</string>
   <string name="yes" formatted="false">确认</string>
   <string name="cancel" formatted="false">取消</string>
   <string name="confirm_close" formatted="false">确认退出？</string>
-  <string name="confirm_close_hint" formatted="false">电量指示器将完全退出，通知栏电量指示图标将不再显示。 如果您想让本程序后台运行，可以单击手机“返回”键关闭主窗口。</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor将完全退出，通知栏电量指示图标将不再显示。 如果您想让本程序后台运行，可以单击手机“返回”键关闭主窗口。</string>
   <string name="confirm_clear_logs" formatted="false">确认清理所有日志？</string>
   <string name="okay" formatted="false">完成</string>
   <string name="none" formatted="false">无</string>
@@ -86,7 +85,7 @@
   <string name="alarm_settings_subtitle" formatted="false">警报器设置</string>
   <string name="alarm_settings" formatted="false">警报器</string>
   <string name="alarm_settings_summary" formatted="false">控制电池信息通知</string>
-  <string name="alarm_settings_help" formatted="false">您可以让电量指示器在电池达到某个状态时通知您(例如:电池充满，或者电量低于20%)</string>
+  <string name="alarm_settings_help" formatted="false">您可以让Battery Monitor在电池达到某个状态时通知您(例如:电池充满，或者电量低于20%)</string>
   <string name="other_settings" formatted="false">其他设置</string>
   <string name="other_settings_help" formatted="false">此页面包含其他的设置项，包括日志功能、屏幕锁功能、温度单位、自启动方式等。</string>
   <string name="pref_cat_more_settings_in_pro" formatted="false">专业版的更多设置项</string>
@@ -95,7 +94,7 @@
   <string name="pref_cat_logging" formatted="false">日志记录</string>
   <string name="pref_enable_logging" formatted="false">启用日志记录功能</string>
   <string name="pref_enable_logging_summary" formatted="false">确认记录电池状态信息？</string>
-  <string name="pref_enable_logging_help" formatted="false">若启用本功能，电量指示器将以日志方式记录电池状态信息（例如拔下电源或电池充满）。您可通过单击“菜单”键和“日志”按钮查看日志记录。</string>
+  <string name="pref_enable_logging_help" formatted="false">若启用本功能，Battery Monitor将以日志方式记录电池状态信息（例如拔下电源或电池充满）。您可通过单击“菜单”键和“日志”按钮查看日志记录。</string>
   <string name="pref_max_log_age" formatted="false">日志记录有效期</string>
   <string name="pref_max_log_age_summary" formatted="false">日志记录有效期限：</string>
   <string name="pref_max_log_age_help" formatted="false">若启用本功能，过期日志将在手机充电时被清除。</string>
@@ -104,8 +103,8 @@
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android系统以摄氏单位报告电池温度信息。若您想使温度信息以华氏单位显示，请勾选此项。</string>
   <string name="pref_cat_autostart" formatted="false">自启动</string>
   <string name="pref_autostart_at_boot" formatted="false">开机自启动方式</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">确认允许电量指示器开机时自启动？</string>
-  <string name="pref_autostart_at_boot_help" formatted="false">设置是否允许电量指示器在开机时自启动。 ”关机前运行中”选项仅在手动关闭电量指示器时有效。若您使用其他方式，如使用任务杀手进行关闭，则本程序无法确认是否由您关闭，选择该方式后仍会在开机时自启动。</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">确认允许Battery Monitor开机时自启动？</string>
+  <string name="pref_autostart_at_boot_help" formatted="false">设置是否允许Battery Monitor在开机时自启动。 ”关机前运行中”选项仅在手动关闭Battery Monitor时有效。若您使用其他方式，如使用任务杀手进行关闭，则本程序无法确认是否由您关闭，选择该方式后仍会在开机时自启动。</string>
   <string name="lang_system_selected" formatted="false">系统选择</string>
   <string name="pref_cat_language" formatted="false">语言</string>
   <string name="pref_language_override_summary" formatted="false">选择语言:</string>
@@ -142,22 +141,22 @@
   </plurals>
 
   <string formatted="false" name="circle_widget">电池监测圈</string>
-  <string formatted="false" name="full_widget">电池监视器满</string>
+  <string formatted="false" name="full_widget">Battery Monitor满</string>
   <string formatted="false" name="notifications_disabled">通知已禁用！</string>
-  <string formatted="false" name="notifications_disabled_message">您已阻止电池监视器的所有通知。  这将
-    防止电池监视器显示任何通知：主要
+  <string formatted="false" name="notifications_disabled_message">您已阻止Battery Monitor的所有通知。  这将
+    防止Battery Monitor显示任何通知：主要
     通知和您设置的任何警报都将被阻止。\n
 
-    \nSince 电池监视器允许您打开或关闭主通知
+    \nSince Battery Monitor允许您打开或关闭主通知
     单独，以及暂时禁用任何警报
     您已创建，强烈建议您解除阻止
-    电池监视器通知。  当它们被阻止时，它会出现
-    电池监视器坏了。\n
+    Battery Monitor通知。  当它们被阻止时，它会出现
+    Battery Monitor坏了。\n
 
     \n请按“确定”进入系统设置，您可以在其中
-    取消阻止电池监视器的通知。</string>
-  <string formatted="false" name="battery_optimized">电池监视器受限！</string>
-  <string formatted="false" name="battery_optimized_message">电池监视器无法正常运行。  这个“电池优化”
+    取消阻止Battery Monitor的通知。</string>
+  <string formatted="false" name="battery_optimized">Battery Monitor受限！</string>
+  <string formatted="false" name="battery_optimized_message">Battery Monitor无法正常运行。  这个“电池优化”
     是一项 Android 功能，旨在限制设计不良的应用程序以防止它们
     由于在后台使用过多电池。\n
 
@@ -166,7 +165,7 @@
     不会减少您的电池寿命。\n
 
     \n请按“确定”进入系统设置，您可以在其中
-    禁用电池监视器的电池优化。</string>
+    禁用Battery Monitor的电池优化。</string>
   <string formatted="false" name="main_notif_chan_name">主要通知</string>
   <string formatted="false" name="channel_group_name_alarms">警报</string>
   <string formatted="false" name="configure_log_filter">显示哪些日志项？</string>
@@ -212,13 +211,13 @@
   <string formatted="false" name="help_cat_open_source">开源</string>
   <string formatted="false" name="help_open_source">这个
     项目是开源的。您可以访问源代码
-    https://github.com/tswistak/Battery-Indicator-Pro。</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>。</string>
   <string formatted="false" name="help_cat_donate">捐</string>
   <string formatted="false" name="help_donate">请
     考虑通过升级到专业版来捐赠
     版本。</string>
   <string formatted="false" name="help_cat_privacy">隐私</string>
-  <string formatted="false" name="help_privacy">电池监视器不会收集、存储或传输任何个人信息。</string>
+  <string formatted="false" name="help_privacy">Battery Monitor不会收集、存储或传输任何个人信息。</string>
   <string formatted="false" name="help_contact">如果
     如果您有疑问、问题或意见，请
     给我发电子邮件。</string>
@@ -430,7 +429,7 @@
   <string formatted="false" name="predictor_long_term_ave">长期平均</string>
   <string formatted="false" name="pref_cat_predictor">剩余时间估计</string>
   <string formatted="false" name="pref_prediction_type">估算类型</string>
-  <string formatted="false" name="pref_prediction_type_help">您可以在此处选择电池监视器如何预测剩余电量
+  <string formatted="false" name="pref_prediction_type_help">您可以在此处选择Battery Monitor如何预测剩余电量
     电池寿命/充满电的时间。\n
 
     \n“敏感”算法严格基于您的最后五个

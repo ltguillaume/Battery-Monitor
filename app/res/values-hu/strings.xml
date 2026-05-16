@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Beállítások</string>
   <string name="help_activity_subtitle" formatted="false">Segítség</string>
   <string name="log_view_activity_subtitle" formatted="false">Naplók</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Akku használat</string>
   <string name="upgrade_donate_b" formatted="false">Vásárlás/Adományozás</string>
   <string name="confirm_disable_hint" formatted="false">Tipp: A beállítások között a megerősítés kérése letiltható...</string>
   <string name="yes" formatted="false">Igen</string>
   <string name="cancel" formatted="false">Mégsem</string>
   <string name="confirm_close" formatted="false">Biztosan bezárja?</string>
-  <string name="confirm_close_hint" formatted="false">A Battery Indicator most teljesen bezárul, és az állapotsorban sem lesz látható.\n\nHa tovább kívánja futtatni a Battery Indicatort, és csak a főablakot szeretné elhagyni, válassz a \"Mégsem\"-et majd használja a Vissza gombot!</string>
+  <string name="confirm_close_hint" formatted="false">A Battery Monitor most teljesen bezárul, és az állapotsorban sem lesz látható.\n\nHa tovább kívánja futtatni a Battery Monitort, és csak a főablakot szeretné elhagyni, válassz a \"Mégsem\"-et majd használja a Vissza gombot!</string>
   <string name="confirm_clear_logs" formatted="false">Biztosan töröl minden naplót?</string>
   <string name="configure_log_filter" formatted="false">Milyen események legyenek naplózva?</string>
   <string name="okay" formatted="false">Rendben</string>
@@ -95,7 +94,7 @@
   <string name="help_cat_open_source" formatted="false">Nyílt forráskód</string>
   <string name="help_open_source" formatted="false">Ezt
     projekt nyílt forráskódú. A forráskódot a címen érheti el
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_cat_donate" formatted="false">Adományozás</string>
   <string name="help_donate" formatted="false">Kérlek, fontold meg az adományozást a <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Verzió</a>ra való frissítéssel.</string>
   <string name="help_cat_no_warranty" formatted="false">Nincs garancia</string>
@@ -113,7 +112,7 @@
   <string name="alarm_settings_subtitle" formatted="false">Riasztás beállítások</string>
   <string name="alarm_settings" formatted="false">Riasztások</string>
   <string name="alarm_settings_summary" formatted="false">Az akku alacsony vagy teljes töltésére vonatkozó értesítések</string>
-  <string name="alarm_settings_help" formatted="false">Beállíthatja, hogy a Battery Indicator értesítse, amikor az akku töltése elér egy bizonyos szintet (pl. ha teljesen feltöltődik, vagy mondjuk 20% alá csökken.)</string>
+  <string name="alarm_settings_help" formatted="false">Beállíthatja, hogy a Battery Monitor értesítse, amikor az akku töltése elér egy bizonyos szintet (pl. ha teljesen feltöltődik, vagy mondjuk 20% alá csökken.)</string>
   <string name="other_settings" formatted="false">Egyéb beállítások</string>
   <string name="other_settings_help" formatted="false">Miden további beállítás ezen az oldalon található: naplózás, képernyőzár, hőmérséklet mértékegysége, automatikus indulás, stb.</string>
   <string name="pref_cat_more_settings_in_pro" formatted="false">További beállítások a Pro verzióban</string>
@@ -134,7 +133,7 @@
   <string name="pref_cat_logging" formatted="false">Naplózás</string>
   <string name="pref_enable_logging" formatted="false">Naplózás engedélyezése</string>
   <string name="pref_enable_logging_summary" formatted="false">Naplózza az akku állapotának változásait?</string>
-  <string name="pref_enable_logging_help" formatted="false">Ha engedélyezi, a Battery Indicator naplózza az akku állapotának változásait. (pl.ha a telefont lekapcsolták a töltőről vagy az akku teljesen feltöltődött). A napló elérhető a főablakból a MENÜ gomb használatával.</string>
+  <string name="pref_enable_logging_help" formatted="false">Ha engedélyezi, a Battery Monitor naplózza az akku állapotának változásait. (pl.ha a telefont lekapcsolták a töltőről vagy az akku teljesen feltöltődött). A napló elérhető a főablakból a MENÜ gomb használatával.</string>
   <string name="pref_max_log_age" formatted="false">Napló időszaka</string>
   <string name="pref_max_log_age_summary" formatted="false">Törölje az ennél régebbi bejegyzéseket:</string>
   <string name="pref_max_log_age_help" formatted="false">Ha a naplózás engedélyezett, minden esetben, amikor tölteni kezdi a készüléket, az ennél régebbi bejegyzések törlődnek.</string>
@@ -143,8 +142,8 @@
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Az Android Celsius°-ban közli a hőmérsékletet. Ha jobban szeretné az akkumlátor hőmérsékletét Fahrenheit-ben látni, kapcsolja be ezt az opciót, és az alkalmásás konvértálni fogja önnek.</string>
   <string name="pref_cat_autostart" formatted="false">Automatikus indítás</string>
   <string name="pref_autostart_at_boot" formatted="false">Automatikus indítás bekapcsoláskor</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">A Battery Indicator elindítása a készülék bekapcsolásakor:</string>
-  <string name="pref_autostart_at_boot_help" formatted="false">Beállíthatja, hogy a Battery Indicator milyen esetekben induljon el a készülék bekapcsolásakor.\n\nA \"Ha kikapcsoláskor aktív\" opcióval az alkalmazás automatikusan elindul, ha kikapcsoláskor aktív volt. Tehát ha leállítja egy task killer-rel, akkor a Battery Indicator nem fogja tudni, hogy leállította, és a készülék indításakor bekapcsol.</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">A Battery Monitor elindítása a készülék bekapcsolásakor:</string>
+  <string name="pref_autostart_at_boot_help" formatted="false">Beállíthatja, hogy a Battery Monitor milyen esetekben induljon el a készülék bekapcsolásakor.\n\nA \"Ha kikapcsoláskor aktív\" opcióval az alkalmazás automatikusan elindul, ha kikapcsoláskor aktív volt. Tehát ha leállítja egy task killer-rel, akkor a Battery Monitor nem fogja tudni, hogy leállította, és a készülék indításakor bekapcsol.</string>
   <string name="pref_cat_predictor" formatted="false">Hátralévő idő becslések</string>
   <string name="pref_prediction_type" formatted="false">Becslés típusa</string>
   <string name="pref_cat_language" formatted="false">Nyelv</string>

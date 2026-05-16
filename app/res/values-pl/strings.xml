@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Ustawienia</string>
   <string name="help_activity_subtitle" formatted="false">Pomoc</string>
   <string name="log_view_activity_subtitle" formatted="false">Logi</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Sprawdź zużycie baterii</string>
   <string name="upgrade_donate_b" formatted="false">Ulepsz/Wspomóż...</string>
   <string name="confirm_disable_hint" formatted="false">Podpowiedź: To potwierdzenie możesz wyłączyć w ustawieniach.</string>
   <string name="yes" formatted="false">Tak</string>
   <string name="cancel" formatted="false">Anuluj</string>
   <string name="confirm_close" formatted="false">Zamknąć?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator zostanie zamknięty i nie będziesz widział statusu w powiadomieniach.\n\nJeżeli chcesz widzieć status, zostaw program uruchomiony naciskając Anuluj a następnie przycisk Wstecz.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor zostanie zamknięty i nie będziesz widział statusu w powiadomieniach.\n\nJeżeli chcesz widzieć status, zostaw program uruchomiony naciskając Anuluj a następnie przycisk Wstecz.</string>
   <string name="notifications_disabled" formatted="false">Powiadomienia są wyłączone!</string>
   <string name="confirm_clear_logs" formatted="false">Usunąć wszystkie logi?</string>
   <string name="configure_log_filter" formatted="false">Co pokazać w dzienniku?</string>
@@ -161,7 +160,7 @@
   <string name="pref_cat_logging" formatted="false">Logowanie</string>
   <string name="pref_enable_logging" formatted="false">Włącz logowanie</string>
   <string name="pref_enable_logging_summary" formatted="false">Czy logować zmiany stanu baterii?</string>
-  <string name="pref_enable_logging_help" formatted="false">Jeżeli aktywny, Battery Indicator będzie zapisywał zmiany statusu baterii (np. jeżeli urządzenie zostało w pełni naładowane). Możesz obejrzeć ligi z głównego okna (wciśnij MENU i wybierz Logi; na tabletach, MENU nie jest wymagane).</string>
+  <string name="pref_enable_logging_help" formatted="false">Jeżeli aktywny, Battery Monitor będzie zapisywał zmiany statusu baterii (np. jeżeli urządzenie zostało w pełni naładowane). Możesz obejrzeć ligi z głównego okna (wciśnij MENU i wybierz Logi; na tabletach, MENU nie jest wymagane).</string>
   <string name="pref_max_log_age" formatted="false">Maksymalny czas logu</string>
   <string name="pref_max_log_age_summary" formatted="false">Usuń logi starsze niż:</string>
   <string name="pref_max_log_age_help" formatted="false">Jeżeli zapisywanie logów jest aktywne, za każdym razem gdy podpinasz urządzenie, logi starsze od tego będą usuwane.</string>
@@ -174,7 +173,7 @@
   <string name="pref_cat_autostart" formatted="false">Automatyczne uruchamianie</string>
   <string name="pref_autostart_at_boot" formatted="false">Startuj razem z telefonem</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Startuj aplikację gdy telefon zostanie uruchomiony:</string>
-  <string name="pref_autostart_at_boot_help" formatted="false">Kontroluje, kiedy Battery Indicator startuje automatycznie przy uruchomieniu urządzenia.\n\nOpcja \"Przed wyłączeniem\" działa jeżeli ostatnio włączałeś/wyłączałeś ręcznie Battery Indicator. Więc jeżeli wyłączyłeś Battery Indicator przez np. menedżer procesów, Battery Indicator nie wie czy zatrzymałeś go i czy nadal ma startować przy uruchomieniu urządzenia.</string>
+  <string name="pref_autostart_at_boot_help" formatted="false">Kontroluje, kiedy Battery Monitor startuje automatycznie przy uruchomieniu urządzenia.\n\nOpcja \"Przed wyłączeniem\" działa jeżeli ostatnio włączałeś/wyłączałeś ręcznie Battery Monitor. Więc jeżeli wyłączyłeś Battery Monitor przez np. menedżer procesów, Battery Monitor nie wie czy zatrzymałeś go i czy nadal ma startować przy uruchomieniu urządzenia.</string>
   <string name="lang_system_selected" formatted="false">Wybrane systemowo</string>
   <string name="pref_cat_language" formatted="false">Język</string>
   <string name="pref_language_override" formatted="false">Wymuś język</string>
@@ -235,7 +234,7 @@
   <string name="help_cat_open_source" formatted="false">Otwarte źródła</string>
   <string name="help_open_source" formatted="false">To
     projekt jest open source. Dostęp do kodu źródłowego można uzyskać pod adresem
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_cat_donate" formatted="false">Wesprzyj</string>
   <string name="help_donate" formatted="false">Rozważ wsparcie, przechodząc na <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">wersję Pro</a>.</string>
   <string name="help_cat_privacy" formatted="false">Prywatność</string>

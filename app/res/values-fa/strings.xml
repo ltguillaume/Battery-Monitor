@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">باتری پات پروپرو</string>
-  <string name="app_launcher_name" formatted="false">باتری پات پرو</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">تنظیمات</string>
   <string name="help_activity_subtitle" formatted="false">کمک</string>
   <string name="log_view_activity_subtitle" formatted="false">گزارشها</string>
-  <string name="app_full_name_free" formatted="false">باتری پات</string>
   <string name="battery_use_b" formatted="false">نمایش کاربرد باتری</string>
   <string name="upgrade_donate_b" formatted="false">بروزرسانی/اهدا ...</string>
   <string name="circle_widget" formatted="false">چرخه باتری پات</string>
@@ -154,7 +153,7 @@
   <string formatted="false" name="help_cat_open_source">منبع باز</string>
   <string formatted="false" name="help_open_source">این
     پروژه متن باز است می توانید به کد منبع دسترسی پیدا کنید
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">اهدا کنید</string>
   <string formatted="false" name="help_donate">لطفا
     کمک مالی را با ارتقاء به Pro در نظر بگیرید

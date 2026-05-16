@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="help_activity_subtitle" formatted="false">Ajuda</string>
   <string name="log_view_activity_subtitle" formatted="false">Registros</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Exibir Uso da Bateria</string>
   <string name="upgrade_donate_b" formatted="false">Fazer Upgrade/Doar...</string>
   <string name="confirm_disable_hint" formatted="false">Sugestão: Essa confirmação pode ser desativada nas configurações...</string>
@@ -86,7 +85,7 @@
 
   <string formatted="false" name="settings_activity_subtitle">Configurações</string>
   <string formatted="false" name="circle_widget">Círculo do Monitor de Bateria</string>
-  <string formatted="false" name="full_widget">Monitor de bateria cheio</string>
+  <string formatted="false" name="full_widget">Battery Monitor cheio</string>
   <string formatted="false" name="notifications_disabled">As notificações estão desativadas!</string>
   <string formatted="false" name="notifications_disabled_message">Você bloqueou todas as notificações do Battery Monitor.  Isto irá
     impedir que o Battery Monitor mostre notificações: o principal
@@ -100,8 +99,8 @@
 
     \nPor favor, pressione OK para ir para as configurações do sistema onde você pode
     desbloquear notificações para o Battery Monitor.</string>
-  <string formatted="false" name="battery_optimized">Monitor de bateria restrito!</string>
-  <string formatted="false" name="battery_optimized_message">O Monitor de bateria está impedido de funcionar corretamente.  Esta \"otimização da bateria\"
+  <string formatted="false" name="battery_optimized">Battery Monitor restrito!</string>
+  <string formatted="false" name="battery_optimized_message">O Battery Monitor está impedido de funcionar corretamente.  Esta \"otimização da bateria\"
     é um recurso do Android projetado para restringir aplicativos mal projetados para evitá-los
     de usar muita bateria em segundo plano.\n
 
@@ -168,7 +167,7 @@
   <string formatted="false" name="help_cat_open_source">Código aberto</string>
   <string formatted="false" name="help_open_source">Isto
     projeto é de código aberto. Você pode acessar o código fonte em
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Doar</string>
   <string formatted="false" name="help_donate">Por favor
     considere doar atualizando para o Pro
@@ -223,7 +222,7 @@
 
     \nSettings para ativar o hack, se possível, e controlar como ele é
     usados estão disponíveis nesta seção.</string>
-  <string formatted="false" name="alarm_settings_help">Você pode fazer com que o Monitor de bateria o notifique quando o nível da bateria
+  <string formatted="false" name="alarm_settings_help">Você pode fazer com que o Battery Monitor o notifique quando o nível da bateria
     atinge uma determinada condição (por exemplo, a bateria fica totalmente carregada,
     o nível da bateria cai abaixo de 20% e muitos outros).</string>
   <string formatted="false" name="other_settings_help">Todas as outras configurações estão nesta página, incluindo registro, bloqueio
@@ -413,19 +412,19 @@
     marque esta opção e o aplicativo será convertido para você.</string>
   <string formatted="false" name="pref_cat_autostart">Início automático</string>
   <string formatted="false" name="pref_autostart_at_boot">Inicialização automática na inicialização</string>
-  <string formatted="false" name="pref_autostart_at_boot_summary">Inicie o Monitor de bateria quando o dispositivo inicializar:</string>
+  <string formatted="false" name="pref_autostart_at_boot_summary">Inicie o Battery Monitor quando o dispositivo inicializar:</string>
   <string formatted="false" name="pref_autostart_at_boot_help">Controla se o Monitor de Bateria deve iniciar sozinho
     automaticamente quando o dispositivo é inicializado.\n
 
     \nA opção \"If Running on Shutdown\" funciona em relação a
-    se você iniciou ou interrompeu manualmente o Monitor de bateria mais recentemente.
+    se você iniciou ou interrompeu manualmente o Battery Monitor mais recentemente.
     Então, se você matar o Battery Monitor através de algum outro
     significa que, como um eliminador de tarefas, o Battery Monitor não sabe
     você o parou e ele ainda iniciará na inicialização, se você o tiver
     definido como este.\n
 
     \nNOTE: O Android sempre iniciará o Battery Monitor na inicialização se você tiver um
-    Widgets da área de trabalho do Monitor de bateria.  Nesse caso, essas configurações são irrelevantes.</string>
+    Widgets da área de trabalho do Battery Monitor.  Nesse caso, essas configurações são irrelevantes.</string>
   <string formatted="false" name="predictor_sensitive">Confidencial</string>
   <string formatted="false" name="predictor_conservative">Conservador</string>
   <string formatted="false" name="predictor_since_status_change">Desde a mudança de status</string>

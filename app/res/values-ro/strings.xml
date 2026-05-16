@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Setari</string>
   <string name="help_activity_subtitle" formatted="false">Ajutor</string>
   <string name="log_view_activity_subtitle" formatted="false">Loguri</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Vizualizeaza Utilizarea Bateriei</string>
   <string name="upgrade_donate_b" formatted="false">Upgrade/Doneaza</string>
   <string name="confirm_disable_hint" formatted="false">Sugestie: Dezactiveaza acest mesaj de confirmare din meniul setari...</string>
   <string name="yes" formatted="false">Da</string>
   <string name="cancel" formatted="false">Anuleaza</string>
   <string name="confirm_close" formatted="false">Sigur inchideti?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator se va inchide complet. Informatiile despre baterie nu vor mai fi afisate in bara de stare a telefonului./n Daca doriti sa inchideti fereastra principala, pastrand afisarea informatiilor despre baterie, apasati Anuleaza si apoi butonul BACK al telefonului.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor se va inchide complet. Informatiile despre baterie nu vor mai fi afisate in bara de stare a telefonului./n Daca doriti sa inchideti fereastra principala, pastrand afisarea informatiilor despre baterie, apasati Anuleaza si apoi butonul BACK al telefonului.</string>
   <string name="confirm_clear_logs" formatted="false">Sigur stergeti toate logurile?</string>
   <string name="okay" formatted="false">Bine</string>
   <string name="none" formatted="false">Nimic/Gol</string>
@@ -149,7 +148,7 @@
   <string formatted="false" name="help_cat_open_source">Open Source</string>
   <string formatted="false" name="help_open_source">Aceasta
     proiectul este open source. Puteți accesa codul sursă la
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Dona</string>
   <string formatted="false" name="help_donate">Vă rog
     luați în considerare donarea prin trecerea la Pro

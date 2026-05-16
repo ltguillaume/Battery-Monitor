@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro版</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">設定</string>
   <string name="help_activity_subtitle" formatted="false">幫助</string>
   <string name="log_view_activity_subtitle" formatted="false">記錄</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">查看電量使用情況</string>
   <string name="upgrade_donate_b" formatted="false">升級/贊助...</string>
   <string name="confirm_disable_hint" formatted="false">提示：可在「設定」中關閉此確認視窗。</string>
   <string name="yes" formatted="false">確認</string>
   <string name="cancel" formatted="false">取消</string>
   <string name="confirm_close" formatted="false">確認退出？</string>
-  <string name="confirm_close_hint" formatted="false">BatteryBot將完全退出，狀態列電量指示圖標將不再顯示。\n\n如果您想讓本程序背景運行，可以單擊手機「返回」鍵關閉主視窗。</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor將完全退出，狀態列電量指示圖標將不再顯示。\n\n如果您想讓本程序背景運行，可以單擊手機「返回」鍵關閉主視窗。</string>
   <string name="confirm_clear_logs" formatted="false">確認清理所有日誌？</string>
   <string name="okay" formatted="false">完成</string>
   <string name="none" formatted="false">無</string>
@@ -79,7 +78,7 @@
   <string name="help_cat_open_source" formatted="false">開放原始碼</string>
   <string name="help_open_source" formatted="false">這個
     專案是開源的。您可以存取原始程式碼
-    https://github.com/tswistak/Battery-Indicator-Pro。</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>。</string>
   <string name="help_cat_donate" formatted="false">贊助</string>
   <string name="help_donate" formatted="false">請考慮以升級到<a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro版</a>來贊助我們。</string>
   <string name="help_cat_no_warranty" formatted="false">免責申明</string>
@@ -170,8 +169,8 @@
     <item quantity="other">已%d小時</item>
   </plurals>
 
-  <string formatted="false" name="circle_widget">電池監測圈</string>
-  <string formatted="false" name="full_widget">電池監視器已滿</string>
+  <string formatted="false" name="circle_widget">Battery Monitor圈</string>
+  <string formatted="false" name="full_widget">Battery Monitor已滿</string>
   <string formatted="false" name="notifications_disabled">通知已禁用！</string>
   <string formatted="false" name="notifications_disabled_message">您已封鎖 Battery Monitor 的所有通知。這將
     使 Battery Monitor 無法顯示任何通知：主要
@@ -185,7 +184,7 @@
 
     \n請按下「確定」前往系統設定，
     在那裡解除封鎖 Battery Monitor 的通知。</string>
-  <string formatted="false" name="battery_optimized">電池監視器受限！</string>
+  <string formatted="false" name="battery_optimized">Battery Monitor受限！</string>
   <string formatted="false" name="battery_optimized_message">
     Battery Monitor 無法在受限制模式下正確運作。這項「電池最佳化」
     是 Android 的一項功能，設計用來限制設計不良的應用程式，避免它們
@@ -239,7 +238,7 @@
   <string formatted="false" name="after_nm_ms_unplugged">%1$dm %2$ds 拔掉插頭後</string>
   <string formatted="false" name="after_nm_ms_plugged_in">%1$dm %2$ds 插入後</string>
   <string formatted="false" name="help_cat_privacy">隱私</string>
-  <string formatted="false" name="help_privacy">電池監視器不會收集、儲存或傳輸任何個人資訊。</string>
+  <string formatted="false" name="help_privacy">Battery Monitor不會收集、儲存或傳輸任何個人資訊。</string>
   <string formatted="false" name="notifications_disabled_cat">通知已禁用</string>
   <string formatted="false" name="app_notifs_disabled_b">啟用應用程式通知</string>
   <string formatted="false" name="app_notifs_disabled_summary">您已停用此應用程式的所有通知。  請允許他們存取這些設定。</string>
@@ -276,7 +275,7 @@
   <string formatted="false" name="alarm_settings_subtitle">警報設定</string>
   <string formatted="false" name="alarm_settings">警報</string>
   <string formatted="false" name="alarm_settings_summary">控制電池電量低/滿的通知</string>
-  <string formatted="false" name="alarm_settings_help">您可以讓電池監視器在電池電量不足時通知您
+  <string formatted="false" name="alarm_settings_help">您可以讓Battery Monitor在電池電量不足時通知您
     達到一定條件（例如，電池充滿電，
     電池電量低於 20% 等等）。</string>
   <string formatted="false" name="pref_enable_live_updates">使用狀態列晶片</string>
@@ -456,7 +455,7 @@
   <string formatted="false" name="predictor_long_term_ave">長期平均</string>
   <string formatted="false" name="pref_cat_predictor">剩餘時間估計</string>
   <string formatted="false" name="pref_prediction_type">估算類型</string>
-  <string formatted="false" name="pref_prediction_type_help">您可以在此處選擇電池監視器如何預測剩餘電量
+  <string formatted="false" name="pref_prediction_type_help">您可以在此處選擇Battery Monitor如何預測剩餘電量
     電池壽命/充滿電的時間。 \n
 
     \n「敏感」演算法嚴格地基於您的最後五個

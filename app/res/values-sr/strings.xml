@@ -1,22 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Podešavanja</string>
   <string name="help_activity_subtitle" formatted="false">Pomoć</string>
   <string name="log_view_activity_subtitle" formatted="false">Evidencija radnji</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Vidi potrošnju baterije</string>
   <string name="upgrade_donate_b" formatted="false">Plaćena verzija/Donirajte...</string>
-  <string name="circle_widget" formatted="false">BatteryBot krug</string>
+  <string name="circle_widget" formatted="false">Battery Monitor krug</string>
   <string name="full_widget" formatted="false">Veliki vidžet</string>
   <string name="confirm_disable_hint" formatted="false">Savet: U podešavanjima možete isključiti prozor za potvrdu...</string>
   <string name="yes" formatted="false">Da</string>
   <string name="cancel" formatted="false">Otkaži</string>
   <string name="confirm_close" formatted="false">Da li ste sigurni da hoćete da isključite?</string>
-  <string name="confirm_close_hint" formatted="false">Ukoliko odlučite da nastavite BatteryBot će u potpunosti biti isključen i više ga nećete videti u statusnoj traci. Nijedan vidžet neće raditi.\n\nUkoliko samo želite da izađete iz glavnog prozora aplikacije i nastavite sa korišćenjem aplikacije, pritisnite \"Otkaži\" i dugme za vraćanje unazad na vašem telefonu.\n\nUkoliko želite da sklonite obaveštenje, a da vidžeti ostanu aktivni, pritisnite \"Otkaži\" i zatim pokrenite \"Čarobnjak za obaveštenja\".</string>
+  <string name="confirm_close_hint" formatted="false">Ukoliko odlučite da nastavite Battery Monitor će u potpunosti biti isključen i više ga nećete videti u statusnoj traci. Nijedan vidžet neće raditi.\n\nUkoliko samo želite da izađete iz glavnog prozora aplikacije i nastavite sa korišćenjem aplikacije, pritisnite \"Otkaži\" i dugme za vraćanje unazad na vašem telefonu.\n\nUkoliko želite da sklonite obaveštenje, a da vidžeti ostanu aktivni, pritisnite \"Otkaži\" i zatim pokrenite \"Čarobnjak za obaveštenja\".</string>
   <string name="notifications_disabled" formatted="false">Obaveštenja su onemogućena!</string>
-  <string name="notifications_disabled_message" formatted="false">Blokirali ste sva obaveštenja od BatteryBot-a. BatteryBot neće moći da prikaže nijedno obaveštenje: glavno obaveštenje i alarmi ukoliko ste ih podesili će takođe biti blokirani.\n\nPošto možete glavno obaveštenje možete uključiti i isključiti, kao i privremeno onemogućiti alarme, toplo preporučujemo da odblokirate BatteryBot obaveštenja. Ukoliko sva obaveštenja budu blokirana izgledaće kao da je BatteryBot prestao da radi.\n\nPritiskom na dugme OK pristupićete sistemskim podešavanjima gde možete ponovo uključiti obaveštenja za BatteryBot.</string>
+  <string name="notifications_disabled_message" formatted="false">Blokirali ste sva obaveštenja od Battery Monitor-a. Battery Monitor neće moći da prikaže nijedno obaveštenje: glavno obaveštenje i alarmi ukoliko ste ih podesili će takođe biti blokirani.\n\nPošto možete glavno obaveštenje možete uključiti i isključiti, kao i privremeno onemogućiti alarme, toplo preporučujemo da odblokirate Battery Monitor obaveštenja. Ukoliko sva obaveštenja budu blokirana izgledaće kao da je Battery Monitor prestao da radi.\n\nPritiskom na dugme OK pristupićete sistemskim podešavanjima gde možete ponovo uključiti obaveštenja za Battery Monitor.</string>
   <string name="confirm_clear_logs" formatted="false">Da li ste sigurni da želite da izbrišete celu evidenciju radnji?</string>
   <string name="configure_log_filter" formatted="false">Odaberite unose u evidenciju koje želite da budu prikazani?</string>
   <string name="okay" formatted="false">U redu</string>
@@ -135,7 +134,7 @@
   <string name="alarm_settings_subtitle" formatted="false">Podešavanja alarma</string>
   <string name="alarm_settings" formatted="false">Alarmi</string>
   <string name="alarm_settings_summary" formatted="false">Podešavanja obaveštenja u slučaju prazne/pune baterije</string>
-  <string name="alarm_settings_help" formatted="false">Možete da podesite da vas BatteryBot obavesti kada procenat baterije dosegne određeni nivo (npr. baterija je u potpunosti napunjena, procenat baterije padne ispod 20%).</string>
+  <string name="alarm_settings_help" formatted="false">Možete da podesite da vas Battery Monitor obavesti kada procenat baterije dosegne određeni nivo (npr. baterija je u potpunosti napunjena, procenat baterije padne ispod 20%).</string>
   <string name="other_settings" formatted="false">Druga podešavanja</string>
   <string name="other_settings_help" formatted="false">Sva druga podešavanja su na ovoj stranici, uključujući evidenciju stanja, režim zaključanog ekrana, jedinicu temperature, samopokretanje i drugo.</string>
   <string name="pref_cat_more_settings_in_pro" formatted="false">Više podešavanja je dostupno u plaćenoj vezriji</string>
@@ -181,7 +180,7 @@
   <string name="pref_cat_logging" formatted="false">Evidencija</string>
   <string name="pref_enable_logging" formatted="false">Omogući evidenciju</string>
   <string name="pref_enable_logging_summary" formatted="false">Evidentiraj promene u stanju baterije?</string>
-  <string name="pref_enable_logging_help" formatted="false">Ukoliko je omogućeno, BatteryBot će evidentirati promene u stanju baterije.</string>
+  <string name="pref_enable_logging_help" formatted="false">Ukoliko je omogućeno, Battery Monitor će evidentirati promene u stanju baterije.</string>
   <string name="pref_max_log_age" formatted="false">Maksimalno vreme evidentiranja unosa</string>
   <string name="pref_max_log_age_summary" formatted="false">Obriši evidenciju unosa stariju od:</string>
   <string name="pref_max_log_age_help" formatted="false">Ukoliko je evidentiranje unosa omogućeno, kad god stavite uređaj na punjenje, starije evidencije unosa će biti obrisane.</string>
@@ -190,7 +189,7 @@
   <string name="pref_convert_to_fahrenheit" formatted="false">Pretvori u farenhajte</string>
   <string name="pref_cat_autostart" formatted="false">Pokreni automatski</string>
   <string name="pref_autostart_at_boot" formatted="false">Pokreni automatski pri paljenju</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">Pokreni BatteryBot kada se uređaj upali:</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">Pokreni Battery Monitor kada se uređaj upali:</string>
   <string name="predictor_sensitive" formatted="false">Osetljivo</string>
   <string name="predictor_conservative" formatted="false">Štedljivo</string>
   <string name="predictor_since_status_change" formatted="false">Otkad se status promenio</string>

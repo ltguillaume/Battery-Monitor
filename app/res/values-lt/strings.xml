@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">Baterijos Indikatorius Pro</string>
-  <string name="app_launcher_name" formatted="false">Baterijos Indikatorius Pro</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Nustatymai</string>
   <string name="help_activity_subtitle" formatted="false">Pagalba</string>
   <string name="log_view_activity_subtitle" formatted="false">Įrašai</string>
-  <string name="app_full_name_free" formatted="false">Baterijos Indikatorius</string>
   <string name="battery_use_b" formatted="false">Baterijos naudojimas</string>
   <string name="upgrade_donate_b" formatted="false">Patobulinti/Paremti...</string>
   <string name="confirm_disable_hint" formatted="false">Patarimas: Išjunkite ši patvirtinimą nustatymuose...</string>
@@ -217,7 +216,7 @@
   <string formatted="false" name="help_cat_open_source">Atvirasis šaltinis</string>
   <string formatted="false" name="help_open_source">Tai
     projektas yra atviro kodo. Šaltinio kodą galite pasiekti adresu
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Paaukoti</string>
   <string formatted="false" name="help_donate">Prašau
     consider donating by upgrading to the Pro

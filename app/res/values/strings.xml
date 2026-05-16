@@ -5,7 +5,6 @@
   <string formatted="false" name="settings_activity_subtitle">Settings</string>
   <string formatted="false" name="help_activity_subtitle">Battery Monitor Help</string>
   <string formatted="false" name="log_view_activity_subtitle">Logs</string>
-  <string formatted="false" name="app_full_name_free">Battery Monitor</string>
 
   <string formatted="false" name="battery_use_b">View Battery Use</string>
   <string formatted="false" name="upgrade_donate_b">Upgrade/Donate...</string>
@@ -242,7 +241,7 @@
   <string formatted="false" name="help_cat_open_source">Open Source</string>
   <string formatted="false" name="help_open_source">This
     project is open source. You can access the source code at
-    <a href="https://github.com/tswistak/Battery-Indicator-Pro">https://github.com/tswistak/Battery-Indicator-Pro</a>.
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.
   </string>
 
   <string formatted="false" name="help_cat_donate">Donate</string>

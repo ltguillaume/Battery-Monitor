@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string formatted="false" name="app_full_name">BatteryBot Pro</string>
-  <string formatted="false" name="app_launcher_name">BatteryBot</string>
+  <string formatted="false" name="app_full_name">Battery Monitor</string>
+  <string formatted="false" name="app_launcher_name">Battery Monitor</string>
   <string formatted="false" name="settings_activity_subtitle">Nastavení</string>
   <string formatted="false" name="help_activity_subtitle">Nápověda k monitorování baterie</string>
   <string formatted="false" name="log_view_activity_subtitle">Záznamy</string>
-  <string formatted="false" name="app_full_name_free">BatteryBot</string>
-  <string formatted="false" name="battery_use_b">Zobrazit využití baterie</string>
+    <string formatted="false" name="battery_use_b">Zobrazit využití baterie</string>
   <string formatted="false" name="upgrade_donate_b">Upgrade/Podpořit vývoj...</string>
   <string formatted="false" name="circle_widget">Kruh monitoru baterie</string>
   <string formatted="false" name="full_widget">Monitor baterie je plný</string>
@@ -14,7 +13,7 @@
   <string formatted="false" name="yes">Ano</string>
   <string formatted="false" name="cancel">Zrušit</string>
   <string formatted="false" name="confirm_close">Opravdu ukončit ?</string>
-  <string formatted="false" name="confirm_close_hint">Battery Indicator bude ukončen a již více neuvidíte stav baterie.\n\nPro návrat zpět bez ukončení aplikace stiskněte Zrušit a poté klávesu ZPĚT na přístroji.</string>
+  <string formatted="false" name="confirm_close_hint">Battery Monitor bude ukončen a již více neuvidíte stav baterie.\n\nPro návrat zpět bez ukončení aplikace stiskněte Zrušit a poté klávesu ZPĚT na přístroji.</string>
   <string formatted="false" name="notifications_disabled">Upozornění jsou zakázána!</string>
   <string formatted="false" name="notifications_disabled_message">
     Zablokovali jste všechna oznámení pro Monitor baterie.  Toto bude
@@ -149,7 +148,7 @@
     <string formatted="false" name="help_cat_open_source">Otevřený zdroj</string>
   <string formatted="false" name="help_open_source">Toto
     projekt je open source. Ke zdrojovému kódu se dostanete na adrese
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string formatted="false" name="help_cat_donate">Darovat</string>
   <string formatted="false" name="help_donate">
     Prosím
@@ -209,7 +208,7 @@
   <string formatted="false" name="alarm_settings_subtitle">Nastavení upozornění</string>
   <string formatted="false" name="alarm_settings">Upozornění</string>
   <string formatted="false" name="alarm_settings_summary">Ovládání oznámení pro nízký stav nebo plně nabitou baterii.</string>
-  <string formatted="false" name="alarm_settings_help">Můžete nastavit upozornění aplikace Battery Indicator jakmile stav baterie dosáhne určité hodnoty(např., Baterie je plně nabitá, Stav baterie klesl 20% atd.).</string>
+  <string formatted="false" name="alarm_settings_help">Můžete nastavit upozornění aplikace Battery Monitor jakmile stav baterie dosáhne určité hodnoty(např., Baterie je plně nabitá, Stav baterie klesl 20% atd.).</string>
   <string formatted="false" name="other_settings">Ostatní nastavení</string>
   <string formatted="false" name="other_settings_help">Všechna ostatní nastavení jsou na této stránce. Zahrnují například záznamy, zámek obrazovky, měrné jednotky, automatické spuštění atd.</string>
   <string formatted="false" name="pref_cat_more_settings_in_pro">Více nastavení pouze ve verzi Pro</string>
@@ -431,7 +430,7 @@
   </string>
   <string formatted="false" name="pref_cat_autostart">Automatické spuštění</string>
   <string formatted="false" name="pref_autostart_at_boot">Automatické spuštění při startu telefonu</string>
-  <string formatted="false" name="pref_autostart_at_boot_summary">Spustit Battery Indicator jakmile je zařízení spuštěno:</string>
+  <string formatted="false" name="pref_autostart_at_boot_summary">Spustit Battery Monitor jakmile je zařízení spuštěno:</string>
   <string formatted="false" name="pref_autostart_at_boot_help">
     Řídí, zda se má Battery Monitor spustit sám
         automaticky při spuštění zařízení.\n

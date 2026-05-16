@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Ayarlar</string>
   <string name="help_activity_subtitle" formatted="false">Yardım</string>
   <string name="log_view_activity_subtitle" formatted="false">Günlükler (Loglar)</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">Pil Kullanımını Gör</string>
   <string name="upgrade_donate_b" formatted="false">Yükselt/Bağış Yap...</string>
   <string name="confirm_disable_hint" formatted="false">İpucu: Bu onay mesajı ayarlar\'dan kaldırılabilir...</string>
   <string name="yes" formatted="false">Evet</string>
   <string name="cancel" formatted="false">İptal</string>
   <string name="confirm_close" formatted="false">Gerçekten Kapat?</string>
-  <string name="confirm_close_hint" formatted="false">Battery Indicator tamamen kapatıldı, ve artık durum çubuğunda görmeyeceksin.\n\nEğer sadece ana pencereden çıkmayı ama göstergenin çalışmaya devam etmesini istiyorsan, İPTAL tuşuna bas ve daha sonra cihazın BACK (GERİ) tuşuna basarak ana pencereden çık.</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor tamamen kapatıldı, ve artık durum çubuğunda görmeyeceksin.\n\nEğer sadece ana pencereden çıkmayı ama göstergenin çalışmaya devam etmesini istiyorsan, İPTAL tuşuna bas ve daha sonra cihazın BACK (GERİ) tuşuna basarak ana pencereden çık.</string>
   <string name="confirm_clear_logs" formatted="false">Tüm günlükleri gerçekten temizle?</string>
   <string name="configure_log_filter" formatted="false">Hangi günlük öğeleri gösterilsin?</string>
   <string name="okay" formatted="false">Tamam</string>
@@ -177,12 +176,12 @@
   <string name="after_nm_ms_plugged_in" formatted="false">%1$dm %2$ds sonra takıldı</string>
   <string name="help_open_source" formatted="false">Bu
     proje açık kaynaktır. Kaynak koduna adresinden ulaşabilirsiniz.
-    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
   <string name="help_donate" formatted="false">Bağış yapmak için lütfen <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Sürüm</a>\'e yükseltmeyi düşünün.</string>
   <string name="help_cat_privacy" formatted="false">Gizlilik</string>
   <string name="help_privacy" formatted="false">Battery Monitor hiçbir kişisel bilgiyi toplamaz, saklamaz veya iletmez.</string>
   <string name="help_no_warranty" formatted="false">Bu yazılım faydalı olması umuduyla sunulur, ancak HİÇBİR GARANTİ VERİLMEZ.</string>
-  <string name="help_acknowledgments" formatted="false">Battery Monitor, Battery Indicator Pro ve BatteryBot Pro tabanlıdır. Orijinal yazarlara ve katkıda bulunanlara projeyi oluşturup sürdürdükleri için teşekkür ederiz.</string>
+  <string name="help_acknowledgments" formatted="false">Battery Monitor, Battery Indicator Pro ve BatteryBot Pro uygulamalarindan fork edilmiştir. Orijinal yazar ve katki saglayanlara projeyi olusturup surdurdukleri icin tesekkur ederiz.</string>
   <string name="help_contact" formatted="false">Eğer
     bir sorunuz, sorununuz veya yorumunuz varsa lütfen
     bana e-posta gönder.</string>

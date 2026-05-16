@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <string name="app_full_name" formatted="false">BatteryBot Pro</string>
-  <string name="app_launcher_name" formatted="false">BatteryBot</string>
+  <string name="app_full_name" formatted="false">Battery Monitor</string>
+  <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">設定</string>
   <string name="help_activity_subtitle" formatted="false">ヘルプ</string>
   <string name="log_view_activity_subtitle" formatted="false">ログ</string>
-  <string name="app_full_name_free" formatted="false">BatteryBot</string>
   <string name="battery_use_b" formatted="false">バッテリーの使用を表示する</string>
   <string name="upgrade_donate_b" formatted="false">アップグレード/寄付...</string>
-  <string name="circle_widget" formatted="false">BatteryBot サークル</string>
-  <string name="full_widget" formatted="false">BatteryBot フル</string>
+  <string name="circle_widget" formatted="false">Battery Monitor サークル</string>
+  <string name="full_widget" formatted="false">Battery Monitor フル</string>
   <string name="confirm_disable_hint" formatted="false">ヒント: 設定でこの確認ダイアログを無効にできます...</string>
   <string name="yes" formatted="false">はい</string>
   <string name="cancel" formatted="false">キャンセル</string>
   <string name="confirm_close" formatted="false">閉じてもよろしいですか?</string>
-  <string name="confirm_close_hint" formatted="false">BatteryBot は完全に閉じます。ステータスバーに 表示されなくなります。\n\nメインウインドウから離れるだけで、インジケーターの 実行を続ける場合は、キャンセルまたはデバイスの戻る ボタンを押してください。</string>
+  <string name="confirm_close_hint" formatted="false">Battery Monitor は完全に閉じます。ステータスバーに 表示されなくなります。\n\nメインウインドウから離れるだけで、インジケーターの 実行を続ける場合は、キャンセルまたはデバイスの戻る ボタンを押してください。</string>
   <string name="confirm_clear_logs" formatted="false">ログをすべてクリアしてもよろしいですか?</string>
   <string name="configure_log_filter" formatted="false">どのログ項目を表示しますか?</string>
   <string name="okay" formatted="false">OK</string>
@@ -119,7 +118,7 @@
   <string name="help_cat_open_source" formatted="false">オープンソース</string>
   <string name="help_open_source" formatted="false">これ
     プロジェクトはオープンソースです。ソースコードには次の場所からアクセスできます。
-    https://github.com/tswistak/Battery-Indicator-Pro。</string>
+    <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>。</string>
   <string name="help_cat_donate" formatted="false">寄付</string>
   <string name="help_donate" formatted="false">寄付のために <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">プロ バージョン</a> へのアップグレードをご検討ください。</string>
   <string name="help_cat_privacy" formatted="false">プライバシー</string>
@@ -165,7 +164,7 @@
   <string name="alarm_settings_subtitle" formatted="false">アラーム設定</string>
   <string name="alarm_settings" formatted="false">アラーム</string>
   <string name="alarm_settings_summary" formatted="false">低残量/フル充電の通知をコントロール</string>
-  <string name="alarm_settings_help" formatted="false">お使いのバッテリー残量が一定のレベルに達したときに、 BatteryBot があなたに通知することができます (例、バッテリーがフル充電された、 バッテリー残量が 20% を下回った)。</string>
+  <string name="alarm_settings_help" formatted="false">お使いのバッテリー残量が一定のレベルに達したときに、 Battery Monitor があなたに通知することができます (例、バッテリーがフル充電された、 バッテリー残量が 20% を下回った)。</string>
   <string name="other_settings" formatted="false">その他の設定</string>
   <string name="other_settings_help" formatted="false">ロギング、ロック画面、温度の単位、自動開始、およびその他を含め、 その他のすべての設定はこのページにあります。</string>
   <string name="pref_cat_more_settings_in_pro" formatted="false">プロバージョンの追加設定</string>
@@ -259,7 +258,7 @@
   <string name="pref_cat_logging" formatted="false">ロギング</string>
   <string name="pref_enable_logging" formatted="false">ログを有効にする</string>
   <string name="pref_enable_logging_summary" formatted="false">バッテリーステータスの変更ログを取得しますか?</string>
-  <string name="pref_enable_logging_help" formatted="false">有効にした場合、BatteryBot はバッテリーのステータスの変更を記録します。</string>
+  <string name="pref_enable_logging_help" formatted="false">有効にした場合、Battery Monitor はバッテリーのステータスの変更を記録します。</string>
   <string name="pref_max_log_age" formatted="false">最大ログ履歴</string>
   <string name="pref_max_log_age_summary" formatted="false">次より古いログを削除します:</string>
   <string name="pref_max_log_age_help" formatted="false">ロギングが有効になっている場合、あなたのデバイスを接続するたびに、 ここで指定した値よりも古いログを削除します。</string>
@@ -271,15 +270,15 @@
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android はセ氏でバッテリ温度を報告します。バッテリー温度を華氏で 確認したい場合は、このオプションをチェックすると、アプリが変換します。</string>
   <string name="pref_cat_autostart" formatted="false">自動開始</string>
   <string name="pref_autostart_at_boot" formatted="false">起動時に自動開始</string>
-  <string name="pref_autostart_at_boot_summary" formatted="false">デバイスが起動した時に BatteryBot を開始します:</string>
-  <string name="pref_autostart_at_boot_help" formatted="false">デバイスの起動時に、BatteryBot が自動的に起動する必要があるか コントロールします。\n\n\"シャットダウン時に実行中の場合\" オプションは、BatteryBot を 直近に手動で開始または停止したかを考慮して動作します。 そのため、タスクキラーのように、他の手段で BatteryBot を kill した場合、 BatteryBot はあなたが停止したことがわからないため、 このオプションを設定していると、起動時に開始します。</string>
+  <string name="pref_autostart_at_boot_summary" formatted="false">デバイスが起動した時に Battery Monitor を開始します:</string>
+  <string name="pref_autostart_at_boot_help" formatted="false">デバイスの起動時に、Battery Monitor が自動的に起動する必要があるか コントロールします。\n\n\"シャットダウン時に実行中の場合\" オプションは、Battery Monitor を 直近に手動で開始または停止したかを考慮して動作します。 そのため、タスクキラーのように、他の手段で Battery Monitor を kill した場合、 Battery Monitor はあなたが停止したことがわからないため、 このオプションを設定していると、起動時に開始します。</string>
   <string name="predictor_sensitive" formatted="false">高感度</string>
   <string name="predictor_conservative" formatted="false">保守的</string>
   <string name="predictor_since_status_change" formatted="false">ステータスが変わったら</string>
   <string name="predictor_long_term_ave" formatted="false">長期平均</string>
   <string name="pref_cat_predictor" formatted="false">残時間の見積</string>
   <string name="pref_prediction_type" formatted="false">見積の種類</string>
-  <string name="pref_prediction_type_help" formatted="false">ここでは、バッテリーのフル充電からの残量/残時間を BatteryBot Pro が予測する方法を選択することができます。\n\n\"高感度\" アルゴリズムは、厳密に直近の5分間の使用量に基づいて求めます。 主に \"あとどのくらい今の操作を続けることができるか?\" に関心がある場合は、このアルゴリズムをご利用ください。\n\"保守的\" なアルゴリズムがデフォルトです。最近の使用状況に 基づいていますが、長期的な平均の使用状況から あまり大きく変化しないようにします\n\n厳密に現在のセッションに基づいて予測するには、 \"ステータスが変わってから\" を選択してください。\n\n最終的に、長期的な平均の使用状況のみに基づいて、 予測することができます。</string>
+  <string name="pref_prediction_type_help" formatted="false">ここでは、バッテリーのフル充電からの残量/残時間を Battery Monitor が予測する方法を選択することができます。\n\n\"高感度\" アルゴリズムは、厳密に直近の5分間の使用量に基づいて求めます。 主に \"あとどのくらい今の操作を続けることができるか?\" に関心がある場合は、このアルゴリズムをご利用ください。\n\"保守的\" なアルゴリズムがデフォルトです。最近の使用状況に 基づいていますが、長期的な平均の使用状況から あまり大きく変化しないようにします\n\n厳密に現在のセッションに基づいて予測するには、 \"ステータスが変わってから\" を選択してください。\n\n最終的に、長期的な平均の使用状況のみに基づいて、 予測することができます。</string>
   <string name="lang_system_selected" formatted="false">システムで選択</string>
   <string name="pref_cat_language" formatted="false">言語</string>
   <string name="pref_language_override" formatted="false">言語の上書き</string>
