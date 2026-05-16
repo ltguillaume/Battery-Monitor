@@ -34,6 +34,7 @@
     android:allowBackup="false"
     android:resizeableActivity="true"
     android:supportsRtl="true"
+    android:localeConfig="@xml/locales_config"
     >
   <!--
       Temporarily put these two lines in <application> above to enable debugging of release build:
