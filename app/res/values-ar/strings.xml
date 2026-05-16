@@ -28,7 +28,6 @@
   <string name="menu_settings" formatted="false">اعدادات</string>
   <string name="menu_close" formatted="false">اغلاق</string>
   <string name="menu_help" formatted="false">مساعدة</string>
-  <string name="menu_rate_and_review" formatted="false">تقييم ومراجعة التطبيق</string>
   <string name="menu_clear" formatted="false">مسح</string>
   <string name="menu_reverse" formatted="false">ترتيب عكسي</string>
   <string name="menu_log_filter" formatted="false">تحديد</string>
@@ -105,25 +104,22 @@
   <string name="currently_set_to" formatted="false">"حاليا ضبط الى: "</string>
   <string name="currently_disabled" formatted="false">معطل حاليا</string>
   <string name="help_cat_version" formatted="false">الاصدار</string>
-  <string name="help_cat_changelog" formatted="false">التغيير</string>
-  <string name="help_changelog" formatted="false">انظر الى<a href="https://www.batterybot.info/changelog">التغيير بالانترنيت</a></string>
-  <string name="help_cat_faq" formatted="false">اسئلة واجوبة</string>
-  <string name="help_faq" formatted="false"><a href="https://www.batterybot.info/faq">online FAQ</a> ارجوك اطلع على هذا</string>
-  <string name="help_cat_website" formatted="false">الموقع</string>
-  <string name="help_website" formatted="false">المزيد من المعلومات متاحة على <a href="https://www.batterybot.info/">BatteryBot website</a></string>
   <string name="help_cat_open_source" formatted="false">مفتوح المصدر</string>
-  <string name="help_open_source" formatted="false">هذا مشروع مفتوح المصدر مما يعني انك قادر على تنزيل المصادر <a href="https://www.batterybot.info/sourcecode">تنزيل مصادر التطبيق</a>.</string>
+  <string name="help_open_source" formatted="false">هذا
+    المشروع مفتوح المصدر. يمكنك الوصول إلى الكود المصدري على
+    https://github.com/tswistak/Battery-Indicator-Pro.</string>
   <string name="help_cat_donate" formatted="false">تبرع</string>
   <string name="help_donate" formatted="false">ارجوك كن من المتبرعين بشرائك النسخة الكاملة <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">النسخة الكاملة</a>.</string>
   <string name="help_cat_no_warranty" formatted="false">لا ضمان</string>
   <string name="help_no_warranty" formatted="false">يتم نشر هذا التطبيق على امل ان يكون مفيدا وعملي لكن من دون اي ضمان حتى دون صلاحية التسويق وللاستخدام لغرض معين\n\nبينما أنا أبذل قصارى جهدي للتأكد من أنه يعمل بشكل جيد ولا يسبب المشاكل، وأنا لست مسؤولا عن أي ضرر أو إزعاج قد يسببه تحت أي ظرف من الظروف</string>
   <string name="help_cat_acknowledgments" formatted="false">شكر وتقدير</string>
-  <string name="help_acknowledgments" formatted="false">هذا التطبيق متاح بلغة الانكليزية فقط ولكن مع مساعدة كبيرة من المترجمين , اشكركم\n\nوالكثير من الشكر لشركة كوكل لسماحها بصناعة التطبيقات بمصادر مفتوحة\n\nايقونة التطبيق (عندما رايته في سوق الاندرويد)مصدرها من هنا<a href="http://www.oxygen-icons.org">the Oxygen icon theme</a> واستخدمت تحت <a href="http://creativecommons.org/licenses/by-sa/3.0/"> الشروط والاحكام</a></string>
-  <string name="help_cat_translations" formatted="false">ترجمات</string>
-  <string name="help_translations" formatted="false">احتاج لمساعدة لترجمة هذا التطبيق اذا كنت تود مساعدتي راسلني على الايميل التالي<a href="mailto:support%2Btranslations@batterybot.info">email</a> ودعوني اوضح لكم عندما تتم ترجمة التطبيق سوف اقوم بأدراج اسم المترجم في قائمة الشكر التقدير</string>
-  <string name="help_subcat_translators" formatted="false">المترجمين</string>
+  <string name="help_acknowledgments" formatted="false">مراقب البطارية عبارة عن شوكة لـ Battery Indicator Pro / BatteryBot Pro بواسطة
+    دارشان للحوسبة، ذ.م.م.  شكرا للمؤلفين والمساهمين الأصليين
+    لإنشاء وصيانة المشروع المنبع.</string>
   <string name="help_cat_contact" formatted="false">للتواصل</string>
-  <string name="help_contact" formatted="false">اذا كنت تملك اسئلة او مشاكل رجاء <a href="mailto:support@batterybot.info">راسلني على</a>.\n</string>
+  <string name="help_contact" formatted="false">إذا
+    لديك سؤال، مشكلة، أو تعليق، من فضلك
+    أرسل لي بريدا إلكترونيا.</string>
   <string name="settings_overview" formatted="false">نظرة عامة</string>
   <string name="settings_overview_help" formatted="false">الاعدادات منفصلة كما موضح ادناه واذا اردت ان تدخل لاعدادات الصفحة ببساطة اضغط على زر الخيارات الموجودة في هاتفك للحصل على مساعدة اما على الاجهزة اللوحية فأن زر الخيارات غير ضروري</string>
   <string name="notification_settings" formatted="false">الاشعارات الرئيسية</string>
@@ -231,6 +227,103 @@
   <string name="icon_set_classic" formatted="false">كلاسيك</string>
   <string name="icon_set_plain" formatted="false">رقم كبير</string>
   <string name="icon_set_smaller" formatted="false">رقم صغير</string>
+  <string name="notifications_disabled" formatted="false">تم تعطيل الإشعارات!</string>
+  <string name="notifications_disabled_message" formatted="false">لقد قمت بحظر جميع إشعارات Battery Monitor. سيمنع ذلك التطبيق من عرض أي إشعارات: سيتم حظر الإشعار الرئيسي وأي إنذارات قمت بإعدادها.\n\nوبما أن Battery Monitor يتيح لك تشغيل أو إيقاف الإشعار الرئيسي بشكل مستقل، وكذلك تعطيل الإنذارات التي أنشأتها مؤقتًا، فننصح بشدة بإلغاء حظر إشعارات Battery Monitor. أثناء الحظر، قد يبدو وكأن التطبيق لا يعمل.\n\nيرجى الضغط على موافق للانتقال إلى إعدادات النظام حيث يمكنك إلغاء حظر إشعارات Battery Monitor.</string>
+  <string name="battery_optimized" formatted="false">تم تقييد Battery Monitor!</string>
+  <string name="battery_optimized_message" formatted="false">تم تقييد Battery Monitor من العمل بشكل صحيح. «تحسين البطارية» ميزة في Android صُممت لتقييد التطبيقات سيئة التصميم حتى لا تستهلك الكثير من البطارية في الخلفية.\n\nلكن Battery Monitor تطبيق مصمم جيدًا ويحتاج للعمل دون تقييد في الخلفية لكي يعمل بصورة صحيحة. وهو فعال جدًا ولن يقلل عمر البطارية.\n\nيرجى الضغط على موافق للانتقال إلى إعدادات النظام حيث يمكنك تعطيل تحسين البطارية لتطبيق Battery Monitor.</string>
+  <string name="main_notif_chan_name" formatted="false">الإشعار الرئيسي</string>
+  <string name="channel_group_name_alarms" formatted="false">الإنذارات</string>
+  <string name="menu_show_seconds" formatted="false">إظهار الثواني</string>
+  <string name="menu_hide_seconds" formatted="false">إخفاء الثواني</string>
+  <string name="no_storage_permission" formatted="false">لم يتم منح إذن التخزين.</string>
+  <string name="current" formatted="false">ميلي أمبير</string>
+  <string name="status_boot_completed" formatted="false">اكتمل الإقلاع</string>
+  <string name="alarm_type_temperature_drops" formatted="false">تنخفض الحرارة عن</string>
+  <string name="alarm_type_entry_temperature_drops" formatted="false">تنخفض الحرارة عن...</string>
+  <string name="alarm_temp_drops" formatted="false">"درجة حرارة البطارية أقل من "</string>
+  <string name="after_nh_mm_unplugged" formatted="false">بعد %1$dس %2$dد بدون توصيل</string>
+  <string name="after_nh_mm_plugged_in" formatted="false">بعد %1$dس %2$dد أثناء التوصيل</string>
+  <string name="after_nm_ms_unplugged" formatted="false">بعد %1$dد %2$dث بدون توصيل</string>
+  <string name="after_nm_ms_plugged_in" formatted="false">بعد %1$dد %2$dث أثناء التوصيل</string>
+  <string name="help_cat_privacy" formatted="false">الخصوصية</string>
+  <string name="help_privacy" formatted="false">لا يقوم Battery Monitor بجمع أو تخزين أو نقل أي معلومات شخصية.</string>
+  <string name="notifications_disabled_cat" formatted="false">الإشعارات معطلة</string>
+  <string name="app_notifs_disabled_b" formatted="false">تمكين إشعارات التطبيق</string>
+  <string name="app_notifs_disabled_summary" formatted="false">لقد عطلت جميع إشعارات هذا التطبيق. يرجى تمكينها للوصول إلى هذه الإعدادات.</string>
+  <string name="main_notifs_disabled_b" formatted="false">تمكين الإشعار الرئيسي</string>
+  <string name="main_notifs_disabled_summary" formatted="false">لقد عطلت الإشعار الرئيسي لهذا التطبيق. يرجى تمكينه للوصول إلى هذه الإعدادات.</string>
+  <string name="app_notifs_alarms_disabled_summary" formatted="false">لقد عطلت جميع إشعارات هذا التطبيق. يرجى تمكينها للوصول إلى إنذاراتك.</string>
+  <string name="alarm_notifs_disabled_b" formatted="false">تمكين الإنذارات</string>
+  <string name="alarm_notifs_disabled_summary" formatted="false">لقد عطلت مجموعة إشعارات الإنذارات لهذا التطبيق. يرجى تمكينها للوصول إلى إنذاراتك.</string>
+  <string name="alarm_chan_disabled" formatted="false">لقد عطلت إشعارات هذا النوع من الإنذارات. يرجى تمكينها لاستخدام هذا النوع.</string>
+  <string name="alarm_chan_disabled_b" formatted="false">تمكين هذا النوع من الإنذارات</string>
+  <string name="alarm_chan_settings_b" formatted="false">إدارة هذا النوع من الإنذارات</string>
+  <string name="status_bar_chip_settings" formatted="false">شريحة شريط الحالة</string>
+  <string name="status_bar_chip_settings_summary" formatted="false">تهيئة محتوى شريحة Live Updates</string>
+  <string name="status_bar_chip_settings_help" formatted="false">على Android 16+ مع Live Updates يمكنك تهيئة ما تعرضه شريحة شريط الحالة وما إذا كان سيتم عرض رمز الشحن التعبيري.</string>
+  <string name="current_hack_settings" formatted="false">حيلة التيار (mA)</string>
+  <string name="current_hack_settings_summary" formatted="false">إعدادات متقدمة لتمكين معلومات mA</string>
+  <string name="current_hack_settings_help" formatted="false">لا يوفر Android طريقة رسمية للتطبيقات للوصول إلى معلومات تيار البطارية. ولكن توجد حيلة قد تتيح هذا على كثير من الأجهزة.\n\nلا يوجد ضمان بأن هذا سيعمل. قد لا يعمل إطلاقًا أو قد يبدو أنه يعمل لكنه يعطي قيماً غير منطقية.\n\nإعدادات تشغيل هذه الحيلة والتحكم بطريقة استخدامها متاحة في هذا القسم إذا كان ذلك ممكنًا.</string>
+  <string name="pref_enable_live_updates" formatted="false">استخدام شريحة شريط الحالة</string>
+  <string name="pref_enable_live_updates_summary" formatted="false">إظهار معلومات البطارية كشريحة في شريط الحالة (Android 16+)</string>
+  <string name="pref_live_updates_system_disabled" formatted="false">معطل في إعدادات Android. اضغط للإصلاح.</string>
+  <string name="live_updates_onboarding_title" formatted="false">شريحة بطارية شريط الحالة</string>
+  <string name="live_updates_onboarding_message_on" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة. هذا الخيار مفعّل افتراضيًا.\n\nإذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك إيقاف «Live Updates» من إعدادات Android لهذا التطبيق.</string>
+  <string name="live_updates_onboarding_message_off" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة، لكنه معطّل حاليًا في إعدادات النظام.\n\nنوصي بتمكينه للحصول على أفضل تجربة. إذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك تركه معطّلًا.</string>
+  <string name="live_updates_onboarding_positive_on" formatted="false">حسنًا</string>
+  <string name="live_updates_onboarding_positive_off" formatted="false">الانتقال إلى الإعدادات</string>
+  <string name="live_updates_onboarding_negative_off" formatted="false">تجاهل</string>
+  <string name="menu_alarm_channel" formatted="false">إعدادات قناة الإنذارات</string>
+  <string name="pref_cat_ui_color" formatted="false">لون الواجهة</string>
+  <string name="pref_ui_color_summary" formatted="false">اللون الأساسي في كامل التطبيق</string>
+  <string name="pref_cat_channel_settings" formatted="false">إعدادات قنوات الإشعارات</string>
+  <string name="pref_manage_main_channel" formatted="false">إدارة القناة الرئيسية</string>
+  <string name="pref_cat_status_bar_chip" formatted="false">شريحة شريط الحالة (Android 16+)</string>
+  <string name="pref_chip_content" formatted="false">محتوى الشريحة</string>
+  <string name="pref_chip_content_switching" formatted="false">التبديل بين البطارية والحرارة</string>
+  <string name="pref_chip_content_switching_summary" formatted="false">التناوب بين نسبة البطارية ودرجة الحرارة</string>
+  <string name="pref_chip_switching_interval" formatted="false">فاصل التبديل</string>
+  <string name="pref_chip_switching_interval_summary" formatted="false">عدد مرات تبديل العرض</string>
+  <string name="pref_chip_content_help" formatted="false">اختر القيمة التي ستُعرض في شريحة الإشعار المروّج على Android 16+.</string>
+  <string name="pref_chip_indicate_charging" formatted="false">إظهار رمز الشحن</string>
+  <string name="pref_chip_indicate_charging_summary" formatted="false">إظهار رمز البرق أثناء الشحن أو عند الامتلاء الكامل؟</string>
+  <string name="pref_chip_indicate_charging_help" formatted="false">عند التمكين، ستعرض شريحة شريط الحالة رمز البرق بجانب القيمة أثناء الشحن أو عند اكتمال الشحن.</string>
+  <string name="pref_icon_content" formatted="false">محتوى الأيقونة</string>
+  <string name="pref_icon_content_help" formatted="false">اختر ما إذا كانت أيقونة شريط الحالة تعرض نسبة البطارية أو درجة حرارتها. ستتبع الحرارة الوحدة التي اخترتها.</string>
+  <string name="pref_cat_current_hack_main" formatted="false">التحكم الرئيسي</string>
+  <string name="pref_cat_current_hack_unsupported" formatted="false">حيلة التيار (mA) غير مدعومة</string>
+  <string name="pref_current_hack_unsupported" formatted="false">عذرًا، حيلة التيار (mA) غير مدعومة على هذا الجهاز.</string>
+  <string name="current_hack_maybe_supported" formatted="false">قد تعمل الحيلة على هذا الجهاز.</string>
+  <string name="pref_enable_current_hack" formatted="false">تمكين الحيلة</string>
+  <string name="pref_enable_current_hack_summary" formatted="false">محاولة تمكين حيلة التيار (mA)؟</string>
+  <string name="pref_enable_current_hack_help" formatted="false">عند تمكين هذا الإعداد ستصبح الخيارات الأخرى الخاصة بالحيلة قابلة للاستخدام.</string>
+  <string name="pref_current_hack_prefer_fs" formatted="false">تفضيل طريقة الحيلة القديمة</string>
+  <string name="pref_current_hack_prefer_fs_summary" formatted="false">تفضيل طريقة أقدم تعتمد على نظام الملفات؟</string>
+  <string name="pref_current_hack_prefer_fs_help" formatted="false">بدءًا من Lollipop (Android 5.0)، يوفّر Android طريقة أقل تحايلاً للوصول إلى معلومات التيار (mA) مباشرة من BatteryManager. ومع ذلك، ما زال غير مضمون أن تعمل دائمًا أو بشكل جيد. حتى Nougat (Android 7.0)، غالبًا ما تعمل الطريقة القديمة (المعتمدة على نظام الملفات) بشكل أفضل على معظم الأجهزة، لذلك تظل افتراضية على الأجهزة الأقل من Android 7.0.\n\nهذا الإعداد مجرد تلميح للحيلة حول الطريقة المفضلة؛ يمكنك تغييره إذا لم تعمل الحيلة جيدًا على جهازك.</string>
+  <string name="pref_current_hack_multiplier" formatted="false">المُضاعِف</string>
+  <string name="pref_current_hack_multiplier_help" formatted="false">بعض الأجهزة ترسل ميلي أمبير بدلًا من ميكروأمبير كما يتوقع الـ API. وبعضها يعكس إشارة القيمة. كما يفضّل بعض المستخدمين الإشارة المعاكسة حتى للقيم الصحيحة.\n\nللتعامل مع مثل هذه الحالات، يمكنك ضرب نتيجة استدعاء API بالقيمة هنا.\n\nمثلًا، إذا كان جهازك يعرض 0 mA دائمًا، جرّب مضاعف 1000. إذا أعاد API قيمة 450 ميكروأمبير، سيعرض التطبيق 450 mA بدلًا من 0 mA. وإذا أعاد API صفرًا، فلن يغيّر المضاعف النتيجة النهائية بالطبع.</string>
+  <string name="pref_cat_current_hack_notification" formatted="false">الإشعار</string>
+  <string name="pref_display_current_in_vital_stats" formatted="false">العرض في الإحصاءات الحيوية</string>
+  <string name="pref_display_current_in_vital_stats_summary" formatted="false">عرض التيار (mA) في إحصاءات الإشعار الرئيسية؟</string>
+  <string name="pref_display_current_in_vital_stats_help" formatted="false">عند التمكين، ستتم محاولة الحيلة وسيُعرض الناتج في سطر الإحصاءات الحيوية بالإشعار الرئيسي. لاحظ أنه يجب ضبط الإشعار الرئيسي لعرض الإحصاءات الحيوية حتى ترى ذلك. لن تتحدّث هذه القيمة إلا عندما يرسل النظام معلومات بطارية جديدة.\n\nفي أغلب الأجهزة، تشير القيمة السالبة إلى سحب صافٍ من البطارية، والموجبة إلى أن البطارية تُشحن. لكن ليس كل الأجهزة تعمل بهذه الطريقة.</string>
+  <string name="pref_cat_current_hack_main_window" formatted="false">النافذة الرئيسية</string>
+  <string name="pref_display_current_in_main_window" formatted="false">العرض في النافذة الرئيسية</string>
+  <string name="pref_display_current_in_main_window_summary" formatted="false">عرض التيار (mA) في النافذة الرئيسية؟</string>
+  <string name="pref_display_current_in_main_window_help" formatted="false">عند التمكين، ستتم محاولة الحيلة وسيُعرض الناتج في النافذة الرئيسية. تُحدّث هذه القيمة كلما أرسل النظام معلومات بطارية جديدة، كما يمكنك تحديثها يدويًا بالنقر على القيمة المعروضة. (لاحظ أن بعض الأجهزة نادرًا ما تحدّث البيانات الأساسية أو لا تحدّثها إطلاقًا، لذلك قد لا تتغير القيمة ظاهريًا عند النقر).\n\nفي أغلب الأجهزة، تشير القيمة السالبة إلى سحب صافٍ من البطارية، والموجبة إلى أن البطارية تُشحن. لكن ليس كل الأجهزة تعمل بهذه الطريقة.</string>
+  <string name="pref_prefer_current_avg_in_vital_stats" formatted="false">تفضيل المتوسط في الإحصاءات الحيوية</string>
+  <string name="pref_prefer_current_avg_in_vital_stats_summary" formatted="false">محاولة استخدام current_avg في إحصاءات الإشعار الرئيسية؟</string>
+  <string name="pref_prefer_current_avg_in_main_window" formatted="false">تفضيل المتوسط في النافذة الرئيسية</string>
+  <string name="pref_prefer_current_avg_in_main_window_summary" formatted="false">محاولة استخدام current_avg في النافذة الرئيسية؟</string>
+  <string name="pref_prefer_current_avg_help" formatted="false">بعض الأنظمة لديها حيلة إضافية تتيح متوسطًا حديثًا للتيار بدل القراءة اللحظية. يختلف معنى ذلك من جهاز لآخر وهو متاح فقط على بعض الأجهزة. قد يعطي قيمة أكثر استقرارًا (إن سارت الأمور جيدًا)، أو يعيد نفس القيمة دائمًا، أو يعيد قيمة غير قابلة للاستخدام (وفي هذه الحالة عطّل هذا الخيار).</string>
+  <string name="pref_auto_refresh_current_in_main_window" formatted="false">تحديث mA تلقائيًا في النافذة الرئيسية</string>
+  <string name="pref_auto_refresh_current_in_main_window_summary" formatted="false">تحديث mA تلقائيًا كل ثانيتين؟</string>
+  <string name="pref_auto_refresh_current_in_main_window_help" formatted="false">إذا كان إعداد الحيلة يعرض mA في النافذة الرئيسية، يمكنك تحديث القيمة بالنقر عليها. وإذا أردت تحديثات متكررة دون النقر، فعّل هذا الخيار لتحديث القيمة تلقائيًا كل ثانيتين أثناء ظهور النافذة.\n\nلاحظ أن بعض الأجهزة نادرًا ما تحدّث البيانات الأساسية أو لا تحدّثها إطلاقًا، لذا قد لا تبدو القيمة متغيرة حتى مع التحديث التلقائي.</string>
+  <string name="pref_classic_color_mode" formatted="false">فرض وضع الألوان الكلاسيكي</string>
+  <string name="pref_classic_color_mode_summary" formatted="false">هذا غالبًا لا يعمل؛ يرجى قراءة المساعدة</string>
+  <string name="pref_classic_color_mode_help" formatted="false">بدءًا من Android 5.0 (Lollipop)، لم تعد أيقونات الإشعارات الملوّنة تعمل رسميًا على Android، مما يجعل الأيقونة الكلاسيكية تظهر باللون الأبيض بالكامل. لذلك يستخدم التطبيق افتراضيًا إطارًا أبيض ورقمًا أبيض على هذه الأجهزة.\n\nومع ذلك، ليست كل الأجهزة تلتزم بالمواصفات، لذا هذا ليس ضروريًا دائمًا ولا يعمل بشكل صحيح في كل مكان. يمكنك محاولة تشغيل مجموعة الأيقونات الكلاسيكية بالطريقة التقليدية عبر تفعيل هذا الخيار. تذكّر أنه على معظم الأجهزة سيجعل الأيقونة بيضاء بالكامل.</string>
+  <string name="pref_content_percent" formatted="false">نسبة البطارية</string>
+  <string name="pref_content_temperature" formatted="false">درجة حرارة البطارية</string>
+  <string name="pref_content_switching" formatted="false">التبديل بين الاثنين</string>
   <plurals name="n_log_items">
     <item quantity="one">%dسجل المحتوى</item>
     <item quantity="other">%d سجل المحتوى</item>

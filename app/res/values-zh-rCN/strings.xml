@@ -54,8 +54,8 @@
   <string name="health_dead" formatted="false">损坏</string>
   <string name="health_overvoltage" formatted="false">超压</string>
   <string name="health_failure" formatted="false">错误</string>
-  <string name="health_cold" formatted="false">Cold</string>
-  <string name="plugged_unplugged" formatted="false">Unplugged</string>
+  <string name="health_cold" formatted="false">寒冷的</string>
+  <string name="plugged_unplugged" formatted="false">拔掉插头</string>
   <string name="plugged_ac" formatted="false">(AC)</string>
   <string name="plugged_usb" formatted="false">(USB)</string>
   <string name="plugged_unknown" formatted="false">(?)</string>
@@ -74,13 +74,12 @@
   <string name="currently_set_to" formatted="false">"当前设置为"</string>
   <string name="currently_disabled" formatted="false">当前不可用</string>
   <string name="help_cat_version" formatted="false">版本</string>
-  <string name="help_cat_changelog" formatted="false">更新日志</string>
-  <string name="help_cat_no_warranty" formatted="false">免责申明</string>
+    <string name="help_cat_no_warranty" formatted="false">免责申明</string>
   <string name="help_no_warranty" formatted="false">本软件旨在提高系统的易用性，并<b>无任何承担责任的义务</b>。<b>不对使用软件实现特殊功能的实用性做任何承诺</b>。 软件开发者将尽其所能最求软件的正常工作及流畅运行，但对任何情况下可能导致的使用者的不适或设备损坏不承担任何责任。</string>
   <string name="help_cat_acknowledgments" formatted="false">声明</string>
-  <string name="help_acknowledgments" formatted="false">由于暂无慷慨的翻译者协助，本程序仅提供英文版本，非常感谢您的支持！ 得益于Google及其他开源项目，本软件功能得以实现。 软件图标（可见于电子市场软件主页右上角）的设计灵感来源于<a href="http://www.oxygen-icons.org"> Oxygen图标主题</a>并在<a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Common Attribution-ShareAlike 3.0 License</a>的规范下有限使用。</string>
-  <string name="help_cat_translations" formatted="false">多语言化</string>
-  <string name="help_subcat_translators" formatted="false">翻译志愿者名单</string>
+  <string name="help_acknowledgments" formatted="false">Battery Monitor 是 Battery Indicator Pro / BatteryBot Pro 的一个分支
+    达山计算有限责任公司。  感谢原作者和贡献者
+    用于创建和维护上游项目。</string>
   <string name="help_cat_contact" formatted="false">联系方式</string>
   <string name="settings_overview" formatted="false">预览</string>
   <string name="settings_overview_help" formatted="false">设置项包括如下所述的三个独立页面。各页面的帮助信息独立显示，在“菜单”-“帮助”内容中可获取当前页面的帮助信息。</string>
@@ -141,4 +140,358 @@
     <item quantity="one">已%d小时</item>
     <item quantity="other">已%d小时</item>
   </plurals>
+
+  <string formatted="false" name="circle_widget">电池监测圈</string>
+  <string formatted="false" name="full_widget">电池监视器满</string>
+  <string formatted="false" name="notifications_disabled">通知已禁用！</string>
+  <string formatted="false" name="notifications_disabled_message">您已阻止电池监视器的所有通知。  这将
+    防止电池监视器显示任何通知：主要
+    通知和您设置的任何警报都将被阻止。\n
+
+    \nSince 电池监视器允许您打开或关闭主通知
+    单独，以及暂时禁用任何警报
+    您已创建，强烈建议您解除阻止
+    电池监视器通知。  当它们被阻止时，它会出现
+    电池监视器坏了。\n
+
+    \n请按“确定”进入系统设置，您可以在其中
+    取消阻止电池监视器的通知。</string>
+  <string formatted="false" name="battery_optimized">电池监视器受限！</string>
+  <string formatted="false" name="battery_optimized_message">电池监视器无法正常运行。  这个“电池优化”
+    是一项 Android 功能，旨在限制设计不良的应用程序以防止它们
+    由于在后台使用过多电池。\n
+
+    然而，\nBattery Monitor 是一款设计精良的应用程序，必须在以下环境中不受限制地运行：
+    背景才能正常运行。  它非常高效并且
+    不会减少您的电池寿命。\n
+
+    \n请按“确定”进入系统设置，您可以在其中
+    禁用电池监视器的电池优化。</string>
+  <string formatted="false" name="main_notif_chan_name">主要通知</string>
+  <string formatted="false" name="channel_group_name_alarms">警报</string>
+  <string formatted="false" name="configure_log_filter">显示哪些日志项？</string>
+  <string formatted="false" name="tab_current_info">当前信息</string>
+  <string formatted="false" name="tab_history">历史</string>
+  <string formatted="false" name="notification_until_charged">“直到收费为止”</string>
+  <string formatted="false" name="notification_until_drained">“ 左边”</string>
+  <string formatted="false" name="activity_until_charged">直到充电为止</string>
+  <string formatted="false" name="activity_until_drained">直到排干</string>
+  <string formatted="false" name="menu_log_filter">筛选</string>
+  <string formatted="false" name="menu_show_seconds">显示秒数</string>
+  <string formatted="false" name="menu_hide_seconds">隐藏秒数</string>
+  <string formatted="false" name="no_storage_permission">未授予存储权限。</string>
+  <string formatted="false" name="date">日期</string>
+  <string formatted="false" name="time">时间</string>
+  <string formatted="false" name="status">地位</string>
+  <string formatted="false" name="charge">收费百分比</string>
+  <string formatted="false" name="temperature">摄氏度</string>
+  <string formatted="false" name="temperature_f">degrees_fahrenheit</string>
+  <string formatted="false" name="voltage">伏特</string>
+  <string formatted="false" name="current">milliamperes</string>
+  <string formatted="false" name="status_boot_completed">启动完成</string>
+  <string formatted="false" name="alarm_type_fully_charged">充满电</string>
+  <string formatted="false" name="alarm_type_charge_drops">电荷降至以下</string>
+  <string formatted="false" name="alarm_type_charge_rises">电荷上升至以上</string>
+  <string formatted="false" name="alarm_type_temperature_drops">气温降至以下</string>
+  <string formatted="false" name="alarm_type_temperature_rises">温度升至以上</string>
+  <string formatted="false" name="alarm_type_health_failure">健康失败</string>
+  <string formatted="false" name="alarm_type_entry_fully_charged">充满电</string>
+  <string formatted="false" name="alarm_type_entry_charge_drops">电荷下降到以下...</string>
+  <string formatted="false" name="alarm_type_entry_charge_rises">电荷上升到以上...</string>
+  <string formatted="false" name="alarm_type_entry_temperature_drops">气温降至以下...</string>
+  <string formatted="false" name="alarm_type_entry_temperature_rises">温度升至以上...</string>
+  <string formatted="false" name="alarm_type_entry_health_failure">健康状况不佳</string>
+  <string formatted="false" name="alarm_temp_drops">“电池温度低于”</string>
+  <string formatted="false" name="alarm_health_failure">“电池健康状况是：”</string>
+  <string formatted="false" name="after_n_hours_unplugged">%1.1f 小时后拔掉插头</string>
+  <string formatted="false" name="after_n_hours_plugged_in">插入 %1.1f 小时后</string>
+  <string formatted="false" name="after_nh_mm_unplugged">%1$dh %2$dm 拔掉插头后</string>
+  <string formatted="false" name="after_nh_mm_plugged_in">%1$dh %2$dm 插入后</string>
+  <string formatted="false" name="after_nm_ms_unplugged">%1$dm %2$ds 拔掉插头后</string>
+  <string formatted="false" name="after_nm_ms_plugged_in">%1$dm %2$ds 插入后</string>
+  <string formatted="false" name="help_cat_open_source">开源</string>
+  <string formatted="false" name="help_open_source">这个
+    项目是开源的。您可以访问源代码
+    https://github.com/tswistak/Battery-Indicator-Pro。</string>
+  <string formatted="false" name="help_cat_donate">捐</string>
+  <string formatted="false" name="help_donate">请
+    考虑通过升级到专业版来捐赠
+    版本。</string>
+  <string formatted="false" name="help_cat_privacy">隐私</string>
+  <string formatted="false" name="help_privacy">电池监视器不会收集、存储或传输任何个人信息。</string>
+  <string formatted="false" name="help_contact">如果
+    如果您有疑问、问题或意见，请
+    给我发电子邮件。</string>
+  <string formatted="false" name="notifications_disabled_cat">通知已禁用</string>
+  <string formatted="false" name="app_notifs_disabled_b">启用应用程序通知</string>
+  <string formatted="false" name="app_notifs_disabled_summary">您已禁用此应用程序的所有通知。  请允许他们访问这些设置。</string>
+  <string formatted="false" name="main_notifs_disabled_b">启用主通知</string>
+  <string formatted="false" name="main_notifs_disabled_summary">您已禁用此应用程序的主要通知。  请启用它以访问这些设置。</string>
+  <string formatted="false" name="app_notifs_alarms_disabled_summary">您已禁用此应用程序的所有通知。  请允许他们访问您的警报。</string>
+  <string formatted="false" name="alarm_notifs_disabled_b">启用警报</string>
+  <string formatted="false" name="alarm_notifs_disabled_summary">您已禁用此应用程序的警报通知组。  请启用它来访问您的警报。</string>
+  <string formatted="false" name="alarm_chan_disabled">您已禁用此警报类型的通知。  请允许他们使用此类警报。</string>
+  <string formatted="false" name="alarm_chan_disabled_b">启用此警报类型</string>
+  <string formatted="false" name="alarm_chan_settings_b">管理此警报类型</string>
+  <string formatted="false" name="notification_settings">主要通知</string>
+  <string formatted="false" name="notification_settings_summary">配置主要通知</string>
+  <string formatted="false" name="notification_settings_help">您可以配置在下拉通知中显示哪些内容。</string>
+  <string formatted="false" name="status_bar_icon_settings">状态栏图标</string>
+  <string formatted="false" name="status_bar_icon_settings_summary">控制图标集</string>
+  <string formatted="false" name="status_bar_icon_settings_help">您可以选择要使用的图标集并更改图标集的设置（例如颜色）。</string>
+  <string formatted="false" name="status_bar_chip_settings">状态栏芯片</string>
+  <string formatted="false" name="status_bar_chip_settings_summary">配置实时更新芯片内容</string>
+  <string formatted="false" name="status_bar_chip_settings_help">在具有实时更新的 Android 16+ 上，您可以配置状态
+    条形芯片显示以及是否显示充电表情。</string>
+  <string formatted="false" name="current_hack_settings">电流 (mA) 黑客</string>
+  <string formatted="false" name="current_hack_settings_summary">用于启用 mA 信息的高级设置</string>
+  <string formatted="false" name="current_hack_settings_help">Android 不提供应用程序访问信息的方法
+    关于电池电流。  但是，可以使用 hack
+    这允许许多设备潜在地获取此信息。\n
+
+    \n这不能保证有效。  它可能根本不起作用或者它
+    可能看起来有效，但只会产生无意义的值。\n
+
+    \n设置以打开黑客（如果可能）并控制其方式
+    使用的内容可在本节中找到。</string>
+  <string formatted="false" name="pref_enable_live_updates">使用状态栏芯片</string>
+  <string formatted="false" name="pref_enable_live_updates_summary">在状态栏中将电池信息显示为芯片（Android 16+）</string>
+  <string formatted="false" name="pref_live_updates_system_disabled">在 Android 设置中禁用。点击即可修复。</string>
+  <string formatted="false" name="live_updates_onboarding_title">状态栏电池芯片</string>
+  <string formatted="false" name="live_updates_onboarding_message_on">您的设备支持在状态栏中以芯片形式显示电池百分比。默认情况下启用此功能。\n\n如果您喜欢传统的通知图标，您可以在 Android 系统设置中为此应用程序关闭“实时更新”。</string>
+  <string formatted="false" name="live_updates_onboarding_message_off">您的设备支持在状态栏中以芯片形式显示电池百分比，但目前在系统设置中已禁用。\n\n我们建议启用它以获得最佳体验。如果您喜欢传统的通知图标，可以将其禁用。</string>
+  <string formatted="false" name="live_updates_onboarding_positive_on">知道了</string>
+  <string formatted="false" name="live_updates_onboarding_positive_off">前往“设置”</string>
+  <string formatted="false" name="live_updates_onboarding_negative_off">解雇</string>
+  <string formatted="false" name="menu_alarm_channel">报警通道设置</string>
+  <string formatted="false" name="pref_cat_ui_color">用户界面颜色</string>
+  <string formatted="false" name="pref_ui_color_summary">整个应用程序的原色</string>
+  <string formatted="false" name="pref_cat_channel_settings">通知渠道设置</string>
+  <string formatted="false" name="pref_manage_main_channel">管理主渠道</string>
+  <string formatted="false" name="pref_cat_notification_content">内容</string>
+  <string formatted="false" name="pref_cat_status_bar_chip">状态栏芯片（Android 16+）</string>
+  <string formatted="false" name="pref_chip_content">芯片内容</string>
+  <string formatted="false" name="pref_chip_content_switching">在电池和温度之间切换</string>
+  <string formatted="false" name="pref_chip_content_switching_summary">在电池百分比和温度之间循环显示</string>
+  <string formatted="false" name="pref_chip_switching_interval">切换间隔</string>
+  <string formatted="false" name="pref_chip_switching_interval_summary">多久切换一次显示</string>
+  <string formatted="false" name="pref_chip_content_help">选择在 Android 16+ 升级通知芯片中显示的值。</string>
+  <string formatted="false" name="pref_chip_indicate_charging">显示充电表情符号</string>
+  <string formatted="false" name="pref_chip_indicate_charging_summary">充电或充满电时显示闪电表情符号？</string>
+  <string formatted="false" name="pref_chip_indicate_charging_help">如果启用，状态栏芯片将在旁边显示闪电表情符号
+    充电时或充满电时的芯片值。</string>
+  <string formatted="false" name="pref_top_line_content">顶线内容</string>
+  <string formatted="false" name="pref_top_line_content_help">配置通知第一行的内容：估计
+    剩余时间（可在其他地方配置），状态发生后多长时间
+    已更改（插入、拔出或充满电），或者
+    电池生命体征（电池健康状况、温度和电压）。</string>
+  <string formatted="false" name="pref_bottom_line_content">底线内容</string>
+  <string formatted="false" name="pref_bottom_line_content_help">对于底线和顶线，您有相同的选项。</string>
+  <string formatted="false" name="time_remaining">剩余时间</string>
+  <string formatted="false" name="time_since_status_change">自状态更改以来的时间</string>
+  <string formatted="false" name="vital_signs">生命体征</string>
+  <string formatted="false" name="pref_time_remaining_verbosity">剩余时间冗长</string>
+  <string formatted="false" name="pref_time_remaining_verbosity_help">设备有各种形状和尺寸，因此大多数翻译都需要
+    使用缩写来确保剩余时间估计符合
+    轻松地在通知区域中。  如果还是不合适的话
+    您可以选择压缩格式。  如果你有足够的空间，
+    您可能更喜欢详细设置。</string>
+  <string formatted="false" name="condensed">浓缩</string>
+  <string formatted="false" name="normal">Normal</string>
+  <string formatted="false" name="verbose">冗长</string>
+  <string formatted="false" name="pref_status_duration_in_vital_signs">生命体征状态持续时间</string>
+  <string formatted="false" name="pref_status_duration_in_vital_signs_summary">包括生命体征状态变化后的时间？</string>
+  <string formatted="false" name="pref_status_duration_in_vital_signs_help">如果设置，生命体征行还将包括小时数
+    设备被拔出、插入或充满电后。</string>
+  <string formatted="false" name="system_default">系统默认值</string>
+  <string formatted="false" name="black">黑色的</string>
+  <string formatted="false" name="white">白色的</string>
+  <string formatted="false" name="ics_blue">Android ICS Blue</string>
+  <string formatted="false" name="custom">风俗...</string>
+  <string formatted="false" name="pref_cat_icon_set">图标集</string>
+  <string formatted="false" name="pref_icon_set">图标集</string>
+  <string formatted="false" name="pref_icon_content">图标内容</string>
+  <string formatted="false" name="pref_icon_content_help">选择状态栏图标是否显示电池百分比或
+    电池温度。温度遵循您选择的单位。</string>
+  <string formatted="false" name="pref_icon_set_help">Android 有多种风格，因此没有一套完美的图标集
+    适用于所有设备。  共有三个内置图标集
+    这应该为几乎每个人提供至少一个好的选择
+    设备.\n
+
+    \n\"Classic\"是2009年的原始图标集。它仍然是
+    在较旧的设备上效果最好，但在较新版本的 Android 上（从
+    Android 3.0，Honeycomb）缩小并变暗通知图标，
+    使得这套书很难阅读。\n
+
+    \n\“普通数字\”是所有较新 Android 设备的默认设置。
+    这是一个非常大的白色数字，即使在
+    被缩小和变暗。  它显示了在下面的闪电
+    充电时的号码。\n
+
+    \n\“较小的数字”类似于“普通数字”，但更小，因为
+    一些较新的设备实际上并没有像库存那样缩小图标
+    Android 可以，“普通数字”中的非常大的数字可以
+    在这些设备上显得大得可笑。</string>
+  <string formatted="false" name="pref_cat_current_hack_main">主控</string>
+  <string formatted="false" name="pref_cat_current_hack_unsupported">电流 (mA) Hack 不支持</string>
+  <string formatted="false" name="pref_current_hack_unsupported">抱歉，该设备不支持当前的 (mA) 破解。</string>
+  <string formatted="false" name="current_hack_maybe_supported">该黑客可能在此设备上起作用。</string>
+  <string formatted="false" name="pref_enable_current_hack">启用黑客攻击</string>
+  <string formatted="false" name="pref_enable_current_hack_summary">尝试启用电流（mA）黑客？</string>
+  <string formatted="false" name="pref_enable_current_hack_help">启用此设置后，有关的其他选项
+    hack 将可用。</string>
+  <string formatted="false" name="pref_current_hack_prefer_fs">更喜欢旧的黑客方法</string>
+  <string formatted="false" name="pref_current_hack_prefer_fs_summary">更喜欢旧的、基于文件系统的黑客方法？</string>
+  <string formatted="false" name="pref_current_hack_prefer_fs_help">从 Lollipop (Android 5.0) 开始，Android 现在提供
+    访问电流（mA）信息的不太黑客的方式，
+    直接来自系统 BatteryManager。  然而，这仍然不是
+    保证能够正常工作或正常工作。  直到 Android 牛轧糖
+    （Android 7.0），旧的（基于文件系统的）黑客方法似乎
+    在大多数设备上工作得更好，因此它仍然是设备上的默认设置
+    运行低于 Android 7.0.\n
+
+    \n这个设置只是提示黑客应该使用哪种方法
+    更喜欢；如果破解效果不佳，您可以尝试更改它
+    您的设备。</string>
+  <string formatted="false" name="pref_current_hack_multiplier">乘数</string>
+  <string formatted="false" name="pref_current_hack_multiplier_help">一些设备报告毫安而不是微安作为
+    API 调用。  相同的设备交换报告值的符号。
+    一些用户更喜欢正确报告值的相反符号。
+    为了帮助适应此类情况，您可以将
+    通过此处的值调用 API 的结果。\n
+
+    \n例如，如果您的设备始终显示 0 mA，您可以尝试
+    使用 1000 的乘数。如果 API 调用返回 450
+    微安，该乘数将使应用程序显示该值
+    为 450 mA 而不是 0 mA。  如果API调用返回0
+    微安，当然，乘数不会改变最终的
+    显示值为 0 mA。</string>
+  <string formatted="false" name="pref_cat_current_hack_notification">通知</string>
+  <string formatted="false" name="pref_display_current_in_vital_stats">在生命统计中显示</string>
+  <string formatted="false" name="pref_display_current_in_vital_stats_summary">在主通知生命统计中显示电流（mA）？</string>
+  <string formatted="false" name="pref_display_current_in_vital_stats_help">启用后，将尝试进行黑客攻击并显示
+    导致主要通知生命统计行。  请注意，您
+    必须将主通知配置为显示重要统计数据
+    为了看到这个。  该值仅在以下情况下才会刷新
+    系统发送新的电池信息。\n
+
+    \n在大多数设备上，负值表示净消耗
+    电池电量，正值表示电池正在充电
+    收费。  然而，并非所有设备都以这种方式产生价值。</string>
+  <string formatted="false" name="pref_cat_current_hack_main_window">主窗口</string>
+  <string formatted="false" name="pref_display_current_in_main_window">在主窗口中显示</string>
+  <string formatted="false" name="pref_display_current_in_main_window_summary">在主窗口中显示电流（mA）？</string>
+  <string formatted="false" name="pref_display_current_in_main_window_help">启用后，将尝试进行黑客攻击并显示
+    结果出现在主窗口中。  该值将在任何时候刷新
+    系统会发送新的电池信息，但您可以刷新
+    只需点击显示的值即可随时查看值。  （注
+    有些设备很少或从不更新底层数据，所以
+    该值可能不会在点击时发生变化。）\n
+
+    \n在大多数设备上，负值表示净消耗
+    电池电量，正值表示电池正在充电
+    收费。  然而，并非所有设备都以这种方式产生价值。</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_vital_stats">更喜欢生命统计数据的平均值</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_vital_stats_summary">尝试在主要通知生命统计中使用 current_avg 吗？</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_main_window">首选主窗口中的平均值</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_main_window_summary">尝试在主窗口中使用 current_avg 吗？</string>
+  <string formatted="false" name="pref_prefer_current_avg_help">有些系统有进一步的破解可用，给出了最近的
+    电流的平均值而不是瞬时读数。
+    这意味着什么因设备而异，并且仅可用
+    在某些设备上。  这可能会给出更稳定的值（如果一切顺利）
+    好吧），它可能返回相同的值，或者可能返回一个不可用的值
+    值（在这种情况下您应该关闭此选项）。</string>
+  <string formatted="false" name="pref_auto_refresh_current_in_main_window">在主窗口中自动刷新 mA</string>
+  <string formatted="false" name="pref_auto_refresh_current_in_main_window_summary">每两秒自动刷新毫安？</string>
+  <string formatted="false" name="pref_auto_refresh_current_in_main_window_help">如果您设置了在主窗口中显示 mA 的功能，您可以
+    只需点击即可刷新该值。  如果你想看
+    无需点击即可频繁更新，您可以启用此选项
+    当窗口可见时每两秒自动刷新一次值。\n
+
+    \n请注意，某些设备很少或从不更新底层
+    数据，因此即使应用程序运行，该值也可能不会发生变化
+    刷新显示的值以匹配从中检索的数据
+    系统。</string>
+  <string formatted="false" name="pref_cat_charging_indicator">充电指示灯</string>
+  <string formatted="false" name="pref_indicate_charging">指示正在充电</string>
+  <string formatted="false" name="pref_indicate_charging_summary">更改图标以指示充电时？</string>
+  <string formatted="false" name="pref_indicate_charging_help">某些图标集指示电池何时充电，例如
+    例如，在数字下方显示闪电。  禁用
+    如果您不希望这样做，请执行此设置。</string>
+  <string formatted="false" name="pref_notify_status_duration">显示状态持续时间</string>
+  <string formatted="false" name="pref_notify_status_duration_summary">显示状态更改后的时间而不是估计的剩余时间？</string>
+  <string formatted="false" name="pref_notify_status_duration_help">如果您希望显示主通知，请启用此设置
+    自状态更改以来的时间（例如，\“拔掉插头 5
+    小时\"）而不是剩余时间的估计。  两件
+    信息可从主窗口获得。</string>
+  <string formatted="false" name="predictor_sensitive">敏感的</string>
+  <string formatted="false" name="predictor_conservative">保守的</string>
+  <string formatted="false" name="predictor_since_status_change">自状态变更以来</string>
+  <string formatted="false" name="predictor_long_term_ave">长期平均</string>
+  <string formatted="false" name="pref_cat_predictor">剩余时间估计</string>
+  <string formatted="false" name="pref_prediction_type">估算类型</string>
+  <string formatted="false" name="pref_prediction_type_help">您可以在此处选择电池监视器如何预测剩余电量
+    电池寿命/充满电的时间。\n
+
+    \n“敏感”算法严格基于您的最后五个
+    使用分钟数。  如果您最关心的是“我的
+    如果我继续做我正在做的事情，电池会耗尽吗？”那么这就是
+    适合你的算法。\n
+
+    \n“保守”算法是默认的。  也是基于
+    根据最近的使用情况，但它尽量不与您的长期使用情况不同
+    平均太随意了。\n
+
+    \n选择“自从状态更改”以进行预测
+    严格限制在当前会话中。\n
+
+    \n最后，您可以仅根据您的情况进行预测
+    长期平均使用情况。</string>
+  <string formatted="false" name="pref_language_override">语言覆盖</string>
+  <string formatted="false" name="pref_language_override_help">如果您的语言翻译不完整或不准确
+    如果您更喜欢另一个可能更好的翻译，您可能会
+    选择在这里这样做。</string>
+  <string formatted="false" name="pref_classic_color_mode">强制经典色彩模式</string>
+  <string formatted="false" name="pref_classic_color_mode_summary">这通常不起作用；请阅读帮助</string>
+  <string formatted="false" name="pref_classic_color_mode_help">从 Android 5.0 (Lollipop) 开始，彩色通知图标
+    正式不再适用于 Android，使经典图标显示
+    呈纯白色。因此，默认情况下，在这些设备上应用程序使用
+    带有白色数字的纯白色轮廓。\n
+
+    \n然而，并非所有设备都遵循该规范，因此这不是
+    必要的，并且不能在任何地方正常工作。  你可以尝试
+    通过转动此按钮使经典图标集以经典方式工作
+    选项打开。  请记住，在大多数设备上这只会使图标
+    变成纯白色。</string>
+  <string formatted="false" name="pref_alarm_enabled_help">如果你想暂时
+  禁用警报而无需在需要时重新创建它
+  同样，您可以在此处或主警报上将其关闭和打开
+  页。</string>
+  <string formatted="false" name="pref_cat_alarm_conditions">报警条件</string>
+  <string formatted="false" name="pref_cat_alarm_conditions_help">这是你可以的地方
+  控制触发警报的条件。</string>
+  <string formatted="false" name="pref_alarm_type">报警类型</string>
+  <string formatted="false" name="pref_alarm_type_summary">电池触发警报：</string>
+  <string formatted="false" name="pref_alarm_type_help">目前有五种类型
+    您可以选择的警报。\n
+
+    \n“充满电”警报会在电量耗尽时通知您
+    电池状态从“正在充电”更改为“完全充电”
+    已收费”。  请注意，在许多设备上，这不一定是
+    与 100% 充电相同。\n
+
+    \n充电和温度警报需要您设置阈值
+    选择警报类型后如下。\n
+
+    \n 如果您的电池健康状况不佳，“健康失败”警报将通知您
+    变成“未知”或“身体健康”以外的东西，如
+    安卓系统报道。</string>
+  <string formatted="false" name="pref_alarm_threshold_help">对于充电和温度报警，需要设置温度
+    或将触发警报的电量水平。</string>
+  <string formatted="false" name="icon_set_classic">经典的</string>
+  <string formatted="false" name="icon_set_plain">普通号码</string>
+  <string formatted="false" name="icon_set_smaller">较小的数字</string>
+  <string formatted="false" name="pref_content_percent">电池电量百分比</string>
+  <string formatted="false" name="pref_content_temperature">电池温度</string>
+  <string formatted="false" name="pref_content_switching">两者之间切换</string>
 </resources>

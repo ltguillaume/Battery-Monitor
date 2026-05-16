@@ -14,7 +14,7 @@
   <string name="confirm_close" formatted="false">Sigur inchideti?</string>
   <string name="confirm_close_hint" formatted="false">Battery Indicator se va inchide complet. Informatiile despre baterie nu vor mai fi afisate in bara de stare a telefonului./n Daca doriti sa inchideti fereastra principala, pastrand afisarea informatiilor despre baterie, apasati Anuleaza si apoi butonul BACK al telefonului.</string>
   <string name="confirm_clear_logs" formatted="false">Sigur stergeti toate logurile?</string>
-  <string name="okay" formatted="false">Okay</string>
+  <string name="okay" formatted="false">Bine</string>
   <string name="none" formatted="false">Nimic/Gol</string>
   <string name="tab_current_info" formatted="false">Informatie actuala</string>
   <string name="tab_history" formatted="false">Istoric</string>
@@ -25,7 +25,6 @@
   <string name="menu_settings" formatted="false">Setari</string>
   <string name="menu_close" formatted="false">Inchide</string>
   <string name="menu_help" formatted="false">Ajutor</string>
-  <string name="menu_rate_and_review" formatted="false">Acorda rating si review</string>
   <string name="menu_clear" formatted="false">Sterge</string>
   <string name="menu_reverse" formatted="false">Inverseaza ordinea</string>
   <string name="menu_log_filter" formatted="false">Filtru</string>
@@ -92,11 +91,445 @@
   <string name="currently_set_to" formatted="false">"Acum setat la: "</string>
   <string name="currently_disabled" formatted="false">Dezactivat Acum</string>
   <string name="help_cat_version" formatted="false">Versiune</string>
-  <string name="help_cat_changelog" formatted="false">Jurnal Schimbari</string>
-  <string name="help_changelog" formatted="false">Consultati <a href="https://www.batterybot.info/changelog">lista schimbarilor online</a>.</string>
   <string name="help_cat_no_warranty" formatted="false">Nu se ofera garantie</string>
-  <string name="help_cat_translations" formatted="false">Traduceri</string>
-  <string name="help_subcat_translators" formatted="false">Traducatori</string>
   <string name="help_cat_contact" formatted="false">Contact</string>
   <string name="settings_overview" formatted="false">Prezentare</string>
+
+  <string formatted="false" name="circle_widget">Cercul de monitorizare a bateriei</string>
+  <string formatted="false" name="full_widget">Monitor baterie plină</string>
+  <string formatted="false" name="notifications_disabled">Notificările sunt dezactivate!</string>
+  <string formatted="false" name="notifications_disabled_message">Ați blocat toate notificările pentru Battery Monitor.  Aceasta va
+    împiedică Battery Monitor să afișeze notificări: principal
+    notificarea și toate alarmele pe care le-ați setat vor fi blocate.\n
+
+    \nDeoarece Battery Monitor vă permite să activați sau să dezactivați notificarea principală
+    separat, precum și dezactivați temporar orice alarme
+    pe care l-ați creat, vă recomandăm ferm să deblocați
+    Notificări pentru monitorizarea bateriei.  În timp ce sunt blocate, va apărea
+    acel monitor al bateriei este stricat.\n
+
+    \nVă rugăm să apăsați pe OK pentru a fi dus la setările sistemului unde puteți
+    deblocați notificările pentru Battery Monitor.</string>
+  <string formatted="false" name="battery_optimized">Monitorul bateriei este restricționat!</string>
+  <string formatted="false" name="battery_optimized_message">Battery Monitor are restricție să funcționeze corect.  Această „optimizare a bateriei”
+    este o caracteristică Android concepută pentru a restricționa aplicațiile prost proiectate pentru a le preveni
+    de la folosirea prea multă baterie în fundal.\n
+
+    \nBattery Monitor, totuși, este o aplicație bine concepută, care trebuie să ruleze fără restricții
+    fundalul pentru a funcționa corect.  Este extrem de eficient si
+    nu vă va reduce durata de viață a bateriei.\n
+
+    \nVă rugăm să apăsați pe OK pentru a fi dus la setările sistemului unde puteți
+    dezactivați optimizarea bateriei pentru Battery Monitor.</string>
+  <string formatted="false" name="main_notif_chan_name">Notificare principală</string>
+  <string formatted="false" name="channel_group_name_alarms">Alarme</string>
+  <string formatted="false" name="configure_log_filter">Afișați ce elemente de jurnal?</string>
+  <string formatted="false" name="menu_show_seconds">Afișează secunde</string>
+  <string formatted="false" name="menu_hide_seconds">Ascunde secunde</string>
+  <string formatted="false" name="no_storage_permission">Permisiunea de stocare nu a fost acordată.</string>
+  <string formatted="false" name="temperature_f">degrees_fahrenheit</string>
+  <string formatted="false" name="current">milliamperes</string>
+  <string formatted="false" name="status_boot_completed">Încărcare finalizată</string>
+  <string formatted="false" name="alarm_type_temperature_drops">Temperatura scade sub</string>
+  <string formatted="false" name="alarm_type_temperature_rises">Temperatura crește deasupra</string>
+  <string formatted="false" name="alarm_type_health_failure">Eșecul de sănătate</string>
+  <string formatted="false" name="alarm_type_entry_fully_charged">Devine complet încărcat</string>
+  <string formatted="false" name="alarm_type_entry_charge_drops">Încărcarea scade sub...</string>
+  <string formatted="false" name="alarm_type_entry_charge_rises">Taxa crește peste...</string>
+  <string formatted="false" name="alarm_type_entry_temperature_drops">Temperatura scade sub...</string>
+  <string formatted="false" name="alarm_type_entry_temperature_rises">Temperatura crește peste...</string>
+  <string formatted="false" name="alarm_type_entry_health_failure">Sănătatea eșuează</string>
+  <string formatted="false" name="alarm_temp_drops">„Temp. baterie este sub”</string>
+  <string formatted="false" name="after_n_hours_unplugged">După ore %1.1f deconectat</string>
+  <string formatted="false" name="after_n_hours_plugged_in">După ore %1.1f conectat</string>
+  <string formatted="false" name="after_nh_mm_unplugged">După ce %1$dh %2$dm a fost deconectat</string>
+  <string formatted="false" name="after_nh_mm_plugged_in">După ce %1$dh %2$dm a fost conectat la priză</string>
+  <string formatted="false" name="after_nm_ms_unplugged">După ce %1$dm %2$d au fost deconectate</string>
+  <string formatted="false" name="after_nm_ms_plugged_in">După ce %1$dm %2$d s-au conectat</string>
+  <string formatted="false" name="help_cat_open_source">Open Source</string>
+  <string formatted="false" name="help_open_source">Aceasta
+    proiectul este open source. Puteți accesa codul sursă la
+    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+  <string formatted="false" name="help_cat_donate">Dona</string>
+  <string formatted="false" name="help_donate">Vă rog
+    luați în considerare donarea prin trecerea la Pro
+    Versiune.</string>
+  <string formatted="false" name="help_cat_privacy">Confidențialitate</string>
+  <string formatted="false" name="help_privacy">Battery Monitor nu colectează, stochează și nu transmite informații personale.</string>
+  <string formatted="false" name="help_no_warranty">Acest software este distribuit în speranța că va fi util, dar
+    FĂRĂ NICIO GARANȚIE; fără măcar garanția implicită a
+    VANTABILITATE sau ADECVENȚĂ PENTRU UN ANUMIT SCOP.\n
+
+    \nÎn timp ce fac tot posibilul să mă asigur că funcționează bine și nu
+    provoacă probleme, nu sunt responsabil pentru nicio pagubă sau inconvenient
+    poate provoca în orice împrejurare.</string>
+  <string formatted="false" name="help_cat_acknowledgments">Mulțumiri</string>
+  <string formatted="false" name="help_acknowledgments">Battery Monitor este o furcă a Battery Indicator Pro / BatteryBot Pro de
+    Darshan Computing, LLC.  Mulțumim autorilor și colaboratorilor originali
+    pentru crearea și menținerea proiectului din amonte.</string>
+  <string formatted="false" name="help_contact">Dacă
+    ai o întrebare, o problemă sau un comentariu, te rog
+    e-mail-mi.</string>
+  <string formatted="false" name="settings_overview_help">Setările monitorului bateriei sunt organizate în pagini separate, așa cum este descris
+    mai jos.  Fiecare pagină de setări are propria pagină de ajutor care descrie
+    setări disponibile acolo.</string>
+  <string formatted="false" name="notifications_disabled_cat">Notificări dezactivate</string>
+  <string formatted="false" name="app_notifs_disabled_b">Activați notificările aplicației</string>
+  <string formatted="false" name="app_notifs_disabled_summary">Ați dezactivat toate notificările pentru această aplicație.  Vă rugăm să le permiteți să acceseze aceste setări.</string>
+  <string formatted="false" name="main_notifs_disabled_b">Activați notificarea principală</string>
+  <string formatted="false" name="main_notifs_disabled_summary">Ați dezactivat notificarea principală pentru această aplicație.  Activați-l pentru a accesa aceste setări.</string>
+  <string formatted="false" name="app_notifs_alarms_disabled_summary">Ați dezactivat toate notificările pentru această aplicație.  Vă rugăm să le permiteți să vă acceseze alarmele.</string>
+  <string formatted="false" name="alarm_notifs_disabled_b">Activați alarmele</string>
+  <string formatted="false" name="alarm_notifs_disabled_summary">Ați dezactivat grupul de notificări de alarmă pentru această aplicație.  Activați-l pentru a vă accesa alarmele.</string>
+  <string formatted="false" name="alarm_chan_disabled">Ați dezactivat notificările pentru acest tip de alarmă.  Vă rugăm să le permiteți să utilizeze acest tip de alarmă.</string>
+  <string formatted="false" name="alarm_chan_disabled_b">Activați acest tip de alarmă</string>
+  <string formatted="false" name="alarm_chan_settings_b">Gestionați acest tip de alarmă</string>
+  <string formatted="false" name="notification_settings">Notificare principală</string>
+  <string formatted="false" name="notification_settings_summary">Configurați notificarea principală</string>
+  <string formatted="false" name="notification_settings_help">Puteți configura ce conținut să se afișeze în notificarea derulantă.</string>
+  <string formatted="false" name="status_bar_icon_settings">Pictograma barei de stare</string>
+  <string formatted="false" name="status_bar_icon_settings_summary">Seturi de pictograme de control</string>
+  <string formatted="false" name="status_bar_icon_settings_help">Puteți selecta ce set de pictograme să utilizați și puteți modifica setările pentru setul de pictograme (de exemplu, culori).</string>
+  <string formatted="false" name="status_bar_chip_settings">Cip bară de stare</string>
+  <string formatted="false" name="status_bar_chip_settings_summary">Configurați conținutul cipului actualizărilor în direct</string>
+  <string formatted="false" name="status_bar_chip_settings_help">Pe Android 16+ cu actualizări live, puteți configura starea
+    cip bară afișează și dacă să afișați emoji-ul de încărcare.</string>
+  <string formatted="false" name="current_hack_settings">Hack actual (mA).</string>
+  <string formatted="false" name="current_hack_settings_summary">Setări avansate pentru activarea informațiilor mA</string>
+  <string formatted="false" name="current_hack_settings_help">Android nu oferă un mijloc pentru ca aplicațiile să acceseze informații
+    despre curentul bateriei.  Cu toate acestea, un hack este disponibil
+    care permite multor dispozitive să obțină potențial aceste informații.\n
+
+    \n Acest lucru nu este garantat să funcționeze.  Poate că nu funcționează deloc sau asta
+    poate părea că funcționează, dar are ca rezultat numai valori aiurea.\n
+
+    \nSetări pentru a activa hack-ul, dacă este posibil, și pentru a controla cum este
+    utilizate sunt disponibile în această secțiune.</string>
+  <string formatted="false" name="alarm_settings_subtitle">Setări de alarmă</string>
+  <string formatted="false" name="alarm_settings">Alarme</string>
+  <string formatted="false" name="alarm_settings_summary">Notificări de control pentru baterie descărcată/plină</string>
+  <string formatted="false" name="alarm_settings_help">Puteți solicita Battery Monitor să vă anunțe când nivelul bateriei este
+    atinge o anumită condiție (de exemplu, bateria se încarcă complet,
+    nivelul bateriei scade sub 20% și multe altele).</string>
+  <string formatted="false" name="other_settings">Alte setări</string>
+  <string formatted="false" name="other_settings_help">Toate celelalte setări sunt pe această pagină, inclusiv înregistrarea, blocarea
+    ecran, unitate de temperatură, pornire automată și multe altele.</string>
+  <string formatted="false" name="pref_cat_more_settings_in_pro">Mai multe setări în Pro</string>
+  <string formatted="false" name="pref_please_upgrade">Versiunea Pro are multe mai multe setări și funcții, inclusiv
+    informații curente (mA),
+    alarme,
+    înregistrarea stării bateriei,
+    si mai mult.</string>
+  <string formatted="false" name="pref_enable_live_updates">Utilizați cip bară de stare</string>
+  <string formatted="false" name="pref_enable_live_updates_summary">Afișați informațiile despre baterie ca cip în bara de stare (Android 16+)</string>
+  <string formatted="false" name="pref_live_updates_system_disabled">Dezactivat în setările Android. Atingeți pentru a remedia.</string>
+  <string formatted="false" name="live_updates_onboarding_title">Bara de stare Cip baterie</string>
+  <string formatted="false" name="live_updates_onboarding_message_on">Dispozitivul dvs. acceptă afișarea procentului bateriei sub formă de cip în bara de stare. Aceasta este activată în mod implicit.\n\nDacă preferați o pictogramă de notificare tradițională, puteți dezactiva „Actualizări live” din setările de sistem Android pentru această aplicație.</string>
+  <string formatted="false" name="live_updates_onboarding_message_off">Dispozitivul dvs. acceptă afișarea procentului bateriei ca cip în bara de stare, dar în prezent este dezactivat în setările de sistem.\n\n Vă recomandăm să îl activați pentru cea mai bună experiență. Dacă preferați o pictogramă de notificare tradițională, o puteți lăsa dezactivată.</string>
+  <string formatted="false" name="live_updates_onboarding_positive_on">Am înţeles</string>
+  <string formatted="false" name="live_updates_onboarding_positive_off">Accesați Setări</string>
+  <string formatted="false" name="live_updates_onboarding_negative_off">Respingeți</string>
+  <string formatted="false" name="add_alarm">Adăugați alarma</string>
+  <string formatted="false" name="menu_alarm_channel">Setări canal de alarmă</string>
+  <string formatted="false" name="pref_cat_ui_color">Culoarea UI</string>
+  <string formatted="false" name="pref_ui_color_summary">Culoarea primară de-a lungul aplicației</string>
+  <string formatted="false" name="pref_cat_channel_settings">Setări canal de notificare</string>
+  <string formatted="false" name="pref_manage_main_channel">Gestionați canalul principal</string>
+  <string formatted="false" name="pref_cat_notification_content">Conţinut</string>
+  <string formatted="false" name="pref_cat_status_bar_chip">Cip bară de stare (Android 16+)</string>
+  <string formatted="false" name="pref_chip_content">Conținut de cip</string>
+  <string formatted="false" name="pref_chip_content_switching">Comutați între baterie și temperatură</string>
+  <string formatted="false" name="pref_chip_content_switching_summary">Comutați afișajul între procentul bateriei și temperatură</string>
+  <string formatted="false" name="pref_chip_switching_interval">Interval de comutare</string>
+  <string formatted="false" name="pref_chip_switching_interval_summary">Cât de des să comutați afișajul</string>
+  <string formatted="false" name="pref_chip_content_help">Alegeți ce valoare să afișați în cipul de notificare promovat Android 16+.</string>
+  <string formatted="false" name="pref_chip_indicate_charging">Afișați emoji de încărcare</string>
+  <string formatted="false" name="pref_chip_indicate_charging_summary">Afișați un emoji fulger când se încarcă sau este complet încărcat?</string>
+  <string formatted="false" name="pref_chip_indicate_charging_help">Dacă este activat, cipul barei de stare va afișa un emoji fulger lângă
+    valoarea cipului în timpul încărcării sau când este complet încărcat.</string>
+  <string formatted="false" name="pref_top_line_content">Conținut de linie de sus</string>
+  <string formatted="false" name="pref_top_line_content_help">Configurați ce se întâmplă în linia de sus a notificării: estimat
+    timpul rămas (configurabil în altă parte), cât timp de la stare
+    sa schimbat (conectat, deconectat sau încărcat complet) sau
+    semnele vitale ale bateriei (sănătatea bateriei, temperatură și tensiune).</string>
+  <string formatted="false" name="pref_bottom_line_content">Conținutul final</string>
+  <string formatted="false" name="pref_bottom_line_content_help">Aveți aceleași opțiuni pentru linia de jos ca și pentru linia de sus.</string>
+  <string formatted="false" name="time_remaining">Timpul rămas</string>
+  <string formatted="false" name="time_since_status_change">Timp de la schimbarea stării</string>
+  <string formatted="false" name="vital_signs">Semne Vitale</string>
+  <string formatted="false" name="pref_time_remaining_verbosity">Verbositatea timpului rămas</string>
+  <string formatted="false" name="pref_time_remaining_verbosity_help">Dispozitivele vin în toate formele și dimensiunile, așa că majoritatea traducerilor trebuie
+    utilizați abrevieri pentru a vă asigura că estimarea timpului rămas se potrivește
+    confortabil în zona de notificare.  Dacă tot nu se potrivește,
+    poți opta pentru formatul condensat.  Daca ai loc destul,
+    ați putea prefera setarea verbose.</string>
+  <string formatted="false" name="condensed">Condensat</string>
+  <string formatted="false" name="normal">Normal</string>
+  <string formatted="false" name="verbose">Verbos</string>
+  <string formatted="false" name="pref_status_duration_in_vital_signs">Durata statutului în semne vitale</string>
+  <string formatted="false" name="pref_status_duration_in_vital_signs_summary">Includeți timpul de la schimbarea stării în semnele vitale?</string>
+  <string formatted="false" name="pref_status_duration_in_vital_signs_help">Dacă este setată, linia semnelor vitale va include și numărul de ore
+    deoarece dispozitivul a fost deconectat, conectat sau încărcat complet.</string>
+  <string formatted="false" name="system_default">Implicit sistem</string>
+  <string formatted="false" name="black">Negru</string>
+  <string formatted="false" name="white">Alb</string>
+  <string formatted="false" name="ics_blue">Android ICS Blue</string>
+  <string formatted="false" name="custom">Personalizat...</string>
+  <string formatted="false" name="pref_cat_icon_set">Set de pictograme</string>
+  <string formatted="false" name="pref_icon_set">Set de pictograme</string>
+  <string formatted="false" name="pref_icon_content">Conținutul pictogramei</string>
+  <string formatted="false" name="pref_icon_content_help">Alegeți dacă pictograma barei de stare arată procentul bateriei sau
+    temperatura bateriei. Temperatura urmează unitatea selectată.</string>
+  <string formatted="false" name="pref_icon_set_help">Android vine în multe variante, așa că nu există un set de pictograme perfect
+    care funcționează bine pe fiecare dispozitiv.  Există trei seturi de pictograme încorporate
+    care ar trebui să ofere cel puțin o opțiune bună pentru aproape fiecare
+    dispozitiv.\n
+
+    \n\"Classic\" este setul original de pictograme din 2009. Este încă
+    cel mai bun pe dispozitive mai vechi, dar versiuni mai noi de Android (începând
+    cu Android 3.0, Honeycomb) micșorați și estompați pictogramele de notificare,
+    făcând acest set foarte greu de citit.\n
+
+    \n\„Număr simplu\” este implicit pentru toate dispozitivele Android mai noi.
+    Este un număr alb foarte mare care apare bine chiar și după
+    fiind micşorat şi estompat.  Prezintă un fulger sub
+    număr în timpul încărcării.\n
+
+    \n\"Număr mai mic\" este ca \"Număr simplu\", dar mai mic, deoarece
+    unele dispozitive mai noi de fapt nu micșorează pictograma ca stocul
+    Android o face, iar numărul foarte mare din „Număr simplu” poate
+    par comic de mari pe aceste dispozitive.</string>
+  <string formatted="false" name="pref_cat_current_hack_main">Control principal</string>
+  <string formatted="false" name="pref_cat_current_hack_unsupported">Hack actual (mA) neacceptat</string>
+  <string formatted="false" name="pref_current_hack_unsupported">Ne pare rău, hack-ul actual (mA) nu este acceptat pe acest dispozitiv.</string>
+  <string formatted="false" name="current_hack_maybe_supported">Hackul POATE funcționa pe acest dispozitiv.</string>
+  <string formatted="false" name="pref_enable_current_hack">Activați hack-ul</string>
+  <string formatted="false" name="pref_enable_current_hack_summary">Încercați să activați hack-ul curent (mA)?</string>
+  <string formatted="false" name="pref_enable_current_hack_help">Când această setare este activată, celelalte opțiuni privind
+    hack-ul va fi utilizabil.</string>
+  <string formatted="false" name="pref_current_hack_prefer_fs">Preferați metoda veche de hack</string>
+  <string formatted="false" name="pref_current_hack_prefer_fs_summary">Preferiți o metodă mai veche, bazată pe sisteme de fișiere?</string>
+  <string formatted="false" name="pref_current_hack_prefer_fs_help">Începând cu Lollipop (Android 5.0), Android oferă acum un
+    un mod ceva mai puțin hackish de a accesa informațiile curente (mA),
+    direct din sistemul BatteryManager.  Cu toate acestea, încă nu este
+    garantat să funcționeze deloc sau să funcționeze bine.  Până la Android Nougat
+    (Android 7.0), se pare că vechea metodă de hack (bazată pe sistemul de fișiere).
+    funcționează mai bine pe majoritatea dispozitivelor, așa că rămâne implicit pe dispozitive
+    rulează mai puțin decât Android 7.0.\n
+
+    \nAceastă setare este doar un indiciu al hack-ului despre ce metodă
+    prefera; poți încerca să-l schimbi dacă hack-ul nu funcționează bine
+    dispozitivul dvs.</string>
+  <string formatted="false" name="pref_current_hack_multiplier">Multiplicator</string>
+  <string formatted="false" name="pref_current_hack_multiplier_help">Unele dispozitive raportează miliamperi mai degrabă decât microamperi ca
+    API solicită.  Aceleași dispozitive schimbă semnul valorii raportate.
+    Unii utilizatori preferă semnul opus al valorilor raportate corect.
+    Pentru a ajuta la adaptarea unor astfel de situații, puteți înmulți
+    rezultat al apelului API prin valoarea de aici.\n
+
+    \nDacă dispozitivul dvs. afișează întotdeauna 0 mA, de exemplu, puteți încerca
+    folosind un multiplicator de 1000. Dacă apelul API returnează 450
+    microamperi, acel multiplicator va face ca aplicația să arate valoarea
+    ca 450 mA mai degrabă decât 0 mA.  Dacă apelul API returnează 0
+    microamperi, desigur, multiplicatorul nu va schimba finalul
+    valoare afișată de 0 mA.</string>
+  <string formatted="false" name="pref_cat_current_hack_notification">Notificare</string>
+  <string formatted="false" name="pref_display_current_in_vital_stats">Afișează în statistici vitale</string>
+  <string formatted="false" name="pref_display_current_in_vital_stats_summary">Afișează curentul (mA) în statisticile vitale ale notificărilor principale?</string>
+  <string formatted="false" name="pref_display_current_in_vital_stats_help">Când este activat, hack-ul va fi încercat și va afișa
+    rezultă în linia principală de statistici vitale de notificare.  Rețineți că dvs
+    trebuie să aibă notificarea principală configurată pentru a afișa statistici vitale
+    pentru a vedea asta.  Această valoare se va reîmprospăta numai când
+    sistemul trimite informații despre baterii noi.\n
+
+    \nOn majoritatea dispozitivelor, o valoare negativă indică o scurgere netă de la
+    baterie și o valoare pozitivă indică faptul că bateria este în funcțiune
+    taxat.  Totuși, nu toate dispozitivele generează valori în acest fel.</string>
+  <string formatted="false" name="pref_cat_current_hack_main_window">Fereastra principală</string>
+  <string formatted="false" name="pref_display_current_in_main_window">Afișare în fereastra principală</string>
+  <string formatted="false" name="pref_display_current_in_main_window_summary">Afișați curentul (mA) în fereastra principală?</string>
+  <string formatted="false" name="pref_display_current_in_main_window_help">Când este activat, hack-ul va fi încercat și va afișa
+    rezultă în fereastra principală.  Această valoare va fi reîmprospătată oricând
+    sistemul trimite informații noi despre baterie, dar puteți reîmprospăta
+    valoare în orice moment prin simpla atingere a valorii afișate.  (Notă
+    că unele dispozitive actualizează rar sau niciodată datele de bază, deci
+    valoarea poate să nu pară să se schimbe la atingere.)\n
+
+    \nOn majoritatea dispozitivelor, o valoare negativă indică o scurgere netă de la
+    baterie și o valoare pozitivă indică faptul că bateria este în funcțiune
+    taxat.  Totuși, nu toate dispozitivele generează valori în acest fel.</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_vital_stats">Prefer media în statistici vitale</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_vital_stats_summary">Încercați să utilizați current_avg în statisticile vitale ale notificărilor principale?</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_main_window">Prefer media în fereastra principală</string>
+  <string formatted="false" name="pref_prefer_current_avg_in_main_window_summary">Încercați să utilizați current_avg în fereastra principală?</string>
+  <string formatted="false" name="pref_prefer_current_avg_help">Unele sisteme au un alt hack disponibil, oferind un recent
+    medie a curentului, mai degrabă decât o citire instantanee a acestuia.
+    Ce înseamnă aceasta variază de la dispozitiv la dispozitiv și este disponibil numai
+    pe unele dispozitive.  Acest lucru poate oferi o valoare mai stabilă (dacă totul merge
+    bine), poate returna aceeași valoare sau poate returna o valoare inutilizabilă
+    valoare (caz în care ar trebui să dezactivați această opțiune).</string>
+  <string formatted="false" name="pref_auto_refresh_current_in_main_window">Reîmprospătare automată mA în fereastra principală</string>
+  <string formatted="false" name="pref_auto_refresh_current_in_main_window_summary">Auto-reîmprospătare mA la fiecare două secunde?</string>
+  <string formatted="false" name="pref_auto_refresh_current_in_main_window_help">Dacă aveți hack-ul setat să afișeze mA în fereastra principală, puteți
+    reîmprospătați valoarea atingând-o pur și simplu.  Daca vrei sa vezi
+    actualizări frecvente fără a fi nevoie să atingeți, puteți activa această opțiune
+    pentru a reîmprospăta automat valoarea la fiecare două secunde în timp ce fereastra este vizibilă.\n
+
+    \nRețineți că unele dispozitive actualizează rar sau niciodată elementele de bază
+    date, astfel încât valoarea poate să nu pară să se schimbe chiar dacă aplicația este
+    reîmprospătarea valorii afișate pentru a se potrivi cu datele preluate
+    sistemul.</string>
+  <string formatted="false" name="pref_cat_charging_indicator">Indicator de încărcare</string>
+  <string formatted="false" name="pref_indicate_charging">Indicați încărcarea</string>
+  <string formatted="false" name="pref_indicate_charging_summary">Modificați pictograma pentru a indica când se încarcă?</string>
+  <string formatted="false" name="pref_indicate_charging_help">Unele seturi de pictograme indică când bateria este încărcată, pt
+    exemplu, arătând un fulger sub număr.  Dezactivați
+    această setare dacă preferați să nu facă asta.</string>
+  <string formatted="false" name="pref_cat_logging">Înregistrare</string>
+  <string formatted="false" name="pref_enable_logging">Activați înregistrarea</string>
+  <string formatted="false" name="pref_enable_logging_summary">Înregistrați modificările stării bateriei?</string>
+  <string formatted="false" name="pref_enable_logging_help">Dacă este activat, Battery Monitor va înregistra modificările stării bateriei.</string>
+  <string formatted="false" name="pref_max_log_age">Vârsta maximă a jurnalului</string>
+  <string formatted="false" name="pref_max_log_age_summary">Ștergeți jurnalele mai vechi de:</string>
+  <string formatted="false" name="pref_max_log_age_help">Dacă înregistrarea este activată, atunci de fiecare dată când conectați dispozitivul, se înregistrează
+    mai vechi decât acesta va fi ștearsă.</string>
+  <string formatted="false" name="pref_notify_status_duration">Afișează durata stării</string>
+  <string formatted="false" name="pref_notify_status_duration_summary">Afișați timpul de când starea s-a schimbat, mai degrabă decât estimarea timpului rămas?</string>
+  <string formatted="false" name="pref_notify_status_duration_help">Activați această setare dacă preferați să se afișeze notificarea principală
+    timpul de la schimbarea stării (de ex., „Deconectat pentru 5
+    ore\"), mai degrabă decât estimarea timpului rămas.  Ambele piese
+    de informații sunt disponibile din fereastra principală.</string>
+  <string formatted="false" name="pref_cat_temperature_unit">Unitate de temperatură</string>
+  <string formatted="false" name="pref_convert_to_fahrenheit">Convertiți în Fahrenheit</string>
+  <string formatted="false" name="pref_convert_to_fahrenheit_help">Android raportează temperatura bateriei în grade Celsius.  Dacă
+    preferați să vedeți temperatura bateriei în grade Fahrenheit,
+    bifați această opțiune, iar aplicația se va converti pentru dvs.</string>
+  <string formatted="false" name="pref_cat_autostart">Pornire automată</string>
+  <string formatted="false" name="pref_autostart_at_boot">Pornire automată la pornire</string>
+  <string formatted="false" name="pref_autostart_at_boot_summary">Porniți monitorizarea bateriei când dispozitivul pornește:</string>
+  <string formatted="false" name="pref_autostart_at_boot_help">Controlează dacă Battery Monitor ar trebui să pornească singur
+    automat când dispozitivul pornește.\n
+
+    \nOpțiunea „Dacă rulează la închidere” funcționează cu privire la
+    indiferent dacă ați pornit sau oprit manual cel mai recent Battery Monitor.
+    Deci, dacă omorâți Battery Monitor printr-un altul
+    înseamnă, ca un ucigaș, atunci Battery Monitor nu știe
+    l-ați oprit și va porni încă la pornire dacă îl aveți
+    setat la aceasta.\n
+
+    \nNOTĂ: Android va porni întotdeauna Battery Monitor la pornire dacă aveți un
+    Widgeturi desktop pentru monitorul bateriei.  În acest caz, aceste setări sunt irelevante.</string>
+  <string formatted="false" name="predictor_sensitive">Sensibil</string>
+  <string formatted="false" name="predictor_conservative">Conservator</string>
+  <string formatted="false" name="predictor_since_status_change">De la schimbarea statutului</string>
+  <string formatted="false" name="predictor_long_term_ave">Medie pe termen lung</string>
+  <string formatted="false" name="pref_cat_predictor">Estimări pentru timpul rămas</string>
+  <string formatted="false" name="pref_prediction_type">Tip de estimare</string>
+  <string formatted="false" name="pref_prediction_type_help">Aici puteți selecta modul în care Monitorul bateriei vă va prezice restul
+    durata / durata bateriei până la încărcarea completă.\n
+
+    \nAlgoritmul „Sensibil” se bazează strict pe ultimele tale cinci
+    minute de utilizare.  Dacă preocuparea dvs. principală este „Cât timp va fi mea
+    bateria durează dacă continui să fac ceea ce fac?\" atunci acesta este
+    algoritm pentru tine.\n
+
+    \nAlgoritmul „Conservator” este implicit.  De asemenea, se bazează
+    privind utilizarea recentă, dar încearcă să nu difere de pe termen lung
+    medie prea liber.\n
+
+    \nSelectați „De la schimbarea stării” pentru a se baza predicția
+    strict pe sesiunea dvs. curentă.\n
+
+    \n În cele din urmă, puteți avea predicția bazată exclusiv pe dvs
+    utilizare medie pe termen lung.</string>
+  <string formatted="false" name="lang_system_selected">Sistem selectat</string>
+  <string formatted="false" name="pref_cat_language">Limbă</string>
+  <string formatted="false" name="pref_language_override">Anularea limbii</string>
+  <string formatted="false" name="pref_language_override_summary">Selectați limba:</string>
+  <string formatted="false" name="pref_language_override_help">Dacă traducerea în limba dvs. este incompletă sau inexactă
+    și ați prefera o altă traducere, eventual mai bună, poate
+    alege să faci asta aici.</string>
+  <string formatted="false" name="pref_classic_color_mode">Forțați modul clasic de culoare</string>
+  <string formatted="false" name="pref_classic_color_mode_summary">Acest lucru de obicei nu funcționează; va rog cititi ajutorul</string>
+  <string formatted="false" name="pref_classic_color_mode_help">Începând cu Android 5.0 (Lollipop), pictograme de notificare colorate
+    oficial nu mai funcționează pe Android, ceea ce face ca pictograma Classic să se afișeze
+    sus ca un alb solid. Deci, în mod implicit, pe aceste dispozitive aplicația folosește un
+    contur alb simplu cu număr alb.\n
+
+    \nCu toate acestea, nu toate dispozitivele respectă specificațiile, așa că nu este așa
+    necesar și nu funcționează corect peste tot.  Poți încerca
+    faceți setul de pictograme clasic să funcționeze în mod clasic, rotind acesta
+    opțiunea activată.  Amintiți-vă, pe majoritatea dispozitivelor, aceasta va face doar pictograma
+    devin alb solid.</string>
+  <string formatted="false" name="pref_cat_device_specific">Setări specifice dispozitivului</string>
+  <string formatted="false" name="alarms_overview">Prezentare generală a alarmelor</string>
+  <string formatted="false" name="alarms_overview_help">Această pagină vă permite să adăugați alarme noi, să activați sau să dezactivați rapid
+    alarme existente sau ștergeți alarmele.\n
+
+    \nPentru a adăuga o nouă alarmă, apăsați „Adăugați alarmă” — aceasta va crea o nouă alarmă
+    alarmă și vă duce la pagina de setări de alarmă, unde puteți
+    controlați setările pentru noua alarmă.  Vezi ajutorul de pe pagina respectivă
+    pentru mai multe detalii.\n
+
+    \nSub butonul „Adăugați alarmă” este o listă cu toate alarmele pe care le aveți
+    creat.\n
+
+    \n• Pentru a edita o alarmă existentă, apăsați-o.
+    \n• Pentru a șterge o alarmă, apăsați lung, apoi selectați „Șterge”.
+    Alarmă\".  (De asemenea, puteți șterge o alarmă din alarma individuală
+    pagina de setări apăsând MENU, apoi „Șterge alarmă”.)
+    \n• Pentru a comuta cu ușurință dacă o alarmă este activată, apăsați comutatorul
+    comutați pe partea laterală a textului de alarmă.  (De asemenea, puteți activa sau
+    dezactivați o alarmă din pagina de setări individuale de alarmă.)</string>
+  <string formatted="false" name="pref_alarm_enabled">Activați alarma</string>
+  <string formatted="false" name="pref_alarm_enabled_help">Dacă vrei temporar
+  dezactivați o alarmă fără a fi nevoie să o recreați când doriți
+  din nou, îl puteți opri și porni fie aici, fie pe alarmele principale
+  pagina.</string>
+  <string formatted="false" name="pref_cat_alarm_conditions">Condiții de alarmă</string>
+  <string formatted="false" name="pref_cat_alarm_conditions_help">Aici poți
+  controlați ce condiții declanșează alarma.</string>
+  <string formatted="false" name="pref_alarm_type">Tip alarmă</string>
+  <string formatted="false" name="pref_alarm_type_summary">Declanșează alarma când bateria:</string>
+  <string formatted="false" name="pref_alarm_type_help">În prezent există cinci tipuri
+    de alarma din care puteti alege.\n
+
+    \nAlarma „Devine complet încărcată” vă va anunța când
+    starea bateriei se schimbă de la „Încărcare” la „Complet
+    Încărcat\”.  Rețineți că pe multe dispozitive, acesta nu este neapărat
+    același lucru ca fiind la 100% încărcare.\n
+
+    \nAlarmele de încărcare și temperatură necesită setarea unui prag
+    mai jos, după alegerea acelui tip de alarmă.\n
+
+    \nAlarma „Sănătatea eșuează” vă va anunța dacă bateria dumneavoastră este bună
+    devine altceva decât \"Necunoscut\" sau \"Sănătate bună\", ca
+    raportat de Android.</string>
+  <string formatted="false" name="pref_alarm_threshold">Prag</string>
+  <string formatted="false" name="alarm_pref_not_used">Nu este utilizat pentru acest tip de alarmă</string>
+  <string formatted="false" name="pref_alarm_threshold_summary">Pragul de alarmare:</string>
+  <string formatted="false" name="pref_alarm_threshold_help">Pentru alarme de încărcare și temperatură, trebuie să setați temperatura
+    sau nivelul de încărcare care va declanșa alarma.</string>
+  <string formatted="false" name="boot_pref_always">Întotdeauna</string>
+  <string formatted="false" name="boot_pref_never">Nu</string>
+  <string formatted="false" name="boot_pref_if_running">Dacă rulează la oprire</string>
+  <string formatted="false" name="status_dur_always">Întotdeauna</string>
+  <string formatted="false" name="status_dur_after_1h">După 1 oră</string>
+  <string formatted="false" name="status_dur_after_2h">După 2 ore</string>
+  <string formatted="false" name="status_dur_after_3h">După 3 ore</string>
+  <string formatted="false" name="status_dur_after_6h">După 6 ore</string>
+  <string formatted="false" name="status_dur_after_12h">După 12 ore</string>
+  <string formatted="false" name="age_1_day">1 zi</string>
+  <string formatted="false" name="age_2_days">2 zile</string>
+  <string formatted="false" name="age_4_days">4 zile</string>
+  <string formatted="false" name="age_1_week">1 saptamana</string>
+  <string formatted="false" name="age_2_weeks">2 saptamani</string>
+  <string formatted="false" name="age_3_weeks">3 saptamani</string>
+  <string formatted="false" name="age_4_weeks">4 săptămâni</string>
+  <string formatted="false" name="icon_set_classic">Clasic</string>
+  <string formatted="false" name="icon_set_plain">Număr simplu</string>
+  <string formatted="false" name="icon_set_smaller">Număr mai mic</string>
+  <string formatted="false" name="pref_content_percent">Procentul bateriei</string>
+  <string formatted="false" name="pref_content_temperature">Temperatura bateriei</string>
+  <string formatted="false" name="pref_content_switching">Comutați între ambele</string>
 </resources>

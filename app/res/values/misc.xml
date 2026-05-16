@@ -415,26 +415,6 @@
   <bool name="long_activity_names">true</bool>
   <bool name="show_main_title">false</bool>
 
-  <string name="help_translators_list">
-    Matthew McBaul(包明)
-    \nGonzalo Rodríguez Píriz
-    \nskwt
-    \nGabriele Ravanetti
-    \nPaul Fiorentino
-    \nPetr BOEHM
-    \nKorenisko
-    \nGabor Kovacs
-    \nRudy Baardman
-    \nBoudewijn
-    \nMiltos (Κύπρος)
-    \nDenis Bence
-    \nDaniel Wiatr
-    \nFabian S.
-    \nALI SAFA
-    \nNaofumi Fukue
-    \nМихаил Одувалов
-  </string>
-
   <string-array name="statuses">
     <item>@string/status_unplugged</item>
     <item>@string/status_unknown</item>

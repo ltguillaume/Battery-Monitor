@@ -27,7 +27,6 @@
   <string name="menu_settings" formatted="false">Ustawienia</string>
   <string name="menu_close" formatted="false">Zamknij</string>
   <string name="menu_help" formatted="false">Pomoc</string>
-  <string name="menu_rate_and_review" formatted="false">Oceń i zrecenzuj</string>
   <string name="menu_clear" formatted="false">Wyczyść</string>
   <string name="menu_reverse" formatted="false">Odwróć kolejność</string>
   <string name="menu_log_filter" formatted="false">Filtruj</string>
@@ -35,7 +34,7 @@
   <string name="menu_delete_alarm" formatted="false">Usuń alarm</string>
   <string name="percent_symbol" formatted="false">%</string>
   <string name="degree_symbol" formatted="false">°</string>
-  <string name="fahrenheit" formatted="false">Fahrenheit</string>
+  <string name="fahrenheit" formatted="false">Fahrenheita</string>
   <string name="fahrenheit_symbol" formatted="false">F</string>
   <string name="celsius" formatted="false">Celcjusz</string>
   <string name="celsius_symbol" formatted="false">C</string>
@@ -53,7 +52,7 @@
   <string name="file_written" formatted="false">Plik został zapisany na Kartę SD.</string>
   <string name="date" formatted="false">data</string>
   <string name="time" formatted="false">czas</string>
-  <string name="status" formatted="false">status</string>
+  <string name="status" formatted="false">stan</string>
   <string name="charge" formatted="false">poziom_naładowania</string>
   <string name="temperature" formatted="false">stopni_celcjusza</string>
   <string name="temperature_f" formatted="false">stopni_fahrenheita</string>
@@ -104,17 +103,16 @@
   <string name="currently_set_to" formatted="false">"Ustawione na: "</string>
   <string name="currently_disabled" formatted="false">Wyłączone</string>
   <string name="help_cat_version" formatted="false">Wersja</string>
-  <string name="help_cat_changelog" formatted="false">Lista zmian</string>
-  <string name="help_changelog" formatted="false">Zobacz <a href="https://www.batterybot.info/changelog">listę zmian online</a></string>
   <string name="help_cat_no_warranty" formatted="false">Brak gwarancji</string>
   <string name="help_no_warranty" formatted="false">Ten program jest wydany z nadzieją, że będzie użyteczny, ale BEZ ŻADNEJ GWARANCJI.\n\nZ czasem gdy robię co mogę by aplikacja działała i nie powodowała żadnych problemów, nie jestem odpowiedzialny za jakiekolwiek zniszczenia urządzenia spowodowane niewłaściwym użytkowaniem aplikacji.</string>
   <string name="help_cat_acknowledgments" formatted="false">Uznania</string>
-  <string name="help_acknowledgments" formatted="false">Aplikacja byłaby dostępna tylko po angielsku gdyby nie wsparcie tłumaczy wolontariuszy. Dzięki!\n\nWielkie dzięki dla Google i innych programistów open-source którzy stworzyli Androida, i bez których ta aplikacja by nie zaistniała.\n\nIkona launchera (prawa górna, którą widzisz w Markecie) jest na bazie ikony z <a href="http://www.oxygen-icons.org">tematu Oxygen icons</a> i użyta na licencji <a href="http://creativecommons.org/licenses/by- sa/3.0/">Creative Common Attribution-ShareAlike 3.0</a>.</string>
-  <string name="help_cat_translations" formatted="false">Tłumaczenia</string>
-  <string name="help_translations" formatted="false">Potrzebuje pomocy z przetłumaczeniem tej apki na inne języki. Jeżeli chciałbyś pomóc, wyslij <a href="mailto:support%2Btranslations@batterybot.info">email</a> (ten adres jest tylko do korespondencji nt. tłumaczenia; zobacz sekcję Kontakt poniżej dla dalszych informacji). Daj mi znać czy chcesz, by Twoje imię w uznaniu za pomoc zostało wymienione w tej sekcji.</string>
-  <string name="help_subcat_translators" formatted="false">Tłumacze</string>
+  <string name="help_acknowledgments" formatted="false">Battery Monitor to rozwidlenie Battery Indicator Pro / BatteryBot Pro firmy
+    Darshan Computing, LLC.  Dziękuję oryginalnym autorom i współpracownikom
+    za utworzenie i utrzymanie projektu upstream.</string>
   <string name="help_cat_contact" formatted="false">Kontakt</string>
-  <string name="help_contact" formatted="false">Jeśli masz pytanie, problem lub uwagi, proszę <a href="mailto:support@batterybot.info">napisz do mnie</a>.</string>
+  <string name="help_contact" formatted="false">Jeśli
+    masz pytanie, problem lub komentarz, proszę
+    napisz do mnie e-mail.</string>
   <string name="settings_overview" formatted="false">Przegląd</string>
   <string name="settings_overview_help" formatted="false">Ustawienia są posegregowane na 4 osobne strony. Każda strona ma własną pomoc, która opisuje ustawienia na niej. Po prostu naciśnij MENU a następnie Pomoc (na tabletach MENU nie jest wymagane) aby ją uzyskać.</string>
   <string name="notification_settings" formatted="false">Główne powiadomienia</string>
@@ -173,7 +171,7 @@
   <string name="pref_cat_temperature_unit" formatted="false">Jednostka temperatury</string>
   <string name="pref_convert_to_fahrenheit" formatted="false">Konwertuj na Fahrenheita</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android raportuje temperaturę baterii w stopniach Celcjusza. Jeżeli wolisz stopnie Fahrenheita, to zaznacz tą opcję a aplikacja wykona konwersję.</string>
-  <string name="pref_cat_autostart" formatted="false">Autostart</string>
+  <string name="pref_cat_autostart" formatted="false">Automatyczne uruchamianie</string>
   <string name="pref_autostart_at_boot" formatted="false">Startuj razem z telefonem</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Startuj aplikację gdy telefon zostanie uruchomiony:</string>
   <string name="pref_autostart_at_boot_help" formatted="false">Kontroluje, kiedy Battery Indicator startuje automatycznie przy uruchomieniu urządzenia.\n\nOpcja \"Przed wyłączeniem\" działa jeżeli ostatnio włączałeś/wyłączałeś ręcznie Battery Indicator. Więc jeżeli wyłączyłeś Battery Indicator przez np. menedżer procesów, Battery Indicator nie wie czy zatrzymałeś go i czy nadal ma startować przy uruchomieniu urządzenia.</string>
@@ -215,6 +213,117 @@
   <string name="icon_set_classic" formatted="false">Klasyczny</string>
   <string name="icon_set_plain" formatted="false">Zwykła liczba</string>
   <string name="icon_set_smaller" formatted="false">Mniejsza liczba</string>
+  <string name="circle_widget" formatted="false">Battery Monitor — widżet okrągły</string>
+  <string name="full_widget" formatted="false">Battery Monitor — widżet pełny</string>
+  <string name="notifications_disabled_message" formatted="false">Zablokowano wszystkie powiadomienia dla Battery Monitor. To uniemożliwi aplikacji wyświetlanie jakichkolwiek powiadomień: zablokowane będą zarówno powiadomienie główne, jak i wszystkie ustawione alarmy.\n\nPonieważ Battery Monitor pozwala osobno włączać/wyłączać powiadomienie główne oraz tymczasowo wyłączać utworzone alarmy, zdecydowanie zalecamy odblokowanie powiadomień Battery Monitor. Gdy są zablokowane, może wyglądać, jakby aplikacja nie działała.\n\nNaciśnij OK, aby przejść do ustawień systemu, gdzie możesz odblokować powiadomienia Battery Monitor.</string>
+  <string name="battery_optimized" formatted="false">Battery Monitor jest ograniczony!</string>
+  <string name="battery_optimized_message" formatted="false">Battery Monitor ma ograniczoną możliwość poprawnego działania. Ta „optymalizacja baterii” to funkcja Androida zaprojektowana do ograniczania źle zaprojektowanych aplikacji, aby nie zużywały zbyt dużo baterii w tle.\n\nBattery Monitor jest jednak dobrze zaprojektowaną aplikacją, która musi działać bez ograniczeń w tle, aby funkcjonować poprawnie. Jest bardzo wydajna i nie skraca czasu pracy baterii.\n\nNaciśnij OK, aby przejść do ustawień systemu, gdzie możesz wyłączyć optymalizację baterii dla Battery Monitor.</string>
+  <string name="main_notif_chan_name" formatted="false">Powiadomienie główne</string>
+  <string name="channel_group_name_alarms" formatted="false">Alarmy</string>
+  <string name="menu_show_seconds" formatted="false">Pokaż sekundy</string>
+  <string name="menu_hide_seconds" formatted="false">Ukryj sekundy</string>
+  <string name="no_storage_permission" formatted="false">Nie przyznano uprawnienia do pamięci.</string>
+  <string name="current" formatted="false">miliampery</string>
+  <string name="status_boot_completed" formatted="false">Uruchamianie zakończone</string>
+  <string name="alarm_type_temperature_drops" formatted="false">Temperatura spadnie poniżej</string>
+  <string name="alarm_type_entry_temperature_drops" formatted="false">Temperatura spadnie poniżej...</string>
+  <string name="alarm_temp_drops" formatted="false">"Temp. baterii jest poniżej "</string>
+  <string name="after_nh_mm_unplugged" formatted="false">Po %1$dh %2$dm od odłączenia</string>
+  <string name="after_nh_mm_plugged_in" formatted="false">Po %1$dh %2$dm od podłączenia</string>
+  <string name="after_nm_ms_unplugged" formatted="false">Po %1$dm %2$ds od odłączenia</string>
+  <string name="after_nm_ms_plugged_in" formatted="false">Po %1$dm %2$ds od podłączenia</string>
+  <string name="help_cat_open_source" formatted="false">Otwarte źródła</string>
+  <string name="help_open_source" formatted="false">To
+    projekt jest open source. Dostęp do kodu źródłowego można uzyskać pod adresem
+    https://github.com/tswistak/Battery-Indicator-Pro.</string>
+  <string name="help_cat_donate" formatted="false">Wesprzyj</string>
+  <string name="help_donate" formatted="false">Rozważ wsparcie, przechodząc na <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">wersję Pro</a>.</string>
+  <string name="help_cat_privacy" formatted="false">Prywatność</string>
+  <string name="help_privacy" formatted="false">Battery Monitor nie gromadzi, nie przechowuje ani nie przekazuje żadnych danych osobowych.</string>
+  <string name="notifications_disabled_cat" formatted="false">Powiadomienia wyłączone</string>
+  <string name="app_notifs_disabled_b" formatted="false">Włącz powiadomienia aplikacji</string>
+  <string name="app_notifs_disabled_summary" formatted="false">Wyłączyłeś wszystkie powiadomienia dla tej aplikacji. Włącz je, aby uzyskać dostęp do tych ustawień.</string>
+  <string name="main_notifs_disabled_b" formatted="false">Włącz powiadomienie główne</string>
+  <string name="main_notifs_disabled_summary" formatted="false">Wyłączyłeś główne powiadomienie dla tej aplikacji. Włącz je, aby uzyskać dostęp do tych ustawień.</string>
+  <string name="app_notifs_alarms_disabled_summary" formatted="false">Wyłączyłeś wszystkie powiadomienia dla tej aplikacji. Włącz je, aby uzyskać dostęp do alarmów.</string>
+  <string name="alarm_notifs_disabled_b" formatted="false">Włącz alarmy</string>
+  <string name="alarm_notifs_disabled_summary" formatted="false">Wyłączyłeś grupę powiadomień alarmów dla tej aplikacji. Włącz ją, aby uzyskać dostęp do alarmów.</string>
+  <string name="alarm_chan_disabled" formatted="false">Wyłączyłeś powiadomienia dla tego typu alarmu. Włącz je, aby używać tego typu alarmu.</string>
+  <string name="alarm_chan_disabled_b" formatted="false">Włącz ten typ alarmu</string>
+  <string name="alarm_chan_settings_b" formatted="false">Zarządzaj tym typem alarmu</string>
+  <string name="status_bar_chip_settings" formatted="false">Chip paska stanu</string>
+  <string name="status_bar_chip_settings_summary" formatted="false">Skonfiguruj zawartość chipa Live Updates</string>
+  <string name="status_bar_chip_settings_help" formatted="false">Na Androidzie 16+ z Live Updates możesz skonfigurować, co pokazuje chip paska stanu oraz czy wyświetlać emoji ładowania.</string>
+  <string name="current_hack_settings" formatted="false">Hack prądu (mA)</string>
+  <string name="current_hack_settings_summary" formatted="false">Zaawansowane ustawienia włączania informacji mA</string>
+  <string name="current_hack_settings_help" formatted="false">Android nie udostępnia aplikacjom oficjalnego sposobu dostępu do informacji o natężeniu prądu baterii. Dostępny jest jednak hack, który na wielu urządzeniach może potencjalnie umożliwić odczyt tych danych.\n\nNie ma gwarancji, że to zadziała. Może nie działać wcale albo wyglądać na działające, ale zwracać bezsensowne wartości.\n\nW tej sekcji są dostępne ustawienia włączania hacka (jeśli to możliwe) oraz kontrolowania sposobu jego działania.</string>
+  <string name="pref_enable_live_updates" formatted="false">Używaj chipa paska stanu</string>
+  <string name="pref_enable_live_updates_summary" formatted="false">Pokaż informacje o baterii jako chip w pasku stanu (Android 16+)</string>
+  <string name="pref_live_updates_system_disabled" formatted="false">Wyłączone w ustawieniach Androida. Dotknij, aby naprawić.</string>
+  <string name="live_updates_onboarding_title" formatted="false">Chip baterii w pasku stanu</string>
+  <string name="live_updates_onboarding_message_on" formatted="false">Twoje urządzenie obsługuje pokazywanie procentu baterii jako chipa w pasku stanu. Ta opcja jest domyślnie włączona.\n\nJeśli wolisz tradycyjną ikonę powiadomienia, możesz wyłączyć „Live Updates” w ustawieniach systemowych Androida dla tej aplikacji.</string>
+  <string name="live_updates_onboarding_message_off" formatted="false">Twoje urządzenie obsługuje pokazywanie procentu baterii jako chipa w pasku stanu, ale obecnie jest to wyłączone w ustawieniach systemowych.\n\nDla najlepszego działania zalecamy włączenie tej opcji. Jeśli wolisz tradycyjną ikonę powiadomienia, możesz pozostawić ją wyłączoną.</string>
+  <string name="live_updates_onboarding_positive_on" formatted="false">Rozumiem</string>
+  <string name="live_updates_onboarding_positive_off" formatted="false">Przejdź do ustawień</string>
+  <string name="live_updates_onboarding_negative_off" formatted="false">Odrzuć</string>
+  <string name="menu_alarm_channel" formatted="false">Ustawienia kanału alarmów</string>
+  <string name="pref_cat_ui_color" formatted="false">Kolor interfejsu</string>
+  <string name="pref_ui_color_summary" formatted="false">Główny kolor w całej aplikacji</string>
+  <string name="pref_cat_channel_settings" formatted="false">Ustawienia kanałów powiadomień</string>
+  <string name="pref_manage_main_channel" formatted="false">Zarządzaj kanałem głównym</string>
+  <string name="pref_cat_status_bar_chip" formatted="false">Chip paska stanu (Android 16+)</string>
+  <string name="pref_chip_content" formatted="false">Zawartość chipa</string>
+  <string name="pref_chip_content_switching" formatted="false">Przełączaj między baterią a temperaturą</string>
+  <string name="pref_chip_content_switching_summary" formatted="false">Naprzemienne wyświetlanie procentu baterii i temperatury</string>
+  <string name="pref_chip_switching_interval" formatted="false">Interwał przełączania</string>
+  <string name="pref_chip_switching_interval_summary" formatted="false">Jak często przełączać wyświetlanie</string>
+  <string name="pref_chip_content_help" formatted="false">Wybierz wartość wyświetlaną w chipie promowanego powiadomienia na Androidzie 16+.</string>
+  <string name="pref_chip_indicate_charging" formatted="false">Pokaż emoji ładowania</string>
+  <string name="pref_chip_indicate_charging_summary" formatted="false">Pokazywać emoji błyskawicy podczas ładowania lub pełnego naładowania?</string>
+  <string name="pref_chip_indicate_charging_help" formatted="false">Po włączeniu chip paska stanu pokaże emoji błyskawicy obok wartości podczas ładowania albo gdy bateria jest w pełni naładowana.</string>
+  <string name="pref_icon_content" formatted="false">Zawartość ikony</string>
+  <string name="pref_icon_content_help" formatted="false">Wybierz, czy ikona paska stanu ma pokazywać procent baterii czy temperaturę baterii. Temperatura będzie zgodna z wybraną jednostką.</string>
+  <string name="pref_cat_current_hack_main" formatted="false">Sterowanie główne</string>
+  <string name="pref_cat_current_hack_unsupported" formatted="false">Hack prądu (mA) nieobsługiwany</string>
+  <string name="pref_current_hack_unsupported" formatted="false">Niestety, hack prądu (mA) nie jest obsługiwany na tym urządzeniu.</string>
+  <string name="current_hack_maybe_supported" formatted="false">Hack MOŻE działać na tym urządzeniu.</string>
+  <string name="pref_enable_current_hack" formatted="false">Włącz hack</string>
+  <string name="pref_enable_current_hack_summary" formatted="false">Spróbować włączyć hack prądu (mA)?</string>
+  <string name="pref_enable_current_hack_help" formatted="false">Po włączeniu tej opcji pozostałe ustawienia dotyczące hacka staną się dostępne.</string>
+  <string name="pref_current_hack_prefer_fs" formatted="false">Preferuj starą metodę hacka</string>
+  <string name="pref_current_hack_prefer_fs_summary" formatted="false">Preferować starszą metodę opartą o system plików?</string>
+  <string name="pref_current_hack_prefer_fs_help" formatted="false">Od Lollipop (Android 5.0) Android udostępnia mniej „hackerski” sposób dostępu do informacji o prądzie (mA), bezpośrednio z systemowego BatteryManager. Nadal jednak nie ma gwarancji, że zadziała lub że będzie działał dobrze. Do Android Nougat (Android 7.0) stara metoda (oparta o system plików) zwykle działa lepiej na większości urządzeń, dlatego pozostaje domyślna na urządzeniach z Androidem poniżej 7.0.\n\nTo ustawienie jest jedynie wskazówką dla hacka, którą metodę preferować; możesz spróbować je zmienić, jeśli hack nie działa dobrze na Twoim urządzeniu.</string>
+  <string name="pref_current_hack_multiplier" formatted="false">Mnożnik</string>
+  <string name="pref_current_hack_multiplier_help" formatted="false">Niektóre urządzenia raportują miliampery zamiast mikroamperów, jak oczekuje API. Niektóre urządzenia odwracają też znak raportowanej wartości. Część użytkowników preferuje przeciwny znak nawet dla poprawnie raportowanych wartości.\n\nAby uwzględnić takie sytuacje, możesz pomnożyć wynik wywołania API przez ustawioną tu wartość.\n\nJeśli na przykład urządzenie zawsze pokazuje 0 mA, możesz spróbować mnożnika 1000. Jeśli API zwraca 450 mikroamperów, dzięki temu mnożnikowi aplikacja pokaże 450 mA zamiast 0 mA. Jeśli API zwraca 0 mikroamperów, mnożnik oczywiście nie zmieni końcowej wartości 0 mA.</string>
+  <string name="pref_cat_current_hack_notification" formatted="false">Powiadomienie</string>
+  <string name="pref_display_current_in_vital_stats" formatted="false">Pokaż w stanie zdrowia</string>
+  <string name="pref_display_current_in_vital_stats_summary" formatted="false">Pokazywać prąd (mA) w stanie zdrowia głównego powiadomienia?</string>
+  <string name="pref_display_current_in_vital_stats_help" formatted="false">Po włączeniu ta metoda zostanie użyta i wynik będzie wyświetlany w wierszu stanu zdrowia głównego powiadomienia. Pamiętaj, że główne powiadomienie musi być skonfigurowane do wyświetlania stanu zdrowia, aby to zobaczyć. Ta wartość odświeża się tylko, gdy system wyśle nowe informacje o baterii.\n\nNa większości urządzeń wartość ujemna oznacza rozładowywanie netto baterii, a dodatnia — ładowanie. Nie wszystkie urządzenia generują wartości w ten sposób.</string>
+  <string name="pref_cat_current_hack_main_window" formatted="false">Okno główne</string>
+  <string name="pref_display_current_in_main_window" formatted="false">Pokaż w oknie głównym</string>
+  <string name="pref_display_current_in_main_window_summary" formatted="false">Pokazywać prąd (mA) w oknie głównym?</string>
+  <string name="pref_display_current_in_main_window_help" formatted="false">Po włączeniu ta metoda zostanie użyta, a wynik będzie wyświetlany w oknie głównym. Wartość odświeży się, gdy system wyśle nowe informacje o baterii, ale możesz ją odświeżyć w każdej chwili, po prostu dotykając wyświetlanej wartości. (Pamiętaj, że niektóre urządzenia rzadko albo nigdy nie aktualizują danych źródłowych, więc wartość może się nie zmieniać po dotknięciu.)\n\nNa większości urządzeń wartość ujemna oznacza rozładowywanie netto baterii, a dodatnia — ładowanie. Nie wszystkie urządzenia generują wartości w ten sposób.</string>
+  <string name="pref_prefer_current_avg_in_vital_stats" formatted="false">Preferuj średnią w stanie zdrowia</string>
+  <string name="pref_prefer_current_avg_in_vital_stats_summary" formatted="false">Próbować używać current_avg w stanie zdrowia głównego powiadomienia?</string>
+  <string name="pref_prefer_current_avg_in_main_window" formatted="false">Preferuj średnią w oknie głównym</string>
+  <string name="pref_prefer_current_avg_in_main_window_summary" formatted="false">Próbować używać current_avg w oknie głównym?</string>
+  <string name="pref_prefer_current_avg_help" formatted="false">W niektórych systemach dostępny jest dodatkowy hack, który podaje niedawną średnią prądu zamiast odczytu chwilowego. Znaczenie tego różni się między urządzeniami i jest dostępne tylko na części z nich. Może to dawać bardziej stabilną wartość (jeśli wszystko działa dobrze), może zwracać tę samą wartość albo wartość bezużyteczną (wtedy wyłącz tę opcję).</string>
+  <string name="pref_auto_refresh_current_in_main_window" formatted="false">Automatycznie odświeżaj mA w oknie głównym</string>
+  <string name="pref_auto_refresh_current_in_main_window_summary" formatted="false">Automatycznie odświeżać mA co dwie sekundy?</string>
+  <string name="pref_auto_refresh_current_in_main_window_help" formatted="false">Jeśli hack jest ustawiony tak, by wyświetlać mA w oknie głównym, możesz odświeżyć wartość dotykając jej. Jeśli chcesz częstych aktualizacji bez dotykania, możesz włączyć tę opcję, aby wartość była odświeżana co dwie sekundy, gdy okno jest widoczne.\n\nPamiętaj, że niektóre urządzenia rzadko albo nigdy nie aktualizują danych źródłowych, więc wartość może się nie zmieniać, mimo że aplikacja odświeża wyświetlaną wartość zgodnie z danymi z systemu.</string>
+  <string name="predictor_sensitive" formatted="false">Czuły</string>
+  <string name="predictor_conservative" formatted="false">Konserwatywny</string>
+  <string name="predictor_since_status_change" formatted="false">Od zmiany stanu</string>
+  <string name="predictor_long_term_ave" formatted="false">Średnia długoterminowa</string>
+  <string name="pref_cat_predictor" formatted="false">Szacunki pozostałego czasu</string>
+  <string name="pref_prediction_type" formatted="false">Typ szacowania</string>
+  <string name="pref_prediction_type_help" formatted="false">Tutaj możesz wybrać, jak Battery Monitor będzie szacował pozostały czas pracy baterii / czas do pełnego naładowania.\n\nAlgorytm „Czuły” jest oparty wyłącznie na ostatnich pięciu minutach użytkowania. Jeśli najważniejsze jest dla Ciebie pytanie „Jak długo bateria wytrzyma, jeśli będę nadal robić to, co teraz?”, ten algorytm jest dla Ciebie.\n\nAlgorytm „Konserwatywny” jest domyślny. Także opiera się na niedawnym użyciu, ale stara się nie odbiegać zbyt mocno od średniej długoterminowej.\n\nWybierz „Od zmiany stanu”, aby szacunek opierał się wyłącznie na bieżącej sesji.\n\nNa koniec możesz oprzeć szacunek wyłącznie na długoterminowej średniej użytkowania.</string>
+  <string name="pref_classic_color_mode" formatted="false">Wymuś klasyczny tryb kolorów</string>
+  <string name="pref_classic_color_mode_summary" formatted="false">To zwykle nie działa; przeczytaj pomoc</string>
+  <string name="pref_classic_color_mode_help" formatted="false">Począwszy od Androida 5.0 (Lollipop), kolorowe ikony powiadomień oficjalnie przestały działać na Androidzie, przez co klasyczna ikona staje się jednolicie biała. Dlatego domyślnie na tych urządzeniach aplikacja używa prostego białego obrysu z białą cyfrą.\n\nNie wszystkie urządzenia trzymają się jednak specyfikacji, więc nie zawsze jest to konieczne i nie wszędzie działa poprawnie. Możesz spróbować uruchomić klasyczny zestaw ikon w klasyczny sposób, włączając tę opcję. Pamiętaj, że na większości urządzeń po prostu zamieni to ikonę na jednolicie białą.</string>
+  <string name="pref_content_percent" formatted="false">Procent baterii</string>
+  <string name="pref_content_temperature" formatted="false">Temperatura baterii</string>
+  <string name="pref_content_switching" formatted="false">Przełączaj między oboma</string>
   <plurals name="n_log_items">
     <item quantity="one">%d Log</item>
     <item quantity="other">%d Logów</item>

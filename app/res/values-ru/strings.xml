@@ -26,7 +26,6 @@
   <string name="menu_settings" formatted="false">Настройки</string>
   <string name="menu_close" formatted="false">Закрыть</string>
   <string name="menu_help" formatted="false">Помощь</string>
-  <string name="menu_rate_and_review" formatted="false">Оценить и написать отзыв</string>
   <string name="menu_clear" formatted="false">Очистить</string>
   <string name="menu_reverse" formatted="false">Обратный порядок</string>
   <string name="menu_log_filter" formatted="false">Фильтр</string>
@@ -38,7 +37,7 @@
   <string name="fahrenheit_symbol" formatted="false">F</string>
   <string name="celsius" formatted="false">Цельсий</string>
   <string name="celsius_symbol" formatted="false">C</string>
-  <string name="volt_symbol" formatted="false">v</string>
+  <string name="volt_symbol" formatted="false">V</string>
   <string name="fully_charged_in" formatted="false">Полностью заряжено в:</string>
   <string name="light_usage" formatted="false">Экономичное использование, осталось:</string>
   <string name="normal_usage" formatted="false">Нормальное использование, осталось:</string>
@@ -71,7 +70,7 @@
   <string name="health_dead" formatted="false">Аккумулятор вышел из строя</string>
   <string name="health_overvoltage" formatted="false">Превышено напряжение</string>
   <string name="health_failure" formatted="false">Сбой</string>
-  <string name="health_cold" formatted="false">Cold</string>
+  <string name="health_cold" formatted="false">Переохлаждение</string>
   <string name="plugged_unplugged" formatted="false">Отключен от сети</string>
   <string name="plugged_ac" formatted="false">(AC)</string>
   <string name="plugged_usb" formatted="false">(USB)</string>
@@ -104,25 +103,22 @@
   <string name="currently_set_to" formatted="false">"Текущая настройка: "</string>
   <string name="currently_disabled" formatted="false">Сейчас отключен</string>
   <string name="help_cat_version" formatted="false">Версия</string>
-  <string name="help_cat_changelog" formatted="false">Журнал изменений</string>
-  <string name="help_changelog" formatted="false">Смотрите в <a href="https://www.batterybot.info/changelog">истории изменений программы</a>.</string>
-  <string name="help_cat_faq" formatted="false">Часто задаваемые вопросы</string>
-  <string name="help_faq" formatted="false">Смотрите <a href="https://www.batterybot.info/faq">online FAQ</a>.</string>
-  <string name="help_cat_website" formatted="false">Сайт</string>
-  <string name="help_website" formatted="false">Больше информации доступно на <a href="https://www.batterybot.info/">сайте BatteryBot</a>.</string>
   <string name="help_cat_open_source" formatted="false">Открытый исходный код</string>
-  <string name="help_open_source" formatted="false">Это проект с открытым исходным кодом. Вы можете скачать <a href="https://www.batterybot.info/sourcecode">исходный код программы</a>.</string>
+  <string name="help_open_source" formatted="false">Это
+    проект с открытым исходным кодом. Вы можете получить доступ к исходному коду по адресу
+    https://github.com/tswistak/Battery-Indicator-Pro.</string>
   <string name="help_cat_donate" formatted="false">Пожертвовать</string>
   <string name="help_donate" formatted="false">Вы можете внести свое пожертвование перейдя на <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Version</a>.</string>
   <string name="help_cat_no_warranty" formatted="false">Отказ от гарантий</string>
   <string name="help_no_warranty" formatted="false">Это приложение распространяется в надежде, что оно принесет пользу, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий ТОВАРНОЙ ПРИГОДНОСТИ или СООТВЕТСТВИЯ ДЛЯ КОНКРЕТНОГО НАМЕРЕНИЯ.\n\nХотя я прикладываю все свои усилия для того, чтобы приложение работало правильно и не вызывало проблем, тем не менее, я не несу ответственность за какие-либо повреждения или неудобства, которые могут возникнуть при некоторых обстоятельствах.</string>
   <string name="help_cat_acknowledgments" formatted="false">Благодарности</string>
-  <string name="help_acknowledgments" formatted="false">Без благородной помощи со стороны добровольцев-переводчиков это приложение было бы доступно только на английском. Спасибо им всем!\n\nБольшое спасибо компании Google и всем программистам открытого исходного кода, которые сделали возможными платформу Android и само это приложение.\n\nЗначок приложения (вертикально ориентированная батарейка, которую вы видите в магазине приложений) основан на пиктограмме из <a href="http://www.oxygen-icons.org">темы Oxygen</a> и используется на условиях лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Common Attribution-ShareAlike 3.0 License</a>.</string>
-  <string name="help_cat_translations" formatted="false">Переводы/локализация</string>
-  <string name="help_translations" formatted="false">Мне необходима помощь в переводе этого приложения на новые языки, а также помощь в поддержке имеющихся переводов. Если у вас есть желание помочь, напишите мне <a href="mailto:support%2Btranslations@batterybot.info">письмо</a>. Если вы желаете, чтобы ваше имя было указано в этом разделе в знак признательности за ваше содействие, пожалуйста, сообщите мне желаемое написание вашего имени.</string>
-  <string name="help_subcat_translators" formatted="false">Переводчики</string>
+  <string name="help_acknowledgments" formatted="false">Battery Monitor — это форк Battery Indicator Pro/BatteryBot Pro от
+    Даршан Компьютинг, ООО.  Спасибо первоначальным авторам и участникам
+    для создания и поддержки восходящего проекта.</string>
   <string name="help_cat_contact" formatted="false">Контакты</string>
-  <string name="help_contact" formatted="false">Если у вас есть вопросы, проблемы или комментарии, пожалуйста <a href="mailto:support@batterybot.info">напишите мне</a>.</string>
+  <string name="help_contact" formatted="false">Если
+    у вас есть вопрос, проблема или комментарий, пожалуйста
+    напишите мне.</string>
   <string name="settings_overview" formatted="false">Обзор</string>
   <string name="settings_overview_help" formatted="false">Все настройки разбиты на несколько страниц. Каждая страница настроек имеет свою соответствующую страницу помощи. Просто нажмите MENU, затем Help (MENU на планшетах не обязательно) для получения справки по настройкам текущей страницы.</string>
   <string name="notification_settings" formatted="false">Основное уведомление</string>
@@ -259,6 +255,75 @@
   <string name="icon_set_classic" formatted="false">Классический</string>
   <string name="icon_set_plain" formatted="false">Просто число</string>
   <string name="icon_set_smaller" formatted="false">Мелкие цифры</string>
+  <string name="circle_widget" formatted="false">Battery Monitor: круглый виджет</string>
+  <string name="full_widget" formatted="false">Battery Monitor: полный виджет</string>
+  <string name="notifications_disabled" formatted="false">Уведомления отключены!</string>
+  <string name="notifications_disabled_message" formatted="false">Вы заблокировали все уведомления для Battery Monitor. Из-за этого Battery Monitor не сможет показывать никакие уведомления: будут заблокированы и основное уведомление, и все настроенные вами предупреждения.\n\nПоскольку в Battery Monitor можно отдельно включать/выключать основное уведомление, а также временно отключать созданные предупреждения, настоятельно рекомендуется разблокировать уведомления Battery Monitor в системе. Пока они заблокированы, может показаться, что Battery Monitor не работает.\n\nНажмите OK, чтобы перейти в системные настройки и разблокировать уведомления для Battery Monitor.</string>
+  <string name="battery_optimized" formatted="false">Battery Monitor ограничен системой!</string>
+  <string name="battery_optimized_message" formatted="false">Работа Battery Monitor ограничена и приложение не может функционировать корректно. Эта «оптимизация батареи» — функция Android, предназначенная для ограничения плохо разработанных приложений, чтобы они не расходовали слишком много заряда в фоне.\n\nОднако Battery Monitor — хорошо спроектированное приложение, которому для корректной работы нужен неограниченный фоновый режим. Оно очень эффективно и не уменьшает время работы аккумулятора.\n\nНажмите OK, чтобы перейти в системные настройки и отключить оптимизацию батареи для Battery Monitor.</string>
+  <string name="main_notif_chan_name" formatted="false">Основное уведомление</string>
+  <string name="channel_group_name_alarms" formatted="false">Предупреждения</string>
+  <string name="menu_show_seconds" formatted="false">Показывать секунды</string>
+  <string name="menu_hide_seconds" formatted="false">Скрывать секунды</string>
+  <string name="no_storage_permission" formatted="false">Доступ к хранилищу не предоставлен.</string>
+  <string name="status_boot_completed" formatted="false">Загрузка завершена</string>
+  <string name="alarm_type_temperature_drops" formatted="false">Температура ниже</string>
+  <string name="alarm_type_entry_temperature_drops" formatted="false">Температура ниже...</string>
+  <string name="alarm_temp_drops" formatted="false">"Температура аккумулятора ниже "</string>
+  <string name="after_nh_mm_unplugged" formatted="false">После %1$dч %2$dм без подключения</string>
+  <string name="after_nh_mm_plugged_in" formatted="false">После %1$dч %2$dм при подключении</string>
+  <string name="after_nm_ms_unplugged" formatted="false">После %1$dм %2$dс без подключения</string>
+  <string name="after_nm_ms_plugged_in" formatted="false">После %1$dм %2$dс при подключении</string>
+  <string name="help_cat_privacy" formatted="false">Конфиденциальность</string>
+  <string name="help_privacy" formatted="false">Battery Monitor не собирает, не хранит и не передает никакой личной информации.</string>
+  <string name="notifications_disabled_cat" formatted="false">Уведомления отключены</string>
+  <string name="app_notifs_disabled_b" formatted="false">Включить уведомления приложения</string>
+  <string name="app_notifs_disabled_summary" formatted="false">Вы отключили все уведомления этого приложения. Включите их, чтобы открыть эти настройки.</string>
+  <string name="main_notifs_disabled_b" formatted="false">Включить основное уведомление</string>
+  <string name="main_notifs_disabled_summary" formatted="false">Вы отключили основное уведомление этого приложения. Включите его, чтобы открыть эти настройки.</string>
+  <string name="app_notifs_alarms_disabled_summary" formatted="false">Вы отключили все уведомления этого приложения. Включите их, чтобы получить доступ к предупреждениям.</string>
+  <string name="alarm_notifs_disabled_b" formatted="false">Включить предупреждения</string>
+  <string name="alarm_notifs_disabled_summary" formatted="false">Вы отключили группу уведомлений предупреждений для этого приложения. Включите ее, чтобы получить доступ к предупреждениям.</string>
+  <string name="alarm_chan_disabled" formatted="false">Вы отключили уведомления для этого типа предупреждений. Включите их, чтобы использовать этот тип предупреждения.</string>
+  <string name="alarm_chan_disabled_b" formatted="false">Включить этот тип предупреждения</string>
+  <string name="alarm_chan_settings_b" formatted="false">Настроить этот тип предупреждения</string>
+  <string name="status_bar_chip_settings" formatted="false">Чип в строке состояния</string>
+  <string name="status_bar_chip_settings_summary" formatted="false">Настройка содержимого чипа Live Updates</string>
+  <string name="status_bar_chip_settings_help" formatted="false">На Android 16+ с Live Updates можно настроить, что показывать в чипе строки состояния и нужно ли отображать эмодзи зарядки.</string>
+  <string name="pref_enable_live_updates" formatted="false">Использовать чип в строке состояния</string>
+  <string name="pref_enable_live_updates_summary" formatted="false">Показывать информацию о батарее в виде чипа в строке состояния (Android 16+)</string>
+  <string name="pref_live_updates_system_disabled" formatted="false">Отключено в настройках Android. Нажмите, чтобы исправить.</string>
+  <string name="live_updates_onboarding_title" formatted="false">Чип батареи в строке состояния</string>
+  <string name="live_updates_onboarding_message_on" formatted="false">Ваше устройство поддерживает отображение процента батареи в виде чипа в строке состояния. Эта функция включена по умолчанию.\n\nЕсли вы предпочитаете традиционный значок уведомления, можно отключить «Live Updates» в системных настройках Android для этого приложения.</string>
+  <string name="live_updates_onboarding_message_off" formatted="false">Ваше устройство поддерживает отображение процента батареи в виде чипа в строке состояния, но сейчас эта функция отключена в системных настройках.\n\nДля лучшего опыта мы рекомендуем включить ее. Если вы предпочитаете традиционный значок уведомления, можно оставить ее выключенной.</string>
+  <string name="live_updates_onboarding_positive_on" formatted="false">Понятно</string>
+  <string name="live_updates_onboarding_positive_off" formatted="false">Перейти в настройки</string>
+  <string name="live_updates_onboarding_negative_off" formatted="false">Закрыть</string>
+  <string name="menu_alarm_channel" formatted="false">Настройки канала предупреждений</string>
+  <string name="pref_cat_ui_color" formatted="false">Цвет интерфейса</string>
+  <string name="pref_ui_color_summary" formatted="false">Основной цвет во всем приложении</string>
+  <string name="pref_cat_channel_settings" formatted="false">Настройки каналов уведомлений</string>
+  <string name="pref_manage_main_channel" formatted="false">Настроить основной канал</string>
+  <string name="pref_cat_status_bar_chip" formatted="false">Чип в строке состояния (Android 16+)</string>
+  <string name="pref_chip_content" formatted="false">Содержимое чипа</string>
+  <string name="pref_chip_content_switching" formatted="false">Переключать между батареей и температурой</string>
+  <string name="pref_chip_content_switching_summary" formatted="false">Чередовать отображение процента батареи и температуры</string>
+  <string name="pref_chip_switching_interval" formatted="false">Интервал переключения</string>
+  <string name="pref_chip_switching_interval_summary" formatted="false">Как часто переключать отображение</string>
+  <string name="pref_chip_content_help" formatted="false">Выберите, какое значение показывать в чипе продвинутого уведомления Android 16+.</string>
+  <string name="pref_chip_indicate_charging" formatted="false">Показывать эмодзи зарядки</string>
+  <string name="pref_chip_indicate_charging_summary" formatted="false">Показывать эмодзи молнии во время зарядки или при полном заряде?</string>
+  <string name="pref_chip_indicate_charging_help" formatted="false">Если включено, чип в строке состояния будет показывать эмодзи молнии рядом со значением во время зарядки или при полном заряде.</string>
+  <string name="pref_icon_content" formatted="false">Содержимое значка</string>
+  <string name="pref_icon_content_help" formatted="false">Выберите, что показывать в значке строки состояния: процент заряда батареи или ее температуру. Для температуры используется выбранная единица измерения.</string>
+  <string name="pref_current_hack_prefer_fs" formatted="false">Предпочитать старый метод обхода</string>
+  <string name="pref_current_hack_prefer_fs_summary" formatted="false">Предпочитать старый метод на основе файловой системы?</string>
+  <string name="pref_current_hack_prefer_fs_help" formatted="false">Начиная с Lollipop (Android 5.0), Android предоставляет менее «хакерский» способ получения данных о токе (mA) напрямую через BatteryManager. Однако он все еще может не работать совсем или работать плохо. До Android Nougat (Android 7.0) старый метод (через файловую систему) чаще работает лучше на большинстве устройств, поэтому на устройствах с Android ниже 7.0 он остается методом по умолчанию.\n\nЭтот параметр лишь подсказывает обходному механизму, какой метод предпочесть; если на вашем устройстве работает плохо, попробуйте переключить его.</string>
+  <string name="pref_current_hack_multiplier" formatted="false">Множитель</string>
+  <string name="pref_current_hack_multiplier_help" formatted="false">Некоторые устройства сообщают миллиамперы вместо микроампер, как ожидает API. Некоторые устройства также меняют знак значения. Некоторым пользователям наоборот удобнее обратный знак даже для корректно сообщаемых значений.\n\nЧтобы учесть такие случаи, можно умножить результат API на это значение. Например, если устройство всегда показывает 0 mA, можно попробовать множитель 1000. Если API возвращает 450 микроампер, приложение покажет 450 mA вместо 0 mA. Если API возвращает 0 микроампер, множитель, конечно, не изменит итоговое значение 0 mA.</string>
+  <string name="pref_content_percent" formatted="false">Процент заряда</string>
+  <string name="pref_content_temperature" formatted="false">Температура батареи</string>
+  <string name="pref_content_switching" formatted="false">Переключать между обоими</string>
   <plurals name="n_log_items">
     <item quantity="one">%d элемент журнала</item>
     <item quantity="other">%d элементов журнала</item>

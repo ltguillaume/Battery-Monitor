@@ -81,7 +81,6 @@
   <string formatted="false" name="menu_settings">Settings</string>
   <string formatted="false" name="menu_close">Close</string>
   <string formatted="false" name="menu_help">Help</string>
-  <string formatted="false" name="menu_rate_and_review">Rate &amp; Review</string>
   <string formatted="false" name="menu_clear">Clear</string>
   <string formatted="false" name="menu_reverse">Reverse Order</string>
   <string formatted="false" name="menu_log_filter">Filter</string>
@@ -240,21 +239,6 @@
 
   <string formatted="false" name="help_cat_version">Version</string>
 
-  <string formatted="false" name="help_cat_changelog">Changelog</string>
-  <string formatted="false" name="help_changelog">Please
-    see the <a href="https://www.batterybot.info/changelog">online Changelog</a>.
-  </string>
-
-  <string formatted="false" name="help_cat_faq">Frequently Asked Questions</string>
-  <string formatted="false" name="help_faq">Please
-    see the <a href="https://www.batterybot.info/faq">online FAQ</a>.
-  </string>
-
-  <string formatted="false" name="help_cat_website">Website</string>
-  <string formatted="false" name="help_website">More
-    infomation is available at the <a href="https://www.batterybot.info/">Battery Monitor website</a>.
-  </string>
-
   <string formatted="false" name="help_cat_open_source">Open Source</string>
   <string formatted="false" name="help_open_source">This
     project is open source. You can access the source code at
@@ -265,16 +249,6 @@
   <string formatted="false" name="help_donate">Please
     consider donating by upgrading to the <a href="market://details?id=codes.swistak.batterymonitor">Pro
     Version</a>.
-  </string>
-
-  <string formatted="false" name="help_cat_other_apps">My Other Apps</string>
-  <string formatted="false" name="help_other_apps"><a href="market://details?id=com.darshancomputing.tuner">Noteworthy Instrument Tuner</a>
-  is an open-source, ad-free tuner for tuning guitars, ukuleles, and just about any other instrument.\n
-
-  \n<a href="market://details?id=com.swapadoodle.android">Swap-a-Doodle!</a>
-  is a free, fun, and playful social drawing app—create animations just by doodling, and
-  share them with your friends.  Or create together by drawing on the doodles they send you,
-  or even doodling with them in real time.
   </string>
 
   <string formatted="false" name="help_cat_privacy">Privacy</string>
@@ -296,25 +270,8 @@
   <string formatted="false" name="help_cat_acknowledgments">Acknowledgments</string>
   <string formatted="false" name="help_acknowledgments">Battery Monitor is a fork of Battery Indicator Pro / BatteryBot Pro by
     Darshan Computing, LLC.  Thank you to the original authors and contributors
-    for creating and maintaining the upstream project.\n
-
-    \nThe launcher icon (the upright battery you see in the Market) is
-    based on an icon from <a href="http://www.oxygen-icons.org">the
-    Oxygen icon theme</a> and used under the
-    <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Common
-      Attribution-ShareAlike 3.0 License</a>.
+    for creating and maintaining the upstream project.
   </string>
-
-  <string formatted="false" name="help_cat_translations">Translations</string>
-  <string formatted="false" name="help_translations">I
-    need help translating this app to new languages and maintaining
-    the existing translations.  If you would like to help, please send
-    me an <a href="mailto:tomasz@swistak.codes">email</a>.
-    Please let me know if and how you would like your name listed in
-    this section in acknowledgment of your assistance.
-  </string>
-
-  <string formatted="false" name="help_subcat_translators">Translators</string>
 
   <string formatted="false" name="help_cat_contact">Contact</string>
   <string formatted="false" name="help_contact">If
@@ -352,7 +309,7 @@
     You can select which icon set to use and change the settings for the icon set (e.g., colors).
   </string>
   <string formatted="false" name="status_bar_chip_settings">Status Bar Chip</string>
-  <string formatted="false" name="status_bar_chip_settings_summary">Configure Android 16+ chip content</string>
+  <string formatted="false" name="status_bar_chip_settings_summary">Configure Live Updates\' chip content</string>
   <string formatted="false" name="status_bar_chip_settings_help">
     On Android 16+ with Live Updates, you can configure what the status
     bar chip shows and whether to display the charging emoji.
