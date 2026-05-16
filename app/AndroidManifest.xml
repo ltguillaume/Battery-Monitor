@@ -29,7 +29,8 @@
 
   <application
     android:label="@string/app_full_name"
-    android:icon="@drawable/battery"
+    android:icon="@mipmap/ic_launcher"
+    android:roundIcon="@mipmap/ic_launcher_round"
     android:hardwareAccelerated="true"
     android:process="codes.swistak.batterymonitor"
     android:allowBackup="false"

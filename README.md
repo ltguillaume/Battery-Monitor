@@ -42,6 +42,8 @@ Battery Monitor does not collect, store, or transmit personal data.
 
 This project is a fork of [Battery Indicator Pro / BatteryBot Pro](https://github.com/darshan-/Battery-Indicator-Pro), with continued development and rebranding.
 
+Main goal of the fork is to maintain and enhance the app to ensure it works well on modern Android versions.
+
 Huge thanks to the original authors and contributors.
 
 ## Build
