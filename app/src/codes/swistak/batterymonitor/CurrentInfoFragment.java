@@ -223,17 +223,6 @@ public class CurrentInfoFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.menu_rate_and_review) {
-            try {
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                                         Uri.parse("market://details?id=codes.swistak.batterymonitor")));
-            } catch (Exception e) {
-                Toast.makeText(getActivity(), "Sorry, can't launch Market!", Toast.LENGTH_SHORT).show();
-            }
-
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
