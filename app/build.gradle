@@ -7,7 +7,7 @@ if (securePropertiesFile.exists()) {
 }
 
 android {
-    namespace "com.darshancomputing.BatteryIndicatorPro"
+    namespace "codes.swistak.batterymonitor"
 
     compileSdk 37
 

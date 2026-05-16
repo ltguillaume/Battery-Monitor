@@ -1,0 +1,1108 @@
+/*
+    Copyright (c) 2009-2020 Darshan Computing, LLC
+    Modified in 2026 by Tomasz Świstak <tomasz@swistak.codes> for the Battery Monitor fork.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+*/
+
+package codes.swistak.batterymonitor;
+
+import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationChannelGroup;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.Service;
+import android.appwidget.AppWidgetManager;
+import android.content.BroadcastReceiver;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.pm.ServiceInfo;
+import android.content.res.Resources;
+import android.content.ServiceConnection;
+import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.media.AudioAttributes;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.Messenger;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Locale;
+
+public class BatteryInfoService extends Service {
+    private static final String LOG_TAG = "BatteryInfoService";
+
+    private final IntentFilter batteryChanged = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
+    //private final IntentFilter userPresent    = new IntentFilter(Intent.ACTION_USER_PRESENT);
+    private PendingIntent currentInfoPendingIntent, updatePredictorPendingIntent, alarmsPendingIntent, alarmsCancelPendingIntent;
+    private Intent alarmsIntent;
+
+    private NotificationManager mNotificationManager;
+    private AlarmManager alarmManager;
+    private SharedPreferences settings;
+    private SharedPreferences sp_service;
+    private SharedPreferences.Editor sps_editor;
+
+    private Resources res;
+    private AlarmDatabase alarms;
+    private LogDatabase log_db;
+    private BatteryLevel bl;
+    //private CurrentHack currentHack;
+    private CircleWidgetBackground cwbg;
+    private BatteryInfo info;
+    private long now;
+    private boolean updated_lasts;
+    private static java.util.HashSet<Messenger> clientMessengers;
+    private static Messenger messenger;
+
+    private static HashSet<Integer> widgetIds = new HashSet<Integer>();
+    private static AppWidgetManager widgetManager;
+
+    //private static final String LOG_TAG = "codes.swistak.batterymonitor - BatteryInfoService";
+
+    private static final int NOTIFICATION_PRIMARY      = 1;
+    private static final int NOTIFICATION_ALARM = 7;
+
+    public static final String CHAN_ID_OLD_MAIN = "main";
+    public static final String CHAN_ID_OLD_ALARM = "alarm";
+    public static final String CHAN_ID_OLD_MAIN_2 = "main_002";
+
+    public static final String CHAN_ID_MAIN = "main_003";
+
+    // Important: Make sure alarm notification channel IDs and alarm type database values always match
+    public static final String CHAN_ID_A_CHARGED = "fully_charged";
+    public static final String CHAN_ID_A_CDROP = "charge_drops";
+    public static final String CHAN_ID_A_CRISE = "charge_rises";
+    public static final String CHAN_ID_A_TDROP = "temp_drops";
+    public static final String CHAN_ID_A_TRISE = "temp_rises";
+    public static final String CHAN_ID_A_HFAIL = "health_failure";
+
+    public static final String CHAN_GROUP_ID_ALARMS = "alarms";
+
+    public static final String[] ALARM_CHAN_IDS = {CHAN_ID_A_CHARGED, CHAN_ID_A_CDROP, CHAN_ID_A_CRISE,
+                                                   CHAN_ID_A_TDROP, CHAN_ID_A_TRISE, CHAN_ID_A_HFAIL};
+
+    private static final int RC_MAIN   = 100;
+    private static final int RC_ALARMS_EDIT = 101;
+    private static final int RC_ALARMS_CANCEL = 102;
+
+    public static final String KEY_PREVIOUS_CHARGE = "previous_charge";
+    public static final String KEY_PREVIOUS_TEMP = "previous_temp";
+    public static final String KEY_PREVIOUS_HEALTH = "previous_health";
+    public static final String KEY_SERVICE_DESIRED = "serviceDesired";
+    public static final String LAST_SDK_API = "last_sdk_api";
+
+
+    private static final String EXTRA_UPDATE_PREDICTOR = "codes.swistak.batterymonitor.EXTRA_UPDATE_PREDICTOR";
+
+    public static final String EXTRA_CURRENT_INFO  = "codes.swistak.batterymonitor.EXTRA_CURRENT_INFO";
+    public static final String EXTRA_EDIT_ALARMS   = "codes.swistak.batterymonitor.EXTRA_EDIT_ALARMS";
+    //public static final String EXTRA_CANCEL_ALARMS = "codes.swistak.batterymonitor.EXTRA_CANCEL_ALARMS";
+
+
+    //private static final Object[] EMPTY_OBJECT_ARRAY = {};
+    //private static final  Class<?>[]  EMPTY_CLASS_ARRAY = {};
+
+    private static final int plainIcon0 = R.drawable.plain000;
+    private static final int small_plainIcon0 = R.drawable.small_plain000;
+    private static final int chargingIcon0 = R.drawable.charging000;
+    private static final int small_chargingIcon0 = R.drawable.small_charging000;
+
+    /* Global variables for these Notification Runnables */
+    private Notification.Builder mainNotificationB;
+    private String mainNotificationTopLine, mainNotificationBottomLine;
+    private RemoteViews notificationRV;
+    private boolean mainNotificationForegroundStarted;
+    private final HashMap<String, Integer> iconResCache = new HashMap<String, Integer>();
+    private static final String CONTENT_PERCENTAGE = "percentage";
+    private static final String CONTENT_TEMPERATURE = "temperature";
+
+    private Predictor predictor;
+
+    private final Handler mHandler = new Handler();
+
+    private boolean chipShowingTemperature = false;
+    private final Runnable runChipSwitch = new Runnable() {
+        @Override
+        public void run() {
+            chipShowingTemperature = !chipShowingTemperature;
+            prepareNotification();
+            if (mainNotificationForegroundStarted) {
+                mNotificationManager.notify(NOTIFICATION_PRIMARY, mainNotificationB.build());
+            }
+
+            int interval;
+            try {
+                interval = Integer.parseInt(settings.getString(SettingsFragment.KEY_CHIP_SWITCHING_INTERVAL, "5"));
+            } catch (NumberFormatException e) {
+                interval = 5;
+            }
+            mHandler.postDelayed(this, interval * 1000L);
+        }
+    };
+
+    private final Runnable runRenotify = new Runnable() {
+        public void run() {
+            registerReceiver(mBatteryInfoReceiver, batteryChanged);
+        }
+    };
+
+    private void setUpChannels() {
+        if (mNotificationManager == null)
+            mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+
+        mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN);
+        mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_MAIN_2);
+        mNotificationManager.deleteNotificationChannel(CHAN_ID_OLD_ALARM);
+
+        boolean useLiveUpdates = supportsLiveUpdates();
+
+        int main_importance = (android.os.Build.VERSION.SDK_INT < 28 || useLiveUpdates)
+                              ? NotificationManager.IMPORTANCE_LOW
+                              : NotificationManager.IMPORTANCE_MIN;
+        CharSequence main_notif_chan_name = getString(R.string.main_notif_chan_name);
+        NotificationChannel ch = new NotificationChannel(CHAN_ID_MAIN, main_notif_chan_name, main_importance);
+        ch.setSound(null, null);
+        ch.enableLights(false);
+        ch.enableVibration(false);
+        ch.setShowBadge(false);
+        ch.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+        mNotificationManager.createNotificationChannel(ch);
+
+        CharSequence channel_group_name_alarms = getString(R.string.channel_group_name_alarms);
+        mNotificationManager.createNotificationChannelGroup(new NotificationChannelGroup(CHAN_GROUP_ID_ALARMS, channel_group_name_alarms));
+
+        int[] alarm_chan_names = {R.string.alarm_type_fully_charged, R.string.alarm_type_charge_drops, R.string.alarm_type_charge_rises,
+                                  R.string.alarm_type_temperature_drops, R.string.alarm_type_temperature_rises, R.string.alarm_type_health_failure};
+
+        for (int i = 0; i < ALARM_CHAN_IDS.length; i++) {
+            Uri ringtone = android.media.RingtoneManager.getDefaultUri(android.media.RingtoneManager.TYPE_NOTIFICATION);
+            CharSequence chan_name = getString(alarm_chan_names[i]);
+            ch = new NotificationChannel(ALARM_CHAN_IDS[i], chan_name, NotificationManager.IMPORTANCE_HIGH);
+            ch.setSound(ringtone, new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_NOTIFICATION_EVENT).build());
+            ch.enableLights(true);
+            ch.setLightColor(0xff33b5e5);
+            ch.enableVibration(true);
+            ch.setVibrationPattern(new long[]{0, 500, 500, 500, 500, 1000, 1000, 1000, 1000});
+            ch.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
+            ch.setGroup(CHAN_GROUP_ID_ALARMS);
+            mNotificationManager.createNotificationChannel(ch);
+        }
+    }
+
+    @Override
+    public void onCreate() {
+        res = getResources();
+        Str.setResources(res);
+        log_db = new LogDatabase(this);
+
+        info = new BatteryInfo();
+
+        messenger = new Messenger(new MessageHandler(this));
+        clientMessengers = new java.util.HashSet<Messenger>();
+
+        predictor = new Predictor(this);
+        bl = BatteryLevel.getSmallInstance(this);
+        cwbg = new CircleWidgetBackground(this);
+
+        alarms = new AlarmDatabase(this);
+
+        mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        mainNotificationB = new Notification.Builder(this);
+        mainNotificationForegroundStarted = false;
+        alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+        loadSettingsFiles();
+        setUpChannels();
+
+        sdkVersioning();
+
+        CurrentHack.setContext(this);
+        CurrentHack.setPreferFS(settings.getBoolean(SettingsFragment.KEY_CURRENT_HACK_PREFER_FS,
+                                                    res.getBoolean(R.bool.default_prefer_fs_current_hack)));
+        CurrentHack.setMultiplier(Integer.valueOf(settings.getString(SettingsFragment.KEY_CURRENT_HACK_MULTIPLIER, "1")));
+
+        Intent currentInfoIntent = new Intent(this, BatteryInfoActivity.class).putExtra(EXTRA_CURRENT_INFO, true);
+        currentInfoPendingIntent = PendingIntent.getActivity(this, RC_MAIN, currentInfoIntent, PendingIntent.FLAG_IMMUTABLE);
+
+        Intent updatePredictorIntent = new Intent(this, BatteryInfoService.class);
+        updatePredictorIntent.putExtra(EXTRA_UPDATE_PREDICTOR, true);
+        updatePredictorPendingIntent = PendingIntent.getService(this, 0, updatePredictorIntent, PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+
+        alarmsIntent = new Intent(this, BatteryInfoActivity.class).putExtra(EXTRA_EDIT_ALARMS, true);
+
+        Intent serviceAlarmsIntent = new Intent(this, BatteryInfoService.class).putExtra(EXTRA_EDIT_ALARMS, true);
+        //alarmsPendingIntent = PendingIntent.getService(this, RC_ALARMS_EDIT, serviceAlarmsIntent, 0);
+        alarmsPendingIntent = PendingIntent.getActivity(this, RC_ALARMS_EDIT, alarmsIntent, PendingIntent.FLAG_IMMUTABLE);
+
+        // Intent serviceCancelAlarmsIntent = new Intent(this, BatteryInfoService.class).putExtra(EXTRA_CANCEL_ALARMS, true);
+        // alarmsCancelPendingIntent = PendingIntent.getService(this, RC_ALARMS_CANCEL, serviceCancelAlarmsIntent, 0);
+
+        widgetManager = AppWidgetManager.getInstance(this);
+
+        Class<?>[] appWidgetProviders = {BatteryInfoAppWidgetProvider.class, /* Circle widget! */
+                                             FullAppWidgetProvider.class};
+
+        for (int i = 0; i < appWidgetProviders.length; i++) {
+            int[] ids = widgetManager.getAppWidgetIds(new ComponentName(this, appWidgetProviders[i]));
+
+            for (int j = 0; j < ids.length; j++) {
+                widgetIds.add(ids[j]);
+            }
+        }
+
+        Intent bc_intent = registerReceiver(mBatteryInfoReceiver, batteryChanged);
+        if (bc_intent != null)
+            info.load(bc_intent, sp_service);
+    }
+
+    @Override
+    public void onTimeout(int startId, int fgsType) {
+        Log.w(LOG_TAG, "Foreground service timeout reached for type: " + fgsType);
+        stopSelf();
+    }
+
+    @Override
+    public void onDestroy() {
+        alarmManager.cancel(updatePredictorPendingIntent);
+        alarms.close();
+        unregisterReceiver(mBatteryInfoReceiver);
+        mHandler.removeCallbacks(runRenotify);
+        mHandler.removeCallbacks(runChipSwitch);
+        mNotificationManager.cancelAll();
+        log_db.close();
+        updateWidgets(null);
+        stopForeground(true);
+        mainNotificationForegroundStarted = false;
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        // if (intent != null && intent.getBooleanExtra(EXTRA_EDIT_ALARMS, false)) {
+        //     alarmPlayer.stop();
+        //     startActivity(alarmsIntent);
+        //     return Service.START_STICKY;
+        // }
+
+        // if (intent != null && intent.getBooleanExtra(EXTRA_CANCEL_ALARMS, false)) {
+        //     alarmPlayer.stop();
+        //     return Service.START_STICKY;
+        // }
+
+        // Always update
+        update(null);
+
+        return Service.START_STICKY;
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        // Notification.Builder nb = makeTestAlarmBuilder();
+        // nb.setContentTitle("Test Title")
+        //     .setContentText("Text content")
+        //     .setContentIntent(alarmsPendingIntent)
+        //     .setVisibility(NotificationCompat.VISIBILITY_PUBLIC);
+        // notifyAlarm(makeTestAlarmBuilder().build());
+
+        return messenger.getBinder();
+    }
+
+    private static class MessageHandler extends Handler {
+        private BatteryInfoService bis;
+
+        MessageHandler(BatteryInfoService s) {
+            bis = s;
+        }
+
+        @Override
+        public void handleMessage(Message incoming) {
+            switch (incoming.what) {
+            case RemoteConnection.SERVICE_CLIENT_CONNECTED:
+                sendClientMessage(incoming.replyTo, RemoteConnection.CLIENT_SERVICE_CONNECTED);
+                break;
+            case RemoteConnection.SERVICE_REGISTER_CLIENT:
+                clientMessengers.add(incoming.replyTo);
+                sendClientMessage(incoming.replyTo, RemoteConnection.CLIENT_BATTERY_INFO_UPDATED, bis.info.toBundle());
+                break;
+            case RemoteConnection.SERVICE_UNREGISTER_CLIENT:
+                clientMessengers.remove(incoming.replyTo);
+                break;
+            case RemoteConnection.SERVICE_RELOAD_SETTINGS:
+                bis.reloadSettings(false);
+                break;
+            case RemoteConnection.SERVICE_CANCEL_NOTIFICATION_AND_RELOAD_SETTINGS:
+                bis.reloadSettings(true);
+                break;
+            default:
+                super.handleMessage(incoming);
+            }
+        }
+    }
+
+    private static void sendClientMessage(Messenger clientMessenger, int what) {
+        sendClientMessage(clientMessenger, what, null);
+    }
+
+    private static void sendClientMessage(Messenger clientMessenger, int what, Bundle data) {
+        Message outgoing = Message.obtain();
+        outgoing.what = what;
+        outgoing.replyTo = messenger;
+        outgoing.setData(data);
+        try { clientMessenger.send(outgoing); } catch (android.os.RemoteException e) {}
+    }
+
+    static class RemoteConnection implements ServiceConnection {
+        // Messages clients send to the service
+        static final int SERVICE_CLIENT_CONNECTED = 0;
+        static final int SERVICE_REGISTER_CLIENT = 1;
+        static final int SERVICE_UNREGISTER_CLIENT = 2;
+        static final int SERVICE_RELOAD_SETTINGS = 3;
+        static final int SERVICE_CANCEL_NOTIFICATION_AND_RELOAD_SETTINGS = 4;
+
+        // Messages the service sends to clients
+        static final int CLIENT_SERVICE_CONNECTED = 0;
+        static final int CLIENT_BATTERY_INFO_UPDATED = 1;
+
+        Messenger serviceMessenger;
+        private Messenger clientMessenger;
+
+        RemoteConnection(Messenger m) {
+            clientMessenger = m;
+        }
+
+        public void onServiceConnected(ComponentName name, IBinder iBinder) {
+            serviceMessenger = new Messenger(iBinder);
+
+            Message outgoing = Message.obtain();
+            outgoing.what = SERVICE_CLIENT_CONNECTED;
+            outgoing.replyTo = clientMessenger;
+            try { serviceMessenger.send(outgoing); } catch (android.os.RemoteException e) {}
+        }
+
+        public void onServiceDisconnected(ComponentName name) {
+            serviceMessenger = null;
+        }
+    }
+
+    private void loadSettingsFiles() {
+        settings = getSharedPreferences(SettingsFragment.SETTINGS_FILE, Context.MODE_MULTI_PROCESS);
+        sp_service = getSharedPreferences(SettingsFragment.SP_SERVICE_FILE, Context.MODE_MULTI_PROCESS);
+    }
+
+    private void reloadSettings(boolean cancelFirst) {
+        loadSettingsFiles();
+        CurrentHack.setPreferFS(settings.getBoolean(SettingsFragment.KEY_CURRENT_HACK_PREFER_FS,
+                                                    res.getBoolean(R.bool.default_prefer_fs_current_hack)));
+        CurrentHack.setMultiplier(Integer.valueOf(settings.getString(SettingsFragment.KEY_CURRENT_HACK_MULTIPLIER, "1")));
+
+        Str.setResources(res); // Language override may have changed
+
+        applyNewSettings(cancelFirst);
+    }
+
+    private void applyNewSettings(boolean cancelFirst) {
+        if (cancelFirst) {
+            stopForeground(true);
+            mainNotificationB = new Notification.Builder(this);
+            mainNotificationForegroundStarted = false;
+        }
+
+        chipShowingTemperature = false;
+        setUpChannels();
+        registerReceiver(mBatteryInfoReceiver, batteryChanged);
+        update(null);
+
+        mHandler.removeCallbacks(runChipSwitch);
+        if (supportsLiveUpdates() && "switching".equals(settings.getString(SettingsFragment.KEY_CHIP_CONTENT, ""))) {
+            int interval;
+            try {
+                interval = Integer.parseInt(settings.getString(SettingsFragment.KEY_CHIP_SWITCHING_INTERVAL, "5"));
+            } catch (NumberFormatException e) {
+                interval = 5;
+            }
+            mHandler.postDelayed(runChipSwitch, interval * 1000L);
+        }
+    }
+
+    private final BroadcastReceiver mBatteryInfoReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context c, Intent intent) {
+            if (! Intent.ACTION_BATTERY_CHANGED.equals(intent.getAction())) return;
+
+            update(intent);
+        }
+    };
+
+    // Does anything needed when SDK API level increases and sets LAST_SDK_API
+    private void sdkVersioning(){
+        SharedPreferences.Editor sps_editor = sp_service.edit();
+        SharedPreferences.Editor settings_editor = settings.edit();
+
+        // Writing to settings here should only happen when Service first started, so shouldn't have conflict
+        // if (sp_service.getInt(LAST_SDK_API, 0) < 21) {
+        //     settings_editor.putBoolean(SettingsFragment.KEY_USE_SYSTEM_NOTIFICATION_LAYOUT, true);
+        // }
+
+        sps_editor.putInt(LAST_SDK_API, android.os.Build.VERSION.SDK_INT);
+
+        sps_editor.apply();
+        settings_editor.apply();
+    }
+
+    private void update(Intent intent) {
+        now = System.currentTimeMillis();
+        sps_editor = sp_service.edit();
+        updated_lasts = false;
+
+        Intent batteryIntent = intent;
+        if (batteryIntent == null)
+            batteryIntent = registerReceiver(null, batteryChanged);
+
+        if (batteryIntent != null)
+            info.load(batteryIntent, sp_service);
+
+        predictor.setPredictionType(settings.getString(SettingsFragment.KEY_PREDICTION_TYPE,
+                                                       Str.default_prediction_type));
+        predictor.update(info);
+        info.prediction.updateRelativeTime();
+
+        if (statusHasChanged())
+            handleUpdateWithChangedStatus();
+        else
+            handleUpdateWithSameStatus();
+
+        prepareNotification();
+        startForegroundWithRetry();
+
+        if (alarms.anyActiveAlarms())
+            handleAlarms();
+
+        updateWidgets(info);
+
+        syncSpsEditor(); // Important to sync after other Service code that uses 'lasts' but before sending info to client
+
+        for (Messenger messenger : clientMessengers) {
+            // TODO: Can I send the same message to multiple clients instead of sending duplicates?
+            sendClientMessage(messenger, RemoteConnection.CLIENT_BATTERY_INFO_UPDATED, info.toBundle());
+        }
+
+        try { // Some reports on Developer console, don't make much sense.  Better not to crash and live without predictor update.
+            alarmManager.set(AlarmManager.ELAPSED_REALTIME, android.os.SystemClock.elapsedRealtime() + (2 * 60 * 1000), updatePredictorPendingIntent);
+        } catch (Exception e) {}
+    }
+
+    private void startForegroundWithRetry() {
+        Notification mainNotification = mainNotificationB.build();
+
+        try {
+            if (mainNotificationForegroundStarted) {
+                mNotificationManager.notify(NOTIFICATION_PRIMARY, mainNotification);
+            } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+                mainNotificationForegroundStarted = true;
+            } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+                mainNotificationForegroundStarted = true;
+            } else {
+                startForeground(NOTIFICATION_PRIMARY, mainNotification);
+                mainNotificationForegroundStarted = true;
+            }
+        } catch (RuntimeException e) {
+            // Channel state may have changed under us; rebuild channels and try once more.
+            try {
+                setUpChannels();
+                prepareNotification();
+                mainNotification = mainNotificationB.build();
+
+                if (mainNotificationForegroundStarted) {
+                    mNotificationManager.notify(NOTIFICATION_PRIMARY, mainNotification);
+                } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                    startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
+                    mainNotificationForegroundStarted = true;
+                } else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
+                    startForeground(NOTIFICATION_PRIMARY, mainNotification, ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+                    mainNotificationForegroundStarted = true;
+                } else {
+                    startForeground(NOTIFICATION_PRIMARY, mainNotification);
+                    mainNotificationForegroundStarted = true;
+                }
+            } catch (RuntimeException retryError) {
+                Log.e(LOG_TAG, "Unable to enter foreground mode", retryError);
+            }
+        }
+    }
+
+    private void updateWidgets(BatteryInfo info) {
+        //Intent mainWindowIntent = new Intent(this, BatteryInfoActivity.class);
+        //PendingIntent mainWindowPendingIntent = PendingIntent.getActivity(this, RC_MAIN, mainWindowIntent, 0);
+        //PendingIntent currentInfoPendingIntent = PendingIntent.getActivity(this, RC_MAIN, currentInfoIntent, 0);
+
+        if (info == null) {
+            cwbg.setLevel(0);
+        } else {
+            bl.setColor(Str.accent_color);
+            cwbg.setColor(0xff79a3ff);
+
+            bl.setLevel(info.percent);
+            cwbg.setLevel(info.percent);
+        }
+
+        for (Integer widgetId : widgetIds) {
+            RemoteViews rv;
+
+            android.appwidget.AppWidgetProviderInfo awpInfo = widgetManager.getAppWidgetInfo(widgetId);
+            if (awpInfo == null) continue; // Based on Developer Console crash reports, this can be null sometimes
+
+            int initLayout = awpInfo.initialLayout;
+
+            if (initLayout == R.layout.circle_app_widget) {
+                rv = new RemoteViews(getPackageName(), R.layout.circle_app_widget);
+
+                if (info == null)
+                    rv.setImageViewResource(R.id.circle_widget_image_view, R.drawable.empty);
+                else
+                    rv.setImageViewBitmap(R.id.circle_widget_image_view, cwbg.getBitmap());
+            } else {
+                rv = new RemoteViews(getPackageName(), R.layout.full_app_widget);
+
+                if (info == null) {
+                    rv.setImageViewResource(R.id.battery_level_view, R.drawable.empty);
+                    rv.setTextViewText(R.id.fully_charged, "");
+                    rv.setTextViewText(R.id.time_remaining, "");
+                    rv.setTextViewText(R.id.until_what, "");
+                } else {
+                    rv.setImageViewBitmap(R.id.battery_level_view, bl.getBitmap());
+
+                    if (info.prediction.what == BatteryInfo.Prediction.NONE) {
+                        rv.setTextViewText(R.id.fully_charged, Str.timeRemaining(info));
+                        rv.setTextViewText(R.id.time_remaining, "");
+                        rv.setTextViewText(R.id.until_what, "");
+                    } else {
+                        rv.setTextViewText(R.id.fully_charged, "");
+                        rv.setTextViewText(R.id.time_remaining, Str.timeRemaining(info));
+                        rv.setTextViewText(R.id.until_what, Str.untilWhat(info));
+                    }
+                }
+            }
+
+            if (info == null)
+                rv.setTextViewText(R.id.level, "XX" + Str.percent_symbol);
+            else
+                rv.setTextViewText(R.id.level, "" + info.percent + Str.percent_symbol);
+
+            rv.setOnClickPendingIntent(R.id.widget_layout, currentInfoPendingIntent);
+            try {
+                widgetManager.updateAppWidget(widgetId, rv);
+            } catch(Exception e) {} // Based on crash reports, exception can be thrown that I think is best ignored
+        }
+    }
+
+    private void syncSpsEditor() {
+        sps_editor.apply();
+
+        if (updated_lasts) {
+            info.last_status_cTM = now;
+            info.last_status = info.status;
+            info.last_percent = info.percent;
+            info.last_plugged = info.plugged;
+        }
+    }
+
+    private void prepareNotification() {
+        mainNotificationTopLine = lineFor(SettingsFragment.KEY_TOP_LINE);
+        mainNotificationBottomLine = lineFor(SettingsFragment.KEY_BOTTOM_LINE);
+
+        mainNotificationB.setSmallIcon(iconFor())
+            .setOngoing(true)
+            .setWhen(0)
+            .setShowWhen(false)
+            .setChannelId(CHAN_ID_MAIN)
+            .setContentIntent(currentInfoPendingIntent)
+            .setVisibility(Notification.VISIBILITY_PUBLIC);
+
+        mainNotificationB.setContentTitle(mainNotificationTopLine)
+            .setContentText(mainNotificationBottomLine);
+
+        if (supportsLiveUpdates()) {
+            try {
+                java.lang.reflect.Method setRequestPromotedOngoing = Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
+                java.lang.reflect.Method setShortCriticalText = Notification.Builder.class.getMethod("setShortCriticalText", String.class);
+                setRequestPromotedOngoing.invoke(mainNotificationB, true);
+
+                String text = chipContentText();
+                if (shouldShowChipChargingIndicator()) {
+                    text = "⚡" + text;
+                }
+
+                setShortCriticalText.invoke(mainNotificationB, text);
+            } catch (Throwable ignored) {}
+        }
+    }
+
+    private String contentPreference(String key, String defaultValue) {
+        String content = settings.getString(key, defaultValue);
+        return CONTENT_TEMPERATURE.equals(content) ? CONTENT_TEMPERATURE : CONTENT_PERCENTAGE;
+    }
+
+    private int roundedTemperatureValue() {
+        boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                               res.getBoolean(R.bool.default_convert_to_fahrenheit));
+        double temp = info.temperature / 10.0;
+        if (convertF) temp = temp * 9.0 / 5.0 + 32.0;
+        return (int) Math.round(temp);
+    }
+
+    private int iconContentValue() {
+        String content = contentPreference(SettingsFragment.KEY_ICON_CONTENT,
+                                           res.getString(R.string.default_icon_content));
+        if (CONTENT_TEMPERATURE.equals(content)) {
+            return roundedTemperatureValue();
+        }
+        return info.percent;
+    }
+
+    private String chipContentText() {
+        String content = settings.getString(SettingsFragment.KEY_CHIP_CONTENT,
+                                            res.getString(R.string.default_chip_content));
+
+        if ("switching".equals(content)) {
+            content = chipShowingTemperature ? CONTENT_TEMPERATURE : CONTENT_PERCENTAGE;
+        } else {
+            content = contentPreference(SettingsFragment.KEY_CHIP_CONTENT,
+                                        res.getString(R.string.default_chip_content));
+        }
+
+        if (CONTENT_TEMPERATURE.equals(content)) {
+            boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                                   res.getBoolean(R.bool.default_convert_to_fahrenheit));
+            return Str.formatTemp(info.temperature, convertF, false);
+        }
+        return info.percent + "%";
+    }
+
+    private boolean shouldShowChipChargingIndicator() {
+        if (!settings.getBoolean(SettingsFragment.KEY_CHIP_INDICATE_CHARGING, true)) return false;
+        return info.status == BatteryInfo.STATUS_CHARGING || info.status == BatteryInfo.STATUS_FULLY_CHARGED;
+    }
+
+    // Since alpha values aren't permitted, return 0 for default
+    private int colorFor(String colorKey, String customKey) {
+        String colorString = settings.getString(colorKey, "default");
+
+        if (colorString.charAt(0) == '#')
+            return colorFromHex(colorString);
+        else if (colorString.equals("custom"))
+            return settings.getInt(customKey, R.color.main_notification_default_custom_text_color);
+        else
+            return 0;
+    }
+
+    private static int colorFromHex(String hex) {
+        if (hex.length() != 7) return 0;
+        if (hex.charAt(0) != '#') return 0;
+
+        int color = 0xff;
+
+        for (int i = 1; i <= 6; i++) {
+            color <<= 4;
+            char c = hex.charAt(i);
+
+            if (c >= '0' && c <= '9')
+                color += c - '0';
+            else if (c >= 'A' && c <= 'F')
+                color += c - 'A' + 10;
+            else if (c >= 'a' && c <= 'f')
+                color += c - 'a' + 10;
+        }
+
+        return color;
+    }
+
+    private String lineFor(String key) {
+        String req = settings.getString(key, key.equals(SettingsFragment.KEY_TOP_LINE) ? "remaining" : "vitals");
+
+        if (req.equals("remaining"))
+            return predictionLine();
+        else if (req.equals("vitals"))
+            return vitalStatsLine();
+        else
+            return statusDurationLine();
+    }
+
+    private String predictionLine() {
+        String line;
+        BatteryInfo.RelativeTime predicted = info.prediction.last_rtime;
+
+        if (info.prediction.what == BatteryInfo.Prediction.NONE) {
+            line = Str.statuses[info.status];
+        } else {
+            if (predicted.days > 0)
+                line = Str.n_days_m_hours(predicted.days, predicted.hours);
+            else if (predicted.hours > 0) {
+                String verbosity = settings.getString(SettingsFragment.KEY_TIME_REMAINING_VERBOSITY,
+                                                      res.getString(R.string.default_time_remaining_verbosity));
+                if (verbosity.equals("condensed"))
+                    line = Str.n_hours_m_minutes_medium(predicted.hours, predicted.minutes);
+                else if (verbosity.equals("verbose"))
+                    line = Str.n_hours_m_minutes_long(predicted.hours, predicted.minutes);
+                else
+                    line = Str.n_hours_long_m_minutes_medium(predicted.hours, predicted.minutes);
+            } else
+                line = Str.n_minutes_long(predicted.minutes);
+
+            if (info.prediction.what == BatteryInfo.Prediction.UNTIL_CHARGED)
+                line += res.getString(R.string.notification_until_charged);
+            else
+                line += res.getString(R.string.notification_until_drained);
+        }
+
+        return line;
+    }
+
+    private String vitalStatsLine() {
+        Boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                               res.getBoolean(R.bool.default_convert_to_fahrenheit));
+
+        String line = Str.healths[info.health] + " / " + Str.formatTemp(info.temperature, convertF);
+
+        if (info.voltage > 500)
+            line += " / " + Str.formatVoltage(info.voltage);
+        if (settings.getBoolean(SettingsFragment.KEY_ENABLE_CURRENT_HACK, false) &&
+            settings.getBoolean(SettingsFragment.KEY_DISPLAY_CURRENT_IN_VITAL_STATS, false)) {
+            Long current = null;
+            if (settings.getBoolean(SettingsFragment.KEY_PREFER_CURRENT_AVG_IN_VITAL_STATS, false))
+                current = CurrentHack.getAvgCurrent();
+            if (current == null) // Either don't prefer avg or avg isn't available
+                current = CurrentHack.getCurrent();
+            if (current != null)
+                line += " / " + String.valueOf(current) + "mA";
+        }
+        if (settings.getBoolean(SettingsFragment.KEY_STATUS_DURATION_IN_VITAL_SIGNS, false)) {
+            float statusDurationHours = (now - info.last_status_cTM) / (60 * 60 * 1000f);
+            line += " / " + String.format("%.1f", statusDurationHours) + "h"; // TODO: Translatable 'h'
+        }
+
+        return line;
+    }
+
+    private String statusDurationLine() {
+        long statusDuration = now - info.last_status_cTM;
+        int statusDurationHours = (int) ((statusDuration + (1000 * 60 * 30)) / (1000 * 60 * 60));
+        String line = Str.statuses[info.status] + " ";
+
+        if (statusDuration < 1000 * 60 * 60)
+            line += Str.since + " " + formatTime(new Date(info.last_status_cTM));
+        else
+            line += Str.for_n_hours(statusDurationHours);
+
+        return line;
+    }
+
+    private int iconFor() {
+        if (supportsLiveUpdates()) {
+            return R.drawable.battery;
+        }
+
+        String default_set = "builtin.plain_number";
+
+        String icon_set = settings.getString(SettingsFragment.KEY_ICON_SET, "null");
+        if (! icon_set.startsWith("builtin.")) icon_set = "null"; // TODO: Remove this line to re-enable plugins
+
+        if (icon_set.equals("null")) {
+            icon_set = default_set;
+
+            // Writing to settings here should only happen when Service first started, so shouldn't have conflict
+            settings.edit().putString(SettingsFragment.KEY_ICON_SET, default_set).apply();
+        }
+
+        Boolean indicate_charging = settings.getBoolean(SettingsFragment.KEY_INDICATE_CHARGING, true);
+        int clampedPercent = Math.max(0, Math.min(140, iconContentValue()));
+
+        if (icon_set.equals("builtin.plain_number")) {
+            String prefix = (info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? "charging" : "plain";
+            return iconByName(prefix, clampedPercent, R.drawable.plain000);
+        } else if (icon_set.equals("builtin.smaller_number")) {
+            String prefix = (info.status == BatteryInfo.STATUS_CHARGING && indicate_charging) ? "small_charging" : "small_plain";
+            return iconByName(prefix, clampedPercent, R.drawable.small_plain000);
+        } else if (!settings.getBoolean(SettingsFragment.KEY_CLASSIC_COLOR_MODE, false)) {
+            return iconByName("w", clampedPercent, R.drawable.w000);
+        } else {
+            return iconByName("b", clampedPercent, R.drawable.b000);
+        }
+    }
+
+    // Resource IDs are not guaranteed to be contiguous; resolve by name and cache.
+    private int iconByName(String prefix, int percent, int fallbackResId) {
+        String key = prefix + percent;
+        Integer cachedResId = iconResCache.get(key);
+        if (cachedResId != null) return cachedResId;
+
+        String iconName = String.format(Locale.US, "%s%03d", prefix, percent);
+        int resId = res.getIdentifier(iconName, "drawable", getPackageName());
+
+        if (resId == 0) {
+            String zeroName = String.format(Locale.US, "%s000", prefix);
+            resId = res.getIdentifier(zeroName, "drawable", getPackageName());
+        }
+
+        if (resId == 0) resId = fallbackResId;
+
+        iconResCache.put(key, resId);
+        return resId;
+    }
+
+    private boolean statusHasChanged() {
+        int previous_charge = sp_service.getInt(KEY_PREVIOUS_CHARGE, 100);
+
+        return (info.last_status != info.status ||
+                info.last_status_cTM >= now ||
+                info.last_plugged != info.plugged ||
+                (info.plugged == BatteryInfo.PLUGGED_UNPLUGGED && info.percent > previous_charge + 20));
+    }
+
+    private void handleUpdateWithChangedStatus() {
+        if (settings.getBoolean(SettingsFragment.KEY_ENABLE_LOGGING, true)) {
+            log_db.logStatus(info, now, LogDatabase.STATUS_NEW);
+
+            if (info.status != info.last_status && info.last_status == BatteryInfo.STATUS_UNPLUGGED)
+                log_db.prune(Integer.valueOf(settings.getString(SettingsFragment.KEY_MAX_LOG_AGE, Str.default_max_log_age)));
+        }
+
+        if (settings.getBoolean(SettingsFragment.KEY_ENABLE_CURRENT_HACK, false) &&
+            settings.getBoolean(SettingsFragment.KEY_DISPLAY_CURRENT_IN_VITAL_STATS, false)) {
+            mHandler.postDelayed(runRenotify, 1000);
+            mHandler.postDelayed(runRenotify, 3000);
+            mHandler.postDelayed(runRenotify, 9000);
+            mHandler.postDelayed(runRenotify, 27000);
+        }
+
+        /* TODO: Af first glance, I think I want to do this, but think about it a bit and decide for sure... */
+        if (info.status != info.last_status && info.status == BatteryInfo.STATUS_UNPLUGGED)
+            mNotificationManager.cancel(NOTIFICATION_ALARM);
+
+        updated_lasts = true;
+        sps_editor.putLong(BatteryInfo.KEY_LAST_STATUS_CTM, now);
+        sps_editor.putInt(BatteryInfo.KEY_LAST_STATUS, info.status);
+        sps_editor.putInt(BatteryInfo.KEY_LAST_PERCENT, info.percent);
+        sps_editor.putInt(BatteryInfo.KEY_LAST_PLUGGED, info.plugged);
+        sps_editor.putInt(KEY_PREVIOUS_CHARGE, info.percent);
+        sps_editor.putInt(KEY_PREVIOUS_TEMP, info.temperature);
+        sps_editor.putInt(KEY_PREVIOUS_HEALTH, info.health);
+    }
+
+    private void handleUpdateWithSameStatus() {
+        if (settings.getBoolean(SettingsFragment.KEY_ENABLE_LOGGING, true))
+            log_db.logStatus(info, now, LogDatabase.STATUS_OLD);
+
+        if (info.percent % 10 == 0) {
+            sps_editor.putInt(KEY_PREVIOUS_CHARGE, info.percent);
+            sps_editor.putInt(KEY_PREVIOUS_TEMP, info.temperature);
+            sps_editor.putInt(KEY_PREVIOUS_HEALTH, info.health);
+        }
+    }
+
+    private void handleAlarms() {
+        Cursor c;
+        Notification.Builder nb;
+
+        int previous_charge = sp_service.getInt(KEY_PREVIOUS_CHARGE, 100);
+
+        if (info.status == BatteryInfo.STATUS_FULLY_CHARGED && info.status != info.last_status) {
+            c = alarms.activeAlarmFull();
+            if (c != null) {
+                nb = parseAlarmCursor(c);
+                nb.setContentTitle(Str.alarm_fully_charged)
+                    .setContentText(Str.alarm_text)
+                    .setChannelId(CHAN_ID_A_CHARGED);
+
+                nb.setVisibility(Notification.VISIBILITY_PUBLIC);
+
+                notifyAlarm(nb.build());
+                c.close();
+            }
+        }
+
+        c = alarms.activeAlarmChargeDrops(info.percent, previous_charge);
+        if (c != null) {
+            sps_editor.putInt(KEY_PREVIOUS_CHARGE, info.percent);
+            nb = parseAlarmCursor(c);
+            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            nb.setContentTitle(Str.alarm_charge_drops + threshold + Str.percent_symbol)
+                .setContentText(Str.alarm_text)
+                .setChannelId(CHAN_ID_A_CDROP);
+
+            nb.setVisibility(Notification.VISIBILITY_PUBLIC);
+
+            notifyAlarm(nb.build());
+            c.close();
+        }
+
+        c = alarms.activeAlarmChargeRises(info.percent, previous_charge);
+        if (c != null && info.status != BatteryInfo.STATUS_UNPLUGGED) {
+            sps_editor.putInt(KEY_PREVIOUS_CHARGE, info.percent);
+            nb = parseAlarmCursor(c);
+            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            nb.setContentTitle(Str.alarm_charge_rises + threshold + Str.percent_symbol)
+                .setContentText(Str.alarm_text)
+                .setChannelId(CHAN_ID_A_CRISE);
+
+            nb.setVisibility(Notification.VISIBILITY_PUBLIC);
+
+            notifyAlarm(nb.build());
+            c.close();
+        }
+
+        c = alarms.activeAlarmTempRises(info.temperature, sp_service.getInt(KEY_PREVIOUS_TEMP, 1));
+        if (c != null) {
+            Boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                                   res.getBoolean(R.bool.default_convert_to_fahrenheit));
+
+            sps_editor.putInt(KEY_PREVIOUS_TEMP, info.temperature);
+            nb = parseAlarmCursor(c);
+            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            nb.setContentTitle(Str.alarm_temp_rises + Str.formatTemp(Integer.valueOf(threshold), convertF, false))
+                .setContentText(Str.alarm_text)
+                .setChannelId(CHAN_ID_A_TRISE);
+
+            nb.setVisibility(Notification.VISIBILITY_PUBLIC);
+
+            notifyAlarm(nb.build());
+            c.close();
+        }
+
+        c = alarms.activeAlarmTempDrops(info.temperature, sp_service.getInt(KEY_PREVIOUS_TEMP, 1));
+        if (c != null) {
+            Boolean convertF = settings.getBoolean(SettingsFragment.KEY_CONVERT_F,
+                                                   res.getBoolean(R.bool.default_convert_to_fahrenheit));
+
+            sps_editor.putInt(KEY_PREVIOUS_TEMP, info.temperature);
+            nb = parseAlarmCursor(c);
+            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            nb.setContentTitle(Str.alarm_temp_drops + Str.formatTemp(Integer.valueOf(threshold), convertF, false))
+                .setContentText(Str.alarm_text)
+                .setChannelId(CHAN_ID_A_TDROP);
+
+            nb.setVisibility(Notification.VISIBILITY_PUBLIC);
+
+            notifyAlarm(nb.build());
+            c.close();
+        }
+
+        if (info.health > BatteryInfo.HEALTH_GOOD && info.health != sp_service.getInt(KEY_PREVIOUS_HEALTH, BatteryInfo.HEALTH_GOOD)) {
+            c = alarms.activeAlarmFailure();
+            if (c != null) {
+                sps_editor.putInt(KEY_PREVIOUS_HEALTH, info.health);
+                nb = parseAlarmCursor(c);
+                nb.setContentTitle(Str.alarm_health_failure + Str.healths[info.health])
+                    .setContentText(Str.alarm_text)
+                    .setChannelId(CHAN_ID_A_HFAIL);
+
+                nb.setVisibility(Notification.VISIBILITY_PUBLIC);
+
+                notifyAlarm(nb.build());
+                c.close();
+            }
+        }
+    }
+
+    private Notification.Builder parseAlarmCursor(Cursor c) {
+        Notification.Builder nb = new Notification.Builder(this)
+            .setSmallIcon(R.drawable.stat_notify_alarm)
+            .setAutoCancel(true)
+            .setContentIntent(alarmsPendingIntent);
+
+        return nb;
+    }
+
+    private void notifyAlarm(Notification n) {
+        mNotificationManager.notify(NOTIFICATION_ALARM, n);
+    }
+
+    private String formatTime(Date d) {
+        String format = android.provider.Settings.System.getString(getContentResolver(),
+                                                                   android.provider.Settings.System.TIME_12_24);
+        if (format == null || format.equals("12")) {
+            return java.text.DateFormat.getTimeInstance(java.text.DateFormat.SHORT,
+                                                        java.util.Locale.getDefault()).format(d);
+        } else {
+            return (new java.text.SimpleDateFormat("HH:mm")).format(d);
+        }
+    }
+
+    public static void onWidgetUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        widgetManager = appWidgetManager;
+
+        for (int i = 0; i < appWidgetIds.length; i++) {
+            widgetIds.add(appWidgetIds[i]);
+        }
+
+        startForegroundServiceSafely(context);
+    }
+
+    public static void startForegroundServiceSafely(Context context) {
+        Intent serviceIntent = new Intent(context, BatteryInfoService.class);
+
+        try {
+            context.startForegroundService(serviceIntent);
+        } catch (RuntimeException e) {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S &&
+                e instanceof android.app.ForegroundServiceStartNotAllowedException) {
+                try {
+                    context.startService(serviceIntent);
+                } catch (Exception ignored) {
+                }
+            } else {
+                try {
+                    context.startService(serviceIntent);
+                } catch (Exception ignored) {
+                }
+            }
+        }
+    }
+
+    public static void onWidgetDeleted(Context context, int[] appWidgetIds) {
+        for (int i = 0; i < appWidgetIds.length; i++) {
+            widgetIds.remove(appWidgetIds[i]);
+        }
+    }
+
+    public static boolean supportsLiveUpdates() {
+        if (android.os.Build.VERSION.SDK_INT < 36) return false;
+        try {
+            Notification.Builder.class.getMethod("setRequestPromotedOngoing", boolean.class);
+            Notification.Builder.class.getMethod("setShortCriticalText", String.class);
+            return true;
+        } catch (Throwable e) {
+            return false;
+        }
+    }
+
+    public static boolean isLiveUpdateEnabledInSystem(Context context) {
+        if (android.os.Build.VERSION.SDK_INT < 36) return true;
+        NotificationManager nm = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        try {
+            Object result = nm.getClass().getMethod("canPostPromotedNotifications").invoke(nm);
+            return result != null && (boolean) result;
+        } catch (Throwable ignored) {
+            return true;
+        }
+    }
+}
