@@ -217,10 +217,6 @@
   <string formatted="false" name="help_open_source">Tai
     projektas yra atviro kodo. Šaltinio kodą galite pasiekti adresu
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">Paaukoti</string>
-  <string formatted="false" name="help_donate">Prašau
-    consider donating by upgrading to the Pro
-    Versija.</string>
   <string formatted="false" name="help_cat_privacy">Privatumas</string>
   <string formatted="false" name="help_privacy">Battery Monitor nerenka, nesaugo ir neperduoda jokios asmeninės informacijos.</string>
   <string formatted="false" name="help_contact">Jeigu

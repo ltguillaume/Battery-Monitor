@@ -235,8 +235,6 @@
   <string name="help_open_source" formatted="false">Dit
     project is open source. U kunt de broncode raadplegen op
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string name="help_cat_donate" formatted="false">Doneren</string>
-  <string name="help_donate" formatted="false">Overweeg om te doneren door te upgraden naar de <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro-versie</a>.</string>
   <string name="help_cat_privacy" formatted="false">Privacy</string>
   <string name="help_privacy" formatted="false">Battery Monitor verzamelt, bewaart of verzendt geen persoonlijke informatie.</string>
   <string name="notifications_disabled_cat" formatted="false">Meldingen uitgeschakeld</string>

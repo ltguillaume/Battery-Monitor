@@ -149,10 +149,6 @@
   <string formatted="false" name="help_open_source">Aceasta
     proiectul este open source. Puteți accesa codul sursă la
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">Dona</string>
-  <string formatted="false" name="help_donate">Vă rog
-    luați în considerare donarea prin trecerea la Pro
-    Versiune.</string>
   <string formatted="false" name="help_cat_privacy">Confidențialitate</string>
   <string formatted="false" name="help_privacy">Battery Monitor nu colectează, stochează și nu transmite informații personale.</string>
   <string formatted="false" name="help_no_warranty">Acest software este distribuit în speranța că va fi util, dar

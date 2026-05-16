@@ -119,8 +119,6 @@
   <string name="help_open_source" formatted="false">これ
     プロジェクトはオープンソースです。ソースコードには次の場所からアクセスできます。
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>。</string>
-  <string name="help_cat_donate" formatted="false">寄付</string>
-  <string name="help_donate" formatted="false">寄付のために <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">プロ バージョン</a> へのアップグレードをご検討ください。</string>
   <string name="help_cat_privacy" formatted="false">プライバシー</string>
   <string name="help_privacy" formatted="false">Battery Monitor は個人情報を収集、保存、送信することはありません。</string>
   <string name="help_cat_no_warranty" formatted="false">無保証</string>

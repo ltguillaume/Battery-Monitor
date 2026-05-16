@@ -204,10 +204,6 @@
   <string formatted="false" name="help_open_source">esto
     El proyecto es de código abierto. Puedes acceder al código fuente en
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">Donar</string>
-  <string formatted="false" name="help_donate">por favor
-    considere donar actualizando a Pro
-    Versión.</string>
   <string formatted="false" name="help_cat_privacy">Privacidad</string>
   <string formatted="false" name="help_privacy">Battery Monitor no recopila, almacena ni transmite ninguna información personal.</string>
   <string formatted="false" name="help_contact">si

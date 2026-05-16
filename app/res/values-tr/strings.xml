@@ -96,7 +96,6 @@
   <string name="currently_disabled" formatted="false">Şu An Etkin Değil</string>
   <string name="help_cat_version" formatted="false">Sürüm</string>
   <string name="help_cat_open_source" formatted="false">Açık Kaynak</string>
-  <string name="help_cat_donate" formatted="false">Bağış</string>
   <string name="help_cat_no_warranty" formatted="false">Garanti Yok</string>
   <string name="help_cat_acknowledgments" formatted="false">Onaylar</string>
   <string name="help_cat_contact" formatted="false">Kişi</string>
@@ -177,7 +176,6 @@
   <string name="help_open_source" formatted="false">Bu
     proje açık kaynaktır. Kaynak koduna adresinden ulaşabilirsiniz.
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string name="help_donate" formatted="false">Bağış yapmak için lütfen <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Sürüm</a>\'e yükseltmeyi düşünün.</string>
   <string name="help_cat_privacy" formatted="false">Gizlilik</string>
   <string name="help_privacy" formatted="false">Battery Monitor hiçbir kişisel bilgiyi toplamaz, saklamaz veya iletmez.</string>
   <string name="help_no_warranty" formatted="false">Bu yazılım faydalı olması umuduyla sunulur, ancak HİÇBİR GARANTİ VERİLMEZ.</string>

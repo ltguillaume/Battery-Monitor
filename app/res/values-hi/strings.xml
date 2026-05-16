@@ -147,10 +147,6 @@
   <string formatted="false" name="help_open_source">यह
     प्रोजेक्ट खुला स्रोत है. आप स्रोत कोड तक पहुंच सकते हैं
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>।</string>
-  <string formatted="false" name="help_cat_donate">दान करें</string>
-  <string formatted="false" name="help_donate">कृपया
-    प्रो में अपग्रेड करके दान करने पर विचार करें
-    संस्करण.</string>
   <string formatted="false" name="help_cat_privacy">गोपनीयता</string>
   <string formatted="false" name="help_privacy">बैटरी मॉनिटर किसी भी व्यक्तिगत जानकारी को एकत्र, संग्रहीत या प्रसारित नहीं करता है।</string>
   <string formatted="false" name="help_cat_no_warranty">कोई वारंटी नहीं</string>

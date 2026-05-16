@@ -112,8 +112,6 @@
   <string name="help_open_source" formatted="false">Ово
     пројекат је отвореног кода. Можете приступити изворном коду на
     хттпс://гитхуб.цом/тсвистак/Баттери-Индицатор-Про.</string>
-  <string name="help_cat_donate" formatted="false">Donirajte</string>
-  <string name="help_donate" formatted="false">Molimo vas da razmislite od doniranju tako što ćete se opredeliti za plaćenu verziju na <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Version</a>.</string>
   <string name="help_cat_privacy" formatted="false">Privatnost</string>
   <string name="help_privacy" formatted="false">Баттери Монитор не прикупља, чува или преноси никакве личне податке.</string>
   <string name="help_cat_no_warranty" formatted="false">Bez garancije</string>

@@ -192,10 +192,6 @@
   <string formatted="false" name="help_open_source">to
     projekt je odprtokoden. Do izvorne kode lahko dostopate na
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">Donirajte</string>
-  <string formatted="false" name="help_donate">prosim
-    razmislite o donaciji z nadgradnjo na Pro
-    Različica.</string>
   <string formatted="false" name="help_cat_privacy">Zasebnost</string>
   <string formatted="false" name="help_privacy">Battery Monitor ne zbira, shranjuje ali prenaša nobenih osebnih podatkov.</string>
   <string formatted="false" name="help_cat_no_warranty">Brez garancije</string>

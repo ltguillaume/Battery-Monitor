@@ -104,7 +104,6 @@
   <string name="help_open_source" formatted="false">Dies
     Das Projekt ist Open Source. Den Quellcode finden Sie unter
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string name="help_cat_donate" formatted="false">Spenden</string>
   <string name="help_cat_no_warranty" formatted="false">Keine Garantie</string>
   <string name="help_no_warranty" formatted="false">Diese Software ist in der Hoffnung erstellt, dass sie nützlich sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTGÄNGIGKEIT oder EIGNUNG FÜR EINEN BESTIMMTEN ZWECK.\n\nWährend ich mein Bestes gebe, um sicherzustellen, dass sie gut funktioniert und sie keine Probleme erzeugt, bin ich keinen Umständen verantwortlich für jegliche Schäden oder Unannehmlichkeiten.</string>
   <string name="help_cat_acknowledgments" formatted="false">Danksagungen</string>
@@ -187,7 +186,6 @@
   <string name="after_nm_ms_unplugged" formatted="false">Nach %1$dm %2$ds ausgesteckt</string>
   <string name="after_nm_ms_plugged_in" formatted="false">Nach %1$dm %2$ds eingesteckt</string>
   <string name="help_cat_open_source" formatted="false">Open Source</string>
-  <string name="help_donate" formatted="false">Bitte unterstützen Sie das Projekt, indem Sie auf die <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro-Version</a> upgraden.</string>
   <string name="help_cat_privacy" formatted="false">Datenschutz</string>
   <string name="help_privacy" formatted="false">Battery Monitor erhebt, speichert oder übermittelt keine personenbezogenen Daten.</string>
   <string name="notifications_disabled_cat" formatted="false">Benachrichtigungen deaktiviert</string>

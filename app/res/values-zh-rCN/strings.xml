@@ -212,10 +212,6 @@
   <string formatted="false" name="help_open_source">这个
     项目是开源的。您可以访问源代码
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>。</string>
-  <string formatted="false" name="help_cat_donate">捐</string>
-  <string formatted="false" name="help_donate">请
-    考虑通过升级到专业版来捐赠
-    版本。</string>
   <string formatted="false" name="help_cat_privacy">隐私</string>
   <string formatted="false" name="help_privacy">Battery Monitor不会收集、存储或传输任何个人信息。</string>
   <string formatted="false" name="help_contact">如果

@@ -90,7 +90,6 @@
   <string name="currently_disabled" formatted="false">אינו מאופשר כעת</string>
   <string name="help_cat_version" formatted="false">גרסה</string>
   <string name="help_cat_open_source" formatted="false">קוד פתוח</string>
-  <string name="help_cat_donate" formatted="false">תרומה</string>
   <string name="help_cat_privacy" formatted="false">פרטיות</string>
   <string name="alarm_settings_subtitle" formatted="false">הגדרות התראה</string>
   <string name="alarm_settings" formatted="false">התראות</string>
@@ -167,9 +166,6 @@
   <string formatted="false" name="help_open_source">זה
     הפרויקט הוא קוד פתוח. אתה יכול לגשת לקוד המקור בכתובת
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_donate">בבקשה
-    שקול לתרום על ידי שדרוג ל-Pro
-    גרסה.</string>
   <string formatted="false" name="help_privacy">Battery Monitor אינו אוסף, מאחסן או מעביר מידע אישי.</string>
   <string formatted="false" name="help_cat_no_warranty">אין אחריות</string>
   <string formatted="false" name="help_no_warranty">תוכנה זו מופצת בתקווה שהיא תהיה שימושית, אבל

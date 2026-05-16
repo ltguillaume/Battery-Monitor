@@ -149,12 +149,6 @@
   <string formatted="false" name="help_open_source">Αυτό
     το έργο είναι ανοιχτού κώδικα. Μπορείτε να αποκτήσετε πρόσβαση στον πηγαίο κώδικα στη διεύθυνση
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">Προσφέρω</string>
-  <string formatted="false" name="help_donate">
-    Παρακαλώ
-        σκεφτείτε να κάνετε δωρεά κάνοντας αναβάθμιση στο Pro
-        Έκδοση.
-  </string>
     <string formatted="false" name="help_cat_privacy">Μυστικότητα</string>
   <string formatted="false" name="help_privacy">Το Battery Monitor δεν συλλέγει, αποθηκεύει ή μεταδίδει προσωπικές πληροφορίες.</string>
   <string formatted="false" name="help_cat_no_warranty">Καμιά Εγγύηση</string>

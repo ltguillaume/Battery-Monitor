@@ -217,10 +217,6 @@
   <string formatted="false" name="help_open_source">Toto
     projekt je open source. K zdrojovému kódu sa môžete dostať na adrese
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">Darovať</string>
-  <string formatted="false" name="help_donate">Prosím
-    zvážte darovanie inováciou na Pro
-    Verzia.</string>
   <string formatted="false" name="help_cat_privacy">Ochrana osobných údajov</string>
   <string formatted="false" name="help_privacy">Battery Monitor nezhromažďuje, neukladá ani neprenáša žiadne osobné informácie.</string>
   <string formatted="false" name="help_contact">Ak

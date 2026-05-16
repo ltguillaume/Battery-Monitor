@@ -106,8 +106,6 @@
   <string name="help_open_source" formatted="false">Это
     проект с открытым исходным кодом. Вы можете получить доступ к исходному коду по адресу
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string name="help_cat_donate" formatted="false">Пожертвовать</string>
-  <string name="help_donate" formatted="false">Вы можете внести свое пожертвование перейдя на <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Version</a>.</string>
   <string name="help_cat_no_warranty" formatted="false">Отказ от гарантий</string>
   <string name="help_no_warranty" formatted="false">Это приложение распространяется в надежде, что оно принесет пользу, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий ТОВАРНОЙ ПРИГОДНОСТИ или СООТВЕТСТВИЯ ДЛЯ КОНКРЕТНОГО НАМЕРЕНИЯ.\n\nХотя я прикладываю все свои усилия для того, чтобы приложение работало правильно и не вызывало проблем, тем не менее, я не несу ответственность за какие-либо повреждения или неудобства, которые могут возникнуть при некоторых обстоятельствах.</string>
   <string name="help_cat_acknowledgments" formatted="false">Благодарности</string>

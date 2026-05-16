@@ -95,8 +95,6 @@
   <string name="help_open_source" formatted="false">Ezt
     projekt nyílt forráskódú. A forráskódot a címen érheti el
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string name="help_cat_donate" formatted="false">Adományozás</string>
-  <string name="help_donate" formatted="false">Kérlek, fontold meg az adományozást a <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro Verzió</a>ra való frissítéssel.</string>
   <string name="help_cat_no_warranty" formatted="false">Nincs garancia</string>
   <string name="help_no_warranty" formatted="false">Ezt a szoftvert annak reményében terjesztjük, hogy hasznosnak bizonyul, de MINDENNEMŰ GARANCIA NÉLKÜL, kizárva még az általában beleértett garanciákat is, mint a FORGALMAZHATÓSÁG, vagy A CÉLNAK VALÓ MEGFELELÉS.\n\nBár minden elvárhatót megteszek, hogy megbizonyosodjak a szoftver helyes és zavartalan működéséről, kizárt bárminemű felelősség a szoftver használatából eredő minden kár vagy okozott kellemetlenség miatt.</string>
   <string name="help_cat_acknowledgments" formatted="false">Köszönetnyilvánítás</string>

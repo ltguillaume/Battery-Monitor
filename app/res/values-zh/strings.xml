@@ -79,8 +79,6 @@
   <string name="help_open_source" formatted="false">這個
     專案是開源的。您可以存取原始程式碼
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>。</string>
-  <string name="help_cat_donate" formatted="false">贊助</string>
-  <string name="help_donate" formatted="false">請考慮以升級到<a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">Pro版</a>來贊助我們。</string>
   <string name="help_cat_no_warranty" formatted="false">免責申明</string>
   <string name="help_no_warranty" formatted="false">本軟體旨在提高系統的易用性，並<b>無任何承擔責任的義務</b>。<b>不對使用軟體實現特殊功能的實用性做任何承諾</b>。\n\n軟體開發者將盡其所能最求軟體的正常工作及流暢運行，但對任何情況下可能導致的使用者的不適或設備損壞不承擔任何責任。</string>
   <string name="help_cat_acknowledgments" formatted="false">聲明</string>

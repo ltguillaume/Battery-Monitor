@@ -154,10 +154,6 @@
   <string formatted="false" name="help_open_source">این
     پروژه متن باز است می توانید به کد منبع دسترسی پیدا کنید
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string formatted="false" name="help_cat_donate">اهدا کنید</string>
-  <string formatted="false" name="help_donate">لطفا
-    کمک مالی را با ارتقاء به Pro در نظر بگیرید
-    نسخه.</string>
   <string formatted="false" name="help_cat_privacy">حریم خصوصی</string>
   <string formatted="false" name="help_privacy">مانیتور باتری هیچ اطلاعات شخصی را جمع آوری، ذخیره یا انتقال نمی دهد.</string>
   <string formatted="false" name="help_cat_no_warranty">بدون گارانتی</string>

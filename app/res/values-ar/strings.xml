@@ -107,8 +107,6 @@
   <string name="help_open_source" formatted="false">هذا
     المشروع مفتوح المصدر. يمكنك الوصول إلى الكود المصدري على
     <a href="https://github.com/tswistak/Battery-Monitor">https://github.com/tswistak/Battery-Monitor</a>.</string>
-  <string name="help_cat_donate" formatted="false">تبرع</string>
-  <string name="help_donate" formatted="false">ارجوك كن من المتبرعين بشرائك النسخة الكاملة <a href="market://details?id=com.darshancomputing.BatteryIndicatorPro">النسخة الكاملة</a>.</string>
   <string name="help_cat_no_warranty" formatted="false">لا ضمان</string>
   <string name="help_no_warranty" formatted="false">يتم نشر هذا التطبيق على امل ان يكون مفيدا وعملي لكن من دون اي ضمان حتى دون صلاحية التسويق وللاستخدام لغرض معين\n\nبينما أنا أبذل قصارى جهدي للتأكد من أنه يعمل بشكل جيد ولا يسبب المشاكل، وأنا لست مسؤولا عن أي ضرر أو إزعاج قد يسببه تحت أي ظرف من الظروف</string>
   <string name="help_cat_acknowledgments" formatted="false">شكر وتقدير</string>
