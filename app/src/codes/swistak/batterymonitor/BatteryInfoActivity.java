@@ -125,6 +125,7 @@ public class BatteryInfoActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case PR_LVF_WRITE_STORAGE: {
                 LogViewFragment lvf = pagerAdapter.getLVF();

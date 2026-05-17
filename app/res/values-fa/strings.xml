@@ -206,8 +206,9 @@
   <string formatted="false" name="other_settings_help">تمام تنظیمات دیگر از جمله ورود به سیستم، قفل در این صفحه وجود دارد
     صفحه نمایش، واحد دما، شروع خودکار و موارد دیگر.</string>
   <string formatted="false" name="live_updates_onboarding_title">نوار وضعیت تراشه باتری</string>
-  <string formatted="false" name="live_updates_onboarding_message_on">دستگاه شما از نمایش درصد باتری به عنوان یک تراشه در نوار وضعیت پشتیبانی می کند. این به طور پیش‌فرض فعال است.</string>
-  <string formatted="false" name="live_updates_onboarding_message_off">دستگاه شما از نمایش درصد باتری به عنوان یک تراشه در نوار وضعیت پشتیبانی می‌کند، اما در حال حاضر در تنظیمات سیستم غیرفعال است. اگر نماد اعلان سنتی را ترجیح می دهید، می توانید آن را غیرفعال کنید.</string>
+  <string formatted="false" name="live_updates_onboarding_message_on">دستگاه شما از نمایش درصد باتری به‌صورت چیپ در نوار وضعیت پشتیبانی می‌کند. این گزینه به‌صورت پیش‌فرض فعال است.\n\nاگر نماد اعلان سنتی را ترجیح می‌دهید، می‌توانید «Live Updates» را در تنظیمات سیستم Android برای این برنامه غیرفعال کنید.\n\nنکته: دادن این مجوز ممکن است گاهی باعث بسته شدن برنامه شود. اگر این اتفاق افتاد، کافی است برنامه را دوباره باز کنید.</string>
+  <string formatted="false" name="live_updates_onboarding_message_off">دستگاه شما از نمایش درصد باتری به‌صورت چیپ در نوار وضعیت پشتیبانی می‌کند، اما این گزینه در حال حاضر در تنظیمات سیستم غیرفعال است.\n\nبرای بهترین تجربه، توصیه می‌کنیم آن را فعال کنید. اگر نماد اعلان سنتی را ترجیح می‌دهید، می‌توانید آن را غیرفعال نگه دارید.\n\nنکته: دادن این مجوز ممکن است گاهی باعث بسته شدن برنامه شود. اگر این اتفاق افتاد، کافی است برنامه را دوباره باز کنید.</string>
+  <string name="notifications_onboarding_message" formatted="false">Battery Monitor برای نمایش سطح باتری در نوار وضعیت و اطلاع‌رسانی درباره هشدارها به اجازه شما نیاز دارد.\n\nنکته: دادن این مجوز ممکن است گاهی باعث بسته شدن برنامه شود. اگر این اتفاق افتاد، کافی است برنامه را دوباره باز کنید.</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">متوجه شدم</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">به تنظیمات بروید</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">رد کردن</string>

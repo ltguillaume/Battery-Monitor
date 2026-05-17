@@ -244,8 +244,9 @@
   <string name="current_hack_settings_summary" formatted="false">إعدادات متقدمة لتمكين معلومات mA</string>
   <string name="current_hack_settings_help" formatted="false">لا يوفر Android طريقة رسمية للتطبيقات للوصول إلى معلومات تيار البطارية. ولكن توجد حيلة قد تتيح هذا على كثير من الأجهزة.\n\nلا يوجد ضمان بأن هذا سيعمل. قد لا يعمل إطلاقًا أو قد يبدو أنه يعمل لكنه يعطي قيماً غير منطقية.\n\nإعدادات تشغيل هذه الحيلة والتحكم بطريقة استخدامها متاحة في هذا القسم إذا كان ذلك ممكنًا.</string>
   <string name="live_updates_onboarding_title" formatted="false">شريحة بطارية شريط الحالة</string>
-  <string name="live_updates_onboarding_message_on" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة. هذا الخيار مفعّل افتراضيًا.\n\nإذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك إيقاف «Live Updates» من إعدادات Android لهذا التطبيق.</string>
-  <string name="live_updates_onboarding_message_off" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة، لكنه معطّل حاليًا في إعدادات النظام.\n\nنوصي بتمكينه للحصول على أفضل تجربة. إذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك تركه معطّلًا.</string>
+  <string name="live_updates_onboarding_message_on" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة. هذا الخيار مفعّل افتراضيًا.\n\nإذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك إيقاف «Live Updates» من إعدادات نظام Android لهذا التطبيق.\n\nملاحظة: قد يؤدي منح هذا الإذن أحيانًا إلى إغلاق التطبيق. إذا حدث ذلك، يرجى إعادة فتحه ببساطة.</string>
+  <string name="live_updates_onboarding_message_off" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة، لكنه معطّل حاليًا في إعدادات النظام.\n\nنوصي بتمكينه للحصول على أفضل تجربة. إذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك تركه معطّلًا.\n\nملاحظة: قد يؤدي منح هذا الإذن أحيانًا إلى إغلاق التطبيق. إذا حدث ذلك، يرجى إعادة فتحه ببساطة.</string>
+  <string name="notifications_onboarding_message" formatted="false">يحتاج Battery Monitor إلى إذنك لعرض مستوى البطارية في شريط الحالة وإشعارك بالتنبيهات.\n\nملاحظة: قد يؤدي منح هذا الإذن أحيانًا إلى إغلاق التطبيق. إذا حدث ذلك، يرجى إعادة فتحه ببساطة.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">حسنًا</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">الانتقال إلى الإعدادات</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">تجاهل</string>

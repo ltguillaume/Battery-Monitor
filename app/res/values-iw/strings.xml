@@ -213,8 +213,9 @@
   <string formatted="false" name="other_settings_help">כל שאר ההגדרות נמצאות בדף זה, כולל רישום, נעילה
     מסך, יחידת טמפרטורה, הפעלה אוטומטית ועוד.</string>
   <string formatted="false" name="live_updates_onboarding_title">שבב סוללה בשורת המצב</string>
-  <string formatted="false" name="live_updates_onboarding_message_on">המכשיר שלך תומך בהצגת אחוז הסוללה כשבב בשורת המצב. זה מופעל כברירת מחדל.\n\nאם אתה מעדיף סמל התראה מסורתי, אתה יכול לכבות את \"עדכונים חיים\" בהגדרות המערכת של אנדרואיד עבור אפליקציה זו.</string>
-  <string formatted="false" name="live_updates_onboarding_message_off">המכשיר שלך תומך בהצגת אחוז הסוללה כשבב בשורת המצב, אך הוא מושבת כעת בהגדרות המערכת.\n\nאנו ממליצים להפעיל אותו לקבלת החוויה הטובה ביותר. אם אתה מעדיף סמל התראה מסורתי, אתה יכול להשאיר אותו מושבת.</string>
+  <string formatted="false" name="live_updates_onboarding_message_on">המכשיר שלך תומך בהצגת אחוז הסוללה כשבב בשורת המצב. אפשרות זו מופעלת כברירת מחדל.\n\nאם אתה מעדיף סמל התראה מסורתי, אפשר לכבות את "Live Updates" בהגדרות המערכת של Android עבור האפליקציה הזו.\n\nהערה: מתן ההרשאה הזו עלול לגרום לעיתים לסגירת האפליקציה. אם זה קורה, פשוט פתח אותה מחדש.</string>
+  <string formatted="false" name="live_updates_onboarding_message_off">המכשיר שלך תומך בהצגת אחוז הסוללה כשבב בשורת המצב, אבל אפשרות זו כבויה כרגע בהגדרות המערכת.\n\nמומלץ להפעיל אותה לחוויה הטובה ביותר. אם אתה מעדיף סמל התראה מסורתי, אפשר להשאיר אותה כבויה.\n\nהערה: מתן ההרשאה הזו עלול לגרום לעיתים לסגירת האפליקציה. אם זה קורה, פשוט פתח אותה מחדש.</string>
+  <string name="notifications_onboarding_message" formatted="false">Battery Monitor צריך את ההרשאה שלך כדי להציג את רמת הסוללה בשורת המצב ולהתריע על אזעקות.\n\nהערה: מתן ההרשאה הזו עלול לגרום לעיתים לסגירת האפליקציה. אם זה קורה, פשוט פתח אותה מחדש.</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">הבנתי</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">עבור אל הגדרות</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">לְפַטֵר</string>

@@ -199,8 +199,9 @@
   <string formatted="false" name="other_settings_help">लॉगिंग, लॉक सहित अन्य सभी सेटिंग्स इस पेज पर हैं
     स्क्रीन, तापमान इकाई, ऑटोस्टार्ट, और बहुत कुछ।</string>
   <string formatted="false" name="live_updates_onboarding_title">स्टेटस बार बैटरी चिप</string>
-  <string formatted="false" name="live_updates_onboarding_message_on">आपका डिवाइस स्टेटस बार में बैटरी प्रतिशत को चिप के रूप में दिखाने का समर्थन करता है। यह डिफ़ॉल्ट रूप से सक्षम है।</string>
-  <string formatted="false" name="live_updates_onboarding_message_off">आपका डिवाइस स्टेटस बार में बैटरी प्रतिशत को चिप के रूप में दिखाने का समर्थन करता है, लेकिन यह वर्तमान में सिस्टम सेटिंग्स में अक्षम है।\nZNLZZहम सर्वोत्तम अनुभव के लिए इसे सक्षम करने की सलाह देते हैं। यदि आप पारंपरिक अधिसूचना आइकन पसंद करते हैं, तो आप इसे अक्षम छोड़ सकते हैं।</string>
+  <string formatted="false" name="live_updates_onboarding_message_on">आपका डिवाइस स्टेटस बार में बैटरी प्रतिशत को चिप के रूप में दिखाने का समर्थन करता है। यह विकल्प डिफ़ॉल्ट रूप से सक्षम है।\n\nअगर आप पारंपरिक नोटिफिकेशन आइकन पसंद करते हैं, तो आप इस ऐप के लिए Android सिस्टम सेटिंग्स में "लाइव अपडेट्स" बंद कर सकते हैं।\n\nनोट: यह अनुमति देने पर कभी-कभी ऐप बंद हो सकती है। अगर ऐसा हो, तो बस ऐप को दोबारा खोलें।</string>
+  <string formatted="false" name="live_updates_onboarding_message_off">आपका डिवाइस स्टेटस बार में बैटरी प्रतिशत को चिप के रूप में दिखाने का समर्थन करता है, लेकिन यह विकल्प अभी सिस्टम सेटिंग्स में बंद है।\n\nबेहतर अनुभव के लिए हम इसे सक्षम करने की सलाह देते हैं। अगर आप पारंपरिक नोटिफिकेशन आइकन पसंद करते हैं, तो आप इसे बंद ही रहने दे सकते हैं।\n\nनोट: यह अनुमति देने पर कभी-कभी ऐप बंद हो सकती है। अगर ऐसा हो, तो बस ऐप को दोबारा खोलें।</string>
+  <string name="notifications_onboarding_message" formatted="false">Battery Monitor को स्टेटस बार में बैटरी स्तर दिखाने और अलार्म के बारे में सूचित करने के लिए आपकी अनुमति चाहिए।\n\nनोट: यह अनुमति देने पर कभी-कभी ऐप बंद हो सकती है। अगर ऐसा हो, तो बस ऐप को दोबारा खोलें।</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">समझ गया</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">सेटिंग्स पर जाएं</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">नकार देना</string>

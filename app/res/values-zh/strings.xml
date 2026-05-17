@@ -263,8 +263,9 @@
     達到一定條件（例如，電池充滿電，
     電池電量低於 20% 等等）。</string>
   <string formatted="false" name="live_updates_onboarding_title">狀態列電池晶片</string>
-  <string formatted="false" name="live_updates_onboarding_message_on">您的裝置支援在狀態列中以晶片形式顯示電池百分比。預設情況下啟用此功能。 \n\n如果您喜歡傳統的通知圖標，您可以在 Android 系統設定中為此應用程式關閉「即時更新」。</string>
-  <string formatted="false" name="live_updates_onboarding_message_off">您的裝置支援在狀態列中以晶片形式顯示電池百分比，但目前在系統設定中已停用。 \n\n我們建議啟用它以獲得最佳體驗。如果您喜歡傳統的通知圖標，可以將其停用。</string>
+  <string formatted="false" name="live_updates_onboarding_message_on">您的装置支援在状态列中以芯片形式显示电池百分比。此选项默认已启用。\n\n如果您偏好传统通知图标，可以在 Android 系统设置中为此应用关闭“实时更新”。\n\n注意：授予此权限有时可能会导致应用关闭。若发生这种情况，请重新打开应用。</string>
+  <string formatted="false" name="live_updates_onboarding_message_off">您的装置支援在状态列中以芯片形式显示电池百分比，但此选项目前在系统设置中已停用。\n\n我们建议启用它以获得最佳体验。如果您偏好传统通知图标，可以保持停用。\n\n注意：授予此权限有时可能会导致应用关闭。若发生这种情况，请重新打开应用。</string>
+  <string name="notifications_onboarding_message" formatted="false">Battery Monitor 需要您的权限，以在状态列显示电池电量并通知您有关警报的信息。\n\n注意：授予此权限有时可能会导致应用关闭。若发生这种情况，请重新打开应用。</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">知道了</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">前往“設定”</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">解僱</string>

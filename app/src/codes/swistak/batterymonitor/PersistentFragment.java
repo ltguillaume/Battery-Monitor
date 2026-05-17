@@ -44,8 +44,10 @@ public class PersistentFragment extends Fragment {
     public SharedPreferences sp_main;
     public Resources res;
 
+    private boolean mHasShownOnboardingInThisSession = false;
+
     private void bindService() {
-        if (! serviceConnected) {
+        if (! serviceConnected && getActivity() != null) {
             getActivity().getApplicationContext().bindService(biServiceIntent, serviceConnection, 0);
             serviceConnected = true;
         }
@@ -100,8 +102,6 @@ public class PersistentFragment extends Fragment {
         serviceConnection = new BatteryInfoService.RemoteConnection(messenger);
 
         biServiceIntent = new Intent(getActivity(), BatteryInfoService.class);
-        BatteryInfoService.startForegroundServiceSafely(getActivity());
-        bindService();
 
         loadSettingsFiles();
     }
@@ -110,7 +110,7 @@ public class PersistentFragment extends Fragment {
     public void onDestroy() {
         super.onDestroy();
 
-        if (serviceConnected) {
+        if (serviceConnected && getActivity() != null) {
             getActivity().getApplicationContext().unbindService(serviceConnection);
             serviceConnected = false;
         }
@@ -135,49 +135,136 @@ public class PersistentFragment extends Fragment {
     public void onResume() {
         super.onResume();
 
-        if (android.os.Build.VERSION.SDK_INT >= 33) {
-            if (androidx.core.content.ContextCompat.checkSelfPermission(getActivity(), android.Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
-                requestPermissions(new String[]{android.Manifest.permission.POST_NOTIFICATIONS}, 101);
+        if (android.os.Build.VERSION.SDK_INT >= 33 &&
+            androidx.core.content.ContextCompat.checkSelfPermission(getActivity(), android.Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+
+            if (sp_main.getBoolean(SettingsFragment.KEY_FIRST_RUN, true)) {
+                showNotificationOnboarding();
+            } else if (!mHasShownOnboardingInThisSession) {
+                requestNotificationPermission();
+                mHasShownOnboardingInThisSession = true;
             }
+            return;
         }
 
         if (sp_main.getBoolean(SettingsFragment.KEY_FIRST_RUN, true)) {
-            if (BatteryInfoService.supportsLiveUpdates()) {
-                showLiveUpdatesOnboarding();
-            }
-
             sp_main.edit().putBoolean(SettingsFragment.KEY_FIRST_RUN, false).apply();
+        }
+
+        startServiceIfNeeded();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        if (requestCode == 101) {
+            if (grantResults.length > 0 && grantResults[0] == android.content.pm.PackageManager.PERMISSION_GRANTED) {
+                startServiceIfNeeded();
+            }
         }
     }
 
-    private void showLiveUpdatesOnboarding() {
-        boolean enabled = BatteryInfoService.isLiveUpdateEnabledInSystem(getActivity());
-
-        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(getActivity());
-        builder.setTitle(R.string.live_updates_onboarding_title);
-
-        if (enabled) {
-            builder.setMessage(R.string.live_updates_onboarding_message_on)
-                   .setPositiveButton(R.string.live_updates_onboarding_positive_on, null);
-        } else {
-            builder.setMessage(R.string.live_updates_onboarding_message_off)
-                   .setPositiveButton(R.string.live_updates_onboarding_positive_off, new android.content.DialogInterface.OnClickListener() {
-                       @Override
-                       public void onClick(android.content.DialogInterface dialog, int which) {
-                           try {
-                               String action = "android.settings.MANAGE_APP_PROMOTED_NOTIFICATIONS";
-                               try {
-                                   action = (String) android.provider.Settings.class.getField("ACTION_MANAGE_APP_PROMOTED_NOTIFICATIONS").get(null);
-                               } catch (Throwable ignored) {}
-                               Intent intent = new Intent(action);
-                               intent.putExtra(android.provider.Settings.EXTRA_APP_PACKAGE, getActivity().getPackageName());
-                               startActivity(intent);
-                           } catch (Throwable ignored) {}
-                       }
-                   })
-                   .setNegativeButton(R.string.live_updates_onboarding_negative_off, null);
+    private void startServiceIfNeeded() {
+        if (android.os.Build.VERSION.SDK_INT < 33 ||
+            androidx.core.content.ContextCompat.checkSelfPermission(getActivity(), android.Manifest.permission.POST_NOTIFICATIONS) == android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            if (!serviceConnected) {
+                BatteryInfoService.startForegroundServiceSafely(getActivity());
+                bindService();
+            }
         }
-        builder.show();
+    }
+
+    private void requestNotificationPermission() {
+        if (android.os.Build.VERSION.SDK_INT >= 36) {
+            requestPermissions(new String[]{android.Manifest.permission.POST_NOTIFICATIONS,
+                                            "android.permission.POST_PROMOTED_NOTIFICATIONS"}, 101);
+        } else if (android.os.Build.VERSION.SDK_INT >= 33) {
+            requestPermissions(new String[]{android.Manifest.permission.POST_NOTIFICATIONS}, 101);
+        }
+    }
+
+    private void showNotificationOnboarding() {
+        if (mHasShownOnboardingInThisSession) return;
+        mHasShownOnboardingInThisSession = true;
+
+        OnboardingDialogFragment dialog = new OnboardingDialogFragment();
+        dialog.show(getParentFragmentManager(), "onboarding");
+    }
+
+    public static class OnboardingDialogFragment extends androidx.fragment.app.DialogFragment {
+        @Override
+        public android.app.Dialog onCreateDialog(Bundle savedInstanceState) {
+            final PersistentFragment pf = (PersistentFragment) getParentFragmentManager().findFragmentByTag(FRAG_TAG);
+            android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(getActivity());
+            builder.setCancelable(false);
+
+            if (BatteryInfoService.supportsLiveUpdates()) {
+                boolean enabled = BatteryInfoService.isLiveUpdateEnabledInSystem(getActivity());
+                builder.setTitle(R.string.live_updates_onboarding_title);
+
+                if (enabled) {
+                    builder.setMessage(R.string.live_updates_onboarding_message_on)
+                           .setPositiveButton(R.string.live_updates_onboarding_positive_on, new android.content.DialogInterface.OnClickListener() {
+                               @Override
+                               public void onClick(android.content.DialogInterface dialog, int which) {
+                                   if (pf != null) pf.requestNotificationPermission();
+                               }
+                           });
+                } else {
+                    builder.setMessage(R.string.live_updates_onboarding_message_off)
+                           .setPositiveButton(R.string.live_updates_onboarding_positive_off, new android.content.DialogInterface.OnClickListener() {
+                               @Override
+                               public void onClick(android.content.DialogInterface dialog, int which) {
+                                   try {
+                                       String action;
+                                       try {
+                                           action = (String) android.provider.Settings.class.getField("ACTION_MANAGE_APP_PROMOTED_NOTIFICATIONS").get(null);
+                                       } catch (Throwable ignored) {
+                                           action = "android.settings.MANAGE_APP_PROMOTED_NOTIFICATIONS";
+                                       }
+                                       Intent intent = new Intent(action);
+                                       intent.putExtra(android.provider.Settings.EXTRA_APP_PACKAGE, getActivity().getPackageName());
+                                       startActivity(intent);
+                                   } catch (Throwable ignored) {}
+                               }
+                           })
+                           .setNegativeButton(R.string.live_updates_onboarding_negative_off, new android.content.DialogInterface.OnClickListener() {
+                               @Override
+                               public void onClick(android.content.DialogInterface dialog, int which) {
+                                   if (pf != null) pf.requestNotificationPermission();
+                               }
+                           });
+                }
+            } else {
+                builder.setTitle(R.string.app_full_name)
+                       .setMessage(R.string.notifications_onboarding_message)
+                       .setPositiveButton(android.R.string.ok, new android.content.DialogInterface.OnClickListener() {
+                           @Override
+                           public void onClick(android.content.DialogInterface dialog, int which) {
+                               if (pf != null) pf.requestNotificationPermission();
+                           }
+                       })
+                       .setNegativeButton(R.string.cancel, new android.content.DialogInterface.OnClickListener() {
+                           @Override
+                           public void onClick(android.content.DialogInterface dialog, int which) {
+                               if (pf != null) {
+                                   pf.sp_main.edit().putBoolean(SettingsFragment.KEY_FIRST_RUN, false).apply();
+                                   pf.startServiceIfNeeded();
+                               }
+                           }
+                       });
+            }
+
+            return builder.create();
+        }
+
+        @Override
+        public void onDismiss(android.content.DialogInterface dialog) {
+            super.onDismiss(dialog);
+            PersistentFragment pf = (PersistentFragment) getParentFragmentManager().findFragmentByTag(FRAG_TAG);
+            if (pf != null) {
+                pf.sp_main.edit().putBoolean(SettingsFragment.KEY_FIRST_RUN, false).apply();
+            }
+        }
     }
 
     @Override
@@ -238,7 +325,7 @@ public class PersistentFragment extends Fragment {
     public void closeApp() {
         sp_main.edit().putBoolean(BatteryInfoService.KEY_SERVICE_DESIRED, false).apply();
 
-        getActivity().finishActivity(1);
+        if (getActivity() == null) return;
 
         if (serviceConnected) {
             getActivity().getApplicationContext().unbindService(serviceConnection);

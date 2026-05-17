@@ -157,8 +157,9 @@
   <string name="status_bar_chip_settings_summary" formatted="false">ライブ更新チップの表示内容を設定</string>
   <string name="status_bar_chip_settings_help" formatted="false">Android 16 以降でライブ更新を使用している場合、ステータスバーチップに表示する内容や充電絵文字の表示有無を設定できます。</string>
   <string name="live_updates_onboarding_title" formatted="false">ステータスバーのバッテリーチップ</string>
-  <string name="live_updates_onboarding_message_on" formatted="false">お使いの端末は、ステータスバーにバッテリー残量をチップとして表示できます。これはデフォルトで有効です。\n\n従来の通知アイコンを使いたい場合は、このアプリの Android システム設定で「ライブ更新」をオフにできます。</string>
-  <string name="live_updates_onboarding_message_off" formatted="false">お使いの端末は、ステータスバーにバッテリー残量をチップとして表示できますが、現在はシステム設定で無効になっています。\n\n最良の体験のため有効化をおすすめします。従来の通知アイコンを使いたい場合は、無効のままでも構いません。</string>
+  <string name="live_updates_onboarding_message_on" formatted="false">お使いの端末は、ステータスバーにバッテリー残量をチップとして表示できます。このオプションはデフォルトで有効です。\n\n従来の通知アイコンを使いたい場合は、このアプリの Android システム設定で「ライブ更新」をオフにできます。\n\n注: この権限を付与すると、まれにアプリが終了することがあります。その場合は、アプリをもう一度開いてください。</string>
+  <string name="live_updates_onboarding_message_off" formatted="false">お使いの端末は、ステータスバーにバッテリー残量をチップとして表示できますが、このオプションは現在システム設定で無効になっています。\n\n最適な体験のため、有効にすることをおすすめします。従来の通知アイコンを使いたい場合は、無効のままでも構いません。\n\n注: この権限を付与すると、まれにアプリが終了することがあります。その場合は、アプリをもう一度開いてください。</string>
+  <string name="notifications_onboarding_message" formatted="false">Battery Monitor がステータスバーにバッテリー残量を表示し、アラームについて通知するには、権限が必要です。\n\n注: この権限を付与すると、まれにアプリが終了することがあります。その場合は、アプリをもう一度開いてください。</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">了解</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">設定へ移動</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">閉じる</string>

@@ -196,8 +196,9 @@
   <string name="alarm_settings_help" formatted="false">Pil seviyesi belirli bir duruma geldiğinde Battery Monitor sizi bilgilendirebilir.</string>
   <string name="other_settings_help" formatted="false">Günlükleme, kilit ekranı, sıcaklık birimi, otomatik başlatma ve daha fazlası bu sayfadadır.</string>
   <string name="live_updates_onboarding_title" formatted="false">Durum Çubuğu Pil Çipi</string>
-  <string name="live_updates_onboarding_message_on" formatted="false">Cihazınız pil yüzdesini durum çubuğunda çip olarak göstermeyi destekliyor.</string>
-  <string name="live_updates_onboarding_message_off" formatted="false">Cihazınız bu özelliği destekliyor ancak sistem ayarlarında kapalı.</string>
+  <string name="live_updates_onboarding_message_on" formatted="false">Cihazınız, pil yüzdesini durum çubuğunda bir çip olarak göstermeyi destekler. Bu seçenek varsayılan olarak etkindir.\n\nGeleneksel bir bildirim simgesini tercih ediyorsanız, bu uygulama için Android sistem ayarlarında "Canlı Güncellemeler"i kapatabilirsiniz.\n\nNot: Bu izni vermek bazen uygulamanın kapanmasına neden olabilir. Böyle olursa uygulamayı yeniden açmanız yeterlidir.</string>
+  <string name="live_updates_onboarding_message_off" formatted="false">Cihazınız, pil yüzdesini durum çubuğunda bir çip olarak göstermeyi destekler, ancak bu seçenek şu anda sistem ayarlarında devre dışıdır.\n\nEn iyi deneyim için etkinleştirmenizi öneririz. Geleneksel bir bildirim simgesini tercih ediyorsanız devre dışı bırakılmış halde tutabilirsiniz.\n\nNot: Bu izni vermek bazen uygulamanın kapanmasına neden olabilir. Böyle olursa uygulamayı yeniden açmanız yeterlidir.</string>
+  <string name="notifications_onboarding_message" formatted="false">Battery Monitor'ün pil seviyesini durum çubuğunda gösterebilmesi ve alarmlar hakkında sizi bilgilendirebilmesi için izninize ihtiyacı vardır.\n\nNot: Bu izni vermek bazen uygulamanın kapanmasına neden olabilir. Böyle olursa uygulamayı yeniden açmanız yeterlidir.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Anladım</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Ayarlara Git</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Kapat</string>
