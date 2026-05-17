@@ -327,4 +327,6 @@
   <plurals name="for_n_hours">
     <item quantity="other">(%d uur)</item>
   </plurals>
+  <string formatted="false" name="alarm_custom_temp_message">Voer de temperatuur in %s graden in</string>
+  <string formatted="false" name="alarm_custom_charge_message">Voer het kostenpercentage in (0-100)</string>
 </resources>

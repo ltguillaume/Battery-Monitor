@@ -17,18 +17,26 @@ package codes.swistak.batterymonitor;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.text.InputType;
+import android.util.TypedValue;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.FrameLayout;
 
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.preference.CheckBoxPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 //import androidx.preference.Preference.OnPreferenceClickListener;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 
 public class AlarmEditFragment extends PreferenceFragmentCompat {
@@ -152,16 +160,112 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
         updateSummary(lp);
         lp.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
             public boolean onPreferenceChange(Preference pref, Object newValue) {
-                if (mAdapter.threshold.equals(newValue)) return false;
+                String val = (String) newValue;
+                if (val.equals("custom")) {
+                    showCustomThresholdDialog((ListPreference) pref);
+                    return false;
+                }
 
-                mAdapter.setThreshold((String) newValue);
+                if (mAdapter.threshold.equals(val)) return false;
 
-                ((ListPreference) pref).setValue((String) newValue);
+                mAdapter.setThreshold(val);
+
+                ((ListPreference) pref).setValue(val);
                 updateSummary((ListPreference) pref);
 
                 return false;
             }
         });
+    }
+
+    private void showCustomThresholdDialog(final ListPreference lp) {
+        Context context = getContext();
+        if (context == null) return;
+
+        final EditText et = new EditText(context);
+        et.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED);
+
+        String currentVal = mAdapter.threshold;
+        boolean convertF = PreferenceManager.getDefaultSharedPreferences(context)
+                .getBoolean(SettingsFragment.KEY_CONVERT_F, false);
+
+        String message;
+        if (mAdapter.type.contains("temp")) {
+            message = getString(R.string.alarm_custom_temp_message,
+                    convertF ? getString(R.string.fahrenheit) : getString(R.string.celsius));
+            try {
+                int tenthsC = Integer.parseInt(currentVal);
+                if (convertF) {
+                    et.setText(String.valueOf(Math.round(tenthsC * 9.0 / 50.0 + 32.0)));
+                } else {
+                    et.setText(String.valueOf(tenthsC / 10));
+                }
+            } catch (NumberFormatException e) {
+                et.setText(currentVal);
+            }
+        } else {
+            message = getString(R.string.alarm_custom_charge_message);
+            et.setText(currentVal);
+        }
+
+        FrameLayout container = new FrameLayout(context);
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        int margin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20,
+                getResources().getDisplayMetrics());
+        params.leftMargin = margin;
+        params.rightMargin = margin;
+        et.setLayoutParams(params);
+        container.addView(et);
+
+        new AlertDialog.Builder(context)
+                .setTitle(lp.getTitle())
+                .setMessage(message)
+                .setView(container)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String input = et.getText().toString();
+                        if (validateAndSaveThreshold(input, lp)) {
+                            dialog.dismiss();
+                        }
+                    }
+                })
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
+    }
+
+    private boolean validateAndSaveThreshold(String input, ListPreference lp) {
+        if (input == null || input.isEmpty()) return false;
+        Context context = getContext();
+        if (context == null) return false;
+
+        try {
+            int val = Integer.parseInt(input);
+            if (mAdapter.type.contains("charge")) {
+                if (val < 0 || val > 100) return false;
+                mAdapter.setThreshold(String.valueOf(val));
+            } else if (mAdapter.type.contains("temp")) {
+                boolean convertF = PreferenceManager.getDefaultSharedPreferences(context)
+                        .getBoolean(SettingsFragment.KEY_CONVERT_F, false);
+                int tenthsC;
+                if (convertF) {
+                    tenthsC = (int) Math.round((val - 32) * 50.0 / 9.0);
+                } else {
+                    tenthsC = val * 10;
+                }
+                if (tenthsC < -500 || tenthsC > 1000) return false;
+                mAdapter.setThreshold(String.valueOf(tenthsC));
+            } else {
+                mAdapter.setThreshold(String.valueOf(val));
+            }
+
+            lp.setValue(mAdapter.threshold);
+            updateSummary(lp);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
     private void matchEnabled() {
@@ -204,6 +308,29 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
             formatterUsed = true;
 
         String entry = (String) lp.getEntry();
+        if (entry == null) {
+            String val = lp.getValue();
+            if (val != null && !val.equals("custom")) {
+                if (mAdapter.type.contains("charge")) {
+                    entry = val + "%";
+                } else if (mAdapter.type.contains("temp")) {
+                    Context context = getContext();
+                    boolean convertF = false;
+                    if (context != null) {
+                        convertF = PreferenceManager.getDefaultSharedPreferences(context)
+                                .getBoolean(SettingsFragment.KEY_CONVERT_F, false);
+                    }
+                    try {
+                        entry = Str.formatTemp(Integer.parseInt(val), convertF, false);
+                    } catch (NumberFormatException e) {
+                        entry = val;
+                    }
+                } else {
+                    entry = val;
+                }
+            }
+        }
+
         if (entry == null) entry = "";
         if (formatterUsed)
             entry = entry.replace("%", "%%");
@@ -218,8 +345,16 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
         ListPreference lp = (ListPreference) mPreferenceScreen.findPreference(KEY_THRESHOLD);
 
         if (mAdapter.type.equals("temp_drops") || mAdapter.type.equals("temp_rises")) {
-            lp.setEntries(Str.temp_alarm_entries);
-            lp.setEntryValues(Str.temp_alarm_values);
+            String[] entries = new String[Str.temp_alarm_entries.length + 1];
+            System.arraycopy(Str.temp_alarm_entries, 0, entries, 0, Str.temp_alarm_entries.length);
+            entries[entries.length - 1] = res.getString(R.string.custom);
+            lp.setEntries(entries);
+
+            String[] values = new String[Str.temp_alarm_values.length + 1];
+            System.arraycopy(Str.temp_alarm_values, 0, values, 0, Str.temp_alarm_values.length);
+            values[values.length - 1] = "custom";
+            lp.setEntryValues(values);
+
             lp.setEnabled(true);
 
             if (resetValue) {
@@ -230,8 +365,16 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
                 lp.setValue(mAdapter.threshold);
             }
         } else if (mAdapter.type.equals("charge_drops") || mAdapter.type.equals("charge_rises")) {
-            lp.setEntries(chargeEntries);
-            lp.setEntryValues(chargeValues);
+            String[] entries = new String[chargeEntries.length + 1];
+            System.arraycopy(chargeEntries, 0, entries, 0, chargeEntries.length);
+            entries[entries.length - 1] = res.getString(R.string.custom);
+            lp.setEntries(entries);
+
+            String[] values = new String[chargeValues.length + 1];
+            System.arraycopy(chargeValues, 0, values, 0, chargeValues.length);
+            values[values.length - 1] = "custom";
+            lp.setEntryValues(values);
+
             lp.setEnabled(true);
 
             if (resetValue) {

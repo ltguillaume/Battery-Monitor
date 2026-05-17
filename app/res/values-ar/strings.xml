@@ -366,4 +366,6 @@
     <item quantity="many">لمدة %d ساعة</item>
     <item quantity="other">لمدة %d ساعة</item>
   </plurals>
+  <string formatted="false" name="alarm_custom_temp_message">أدخل درجة الحرارة بدرجات %s</string>
+  <string formatted="false" name="alarm_custom_charge_message">أدخل نسبة الشحن (0-100)</string>
 </resources>

@@ -489,4 +489,6 @@
   <string formatted="false" name="pref_content_percent">Odstotek baterije</string>
   <string formatted="false" name="pref_content_temperature">Temperatura baterije</string>
   <string formatted="false" name="pref_content_switching">Preklapljajte med obema</string>
+  <string formatted="false" name="alarm_custom_temp_message">Vnesite temperaturo v stopinjah %s</string>
+  <string formatted="false" name="alarm_custom_charge_message">Vnesite odstotek obremenitve (0-100)</string>
 </resources>

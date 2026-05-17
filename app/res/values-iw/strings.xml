@@ -478,4 +478,6 @@
   <string formatted="false" name="pref_content_percent">אחוז סוללה</string>
   <string formatted="false" name="pref_content_temperature">טמפרטורת הסוללה</string>
   <string formatted="false" name="pref_content_switching">החלף בין שניהם</string>
+  <string formatted="false" name="alarm_custom_temp_message">הזן טמפרטורה ב-%s מעלות</string>
+  <string formatted="false" name="alarm_custom_charge_message">הזן אחוז חיוב (0-100)</string>
 </resources>

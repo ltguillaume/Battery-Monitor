@@ -687,6 +687,8 @@
     For charge and temperature alarms, you need to set the temperature
     or charge level that will trigger the alarm.
   </string>
+  <string formatted="true" name="alarm_custom_temp_message">Enter temperature in %s degrees</string>
+  <string formatted="false" name="alarm_custom_charge_message">Enter charge percentage (0-100)</string>
 
   <string formatted="false" name="boot_pref_always">Always</string>
   <string formatted="false" name="boot_pref_never">Never</string>

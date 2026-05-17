@@ -302,4 +302,6 @@
     <item quantity="one">Seit %d Stunde</item>
     <item quantity="other">Seit %d Stunden</item>
   </plurals>
+  <string formatted="false" name="alarm_custom_temp_message">Geben Sie die Temperatur in %s Grad ein</string>
+  <string formatted="false" name="alarm_custom_charge_message">Geben Sie den Gebührenprozentsatz ein (0–100).</string>
 </resources>

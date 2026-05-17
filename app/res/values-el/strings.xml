@@ -470,4 +470,6 @@
   <string formatted="false" name="pref_content_percent">Ποσοστό μπαταρίας</string>
   <string formatted="false" name="pref_content_temperature">Θερμοκρασία μπαταρίας</string>
   <string formatted="false" name="pref_content_switching">Εναλλαγή μεταξύ των δύο</string>
+  <string formatted="false" name="alarm_custom_temp_message">Εισαγάγετε τη θερμοκρασία σε %s βαθμούς</string>
+  <string formatted="false" name="alarm_custom_charge_message">Εισαγάγετε το ποσοστό χρέωσης (0-100)</string>
 </resources>

@@ -490,4 +490,6 @@
   <string formatted="false" name="pref_content_percent">Baterijos procentas</string>
   <string formatted="false" name="pref_content_temperature">Baterijos temperatūra</string>
   <string formatted="false" name="pref_content_switching">Perjungti tarp abiejų</string>
+  <string formatted="false" name="alarm_custom_temp_message">Įveskite temperatūrą %s laipsniais</string>
+  <string formatted="false" name="alarm_custom_charge_message">Įveskite apmokestinimo procentą (0–100)</string>
 </resources>

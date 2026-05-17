@@ -486,4 +486,6 @@
   <string formatted="false" name="pref_content_percent">बैटरी प्रतिशत</string>
   <string formatted="false" name="pref_content_temperature">बैटरी तापमान</string>
   <string formatted="false" name="pref_content_switching">दोनों के बीच स्विच करें</string>
+  <string formatted="false" name="alarm_custom_temp_message">तापमान %s डिग्री में दर्ज करें</string>
+  <string formatted="false" name="alarm_custom_charge_message">चार्ज प्रतिशत दर्ज करें (0-100)</string>
 </resources>

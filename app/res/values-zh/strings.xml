@@ -505,4 +505,6 @@
   <string formatted="false" name="pref_content_percent">電池電量百分比</string>
   <string formatted="false" name="pref_content_temperature">電池溫度</string>
   <string formatted="false" name="pref_content_switching">兩者之間切換</string>
+  <string formatted="false" name="alarm_custom_temp_message">輸入 %s 度的溫度</string>
+  <string formatted="false" name="alarm_custom_charge_message">輸入費用百分比（0-100）</string>
 </resources>

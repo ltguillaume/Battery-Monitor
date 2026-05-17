@@ -476,4 +476,6 @@
   <string formatted="false" name="pref_content_percent">Porcentaje de batería</string>
   <string formatted="false" name="pref_content_temperature">Temperatura de la batería</string>
   <string formatted="false" name="pref_content_switching">Cambiar entre ambos</string>
+  <string formatted="false" name="alarm_custom_temp_message">Introduzca la temperatura en grados %s</string>
+  <string formatted="false" name="alarm_custom_charge_message">Ingrese el porcentaje de cargo (0-100)</string>
 </resources>

@@ -302,4 +302,6 @@
     <item quantity="one">Per %d ora</item>
     <item quantity="other">Per %d ore</item>
   </plurals>
+  <string formatted="false" name="alarm_custom_temp_message">Inserisci la temperatura in gradi %s</string>
+  <string formatted="false" name="alarm_custom_charge_message">Inserisci la percentuale di addebito (0-100)</string>
 </resources>

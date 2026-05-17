@@ -492,4 +492,6 @@
   <string formatted="false" name="pref_content_percent">Percento batérie</string>
   <string formatted="false" name="pref_content_temperature">Teplota batérie</string>
   <string formatted="false" name="pref_content_switching">Prepínajte medzi oboma</string>
+  <string formatted="false" name="alarm_custom_temp_message">Zadajte teplotu v stupňoch %s</string>
+  <string formatted="false" name="alarm_custom_charge_message">Zadajte percento účtovania (0 – 100)</string>
 </resources>

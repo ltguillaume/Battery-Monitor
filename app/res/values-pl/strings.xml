@@ -344,4 +344,6 @@
     <item quantity="few">Przez %d godziny</item>
     <item quantity="many">Przez %d godzin</item>
   </plurals>
+  <string formatted="false" name="alarm_custom_temp_message">Wprowadź temperaturę w stopniach %s</string>
+  <string formatted="false" name="alarm_custom_charge_message">Wprowadź procent opłaty (0-100)</string>
 </resources>
