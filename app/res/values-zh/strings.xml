@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">設定</string>
   <string name="help_activity_subtitle" formatted="false">幫助</string>
-  <string name="log_view_activity_subtitle" formatted="false">記錄</string>
   <string name="battery_use_b" formatted="false">查看電量使用情況</string>
-  <string name="upgrade_donate_b" formatted="false">升級/贊助...</string>
-  <string name="confirm_disable_hint" formatted="false">提示：可在「設定」中關閉此確認視窗。</string>
   <string name="yes" formatted="false">確認</string>
   <string name="cancel" formatted="false">取消</string>
   <string name="confirm_close" formatted="false">確認退出？</string>
@@ -30,13 +27,10 @@
   <string name="celsius" formatted="false">攝氏溫度</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">完全充滿剩餘時間：</string>
   <string name="light_usage" formatted="false">省電使用剩餘時間：</string>
   <string name="normal_usage" formatted="false">正常使用剩餘時間：</string>
   <string name="heavy_usage" formatted="false">頻繁使用剩餘時間：</string>
   <string name="constant_usage" formatted="false">持續使用剩餘時間：</string>
-  <string name="press_back_to_leave" formatted="false">單擊「返回」鍵退出。</string>
-  <string name="press_menu_for_more" formatted="false">單擊「選單」查看更多選項。</string>
   <string name="inaccessible_storage" formatted="false">SD卡無法存取。</string>
   <string name="inaccessible_w_reason" formatted="false">SD卡無法存取：</string>
   <string name="read_only_storage" formatted="false">SD卡已設定為「唯讀」模式。</string>
@@ -67,7 +61,6 @@
   <string name="alarm_type_fully_charged" formatted="false">電池充滿</string>
   <string name="alarm_fully_charged" formatted="false">電池已充滿</string>
   <string name="logs_empty" formatted="false">日誌記錄為空</string>
-  <string name="discharging_from" formatted="false">放電起始電量</string>
   <string name="charging_from" formatted="false">充電起始電量</string>
   <string name="fully_charged" formatted="false">完全充滿</string>
   <string name="since" formatted="false">開始於</string>
@@ -91,8 +84,6 @@
   <string name="settings_overview_help" formatted="false">設定包括如下所述的三個獨立頁面。各頁面的說明信息獨立顯示，在「選單」-「說明」內容中可獲取當前頁面的說明信息。</string>
   <string name="other_settings" formatted="false">其他設定</string>
   <string name="other_settings_help" formatted="false">此頁面包含其他的設定，包括日誌功能、螢幕鎖功能、溫度單位、自動啟動方式等。</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Pro版的更多設定</string>
-  <string name="pref_please_upgrade" formatted="false">Pro版包含了以紅色、黃色及綠色圖標提示剩餘電量等級、電池狀態記錄、自動/手動關閉鎖屏、充電/放電剩餘時間預估等多種高級功能。</string>
   <string name="pref_cat_icon_set" formatted="false">圖示設定</string>
   <string name="pref_icon_set" formatted="false">圖示設定</string>
   <string name="pref_cat_logging" formatted="false">日誌記錄</string>
@@ -227,8 +218,6 @@
   <string formatted="false" name="alarm_temp_rises">“電池溫度高於”</string>
   <string formatted="false" name="alarm_health_failure">“電池健康狀況是：”</string>
   <string formatted="false" name="alarm_text">選擇編輯警報。</string>
-  <string formatted="false" name="after_n_hours_unplugged">%1.1f 小時後拔掉插頭</string>
-  <string formatted="false" name="after_n_hours_plugged_in">插入 %1.1f 小時後</string>
   <string formatted="false" name="after_nh_mm_unplugged">%1$dh %2$dm 拔掉插頭後</string>
   <string formatted="false" name="after_nh_mm_plugged_in">%1$dh %2$dm 插入後</string>
   <string formatted="false" name="after_nm_ms_unplugged">%1$dm %2$ds 拔掉插頭後</string>
@@ -270,13 +259,9 @@
     使用的內容可在本節中找到。</string>
   <string formatted="false" name="alarm_settings_subtitle">警報設定</string>
   <string formatted="false" name="alarm_settings">警報</string>
-  <string formatted="false" name="alarm_settings_summary">控制電池電量低/滿的通知</string>
   <string formatted="false" name="alarm_settings_help">您可以讓Battery Monitor在電池電量不足時通知您
     達到一定條件（例如，電池充滿電，
     電池電量低於 20% 等等）。</string>
-  <string formatted="false" name="pref_enable_live_updates">使用狀態列晶片</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">在狀態列中將電池資訊顯示為晶片（Android 16+）</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">在 Android 設定中停用。點擊即可修復。</string>
   <string formatted="false" name="live_updates_onboarding_title">狀態列電池晶片</string>
   <string formatted="false" name="live_updates_onboarding_message_on">您的裝置支援在狀態列中以晶片形式顯示電池百分比。預設情況下啟用此功能。 \n\n如果您喜歡傳統的通知圖標，您可以在 Android 系統設定中為此應用程式關閉「即時更新」。</string>
   <string formatted="false" name="live_updates_onboarding_message_off">您的裝置支援在狀態列中以晶片形式顯示電池百分比，但目前在系統設定中已停用。 \n\n我們建議啟用它以獲得最佳體驗。如果您喜歡傳統的通知圖標，可以將其停用。</string>
@@ -284,18 +269,13 @@
   <string formatted="false" name="live_updates_onboarding_positive_off">前往“設定”</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">解僱</string>
   <string formatted="false" name="add_alarm">添加鬧鐘</string>
-  <string formatted="false" name="menu_alarm_channel">警報通道設定</string>
-  <string formatted="false" name="pref_cat_ui_color">使用者介面顏色</string>
-  <string formatted="false" name="pref_ui_color_summary">整個應用程式的原色</string>
   <string formatted="false" name="pref_cat_channel_settings">通知頻道設定</string>
   <string formatted="false" name="pref_manage_main_channel">管理主通路</string>
   <string formatted="false" name="pref_cat_notification_content">內容</string>
   <string formatted="false" name="pref_cat_status_bar_chip">狀態列晶片（Android 16+）</string>
   <string formatted="false" name="pref_chip_content">晶片內容</string>
   <string formatted="false" name="pref_chip_content_switching">在電池和溫度之間切換</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">在電池百分比和溫度之間循環顯示</string>
   <string formatted="false" name="pref_chip_switching_interval">切換間隔</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">多久切換一次顯示</string>
   <string formatted="false" name="pref_chip_content_help">選擇在 Android 16+ 升級通知晶片中顯示的值。</string>
   <string formatted="false" name="pref_chip_indicate_charging">顯示充電表情符號</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">充電或充飽電時顯示閃電表情符號？</string>
@@ -354,7 +334,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">主控</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">電流 (mA) Hack 不支持</string>
   <string formatted="false" name="pref_current_hack_unsupported">抱歉，該裝置不支援目前的 (mA) 破解。</string>
-  <string formatted="false" name="current_hack_maybe_supported">該駭客可能在此裝置上起作用。</string>
   <string formatted="false" name="pref_enable_current_hack">啟用駭客攻擊</string>
   <string formatted="false" name="pref_enable_current_hack_summary">嘗試啟用電流（mA）黑客？</string>
   <string formatted="false" name="pref_enable_current_hack_help">啟用此設定後，相關的其他選項
@@ -440,11 +419,6 @@
     例如，在數字下方顯示閃電。  停用
     如果您不希望這樣做，請執行此設定。</string>
   <string formatted="false" name="pref_notify_status_duration">顯示狀態持續時間</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">顯示自狀態變更以來的時間，而不是剩餘時間估計？</string>
-  <string formatted="false" name="pref_notify_status_duration_help">如果您希望顯示主通知，請啟用此設置
-    自狀態變更以來的時間（例如，\「拔掉插頭 5
-    小時\"）而不是剩餘時間的估計。  兩件
-    資訊可從主視窗取得。</string>
   <string formatted="false" name="predictor_sensitive">敏感的</string>
   <string formatted="false" name="predictor_conservative">保守的</string>
   <string formatted="false" name="predictor_since_status_change">自從狀態變更以來</string>
@@ -468,12 +442,8 @@
 
     \n最後，您可以僅根據您的情況進行預測
     長期平均使用情況。</string>
-  <string formatted="false" name="lang_system_selected">系統選擇</string>
   <string formatted="false" name="pref_language_override">語言覆蓋</string>
   <string formatted="false" name="pref_language_override_summary">選擇語言：</string>
-  <string formatted="false" name="pref_language_override_help">如果您的語言翻譯不完整或不準確
-    如果您喜歡另一個可能更好的翻譯，您可能會
-    選擇在這裡這樣做。</string>
   <string formatted="false" name="pref_classic_color_mode">強制經典色彩模式</string>
   <string formatted="false" name="pref_classic_color_mode_summary">這通常不起作用；請閱讀幫助</string>
   <string formatted="false" name="pref_classic_color_mode_help">從 Android 5.0 (Lollipop) 開始，彩色通知圖標

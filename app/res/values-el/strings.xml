@@ -4,13 +4,10 @@
   <string formatted="false" name="app_launcher_name">Battery Monitor</string>
   <string formatted="false" name="settings_activity_subtitle">Ρυθμίσεις</string>
   <string formatted="false" name="help_activity_subtitle">Βοήθεια</string>
-  <string formatted="false" name="log_view_activity_subtitle">Λίστες Καταγραφής Δεδομένων</string>
     <string formatted="false" name="battery_use_b">Χρήση Μπαταρίας</string>
-  <string formatted="false" name="upgrade_donate_b">Αναβάθμιση/Δωρεά</string>
-  <string formatted="false" name="circle_widget">Κύκλος παρακολούθησης μπαταρίας</string>
+    <string formatted="false" name="circle_widget">Κύκλος παρακολούθησης μπαταρίας</string>
   <string formatted="false" name="full_widget">Οθόνη μπαταρίας πλήρης</string>
-  <string formatted="false" name="confirm_disable_hint">Συμβουλή: Απενεργοποιήστε αυτό το μήνυμα στις ρυθμίσεις...</string>
-  <string formatted="false" name="yes">Ναι</string>
+    <string formatted="false" name="yes">Ναι</string>
   <string formatted="false" name="cancel">Ακύρωση</string>
   <string formatted="false" name="confirm_close">Θέλετε να Κλείσετε την εφαρμογή;</string>
   <string formatted="false" name="confirm_close_hint">Ο Battery Monitor θα κλείσει εντελώς, και δε θα υπάρχει στην μπάρα κατάστασης πλέον.\n\nΑν επιθυμείτε να φύγετε από το κυρίως παράθυρο και να αφήσετε το πρόγραμμα να τρέχει, πατήστε Ακύρωση και μετά πατήστε το κουμπί BACK της συσκευής σας για να φύγετε από το κυρίως παράθυρο.</string>
@@ -71,14 +68,11 @@
   <string formatted="false" name="celsius">Κελσίου</string>
   <string formatted="false" name="celsius_symbol">C</string>
   <string formatted="false" name="volt_symbol">V</string>
-  <string formatted="false" name="fully_charged_in">Θα φορτιστεί πλήρως σε:</string>
-  <string formatted="false" name="light_usage">Χρόνος με Ελαφριά Χρήση:</string>
+    <string formatted="false" name="light_usage">Χρόνος με Ελαφριά Χρήση:</string>
   <string formatted="false" name="normal_usage">Χρόνος με Κανονική Χρήση:</string>
   <string formatted="false" name="heavy_usage">Χρόνος με Βαριά Χρήση:</string>
   <string formatted="false" name="constant_usage">Χρόνος με Σταθερή Χρήση:</string>
-  <string formatted="false" name="press_back_to_leave">Πατήστε BACK για να φύγετε.</string>
-  <string formatted="false" name="press_menu_for_more">Πατήστε MENU για περισσότερες επιλογές.</string>
-  <string formatted="false" name="inaccessible_storage">Η Κάρτα SD είναι απροσπέλαστη.</string>
+    <string formatted="false" name="inaccessible_storage">Η Κάρτα SD είναι απροσπέλαστη.</string>
   <string formatted="false" name="inaccessible_w_reason">Κάρτα SD απροσπέλαστη:</string>
   <string formatted="false" name="read_only_storage">Η Κάρτα SD είναι αναγνώσιμη μόνο.</string>
   <string formatted="false" name="no_storage_permission">Δεν έχει δοθεί άδεια αποθήκευσης.</string>
@@ -131,14 +125,11 @@
   <string formatted="false" name="alarm_health_failure">"Η υγεία της μπαταρίας είναι: "</string>
   <string formatted="false" name="alarm_text">Επιλέξτε για επεξεργασία ειδοποιήσεων.</string>
   <string formatted="false" name="logs_empty">Λίστες Καταγραφής Άδειες</string>
-  <string formatted="true" name="after_n_hours_unplugged">Μετά από %1.1f ώρες αποσύνδεσης</string>
-  <string formatted="true" name="after_n_hours_plugged_in">Μετά από ώρες σύνδεσης %1.1f</string>
-  <string formatted="true" name="after_nh_mm_unplugged">Μετά την αποσύνδεση του %1$dh %2$dm</string>
+    <string formatted="true" name="after_nh_mm_unplugged">Μετά την αποσύνδεση του %1$dh %2$dm</string>
   <string formatted="true" name="after_nh_mm_plugged_in">Αφού συνδεθεί το %1$dh, το %2$dm</string>
   <string formatted="true" name="after_nm_ms_unplugged">Μετά την αποσύνδεση του %1$dm του %2$d</string>
   <string formatted="true" name="after_nm_ms_plugged_in">Μετά την σύνδεση %1$dm %2$ds</string>
-  <string formatted="false" name="discharging_from">Αποφόρτιση από</string>
-  <string formatted="false" name="charging_from">Φόρτιση από</string>
+    <string formatted="false" name="charging_from">Φόρτιση από</string>
   <string formatted="false" name="fully_charged">Πλήρως Φορτισμένη</string>
   <string formatted="false" name="since">Από</string>
   <string formatted="false" name="currently_using">Τώρα χρησιμοποιείται</string>
@@ -199,35 +190,24 @@
   </string>
   <string formatted="false" name="alarm_settings_subtitle">Ρυθμίσεις Ειδοποιήσεων</string>
   <string formatted="false" name="alarm_settings">Ειδοποιήσεις</string>
-  <string formatted="false" name="alarm_settings_summary">Έλεγχος ειδοποιήσεων για χαμηλή/πλήρη μπαταρία</string>
-  <string formatted="false" name="alarm_settings_help">Μπορείτε να ρυθμίσετε τον Battery Monitor να σας ενημερώνει όταν το επίπεδο της μπαταρίας φτάνει σε ένα συγκεκριμένο επίπεδο (π.χ, όταν η μπαταρία φορτίζεται πλήρως ή όταν το επίπεδο της μπαταρίας πέφτει κάτω από 20%)</string>
+    <string formatted="false" name="alarm_settings_help">Μπορείτε να ρυθμίσετε τον Battery Monitor να σας ενημερώνει όταν το επίπεδο της μπαταρίας φτάνει σε ένα συγκεκριμένο επίπεδο (π.χ, όταν η μπαταρία φορτίζεται πλήρως ή όταν το επίπεδο της μπαταρίας πέφτει κάτω από 20%)</string>
   <string formatted="false" name="other_settings">Άλλες Ρυθμίσεις</string>
   <string formatted="false" name="other_settings_help">Όλες οι άλλες ρυθμίσεις βρίσκονται σε αυτή τη σελίδα, συμπεριλαμβανομένων της καταγραφής δεδομένων, του κλειδώματος της οθόνης, των μονάδων θερμοκρασίας, της αυτόματης έναρξης, και άλλα ακόμη.</string>
-  <string formatted="false" name="pref_cat_more_settings_in_pro">Επιπλέον Ρυθμίσεις στο Pro</string>
-  <string formatted="false" name="pref_please_upgrade">Η έκδοση Pro έχει πολύ περισσότερες ρυθμίσεις και δυνατότητες, συμπεριλαμβανομένων έγχρωμων εικόνων, λαμβανόμενα plugins, ειδοποιήσεις, θέματα παραθύρων, καταγραφή κατάστασης μπαταρίας, αυτόματη/χειροκίνητη απενεργοποίηση κλειδώματος οθόνης, υπολογισμό χρόνου για φόρτιση/αποφόρτιση, και άλλα ακόμη.</string>
-  <string name="pref_enable_live_updates">Χρησιμοποιήστε το τσιπ της γραμμής κατάστασης</string>
-  <string name="pref_enable_live_updates_summary">Εμφάνιση πληροφοριών μπαταρίας ως τσιπ στη γραμμή κατάστασης (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled">Απενεργοποιήθηκε στις ρυθμίσεις Android. Πατήστε για επιδιόρθωση.</string>
-  <string name="live_updates_onboarding_title">Τσιπ μπαταρίας γραμμής κατάστασης</string>
+    <string name="live_updates_onboarding_title">Τσιπ μπαταρίας γραμμής κατάστασης</string>
   <string name="live_updates_onboarding_message_on">Η συσκευή σας υποστηρίζει την εμφάνιση του ποσοστού της μπαταρίας ως τσιπ στη γραμμή κατάστασης. Αυτό είναι ενεργοποιημένο από προεπιλογή.\n\nΕάν προτιμάτε ένα παραδοσιακό εικονίδιο ειδοποίησης, μπορείτε να απενεργοποιήσετε τις \"Ζωντανές ενημερώσεις\" στις ρυθμίσεις συστήματος του Android για αυτήν την εφαρμογή.</string>
   <string name="live_updates_onboarding_message_off">Η συσκευή σας υποστηρίζει την εμφάνιση του ποσοστού της μπαταρίας ως τσιπ στη γραμμή κατάστασης, αλλά αυτή τη στιγμή είναι απενεργοποιημένη στις ρυθμίσεις συστήματος.\n\nΣυνιστούμε να την ενεργοποιήσετε για την καλύτερη εμπειρία. Εάν προτιμάτε ένα παραδοσιακό εικονίδιο ειδοποίησης, μπορείτε να το αφήσετε απενεργοποιημένο.</string>
   <string name="live_updates_onboarding_positive_on">Κατάλαβα</string>
   <string name="live_updates_onboarding_positive_off">Μεταβείτε στις Ρυθμίσεις</string>
   <string name="live_updates_onboarding_negative_off">Απολύω</string>
   <string formatted="false" name="add_alarm">Προσθήκη ειδοποίησης</string>
-  <string formatted="false" name="menu_alarm_channel">Ρυθμίσεις καναλιού συναγερμού</string>
-  <string formatted="false" name="pref_cat_ui_color">Χρώμα διεπαφής χρήστη</string>
-  <string formatted="false" name="pref_ui_color_summary">Πρωτεύον χρώμα σε όλη την εφαρμογή</string>
-  <string formatted="false" name="pref_cat_channel_settings">Ρυθμίσεις καναλιού ειδοποιήσεων</string>
+    <string formatted="false" name="pref_cat_channel_settings">Ρυθμίσεις καναλιού ειδοποιήσεων</string>
   <string formatted="false" name="pref_manage_main_channel">Διαχείριση Κύριου Καναλιού</string>
   <string formatted="false" name="pref_cat_notification_content">Περιεχόμενο</string>
   <string formatted="false" name="pref_cat_status_bar_chip">Τσιπ γραμμής κατάστασης (Android 16+)</string>
   <string formatted="false" name="pref_chip_content">Περιεχόμενο Chip</string>
   <string formatted="false" name="pref_chip_content_switching">Εναλλαγή μεταξύ μπαταρίας και θερμοκρασίας</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">Κυλήστε την οθόνη μεταξύ ποσοστού μπαταρίας και θερμοκρασίας</string>
-  <string formatted="false" name="pref_chip_switching_interval">Μεσοδιάστημα εναλλαγής</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">Πόσο συχνά αλλάζετε την οθόνη</string>
-  <string formatted="false" name="pref_chip_content_help">Επιλέξτε ποια τιμή θα εμφανίζεται στο τσιπ ειδοποιήσεων προωθημένων Android 16+.</string>
+    <string formatted="false" name="pref_chip_switching_interval">Μεσοδιάστημα εναλλαγής</string>
+    <string formatted="false" name="pref_chip_content_help">Επιλέξτε ποια τιμή θα εμφανίζεται στο τσιπ ειδοποιήσεων προωθημένων Android 16+.</string>
   <string formatted="false" name="pref_chip_indicate_charging">Εμφάνιση Emoji φόρτισης</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">Εμφάνιση ενός emoji αστραπής κατά τη φόρτιση ή την πλήρη φόρτιση;</string>
   <string formatted="false" name="pref_chip_indicate_charging_help">
@@ -299,8 +279,7 @@
   <string formatted="false" name="pref_cat_current_hack_main">Κύριος έλεγχος</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">Τρέχουσα παραβίαση (mA) Δεν υποστηρίζεται</string>
   <string formatted="false" name="pref_current_hack_unsupported">Λυπούμαστε, η τρέχουσα εισβολή (mA) δεν υποστηρίζεται σε αυτήν τη συσκευή.</string>
-  <string formatted="false" name="current_hack_maybe_supported">Το hack ΜΠΟΡΕΙ να λειτουργήσει σε αυτήν τη συσκευή.</string>
-  <string formatted="false" name="pref_enable_current_hack">Ενεργοποίηση hack</string>
+    <string formatted="false" name="pref_enable_current_hack">Ενεργοποίηση hack</string>
   <string formatted="false" name="pref_enable_current_hack_summary">Προσπαθήστε να ενεργοποιήσετε την τρέχουσα εισβολή (mA);</string>
   <string formatted="false" name="pref_enable_current_hack_help">
     Όταν αυτή η ρύθμιση είναι ενεργοποιημένη, οι άλλες επιλογές σχετικά με το
@@ -406,14 +385,7 @@
   <string formatted="false" name="pref_max_log_age_summary">Διαγραφή λίστας δεδομένων παλαιότερης από:</string>
   <string formatted="false" name="pref_max_log_age_help">Αν η καταγραφή είναι ενεργοποιημένη, τότε όποτε συνδέετε τη συσκευή στην πρίζα, όλες οι παλαιότερες καταγραφές θα διαγραφούν.</string>
   <string formatted="false" name="pref_notify_status_duration">Εμφάνιση διάρκειας κατάστασης</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">Εμφάνιση του χρόνου από την αλλαγή της κατάστασης αντί της εκτίμησης του χρόνου που απομένει;</string>
-  <string formatted="false" name="pref_notify_status_duration_help">
-    Ενεργοποιήστε αυτήν τη ρύθμιση εάν προτιμάτε να εμφανίζεται η κύρια ειδοποίηση
-        ο χρόνος από την αλλαγή της κατάστασης (π.χ. \"Αποσυνδέθηκε για 5
-        ώρες\") αντί για την εκτίμηση του χρόνου που απομένει.  Και τα δύο κομμάτια
-        πληροφορίες είναι διαθέσιμες από το κύριο παράθυρο.
-  </string>
-  <string formatted="false" name="pref_cat_temperature_unit">Μονάδες Θερμοκρασίας</string>
+    <string formatted="false" name="pref_cat_temperature_unit">Μονάδες Θερμοκρασίας</string>
   <string formatted="false" name="pref_convert_to_fahrenheit">Μετατροπή σε Φάρεναϊτ</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">Το Android αναφέρει τη θερμοκρασία της μπαταρίας σε βαθμούς Κελσίου. Αν προτιμάτε να τη βλέπετε σε Φάρεναϊτ, επιλέξετε αυτήν την επιλογή και η εφαρμογή θα σας τη μετατρέπει.</string>
   <string formatted="false" name="pref_cat_autostart">Αυτόματη Ενεργοποίηση</string>
@@ -445,12 +417,10 @@
         \nΤέλος, μπορείτε να έχετε την πρόβλεψη βασισμένη αποκλειστικά στη δική σας
         μακροπρόθεσμη μέση χρήση.
   </string>
-  <string formatted="false" name="lang_system_selected">Επιλογή Συστήματος</string>
-  <string formatted="false" name="pref_cat_language">Γλώσσα</string>
+    <string formatted="false" name="pref_cat_language">Γλώσσα</string>
   <string formatted="false" name="pref_language_override">Υπέρβαση Γλώσσας</string>
   <string formatted="false" name="pref_language_override_summary">Επιλογή Γλώσσας:</string>
-  <string formatted="false" name="pref_language_override_help">Αν η μετάφραση στη γλώσσα σας είναι ελλειπής ή ανακριβής και προτιμάτε να επιλέξετε μια άλλη, πιθανώς καλύτερη μετάφραση, μπορείτε να το κάνετε εδώ.</string>
-  <string formatted="false" name="pref_classic_color_mode">Αναγκαστική κλασική λειτουργία χρώματος</string>
+    <string formatted="false" name="pref_classic_color_mode">Αναγκαστική κλασική λειτουργία χρώματος</string>
   <string formatted="false" name="pref_classic_color_mode_summary">Αυτό συνήθως δεν λειτουργεί. παρακαλώ διαβάστε τη βοήθεια</string>
   <string formatted="false" name="pref_classic_color_mode_help">
     Ξεκινώντας με το Android 5.0 (Lollipop), έγχρωμα εικονίδια ειδοποιήσεων

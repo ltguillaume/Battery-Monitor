@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Настройки</string>
   <string name="help_activity_subtitle" formatted="false">Помощь</string>
-  <string name="log_view_activity_subtitle" formatted="false">Журналы</string>
   <string name="battery_use_b" formatted="false">Посмотреть использование аккумулятора</string>
-  <string name="upgrade_donate_b" formatted="false">Улучшить/Помочь проекту</string>
-  <string name="confirm_disable_hint" formatted="false">Подсказка: Отключите этот диалог подтверждения в настройках...</string>
   <string name="yes" formatted="false">Да</string>
   <string name="cancel" formatted="false">Отмена</string>
   <string name="confirm_close" formatted="false">Действительно закрыть?</string>
@@ -37,13 +34,10 @@
   <string name="celsius" formatted="false">Цельсий</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Полностью заряжено в:</string>
   <string name="light_usage" formatted="false">Экономичное использование, осталось:</string>
   <string name="normal_usage" formatted="false">Нормальное использование, осталось:</string>
   <string name="heavy_usage" formatted="false">Активное использование, осталось:</string>
   <string name="constant_usage" formatted="false">Постоянное использование, осталось:</string>
-  <string name="press_back_to_leave" formatted="false">Нажмите BACK для выхода.</string>
-  <string name="press_menu_for_more" formatted="false">Нажмите MENU для дальнейшей настройки.</string>
   <string name="inaccessible_storage" formatted="false">SD-карта недоступна.</string>
   <string name="inaccessible_w_reason" formatted="false">SD-карта недоступна:</string>
   <string name="read_only_storage" formatted="false">SD-карта доступна только для чтения.</string>
@@ -92,9 +86,6 @@
   <string name="alarm_health_failure" formatted="false">"Состояние аккумулятора: "</string>
   <string name="alarm_text" formatted="false">Редактировать предупреждения.</string>
   <string name="logs_empty" formatted="false">Журналы пусты</string>
-  <string name="after_n_hours_unplugged" formatted="false">После %1.1f часов работы от аккумулятора</string>
-  <string name="after_n_hours_plugged_in" formatted="false">После %1.1f часов подключения к сети</string>
-  <string name="discharging_from" formatted="false">Разряжается от</string>
   <string name="charging_from" formatted="false">Заряжается от</string>
   <string name="fully_charged" formatted="false">Полностью заряжен</string>
   <string name="since" formatted="false">После</string>
@@ -127,12 +118,9 @@
   <string name="current_hack_settings_help" formatted="false">Система Android не предоставляет приложениям информации о токе аккумулятора. Тем не менее, существует обходной способ, потенциально позволяющий получить эти данные.\n\nНЕТ НИКАКОЙ гарантии, что этот способ будет работать. Он может не работать вообще или же работать, но выдавать при этом бессмысленные значения.\n\nВ этом разделе находятся настройки включения этого способа, а также его использования, если это возможно.</string>
   <string name="alarm_settings_subtitle" formatted="false">Настройки оповещений</string>
   <string name="alarm_settings" formatted="false">Оповещения</string>
-  <string name="alarm_settings_summary" formatted="false">Настройка уведомлений о низком/полном заряде аккумулятора</string>
   <string name="alarm_settings_help" formatted="false">Вы можете настроить Battery Monitor так, чтобы получать уведомление о том, что заряд аккумулятора достигает определенного уровня (например, аккумулятор становится полностью заряженным, заряд опустился ниже 20%).</string>
   <string name="other_settings" formatted="false">Другие настройки</string>
   <string name="other_settings_help" formatted="false">На этой странице представлены все остальные настройки, включая настройку журнала работы, блокировки экрана, единиц измерения, автозагрузки и другие.</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Больше настроек в версии Pro</string>
-  <string name="pref_please_upgrade" formatted="false">В версии Pro значительно больше настроек и функций, включая информацию о токе аккумулятора (mA), полноцветные значки, предупреждения, журнал состояния аккумулятора, автоматическое/ручное отключение блокировки экрана и многое другое.</string>
   <string name="add_alarm" formatted="false">Добавить предупреждение</string>
   <string name="pref_cat_notification_content" formatted="false">Содержание</string>
   <string name="pref_top_line_content" formatted="false">Содержимое верхней строчки</string>
@@ -161,7 +149,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">Основные параметры</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">Определение силы тока не поддерживается</string>
   <string name="pref_current_hack_unsupported" formatted="false">Извините, но определение силы тока для данного устройства не поддерживается.</string>
-  <string name="current_hack_maybe_supported" formatted="false">Определение силы тока, возможно, работает на данном устройстве.</string>
   <string name="pref_enable_current_hack" formatted="false">Включить определение силы тока.</string>
   <string name="pref_enable_current_hack_summary" formatted="false">Попытаться включить определение силы тока?</string>
   <string name="pref_enable_current_hack_help" formatted="false">Если включено, будут работать другие опции, связанные с определением силы тока.</string>
@@ -193,8 +180,6 @@
   <string name="pref_max_log_age_summary" formatted="false">Удалить журналы старше:</string>
   <string name="pref_max_log_age_help" formatted="false">Если включено ведение журнала, то при каждом подключении зарядного устройства более старые, чем указанная величина, журналы будут удаляться.</string>
   <string name="pref_notify_status_duration" formatted="false">Показывать продолжительность состояния</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">Показывать время с момента изменения состояния или оценку оставшегося времени?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">Включите эту опцию, если предпочитаете, чтобы в главном уведомлении было показано время, прошедшее с момента изменения состояния (например, \"Работает от аккумулятора в течение 5 часов\"), а не оценку оставшегося времени работы. Обе характеристики доступны в главном окне приложения.</string>
   <string name="pref_cat_temperature_unit" formatted="false">Единицы измерения температуры</string>
   <string name="pref_convert_to_fahrenheit" formatted="false">Преобразовать к Фаренгейту</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Система Android сообщает температуру аккумулятора в градусах Цельсия. Если для вас предпочтительнее градусы Фаренгейта, выберите эту опцию, и приложение осуществит преобразование для вас.</string>
@@ -209,11 +194,9 @@
   <string name="pref_cat_predictor" formatted="false">Оценки оставшегося времени</string>
   <string name="pref_prediction_type" formatted="false">Тип оценки</string>
   <string name="pref_prediction_type_help" formatted="false">Можно выбрать метод, с помощью которого Battery Monitor будет предсказывать время до полного разряда или полного заряда аккумулятора.\n\n\"Чувствительный\" алгоритм основывается исключительно на последних пяти минутах работы устройства. Если основной вопрос \"Как долго продержится аккумулятор, если я буду продолжать работать с устройством как сейчас?\", то это ваш выбор.\n\n\"Консервативный\" алгоритм установлен по умолчанию. Он тоже основывается на данных о недавнем использовании устройства, но старается не отклоняться слишком сильно от данных за большой период времени.\n\n\"С момента изменения состояния\" - прогноз основан строго на данных текущей сессии.\n\nИ, наконец, прогноз может основываться исключительно на усредненных данных об использовании за длительный период времени.</string>
-  <string name="lang_system_selected" formatted="false">Язык системы</string>
   <string name="pref_cat_language" formatted="false">Язык</string>
   <string name="pref_language_override" formatted="false">Переопределить язык</string>
   <string name="pref_language_override_summary" formatted="false">Выберите язык:</string>
-  <string name="pref_language_override_help" formatted="false">Если перевод на ваш язык неполон или неточен и вы хотели бы пользоваться другим, возможно, более хорошим переводом, вы можете сделать этот выбор здесь.</string>
   <string name="pref_classic_color_mode" formatted="false">Применить классический цветовой режим</string>
   <string name="pref_classic_color_mode_summary" formatted="false">Это обычно не работает; пожалуйста, прочтите справку</string>
   <string name="pref_classic_color_mode_help" formatted="false">Начиная с Android 5.0 (Lollipop), цветные значки уведомлений официально больше не поддерживаются, при этом классический значок BatteryBot выглядит сплошным белым. Поэтому на подобных устройствах приложение использует простой белый контур с белыми цифрами.\n\nОднако, не все устройства строго следуют спецификациям, поэтому сказанное выше не является обязательным не везде работает корректно. Вы можете попробовать настроить стандартное отображение классического набора значков включением этой опции. Помните, что на большинстве устройств это только приведет к тому, что значок станет сплошным белым.</string>
@@ -285,26 +268,18 @@
   <string name="status_bar_chip_settings" formatted="false">Чип в строке состояния</string>
   <string name="status_bar_chip_settings_summary" formatted="false">Настройка содержимого чипа Live Updates</string>
   <string name="status_bar_chip_settings_help" formatted="false">На Android 16+ с Live Updates можно настроить, что показывать в чипе строки состояния и нужно ли отображать эмодзи зарядки.</string>
-  <string name="pref_enable_live_updates" formatted="false">Использовать чип в строке состояния</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">Показывать информацию о батарее в виде чипа в строке состояния (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">Отключено в настройках Android. Нажмите, чтобы исправить.</string>
   <string name="live_updates_onboarding_title" formatted="false">Чип батареи в строке состояния</string>
   <string name="live_updates_onboarding_message_on" formatted="false">Ваше устройство поддерживает отображение процента батареи в виде чипа в строке состояния. Эта функция включена по умолчанию.\n\nЕсли вы предпочитаете традиционный значок уведомления, можно отключить «Live Updates» в системных настройках Android для этого приложения.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">Ваше устройство поддерживает отображение процента батареи в виде чипа в строке состояния, но сейчас эта функция отключена в системных настройках.\n\nДля лучшего опыта мы рекомендуем включить ее. Если вы предпочитаете традиционный значок уведомления, можно оставить ее выключенной.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Понятно</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Перейти в настройки</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Закрыть</string>
-  <string name="menu_alarm_channel" formatted="false">Настройки канала предупреждений</string>
-  <string name="pref_cat_ui_color" formatted="false">Цвет интерфейса</string>
-  <string name="pref_ui_color_summary" formatted="false">Основной цвет во всем приложении</string>
   <string name="pref_cat_channel_settings" formatted="false">Настройки каналов уведомлений</string>
   <string name="pref_manage_main_channel" formatted="false">Настроить основной канал</string>
   <string name="pref_cat_status_bar_chip" formatted="false">Чип в строке состояния (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">Содержимое чипа</string>
   <string name="pref_chip_content_switching" formatted="false">Переключать между батареей и температурой</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">Чередовать отображение процента батареи и температуры</string>
   <string name="pref_chip_switching_interval" formatted="false">Интервал переключения</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">Как часто переключать отображение</string>
   <string name="pref_chip_content_help" formatted="false">Выберите, какое значение показывать в чипе продвинутого уведомления Android 16+.</string>
   <string name="pref_chip_indicate_charging" formatted="false">Показывать эмодзи зарядки</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">Показывать эмодзи молнии во время зарядки или при полном заряде?</string>

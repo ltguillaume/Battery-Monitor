@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">设置</string>
   <string name="help_activity_subtitle" formatted="false">帮助</string>
-  <string name="log_view_activity_subtitle" formatted="false">日志</string>
   <string name="battery_use_b" formatted="false">查看电量使用情况</string>
-  <string name="upgrade_donate_b" formatted="false">升级/捐助...</string>
-  <string name="confirm_disable_hint" formatted="false">提示：可在“设置项”中关闭此提示信息。</string>
   <string name="yes" formatted="false">确认</string>
   <string name="cancel" formatted="false">取消</string>
   <string name="confirm_close" formatted="false">确认退出？</string>
@@ -29,13 +26,10 @@
   <string name="celsius" formatted="false">摄氏温度</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">完全充满剩余时间：</string>
   <string name="light_usage" formatted="false">省电使用剩余时间：</string>
   <string name="normal_usage" formatted="false">正常使用剩余时间：</string>
   <string name="heavy_usage" formatted="false">频繁使用剩余时间：</string>
   <string name="constant_usage" formatted="false">持续使用剩余时间：</string>
-  <string name="press_back_to_leave" formatted="false">单击“返回”键退出。</string>
-  <string name="press_menu_for_more" formatted="false">单击“菜单”查看更多选项。</string>
   <string name="inaccessible_storage" formatted="false">SD卡无法访问。</string>
   <string name="inaccessible_w_reason" formatted="false">SD卡无法访问：</string>
   <string name="read_only_storage" formatted="false">SD卡已设置为“只读”模式。</string>
@@ -65,7 +59,6 @@
   <string name="alarm_temp_rises" formatted="false">电池温度高于</string>
   <string name="alarm_text" formatted="false">点击编辑此警报器</string>
   <string name="logs_empty" formatted="false">日志记录为空</string>
-  <string name="discharging_from" formatted="false">放电起始电量</string>
   <string name="charging_from" formatted="false">充电起始电量</string>
   <string name="fully_charged" formatted="false">完全充满</string>
   <string name="since" formatted="false">开始于</string>
@@ -84,12 +77,9 @@
   <string name="settings_overview_help" formatted="false">设置项包括如下所述的三个独立页面。各页面的帮助信息独立显示，在“菜单”-“帮助”内容中可获取当前页面的帮助信息。</string>
   <string name="alarm_settings_subtitle" formatted="false">警报器设置</string>
   <string name="alarm_settings" formatted="false">警报器</string>
-  <string name="alarm_settings_summary" formatted="false">控制电池信息通知</string>
   <string name="alarm_settings_help" formatted="false">您可以让Battery Monitor在电池达到某个状态时通知您(例如:电池充满，或者电量低于20%)</string>
   <string name="other_settings" formatted="false">其他设置</string>
   <string name="other_settings_help" formatted="false">此页面包含其他的设置项，包括日志功能、屏幕锁功能、温度单位、自启动方式等。</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">专业版的更多设置项</string>
-  <string name="pref_please_upgrade" formatted="false">专业版包含了以红色、黄色及绿色图标提示剩余电量等级、电池状态记录、自动/手动关闭锁屏、充电/放电剩余时间预估等多种高级功能。</string>
   <string name="add_alarm" formatted="false">添加警报器</string>
   <string name="pref_cat_logging" formatted="false">日志记录</string>
   <string name="pref_enable_logging" formatted="false">启用日志记录功能</string>
@@ -105,7 +95,6 @@
   <string name="pref_autostart_at_boot" formatted="false">开机自启动方式</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">确认允许Battery Monitor开机时自启动？</string>
   <string name="pref_autostart_at_boot_help" formatted="false">设置是否允许Battery Monitor在开机时自启动。 ”关机前运行中”选项仅在手动关闭Battery Monitor时有效。若您使用其他方式，如使用任务杀手进行关闭，则本程序无法确认是否由您关闭，选择该方式后仍会在开机时自启动。</string>
-  <string name="lang_system_selected" formatted="false">系统选择</string>
   <string name="pref_cat_language" formatted="false">语言</string>
   <string name="pref_language_override_summary" formatted="false">选择语言:</string>
   <string name="pref_cat_device_specific" formatted="false">特殊设备设置</string>
@@ -202,8 +191,6 @@
   <string formatted="false" name="alarm_type_entry_health_failure">健康状况不佳</string>
   <string formatted="false" name="alarm_temp_drops">“电池温度低于”</string>
   <string formatted="false" name="alarm_health_failure">“电池健康状况是：”</string>
-  <string formatted="false" name="after_n_hours_unplugged">%1.1f 小时后拔掉插头</string>
-  <string formatted="false" name="after_n_hours_plugged_in">插入 %1.1f 小时后</string>
   <string formatted="false" name="after_nh_mm_unplugged">%1$dh %2$dm 拔掉插头后</string>
   <string formatted="false" name="after_nh_mm_plugged_in">%1$dh %2$dm 插入后</string>
   <string formatted="false" name="after_nm_ms_unplugged">%1$dm %2$ds 拔掉插头后</string>
@@ -247,27 +234,19 @@
 
     \n设置以打开黑客（如果可能）并控制其方式
     使用的内容可在本节中找到。</string>
-  <string formatted="false" name="pref_enable_live_updates">使用状态栏芯片</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">在状态栏中将电池信息显示为芯片（Android 16+）</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">在 Android 设置中禁用。点击即可修复。</string>
   <string formatted="false" name="live_updates_onboarding_title">状态栏电池芯片</string>
   <string formatted="false" name="live_updates_onboarding_message_on">您的设备支持在状态栏中以芯片形式显示电池百分比。默认情况下启用此功能。\n\n如果您喜欢传统的通知图标，您可以在 Android 系统设置中为此应用程序关闭“实时更新”。</string>
   <string formatted="false" name="live_updates_onboarding_message_off">您的设备支持在状态栏中以芯片形式显示电池百分比，但目前在系统设置中已禁用。\n\n我们建议启用它以获得最佳体验。如果您喜欢传统的通知图标，可以将其禁用。</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">知道了</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">前往“设置”</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">解雇</string>
-  <string formatted="false" name="menu_alarm_channel">报警通道设置</string>
-  <string formatted="false" name="pref_cat_ui_color">用户界面颜色</string>
-  <string formatted="false" name="pref_ui_color_summary">整个应用程序的原色</string>
   <string formatted="false" name="pref_cat_channel_settings">通知渠道设置</string>
   <string formatted="false" name="pref_manage_main_channel">管理主渠道</string>
   <string formatted="false" name="pref_cat_notification_content">内容</string>
   <string formatted="false" name="pref_cat_status_bar_chip">状态栏芯片（Android 16+）</string>
   <string formatted="false" name="pref_chip_content">芯片内容</string>
   <string formatted="false" name="pref_chip_content_switching">在电池和温度之间切换</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">在电池百分比和温度之间循环显示</string>
   <string formatted="false" name="pref_chip_switching_interval">切换间隔</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">多久切换一次显示</string>
   <string formatted="false" name="pref_chip_content_help">选择在 Android 16+ 升级通知芯片中显示的值。</string>
   <string formatted="false" name="pref_chip_indicate_charging">显示充电表情符号</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">充电或充满电时显示闪电表情符号？</string>
@@ -328,7 +307,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">主控</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">电流 (mA) Hack 不支持</string>
   <string formatted="false" name="pref_current_hack_unsupported">抱歉，该设备不支持当前的 (mA) 破解。</string>
-  <string formatted="false" name="current_hack_maybe_supported">该黑客可能在此设备上起作用。</string>
   <string formatted="false" name="pref_enable_current_hack">启用黑客攻击</string>
   <string formatted="false" name="pref_enable_current_hack_summary">尝试启用电流（mA）黑客？</string>
   <string formatted="false" name="pref_enable_current_hack_help">启用此设置后，有关的其他选项
@@ -412,11 +390,6 @@
     例如，在数字下方显示闪电。  禁用
     如果您不希望这样做，请执行此设置。</string>
   <string formatted="false" name="pref_notify_status_duration">显示状态持续时间</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">显示状态更改后的时间而不是估计的剩余时间？</string>
-  <string formatted="false" name="pref_notify_status_duration_help">如果您希望显示主通知，请启用此设置
-    自状态更改以来的时间（例如，\“拔掉插头 5
-    小时\"）而不是剩余时间的估计。  两件
-    信息可从主窗口获得。</string>
   <string formatted="false" name="predictor_sensitive">敏感的</string>
   <string formatted="false" name="predictor_conservative">保守的</string>
   <string formatted="false" name="predictor_since_status_change">自状态变更以来</string>
@@ -441,9 +414,6 @@
     \n最后，您可以仅根据您的情况进行预测
     长期平均使用情况。</string>
   <string formatted="false" name="pref_language_override">语言覆盖</string>
-  <string formatted="false" name="pref_language_override_help">如果您的语言翻译不完整或不准确
-    如果您更喜欢另一个可能更好的翻译，您可能会
-    选择在这里这样做。</string>
   <string formatted="false" name="pref_classic_color_mode">强制经典色彩模式</string>
   <string formatted="false" name="pref_classic_color_mode_summary">这通常不起作用；请阅读帮助</string>
   <string formatted="false" name="pref_classic_color_mode_help">从 Android 5.0 (Lollipop) 开始，彩色通知图标

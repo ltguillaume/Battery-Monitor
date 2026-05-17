@@ -4,12 +4,9 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">تنظیمات</string>
   <string name="help_activity_subtitle" formatted="false">کمک</string>
-  <string name="log_view_activity_subtitle" formatted="false">گزارشها</string>
   <string name="battery_use_b" formatted="false">نمایش کاربرد باتری</string>
-  <string name="upgrade_donate_b" formatted="false">بروزرسانی/اهدا ...</string>
   <string name="circle_widget" formatted="false">چرخه باتری پات</string>
   <string name="full_widget" formatted="false">باتری پات کامل</string>
-  <string name="confirm_disable_hint" formatted="false">راهنمایی : نافعالسازی تاییدیه در تنظیماتری</string>
   <string name="yes" formatted="false">آری</string>
   <string name="cancel" formatted="false">لغو</string>
   <string name="confirm_close" formatted="false">بستن</string>
@@ -76,13 +73,10 @@
   <string formatted="false" name="celsius">درجه سانتیگراد</string>
   <string formatted="false" name="celsius_symbol">C</string>
   <string formatted="false" name="volt_symbol">V</string>
-  <string formatted="false" name="fully_charged_in">شارژ کامل در:</string>
   <string formatted="false" name="light_usage">استفاده از نور باقی مانده:</string>
   <string formatted="false" name="normal_usage">استفاده معمولی باقی مانده:</string>
   <string formatted="false" name="heavy_usage">استفاده سنگین باقی مانده:</string>
   <string formatted="false" name="constant_usage">استفاده ثابت باقی مانده:</string>
-  <string formatted="false" name="press_back_to_leave">برای خروج، BACK را فشار دهید.</string>
-  <string formatted="false" name="press_menu_for_more">MENU را برای موارد بیشتر فشار دهید.</string>
   <string formatted="false" name="inaccessible_storage">کارت SD غیر قابل دسترسی است.</string>
   <string formatted="false" name="inaccessible_w_reason">کارت SD غیر قابل دسترسی است:</string>
   <string formatted="false" name="read_only_storage">کارت SD فقط خواندنی است.</string>
@@ -136,13 +130,10 @@
   <string formatted="false" name="alarm_health_failure">"سلامت باتری این است:"</string>
   <string formatted="false" name="alarm_text">برای ویرایش آلارم ها را انتخاب کنید.</string>
   <string formatted="false" name="logs_empty">سیاههها خالی هستند</string>
-  <string formatted="false" name="after_n_hours_unplugged">پس از ساعت‌هایی که %1.1f از برق جدا شد</string>
-  <string formatted="false" name="after_n_hours_plugged_in">پس از ساعت اتصال %1.1f به برق</string>
   <string formatted="false" name="after_nh_mm_unplugged">پس از قطع %1$dh %2$dm از برق</string>
   <string formatted="false" name="after_nh_mm_plugged_in">بعد از اینکه %1$dh %2$dm وصل شد</string>
   <string formatted="false" name="after_nm_ms_unplugged">پس از قطع %1$dm %2$ds از برق</string>
   <string formatted="false" name="after_nm_ms_plugged_in">بعد از اینکه %1$dm %2$ds وصل شد</string>
-  <string formatted="false" name="discharging_from">تخلیه از</string>
   <string formatted="false" name="charging_from">شارژ از</string>
   <string formatted="false" name="fully_charged">کاملا شارژ شده</string>
   <string formatted="false" name="since">از آنجایی که</string>
@@ -208,22 +199,12 @@
     استفاده شده در این بخش موجود است.</string>
   <string formatted="false" name="alarm_settings_subtitle">تنظیمات هشدار</string>
   <string formatted="false" name="alarm_settings">آلارم ها</string>
-  <string formatted="false" name="alarm_settings_summary">کنترل اعلان‌ها برای باتری کم/پر</string>
   <string formatted="false" name="alarm_settings_help">می‌توانید از مانیتور باتری به شما اطلاع دهید که وقتی باتری شما تمام می‌شود
     به شرایط خاصی می رسد (به عنوان مثال، باتری کاملاً شارژ می شود،
     سطح باتری به زیر 20٪ می رسد و بسیاری دیگر).</string>
   <string formatted="false" name="other_settings">تنظیمات دیگر</string>
   <string formatted="false" name="other_settings_help">تمام تنظیمات دیگر از جمله ورود به سیستم، قفل در این صفحه وجود دارد
     صفحه نمایش، واحد دما، شروع خودکار و موارد دیگر.</string>
-  <string formatted="false" name="pref_cat_more_settings_in_pro">تنظیمات بیشتر در Pro</string>
-  <string formatted="false" name="pref_please_upgrade">نسخه Pro دارای تنظیمات و ویژگی های بسیار بیشتری از جمله
-    اطلاعات جاری (mA)،
-    آلارم ها،
-    ثبت وضعیت باتری،
-    و بیشتر</string>
-  <string formatted="false" name="pref_enable_live_updates">از تراشه نوار وضعیت استفاده کنید</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">نمایش اطلاعات باتری به عنوان یک تراشه در نوار وضعیت (Android 16 و بالاتر)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">در تنظیمات اندروید غیرفعال است. برای رفع مشکل ضربه بزنید.</string>
   <string formatted="false" name="live_updates_onboarding_title">نوار وضعیت تراشه باتری</string>
   <string formatted="false" name="live_updates_onboarding_message_on">دستگاه شما از نمایش درصد باتری به عنوان یک تراشه در نوار وضعیت پشتیبانی می کند. این به طور پیش‌فرض فعال است.</string>
   <string formatted="false" name="live_updates_onboarding_message_off">دستگاه شما از نمایش درصد باتری به عنوان یک تراشه در نوار وضعیت پشتیبانی می‌کند، اما در حال حاضر در تنظیمات سیستم غیرفعال است. اگر نماد اعلان سنتی را ترجیح می دهید، می توانید آن را غیرفعال کنید.</string>
@@ -231,18 +212,13 @@
   <string formatted="false" name="live_updates_onboarding_positive_off">به تنظیمات بروید</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">رد کردن</string>
   <string formatted="false" name="add_alarm">هشدار اضافه کنید</string>
-  <string formatted="false" name="menu_alarm_channel">تنظیمات کانال هشدار</string>
-  <string formatted="false" name="pref_cat_ui_color">رنگ رابط کاربری</string>
-  <string formatted="false" name="pref_ui_color_summary">رنگ اصلی در سراسر برنامه</string>
   <string formatted="false" name="pref_cat_channel_settings">تنظیمات کانال اعلان</string>
   <string formatted="false" name="pref_manage_main_channel">کانال اصلی را مدیریت کنید</string>
   <string formatted="false" name="pref_cat_notification_content">محتوا</string>
   <string formatted="false" name="pref_cat_status_bar_chip">تراشه نوار وضعیت (Android 16 و بالاتر)</string>
   <string formatted="false" name="pref_chip_content">محتوای تراشه</string>
   <string formatted="false" name="pref_chip_content_switching">بین باتری و دما سوئیچ کنید</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">چرخه نمایشگر بین درصد باتری و دما</string>
   <string formatted="false" name="pref_chip_switching_interval">فاصله تعویض</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">هر چند وقت یکبار صفحه نمایش را تغییر دهید</string>
   <string formatted="false" name="pref_chip_content_help">مقداری را انتخاب کنید که در تراشه اعلان تبلیغاتی Android 16+ نشان داده شود.</string>
   <string formatted="false" name="pref_chip_indicate_charging">نمایش شکلک شارژ</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">یک شکلک رعد و برق هنگام شارژ یا شارژ کامل نشان داده شود؟</string>
@@ -303,7 +279,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">کنترل اصلی</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">هک فعلی (mA) پشتیبانی نمی شود</string>
   <string formatted="false" name="pref_current_hack_unsupported">متأسفیم، هک فعلی (mA) در این دستگاه پشتیبانی نمی شود.</string>
-  <string formatted="false" name="current_hack_maybe_supported">هک ممکن است روی این دستگاه کار کند.</string>
   <string formatted="false" name="pref_enable_current_hack">هک را فعال کنید</string>
   <string formatted="false" name="pref_enable_current_hack_summary">تلاش برای فعال کردن هک فعلی (mA)؟</string>
   <string formatted="false" name="pref_enable_current_hack_help">هنگامی که این تنظیم فعال است، گزینه های دیگر مربوط به
@@ -395,11 +370,6 @@
   <string formatted="false" name="pref_max_log_age_help">اگر ورود به سیستم فعال باشد، هر زمان که دستگاه خود را وصل می کنید، ثبت می شود
     قدیمی تر از این حذف خواهد شد.</string>
   <string formatted="false" name="pref_notify_status_duration">نمایش مدت زمان وضعیت</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">زمان از زمان تغییر وضعیت به جای تخمین زمان باقی مانده نشان داده شود؟</string>
-  <string formatted="false" name="pref_notify_status_duration_help">اگر ترجیح می‌دهید اعلان اصلی نشان داده شود، این تنظیم را فعال کنید
-    زمان تغییر وضعیت (به عنوان مثال، \"قطع شده برای 5
-    ساعت\") به جای تخمین زمان باقی مانده.  هر دو قطعه
-    اطلاعات از پنجره اصلی در دسترس هستند.</string>
   <string formatted="false" name="pref_cat_temperature_unit">واحد دما</string>
   <string formatted="false" name="pref_convert_to_fahrenheit">تبدیل به فارنهایت</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">اندروید دمای باتری را بر حسب درجه سانتیگراد گزارش می کند.  اگر
@@ -443,13 +413,9 @@
 
     \n در نهایت، شما می توانید پیش بینی را تنها بر اساس خود داشته باشید
     متوسط استفاده طولانی مدت</string>
-  <string formatted="false" name="lang_system_selected">سیستم انتخاب شده است</string>
   <string formatted="false" name="pref_cat_language">زبان</string>
   <string formatted="false" name="pref_language_override">لغو زبان</string>
   <string formatted="false" name="pref_language_override_summary">انتخاب زبان:</string>
-  <string formatted="false" name="pref_language_override_help">اگر ترجمه به زبان شما ناقص یا نادرست است
-    و شما ترجمه دیگری، احتمالا بهتر را ترجیح می دهید، ممکن است
-    این کار را در اینجا انتخاب کنید.</string>
   <string formatted="false" name="pref_classic_color_mode">اجباری حالت رنگ کلاسیک</string>
   <string formatted="false" name="pref_classic_color_mode_summary">این معمولا کار نمی کند. لطفا راهنما را بخوانید</string>
   <string formatted="false" name="pref_classic_color_mode_help">شروع با Android 5.0 (Lollipop)، نمادهای اعلان رنگی

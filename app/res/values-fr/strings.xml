@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Paramètres</string>
   <string name="help_activity_subtitle" formatted="false">Aide</string>
-  <string name="log_view_activity_subtitle" formatted="false">Journaux</string>
   <string name="battery_use_b" formatted="false">Utilisation de la batterie</string>
-  <string name="upgrade_donate_b" formatted="false">Mettre à niveau/Faire un don...</string>
-  <string name="confirm_disable_hint" formatted="false">Conseil : Vous pouvez désactiver ce message dans les paramètres...</string>
   <string name="yes" formatted="false">Oui</string>
   <string name="cancel" formatted="false">Annuler</string>
   <string name="confirm_close" formatted="false">Fermer l\'application ?</string>
@@ -29,13 +26,10 @@
   <string name="celsius" formatted="false">Celsius</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Complètement chargée dans :</string>
   <string name="light_usage" formatted="false">Utilisation légère :</string>
   <string name="normal_usage" formatted="false">Utilisation normale :</string>
   <string name="heavy_usage" formatted="false">Utilisation intensive :</string>
   <string name="constant_usage" formatted="false">Utilisation constante :</string>
-  <string name="press_back_to_leave" formatted="false">Appuyez sur RETOUR pour quitter.</string>
-  <string name="press_menu_for_more" formatted="false">Appuyez sur MENU pour plus d\'options.</string>
   <string name="inaccessible_storage" formatted="false">Carte SD inaccessible.</string>
   <string name="inaccessible_w_reason" formatted="false">Carte SD inaccessible :</string>
   <string name="read_only_storage" formatted="false">Carte SD en lecture seule.</string>
@@ -82,7 +76,6 @@
   <string name="alarm_health_failure" formatted="false">"Santé de la batterie : "</string>
   <string name="alarm_text" formatted="false">Sélectionnez pour modifier l\'alarme.</string>
   <string name="logs_empty" formatted="false">Les journaux sont vides</string>
-  <string name="discharging_from" formatted="false">Se décharge depuis</string>
   <string name="charging_from" formatted="false">En charge depuis</string>
   <string name="fully_charged" formatted="false">Complètement chargée</string>
   <string name="since" formatted="false">depuis</string>
@@ -101,12 +94,9 @@
   <string name="settings_overview_help" formatted="false">Les paramètres sont organisés en quatre parties (décrites ci-dessous). Chaque partie possède sa propre page d\'aide la décrivant. Appuyez simplement sur MENU (sur les tablettes, MENU n\'est pas nécessaire) puis Aide pour obtenir de l\'aide concernant la page sur laquelle vous êtes.</string>
   <string name="alarm_settings_subtitle" formatted="false">Paramètres des alarmes</string>
   <string name="alarm_settings" formatted="false">Alarmes</string>
-  <string name="alarm_settings_summary" formatted="false">Paramétrez les notifications de batterie faible/chargée</string>
   <string name="alarm_settings_help" formatted="false">Vous pouvez configurer Battery Monitor pour qu\'il vous informe dès que la batterie a atteint un certain point (exemple : La batterie est complètement chargée, le niveau de charge a atteint 20%, etc...).</string>
   <string name="other_settings" formatted="false">Autres paramètres</string>
   <string name="other_settings_help" formatted="false">Tous les autres paramètres sont dans cette partie, y compris la journalisation, la gestion de l\'écran de verrouillage, l\'unité de température, le démarrage automatique, etc...</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Autres paramètres (version Pro)</string>
-  <string name="pref_please_upgrade" formatted="false">La version Pro possède de nombreux autres paramètres et fonctionnalités, comme la couleur de l\'icône, les thèmes de la fenêtre principale, et bien plus...</string>
   <string name="add_alarm" formatted="false">Ajouter une alarme</string>
   <string name="pref_cat_logging" formatted="false">Journalisation</string>
   <string name="pref_enable_logging" formatted="false">Activer la journalisation</string>
@@ -122,11 +112,9 @@
   <string name="pref_autostart_at_boot" formatted="false">Démarrage automatique au lancement</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Démarrer Battery Monitor lorsque le téléphone s\'allume ?</string>
   <string name="pref_autostart_at_boot_help" formatted="false">Choisissez si l\'application doit démarrer automatiquement lorsque le téléphone démarre.\n\nL\'option \"Si lancé à l\'extinction\" est active l\'application démarrera automatiquement au démarrage de l\'appareil si elle était lancée lors de l\'extinction. Si vous quittez l\'application par un autre moyen que par elle-même (comme par exemple grâce à un task killer) elle se relancera automatiquement lors du prochain démarrage du téléphone.</string>
-  <string name="lang_system_selected" formatted="false">Déterminée par le système</string>
   <string name="pref_cat_language" formatted="false">Langue</string>
   <string name="pref_language_override" formatted="false">Outrepasser la langue</string>
   <string name="pref_language_override_summary" formatted="false">Sélectionnez une langue :</string>
-  <string name="pref_language_override_help" formatted="false">Si la traduction dans votre langue est incomplète ou inexacte et que vous préférez en utiliser une autre, potentiellement meilleure, vous pouvez le faire ici.</string>
   <string name="pref_cat_device_specific" formatted="false">Paramètres spécifiques au matériel</string>
   <string name="alarms_overview" formatted="false">Aperçu des alarmes</string>
   <string name="alarms_overview_help" formatted="false">Cette page vous permet d\'ajouter de nouvelles alarmes, activer ou désactiver rapidement les alarmes existantes, ou supprimer des alarmes.\n\nPour ajouter une nouvelle alarme, appuyez sur \"Ajouter une alarme\" - cela va créer une nouvelle alarme et vous amène à la page de paramètres, où vous pouvez contrôler les paramètres de la nouvelle alarme. Voir l\'aide sur cette page pour plus de détails.\n\nSous le bouton \"Ajouter une alarme\" se trouve la liste de toutes les alarmes que vous avez créé.\n\n• Pour modifier une alarme existante, il suffit de la sélectionner.\n• Pour supprimer une alarme, il faut effectuer un appui long sur une alarme, puis sélectionner \"Supprimer l\'alarme\". (Vous pouvez également supprimer une alarme à partir de la page des paramètres individuels de l\'alarme en appuyant sur MENU, puis sur \"Supprimer l\'alarme\".)\n• Pour basculer rapidement si une alarme est activée, il faut appuyer sur l\'icône horloge située à la gauche du texte de l\'alarme. (Vous pouvez également activer ou désactiver une alarme à partir de la page des paramètres individuels de l\'alarme.)</string>
@@ -180,8 +168,6 @@
   <string name="alarm_type_temperature_drops" formatted="false">Température inférieure à</string>
   <string name="alarm_type_entry_temperature_drops" formatted="false">Température inférieure à...</string>
   <string name="alarm_temp_drops" formatted="false">"Temp. batterie inférieure à "</string>
-  <string name="after_n_hours_unplugged" formatted="false">Après %1.1f heures débranché</string>
-  <string name="after_n_hours_plugged_in" formatted="false">Après %1.1f heures branché</string>
   <string name="after_nh_mm_unplugged" formatted="false">Après %1$dh %2$dm débranché</string>
   <string name="after_nh_mm_plugged_in" formatted="false">Après %1$dh %2$dm branché</string>
   <string name="after_nm_ms_unplugged" formatted="false">Après %1$dm %2$ds débranché</string>
@@ -216,27 +202,19 @@
   <string name="current_hack_settings" formatted="false">Hack courant (mA)</string>
   <string name="current_hack_settings_summary" formatted="false">Réglages avancés pour activer les infos mA</string>
   <string name="current_hack_settings_help" formatted="false">Android ne fournit pas de méthode officielle pour accéder au courant de la batterie. Un hack peut toutefois fonctionner sur certains appareils.</string>
-  <string name="pref_enable_live_updates" formatted="false">Utiliser la puce de barre d’état</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">Afficher les infos batterie sous forme de puce dans la barre d’état (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">Désactivé dans les paramètres Android. Appuyez pour corriger.</string>
   <string name="live_updates_onboarding_title" formatted="false">Puce batterie de la barre d’état</string>
   <string name="live_updates_onboarding_message_on" formatted="false">Votre appareil prend en charge l’affichage du pourcentage batterie en puce dans la barre d’état.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">Votre appareil prend en charge la puce batterie, mais elle est désactivée dans les paramètres système.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Compris</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Aller aux paramètres</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Ignorer</string>
-  <string name="menu_alarm_channel" formatted="false">Réglages du canal d’alarme</string>
-  <string name="pref_cat_ui_color" formatted="false">Couleur de l’interface</string>
-  <string name="pref_ui_color_summary" formatted="false">Couleur principale dans toute l’appli</string>
   <string name="pref_cat_channel_settings" formatted="false">Réglages des canaux de notification</string>
   <string name="pref_manage_main_channel" formatted="false">Gérer le canal principal</string>
   <string name="pref_cat_notification_content" formatted="false">Contenu</string>
   <string name="pref_cat_status_bar_chip" formatted="false">Puce de barre d’état (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">Contenu de la puce</string>
   <string name="pref_chip_content_switching" formatted="false">Alterner entre batterie et température</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">Alterner entre pourcentage batterie et température</string>
   <string name="pref_chip_switching_interval" formatted="false">Intervalle d’alternance</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">Fréquence d’alternance de l’affichage</string>
   <string name="pref_chip_content_help" formatted="false">Choisissez la valeur à afficher dans la puce Android 16+.</string>
   <string name="pref_chip_indicate_charging" formatted="false">Afficher l’emoji de charge</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">Afficher un emoji éclair pendant la charge ?</string>
@@ -269,7 +247,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">Contrôle principal</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">Hack courant (mA) non pris en charge</string>
   <string name="pref_current_hack_unsupported" formatted="false">Désolé, le hack courant (mA) n’est pas pris en charge sur cet appareil.</string>
-  <string name="current_hack_maybe_supported" formatted="false">Le hack POURRAIT fonctionner sur cet appareil.</string>
   <string name="pref_enable_current_hack" formatted="false">Activer le hack</string>
   <string name="pref_enable_current_hack_summary" formatted="false">Tenter d’activer le hack courant (mA) ?</string>
   <string name="pref_enable_current_hack_help" formatted="false">Quand ce réglage est activé, les autres options liées au hack deviennent utilisables.</string>
@@ -299,8 +276,6 @@
   <string name="pref_indicate_charging_summary" formatted="false">Modifier l’icône pendant la charge ?</string>
   <string name="pref_indicate_charging_help" formatted="false">Certains jeux d’icônes montrent un éclair pendant la charge ; ce réglage le désactive.</string>
   <string name="pref_notify_status_duration" formatted="false">Afficher la durée du statut</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">Afficher le temps depuis changement d’état plutôt que l’estimation restante ?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">Activez ce réglage pour afficher le temps depuis le changement d’état dans la notification principale.</string>
   <string name="predictor_sensitive" formatted="false">Sensible</string>
   <string name="predictor_conservative" formatted="false">Conservateur</string>
   <string name="predictor_since_status_change" formatted="false">Depuis changement d’état</string>

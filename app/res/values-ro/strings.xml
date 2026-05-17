@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Setari</string>
   <string name="help_activity_subtitle" formatted="false">Ajutor</string>
-  <string name="log_view_activity_subtitle" formatted="false">Loguri</string>
   <string name="battery_use_b" formatted="false">Vizualizeaza Utilizarea Bateriei</string>
-  <string name="upgrade_donate_b" formatted="false">Upgrade/Doneaza</string>
-  <string name="confirm_disable_hint" formatted="false">Sugestie: Dezactiveaza acest mesaj de confirmare din meniul setari...</string>
   <string name="yes" formatted="false">Da</string>
   <string name="cancel" formatted="false">Anuleaza</string>
   <string name="confirm_close" formatted="false">Sigur inchideti?</string>
@@ -36,13 +33,10 @@
   <string name="celsius" formatted="false">Celsius</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Incarcata Complet in:</string>
   <string name="light_usage" formatted="false">Timp Ramas - Utilizare Usoara</string>
   <string name="normal_usage" formatted="false">Timp Ramas - Utilizare Normala</string>
   <string name="heavy_usage" formatted="false">Timp Ramas - Utilizare Intensiva</string>
   <string name="constant_usage" formatted="false">Timp Ramas - Utilizare Constanta</string>
-  <string name="press_back_to_leave" formatted="false">Pentru iesire, apasa BACK/Inapoi</string>
-  <string name="press_menu_for_more" formatted="false">Pentru mai multe elemente/items apasa MENU</string>
   <string name="inaccessible_storage" formatted="false">Cartela SD nu este accesibila</string>
   <string name="inaccessible_w_reason" formatted="false">Cartela SD nu este accesibila</string>
   <string name="read_only_storage" formatted="false">Cartela SD nu este protejata la scriere (Read Only)</string>
@@ -82,7 +76,6 @@
   <string name="alarm_health_failure" formatted="false">Calitatea Bateriei este:</string>
   <string name="alarm_text" formatted="false">Selecteaza pentru a edita alarmele.</string>
   <string name="logs_empty" formatted="false">Nu sunt loguri/loguri goale</string>
-  <string name="discharging_from" formatted="false">Se descarca de la</string>
   <string name="charging_from" formatted="false">Se incarca de la</string>
   <string name="fully_charged" formatted="false">Incarcata Complet</string>
   <string name="since" formatted="false">De la</string>
@@ -139,8 +132,6 @@
   <string formatted="false" name="alarm_type_entry_temperature_rises">Temperatura crește peste...</string>
   <string formatted="false" name="alarm_type_entry_health_failure">Sănătatea eșuează</string>
   <string formatted="false" name="alarm_temp_drops">„Temp. baterie este sub”</string>
-  <string formatted="false" name="after_n_hours_unplugged">După ore %1.1f deconectat</string>
-  <string formatted="false" name="after_n_hours_plugged_in">După ore %1.1f conectat</string>
   <string formatted="false" name="after_nh_mm_unplugged">După ce %1$dh %2$dm a fost deconectat</string>
   <string formatted="false" name="after_nh_mm_plugged_in">După ce %1$dh %2$dm a fost conectat la priză</string>
   <string formatted="false" name="after_nm_ms_unplugged">După ce %1$dm %2$d au fost deconectate</string>
@@ -200,22 +191,12 @@
     utilizate sunt disponibile în această secțiune.</string>
   <string formatted="false" name="alarm_settings_subtitle">Setări de alarmă</string>
   <string formatted="false" name="alarm_settings">Alarme</string>
-  <string formatted="false" name="alarm_settings_summary">Notificări de control pentru baterie descărcată/plină</string>
   <string formatted="false" name="alarm_settings_help">Puteți solicita Battery Monitor să vă anunțe când nivelul bateriei este
     atinge o anumită condiție (de exemplu, bateria se încarcă complet,
     nivelul bateriei scade sub 20% și multe altele).</string>
   <string formatted="false" name="other_settings">Alte setări</string>
   <string formatted="false" name="other_settings_help">Toate celelalte setări sunt pe această pagină, inclusiv înregistrarea, blocarea
     ecran, unitate de temperatură, pornire automată și multe altele.</string>
-  <string formatted="false" name="pref_cat_more_settings_in_pro">Mai multe setări în Pro</string>
-  <string formatted="false" name="pref_please_upgrade">Versiunea Pro are multe mai multe setări și funcții, inclusiv
-    informații curente (mA),
-    alarme,
-    înregistrarea stării bateriei,
-    si mai mult.</string>
-  <string formatted="false" name="pref_enable_live_updates">Utilizați cip bară de stare</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">Afișați informațiile despre baterie ca cip în bara de stare (Android 16+)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">Dezactivat în setările Android. Atingeți pentru a remedia.</string>
   <string formatted="false" name="live_updates_onboarding_title">Bara de stare Cip baterie</string>
   <string formatted="false" name="live_updates_onboarding_message_on">Dispozitivul dvs. acceptă afișarea procentului bateriei sub formă de cip în bara de stare. Aceasta este activată în mod implicit.\n\nDacă preferați o pictogramă de notificare tradițională, puteți dezactiva „Actualizări live” din setările de sistem Android pentru această aplicație.</string>
   <string formatted="false" name="live_updates_onboarding_message_off">Dispozitivul dvs. acceptă afișarea procentului bateriei ca cip în bara de stare, dar în prezent este dezactivat în setările de sistem.\n\n Vă recomandăm să îl activați pentru cea mai bună experiență. Dacă preferați o pictogramă de notificare tradițională, o puteți lăsa dezactivată.</string>
@@ -223,18 +204,13 @@
   <string formatted="false" name="live_updates_onboarding_positive_off">Accesați Setări</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">Respingeți</string>
   <string formatted="false" name="add_alarm">Adăugați alarma</string>
-  <string formatted="false" name="menu_alarm_channel">Setări canal de alarmă</string>
-  <string formatted="false" name="pref_cat_ui_color">Culoarea UI</string>
-  <string formatted="false" name="pref_ui_color_summary">Culoarea primară de-a lungul aplicației</string>
   <string formatted="false" name="pref_cat_channel_settings">Setări canal de notificare</string>
   <string formatted="false" name="pref_manage_main_channel">Gestionați canalul principal</string>
   <string formatted="false" name="pref_cat_notification_content">Conţinut</string>
   <string formatted="false" name="pref_cat_status_bar_chip">Cip bară de stare (Android 16+)</string>
   <string formatted="false" name="pref_chip_content">Conținut de cip</string>
   <string formatted="false" name="pref_chip_content_switching">Comutați între baterie și temperatură</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">Comutați afișajul între procentul bateriei și temperatură</string>
   <string formatted="false" name="pref_chip_switching_interval">Interval de comutare</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">Cât de des să comutați afișajul</string>
   <string formatted="false" name="pref_chip_content_help">Alegeți ce valoare să afișați în cipul de notificare promovat Android 16+.</string>
   <string formatted="false" name="pref_chip_indicate_charging">Afișați emoji de încărcare</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">Afișați un emoji fulger când se încarcă sau este complet încărcat?</string>
@@ -295,7 +271,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">Control principal</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">Hack actual (mA) neacceptat</string>
   <string formatted="false" name="pref_current_hack_unsupported">Ne pare rău, hack-ul actual (mA) nu este acceptat pe acest dispozitiv.</string>
-  <string formatted="false" name="current_hack_maybe_supported">Hackul POATE funcționa pe acest dispozitiv.</string>
   <string formatted="false" name="pref_enable_current_hack">Activați hack-ul</string>
   <string formatted="false" name="pref_enable_current_hack_summary">Încercați să activați hack-ul curent (mA)?</string>
   <string formatted="false" name="pref_enable_current_hack_help">Când această setare este activată, celelalte opțiuni privind
@@ -387,11 +362,6 @@
   <string formatted="false" name="pref_max_log_age_help">Dacă înregistrarea este activată, atunci de fiecare dată când conectați dispozitivul, se înregistrează
     mai vechi decât acesta va fi ștearsă.</string>
   <string formatted="false" name="pref_notify_status_duration">Afișează durata stării</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">Afișați timpul de când starea s-a schimbat, mai degrabă decât estimarea timpului rămas?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">Activați această setare dacă preferați să se afișeze notificarea principală
-    timpul de la schimbarea stării (de ex., „Deconectat pentru 5
-    ore\"), mai degrabă decât estimarea timpului rămas.  Ambele piese
-    de informații sunt disponibile din fereastra principală.</string>
   <string formatted="false" name="pref_cat_temperature_unit">Unitate de temperatură</string>
   <string formatted="false" name="pref_convert_to_fahrenheit">Convertiți în Fahrenheit</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">Android raportează temperatura bateriei în grade Celsius.  Dacă
@@ -435,13 +405,9 @@
 
     \n În cele din urmă, puteți avea predicția bazată exclusiv pe dvs
     utilizare medie pe termen lung.</string>
-  <string formatted="false" name="lang_system_selected">Sistem selectat</string>
   <string formatted="false" name="pref_cat_language">Limbă</string>
   <string formatted="false" name="pref_language_override">Anularea limbii</string>
   <string formatted="false" name="pref_language_override_summary">Selectați limba:</string>
-  <string formatted="false" name="pref_language_override_help">Dacă traducerea în limba dvs. este incompletă sau inexactă
-    și ați prefera o altă traducere, eventual mai bună, poate
-    alege să faci asta aici.</string>
   <string formatted="false" name="pref_classic_color_mode">Forțați modul clasic de culoare</string>
   <string formatted="false" name="pref_classic_color_mode_summary">Acest lucru de obicei nu funcționează; va rog cititi ajutorul</string>
   <string formatted="false" name="pref_classic_color_mode_help">Începând cu Android 5.0 (Lollipop), pictograme de notificare colorate

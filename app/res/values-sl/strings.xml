@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Nastavitve</string>
   <string name="help_activity_subtitle" formatted="false">Pomoč</string>
-  <string name="log_view_activity_subtitle" formatted="false">Poročila</string>
   <string name="battery_use_b" formatted="false">Poglej porabo baterije</string>
-  <string name="upgrade_donate_b" formatted="false">Nadgradi/doniraj...</string>
-  <string name="confirm_disable_hint" formatted="false">Namig: Onemogočite to vprašanje v nastavitvah...</string>
   <string name="yes" formatted="false">Da</string>
   <string name="cancel" formatted="false">Prekliči</string>
   <string name="confirm_close" formatted="false">Ste prepričani da želite zapreti?</string>
@@ -29,13 +26,10 @@
   <string name="celsius" formatted="false">Celzija</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Popolnoma napolnjeno v:</string>
   <string name="light_usage" formatted="false">Lahka uporaba:</string>
   <string name="normal_usage" formatted="false">Normalna uporaba:</string>
   <string name="heavy_usage" formatted="false">Težka uporaba:</string>
   <string name="constant_usage" formatted="false">Nenehna uporaba:</string>
-  <string name="press_back_to_leave" formatted="false">Pritisnite NAZAJ za izhod.</string>
-  <string name="press_menu_for_more" formatted="false">Pritisnite MENU za več stvari.</string>
   <string name="inaccessible_storage" formatted="false">SD kartica je nedostopna.</string>
   <string name="inaccessible_w_reason" formatted="false">SD kartica nedostopna:</string>
   <string name="read_only_storage" formatted="false">SD kartica samo za branje.</string>
@@ -80,7 +74,6 @@
   <string name="alarm_health_failure" formatted="false">"Zdravje baterije je: "</string>
   <string name="alarm_text" formatted="false">Izberite za urejanje alarmov.</string>
   <string name="logs_empty" formatted="false">Poročila so prazna</string>
-  <string name="discharging_from" formatted="false">Praznanje od</string>
   <string name="charging_from" formatted="false">Polnjenje od</string>
   <string name="fully_charged" formatted="false">Napolnjeno</string>
   <string name="since" formatted="false">od</string>
@@ -92,10 +85,8 @@
   <string name="settings_overview" formatted="false">Povzetek</string>
   <string name="alarm_settings_subtitle" formatted="false">Nastavitve alarma</string>
   <string name="alarm_settings" formatted="false">Alarmi</string>
-  <string name="alarm_settings_summary" formatted="false">Nadzoruj obvestila za slabo/polno baterijo</string>
   <string name="alarm_settings_help" formatted="false">Battery Monitor lahko nastavite tako, da vas obvesti ko baterija doseže določeno točko (npr., baterija se popolnoma napolni, baterija pade pod 20%).</string>
   <string name="other_settings" formatted="false">Druge nastavitve</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Več nastavitev v Pro različici</string>
   <string name="add_alarm" formatted="false">Dodaj alarm</string>
   <string name="pref_cat_logging" formatted="false">Beleženje</string>
   <string name="pref_enable_logging" formatted="false">Omogoči beleženje</string>
@@ -182,8 +173,6 @@
   <string formatted="false" name="alarm_type_entry_temperature_drops">Temperatura pade pod...</string>
   <string formatted="false" name="alarm_type_entry_health_failure">Zdravje ne uspe</string>
   <string formatted="false" name="alarm_temp_drops">"Temperatura baterije je nižja"</string>
-  <string formatted="false" name="after_n_hours_unplugged">Po %1.1f urah odklopljen</string>
-  <string formatted="false" name="after_n_hours_plugged_in">Po %1.1f urah priklopljen</string>
   <string formatted="false" name="after_nh_mm_unplugged">Po %1$dh %2$dm odklopljen</string>
   <string formatted="false" name="after_nh_mm_plugged_in">Po priključitvi %1$dh %2$dm</string>
   <string formatted="false" name="after_nm_ms_unplugged">Po %1$dm %2$ds odklopljen</string>
@@ -244,32 +233,19 @@
     rabljeni so na voljo v tem razdelku.</string>
   <string formatted="false" name="other_settings_help">Vse druge nastavitve so na tej strani, vključno z beleženjem, zaklepanjem
     zaslon, temperaturna enota, samodejni zagon itd.</string>
-  <string formatted="false" name="pref_please_upgrade">Različica Pro ima veliko več nastavitev in funkcij, vključno z
-    informacije o toku (mA),
-    alarmi,
-    beleženje stanja baterije,
-    in več.</string>
-  <string formatted="false" name="pref_enable_live_updates">Uporabi čip statusne vrstice</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">Prikaži informacije o bateriji kot čip v vrstici stanja (Android 16+)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">Onemogočeno v nastavitvah Androida. Tapnite za popravek.</string>
   <string formatted="false" name="live_updates_onboarding_title">Vrstica stanja Baterijski čip</string>
   <string formatted="false" name="live_updates_onboarding_message_on">Vaša naprava podpira prikaz odstotka baterije kot čip v vrstici stanja. To je privzeto omogočeno.\n\nČe imate raje tradicionalno ikono za obvestila, lahko za to aplikacijo izklopite \"Posodobitve v živo\" v sistemskih nastavitvah Androida.</string>
   <string formatted="false" name="live_updates_onboarding_message_off">Vaša naprava podpira prikaz odstotka baterije kot čip v vrstici stanja, vendar je trenutno onemogočen v sistemskih nastavitvah.\n\nPriporočamo, da ga omogočite za najboljšo izkušnjo. Če imate raje tradicionalno ikono za obvestila, jo lahko pustite onemogočeno.</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">Razumem</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">Pojdite v Nastavitve</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">Odpusti</string>
-  <string formatted="false" name="menu_alarm_channel">Nastavitve alarmnega kanala</string>
-  <string formatted="false" name="pref_cat_ui_color">Barva uporabniškega vmesnika</string>
-  <string formatted="false" name="pref_ui_color_summary">Primarna barva v celotni aplikaciji</string>
   <string formatted="false" name="pref_cat_channel_settings">Nastavitve kanala za obvestila</string>
   <string formatted="false" name="pref_manage_main_channel">Upravljanje glavnega kanala</string>
   <string formatted="false" name="pref_cat_notification_content">Vsebina</string>
   <string formatted="false" name="pref_cat_status_bar_chip">Čip vrstice stanja (Android 16+)</string>
   <string formatted="false" name="pref_chip_content">Vsebina čipa</string>
   <string formatted="false" name="pref_chip_content_switching">Preklop med baterijo in temperaturo</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">Zaslon preklapljajte med odstotkom baterije in temperaturo</string>
   <string formatted="false" name="pref_chip_switching_interval">Preklopni interval</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">Kako pogosto zamenjati zaslon</string>
   <string formatted="false" name="pref_chip_content_help">Izberite, katero vrednost želite prikazati v čipu za promovirana obvestila Android 16+.</string>
   <string formatted="false" name="pref_chip_indicate_charging">Prikaži polnilni emoji</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">Prikaži emoji strele, ko se polni ali je popolnoma napolnjen?</string>
@@ -330,7 +306,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">Glavni nadzor</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">Tok (mA) Hack ni podprt</string>
   <string formatted="false" name="pref_current_hack_unsupported">Oprostite, trenutni (mA) hack ni podprt v tej napravi.</string>
-  <string formatted="false" name="current_hack_maybe_supported">Vdor MORDA deluje na tej napravi.</string>
   <string formatted="false" name="pref_enable_current_hack">Omogoči kramp</string>
   <string formatted="false" name="pref_enable_current_hack_summary">Poskus omogočiti trenutni (mA) vdor?</string>
   <string formatted="false" name="pref_enable_current_hack_help">Ko je ta nastavitev omogočena, se druge možnosti glede
@@ -417,11 +392,6 @@
   <string formatted="false" name="pref_max_log_age_help">Če je beleženje omogočeno, se beleži vsakič, ko priključite napravo
     starejše od tega bodo izbrisane.</string>
   <string formatted="false" name="pref_notify_status_duration">Prikaži trajanje stanja</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">Želite prikazati čas od spremembe stanja namesto ocene preostalega časa?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">Omogočite to nastavitev, če želite, da se prikaže glavno obvestilo
-    čas od spremembe stanja (npr. \"Unplugged for 5
-    ure\") namesto ocene preostalega časa.  Oba kosa
-    informacije so na voljo v glavnem oknu.</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">Android sporoča temperaturo baterije v stopinjah Celzija.  če
     raje vidite temperaturo baterije v stopinjah Fahrenheita,
     označite to možnost in aplikacija se bo pretvorila namesto vas.</string>
@@ -460,11 +430,7 @@
 
     \nNazadnje lahko napoved temelji na vašem
     dolgoročna povprečna uporaba.</string>
-  <string formatted="false" name="lang_system_selected">Sistemsko izbrano</string>
   <string formatted="false" name="pref_language_override">Preglasitev jezika</string>
-  <string formatted="false" name="pref_language_override_help">Če je prevod v vaš jezik nepopoln ali netočen
-    in bi morda raje drug, morda boljši prevod
-    izberite to tukaj.</string>
   <string formatted="false" name="pref_classic_color_mode">Vsili klasični barvni način</string>
   <string formatted="false" name="pref_classic_color_mode_summary">To ponavadi ne deluje; prosim preberi pomoč</string>
   <string formatted="false" name="pref_classic_color_mode_help">Od Android 5.0 (Lollipop), barvne ikone obvestil

@@ -4,12 +4,9 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">सेटिंग</string>
   <string name="help_activity_subtitle" formatted="false">मदद</string>
-  <string name="log_view_activity_subtitle" formatted="false">लॉग्स</string>
   <string name="battery_use_b" formatted="false">बैटरी उपयोग देखें</string>
-  <string name="upgrade_donate_b" formatted="false">उन्नयन या दान के लिए</string>
   <string name="circle_widget" formatted="false">Battery Monitor वृत्त</string>
   <string name="full_widget" formatted="false">पूर्ण बैटरी</string>
-  <string name="confirm_disable_hint" formatted="false">सुझाव: सेटिंग्स में इस पुष्टिकरण संवाद अक्षम करें ...</string>
   <string name="yes" formatted="false">हां</string>
   <string name="cancel" formatted="false">निष्क्रिय</string>
   <string name="confirm_close" formatted="false">वास्तव मे बंद करें</string>
@@ -69,13 +66,10 @@
   <string formatted="false" name="celsius">सेल्सीयस</string>
   <string formatted="false" name="celsius_symbol">C</string>
   <string formatted="false" name="volt_symbol">V</string>
-  <string formatted="false" name="fully_charged_in">पूरी तरह से चार्ज:</string>
   <string formatted="false" name="light_usage">प्रकाश उपयोग बायां:</string>
   <string formatted="false" name="normal_usage">सामान्य उपयोग बाएँ:</string>
   <string formatted="false" name="heavy_usage">भारी उपयोग बायाँ:</string>
   <string formatted="false" name="constant_usage">लगातार उपयोग बाएँ:</string>
-  <string formatted="false" name="press_back_to_leave">जाने के लिए वापस दबाएँ.</string>
-  <string formatted="false" name="press_menu_for_more">अधिक आइटम के लिए मेनू दबाएँ।</string>
   <string formatted="false" name="inaccessible_storage">एसडी कार्ड पहुंच योग्य नहीं है.</string>
   <string formatted="false" name="inaccessible_w_reason">एसडी कार्ड पहुंच योग्य नहीं:</string>
   <string formatted="false" name="read_only_storage">एसडी कार्ड केवल पढ़ने के लिए है.</string>
@@ -129,13 +123,10 @@
   <string formatted="false" name="alarm_health_failure">"बैटरी स्वास्थ्य है:"</string>
   <string formatted="false" name="alarm_text">अलार्म संपादित करने के लिए चयन करें.</string>
   <string formatted="false" name="logs_empty">लॉग खाली हैं</string>
-  <string formatted="false" name="after_n_hours_unplugged">%1.1f घंटों के बाद अनप्लग किया गया</string>
-  <string formatted="false" name="after_n_hours_plugged_in">%1.1f घंटों के बाद प्लग इन किया गया</string>
   <string formatted="false" name="after_nh_mm_unplugged">%1$dh %2$dm के बाद अनप्लग किया गया</string>
   <string formatted="false" name="after_nh_mm_plugged_in">%1$dh %2$dm के बाद प्लग इन किया गया</string>
   <string formatted="false" name="after_nm_ms_unplugged">%1$dm %2$ds के अनप्लग होने के बाद</string>
   <string formatted="false" name="after_nm_ms_plugged_in">%1$dm %2$ds प्लग इन करने के बाद</string>
-  <string formatted="false" name="discharging_from">से डिस्चार्ज हो रहा है</string>
   <string formatted="false" name="charging_from">से चार्ज हो रहा है</string>
   <string formatted="false" name="fully_charged">पूर्णतःउर्जित</string>
   <string formatted="false" name="since">तब से</string>
@@ -201,22 +192,12 @@
     प्रयुक्त इस अनुभाग में उपलब्ध हैं।</string>
   <string formatted="false" name="alarm_settings_subtitle">अलार्म सेटिंग्स</string>
   <string formatted="false" name="alarm_settings">एलार्म</string>
-  <string formatted="false" name="alarm_settings_summary">कम/पूर्ण बैटरी के लिए सूचनाओं को नियंत्रित करें</string>
   <string formatted="false" name="alarm_settings_help">आपकी बैटरी का स्तर होने पर आप बैटरी मॉनिटर आपको सूचित कर सकते हैं
     एक निश्चित स्थिति तक पहुँच जाता है (उदाहरण के लिए, बैटरी पूरी तरह चार्ज हो जाती है,
     बैटरी का स्तर 20% से नीचे चला जाता है, और कई अन्य)।</string>
   <string formatted="false" name="other_settings">अन्य सेटिंग्स</string>
   <string formatted="false" name="other_settings_help">लॉगिंग, लॉक सहित अन्य सभी सेटिंग्स इस पेज पर हैं
     स्क्रीन, तापमान इकाई, ऑटोस्टार्ट, और बहुत कुछ।</string>
-  <string formatted="false" name="pref_cat_more_settings_in_pro">प्रो में अधिक सेटिंग्स</string>
-  <string formatted="false" name="pref_please_upgrade">प्रो संस्करण में कई और सेटिंग्स और सुविधाएँ शामिल हैं
-    वर्तमान (एमए) जानकारी,
-    अलार्म,
-    बैटरी स्थिति लॉगिंग,
-    और भी बहुत कुछ.</string>
-  <string formatted="false" name="pref_enable_live_updates">स्टेटस बार चिप का उपयोग करें</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">स्टेटस बार में बैटरी की जानकारी एक चिप के रूप में दिखाएं (Android 16+)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">Android सेटिंग में अक्षम. ठीक करने के लिए टैप करें.</string>
   <string formatted="false" name="live_updates_onboarding_title">स्टेटस बार बैटरी चिप</string>
   <string formatted="false" name="live_updates_onboarding_message_on">आपका डिवाइस स्टेटस बार में बैटरी प्रतिशत को चिप के रूप में दिखाने का समर्थन करता है। यह डिफ़ॉल्ट रूप से सक्षम है।</string>
   <string formatted="false" name="live_updates_onboarding_message_off">आपका डिवाइस स्टेटस बार में बैटरी प्रतिशत को चिप के रूप में दिखाने का समर्थन करता है, लेकिन यह वर्तमान में सिस्टम सेटिंग्स में अक्षम है।\nZNLZZहम सर्वोत्तम अनुभव के लिए इसे सक्षम करने की सलाह देते हैं। यदि आप पारंपरिक अधिसूचना आइकन पसंद करते हैं, तो आप इसे अक्षम छोड़ सकते हैं।</string>
@@ -224,18 +205,13 @@
   <string formatted="false" name="live_updates_onboarding_positive_off">सेटिंग्स पर जाएं</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">नकार देना</string>
   <string formatted="false" name="add_alarm">अलार्म जोड़ें</string>
-  <string formatted="false" name="menu_alarm_channel">अलार्म चैनल सेटिंग्स</string>
-  <string formatted="false" name="pref_cat_ui_color">यूआई रंग</string>
-  <string formatted="false" name="pref_ui_color_summary">पूरे ऐप में प्राथमिक रंग</string>
   <string formatted="false" name="pref_cat_channel_settings">अधिसूचना चैनल सेटिंग्स</string>
   <string formatted="false" name="pref_manage_main_channel">मुख्य चैनल प्रबंधित करें</string>
   <string formatted="false" name="pref_cat_notification_content">सामग्री</string>
   <string formatted="false" name="pref_cat_status_bar_chip">स्टेटस बार चिप (एंड्रॉइड 16+)</string>
   <string formatted="false" name="pref_chip_content">चिप सामग्री</string>
   <string formatted="false" name="pref_chip_content_switching">बैटरी और तापमान के बीच स्विच करें</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">बैटरी प्रतिशत और तापमान के बीच डिस्प्ले को चक्रित करें</string>
   <string formatted="false" name="pref_chip_switching_interval">स्विचिंग अंतराल</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">डिस्प्ले को कितनी बार स्विच करना है</string>
   <string formatted="false" name="pref_chip_content_help">चुनें कि Android 16+ प्रचारित-अधिसूचना चिप में कौन सा मान दिखाना है।</string>
   <string formatted="false" name="pref_chip_indicate_charging">चार्जिंग इमोजी दिखाएँ</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">चार्ज करते समय या पूरी तरह चार्ज होने पर बिजली का इमोजी दिखाएँ?</string>
@@ -291,7 +267,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">मुख्य नियंत्रण</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">वर्तमान (एमए) हैक असमर्थित</string>
   <string formatted="false" name="pref_current_hack_unsupported">क्षमा करें, वर्तमान (एमए) हैक इस डिवाइस पर समर्थित नहीं है।</string>
-  <string formatted="false" name="current_hack_maybe_supported">हैक इस डिवाइस पर काम कर सकता है।</string>
   <string formatted="false" name="pref_enable_current_hack">हैक सक्षम करें</string>
   <string formatted="false" name="pref_enable_current_hack_summary">वर्तमान (एमए) हैक को सक्षम करने का प्रयास करें?</string>
   <string formatted="false" name="pref_enable_current_hack_help">जब यह सेटिंग सक्षम हो जाती है, तो इसके संबंध में अन्य विकल्प
@@ -383,11 +358,6 @@
   <string formatted="false" name="pref_max_log_age_help">यदि लॉगिंग सक्षम है, तो जब भी आप अपने डिवाइस को प्लग इन करते हैं, लॉग इन होता है
     इससे अधिक पुराना हटा दिया जाएगा।</string>
   <string formatted="false" name="pref_notify_status_duration">स्थिति अवधि दिखाएँ</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">शेष समय का अनुमान लगाने के बजाय स्थिति बदलने के बाद से समय दिखाएं?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">यदि आप मुख्य अधिसूचना दिखाना चाहते हैं तो इस सेटिंग को सक्षम करें
-    स्थिति बदलने के बाद का समय (उदाहरण के लिए, \"5 के लिए अनप्लग्ड)।
-    शेष समय के अनुमान के बजाय घंटे\")।  दोनों टुकड़े
-    जानकारी मुख्य विंडो से उपलब्ध है।</string>
   <string formatted="false" name="pref_cat_temperature_unit">तापमान इकाई</string>
   <string formatted="false" name="pref_convert_to_fahrenheit">फ़ारेनहाइट में कनवर्ट करें</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">एंड्रॉइड बैटरी तापमान को डिग्री सेल्सियस में रिपोर्ट करता है।  यदि
@@ -430,13 +400,9 @@
 
     \nअंत में, आप पूरी तरह से अपने आधार पर भविष्यवाणी कर सकते हैं
     दीर्घकालिक औसत उपयोग।</string>
-  <string formatted="false" name="lang_system_selected">सिस्टम-चयनित</string>
   <string formatted="false" name="pref_cat_language">भाषा</string>
   <string formatted="false" name="pref_language_override">भाषा ओवरराइड</string>
   <string formatted="false" name="pref_language_override_summary">भाषा चुने:</string>
-  <string formatted="false" name="pref_language_override_help">यदि आपकी भाषा में अनुवाद अधूरा या गलत है
-    और आप दूसरा, संभवतः बेहतर अनुवाद पसंद करेंगे, हो सकता है
-    यहां ऐसा करना चुनें.</string>
   <string formatted="false" name="pref_classic_color_mode">फोर्स क्लासिक कलर मोड</string>
   <string formatted="false" name="pref_classic_color_mode_summary">यह आमतौर पर काम नहीं करता; कृपया सहायता पढ़ें</string>
   <string formatted="false" name="pref_classic_color_mode_help">एंड्रॉइड 5.0 (लॉलीपॉप) से शुरू होकर, रंगीन अधिसूचना आइकन

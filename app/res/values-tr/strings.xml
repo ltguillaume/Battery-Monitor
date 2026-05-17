@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Ayarlar</string>
   <string name="help_activity_subtitle" formatted="false">Yardım</string>
-  <string name="log_view_activity_subtitle" formatted="false">Günlükler (Loglar)</string>
   <string name="battery_use_b" formatted="false">Pil Kullanımını Gör</string>
-  <string name="upgrade_donate_b" formatted="false">Yükselt/Bağış Yap...</string>
-  <string name="confirm_disable_hint" formatted="false">İpucu: Bu onay mesajı ayarlar\'dan kaldırılabilir...</string>
   <string name="yes" formatted="false">Evet</string>
   <string name="cancel" formatted="false">İptal</string>
   <string name="confirm_close" formatted="false">Gerçekten Kapat?</string>
@@ -31,13 +28,10 @@
   <string name="celsius" formatted="false">Santigrad</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Zamana Kadar Şarj Dolacak:</string>
   <string name="light_usage" formatted="false">Kalan Hafif Kullanım:</string>
   <string name="normal_usage" formatted="false">Kalan Normal Kullanım:</string>
   <string name="heavy_usage" formatted="false">Kalan Yoğun Kullanım:</string>
   <string name="constant_usage" formatted="false">Kalan Durağan Kullanım Süresi:</string>
-  <string name="press_back_to_leave" formatted="false">Çıkmak için GERİ tuşuna bas.</string>
-  <string name="press_menu_for_more" formatted="false">Daha fazla seçenek için MENU tuşuna bas.</string>
   <string name="inaccessible_storage" formatted="false">SD Kart erişilebilir değil.</string>
   <string name="inaccessible_w_reason" formatted="false">SD Kart\'a erişilemiyor:</string>
   <string name="read_only_storage" formatted="false">SK Kart sadece okunur modda.</string>
@@ -85,9 +79,6 @@
   <string name="alarm_health_failure" formatted="false">"Pil sağlığı: "</string>
   <string name="alarm_text" formatted="false">Alarmları düzenlemek için seç.</string>
   <string name="logs_empty" formatted="false">Kayıtlar Boş</string>
-  <string name="after_n_hours_unplugged" formatted="false">%1.1f saat sonra çıkartıldı</string>
-  <string name="after_n_hours_plugged_in" formatted="false">%1.1f saat sonra takıldı</string>
-  <string name="discharging_from" formatted="false">den Boşalıyor</string>
   <string name="charging_from" formatted="false">den şarj ediliyor</string>
   <string name="fully_charged" formatted="false">Şarj Tam Dolu</string>
   <string name="since" formatted="false">den itibaren</string>
@@ -103,9 +94,7 @@
   <string name="settings_overview_help" formatted="false">Aşağıda açıklandığı gibi, Ayarlar dört ayrı sayfa içerisinden düzenlenebilir. Her sayfa ayarları açıklayan kendi yardım sayfasına sahiptir. Bulunduğunuz sayfada hangi ayar için yardım almak istiyorsanız sadece MENU tuşuna basın (tabletler için, Menu gereklli değildir).</string>
   <string name="alarm_settings_subtitle" formatted="false">Alarm Ayarları</string>
   <string name="alarm_settings" formatted="false">Alarmlar</string>
-  <string name="alarm_settings_summary" formatted="false">Düşük/tam dolu batarya için uyarıları düzenle</string>
   <string name="other_settings" formatted="false">Diğer Ayarlar</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Pro da fazla ayarlar</string>
   <string name="add_alarm" formatted="false">Alarm ekle</string>
   <string name="pref_icon_set" formatted="false">Simge ayarla</string>
   <string name="pref_cat_charging_indicator" formatted="false">Şarj oluyor Göstergesi</string>
@@ -206,28 +195,19 @@
   <string name="current_hack_settings_help" formatted="false">Android, uygulamalara pil akımı bilgisine resmi erişim sunmaz; ancak bazı cihazlarda çalışan bir hile vardır.</string>
   <string name="alarm_settings_help" formatted="false">Pil seviyesi belirli bir duruma geldiğinde Battery Monitor sizi bilgilendirebilir.</string>
   <string name="other_settings_help" formatted="false">Günlükleme, kilit ekranı, sıcaklık birimi, otomatik başlatma ve daha fazlası bu sayfadadır.</string>
-  <string name="pref_please_upgrade" formatted="false">Pro sürümde akım (mA) bilgisi, alarmlar, pil durum günlüğü ve daha fazlası bulunur.</string>
-  <string name="pref_enable_live_updates" formatted="false">Durum Çubuğu Çipini Kullan</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">Pil bilgilerini durum çubuğunda çip olarak göster (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">Android ayarlarında devre dışı. Düzeltmek için dokun.</string>
   <string name="live_updates_onboarding_title" formatted="false">Durum Çubuğu Pil Çipi</string>
   <string name="live_updates_onboarding_message_on" formatted="false">Cihazınız pil yüzdesini durum çubuğunda çip olarak göstermeyi destekliyor.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">Cihazınız bu özelliği destekliyor ancak sistem ayarlarında kapalı.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Anladım</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Ayarlara Git</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Kapat</string>
-  <string name="menu_alarm_channel" formatted="false">Alarm Kanalı Ayarları</string>
-  <string name="pref_cat_ui_color" formatted="false">Arayüz Rengi</string>
-  <string name="pref_ui_color_summary" formatted="false">Uygulama genelinde birincil renk</string>
   <string name="pref_cat_channel_settings" formatted="false">Bildirim Kanalı Ayarları</string>
   <string name="pref_manage_main_channel" formatted="false">Ana Kanalı Yönet</string>
   <string name="pref_cat_notification_content" formatted="false">İçerik</string>
   <string name="pref_cat_status_bar_chip" formatted="false">Durum Çubuğu Çipi (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">Çip İçeriği</string>
   <string name="pref_chip_content_switching" formatted="false">Pil ve sıcaklık arasında geçiş yap</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">Pil yüzdesi ve sıcaklık arasında döngü</string>
   <string name="pref_chip_switching_interval" formatted="false">Geçiş aralığı</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">Ekranın ne sıklıkla değişeceği</string>
   <string name="pref_chip_content_help" formatted="false">Android 16+ bildirim çipinde hangi değerin gösterileceğini seçin.</string>
   <string name="pref_chip_indicate_charging" formatted="false">Şarj Emojisini Göster</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">Şarj olurken/yüzde 100\'de yıldırım emojisi gösterilsin mi?</string>
@@ -259,7 +239,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">Ana Kontrol</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">Akım (mA) Hilesi Desteklenmiyor</string>
   <string name="pref_current_hack_unsupported" formatted="false">Üzgünüz, akım (mA) hilesi bu cihazda desteklenmiyor.</string>
-  <string name="current_hack_maybe_supported" formatted="false">Bu hile bu cihazda çalışABİLİR.</string>
   <string name="pref_enable_current_hack" formatted="false">Hileyi etkinleştir</string>
   <string name="pref_enable_current_hack_summary" formatted="false">Akım (mA) hilesini etkinleştirmeyi dene?</string>
   <string name="pref_enable_current_hack_help" formatted="false">Bu ayar etkinleştirildiğinde hile ile ilgili diğer seçenekler kullanılabilir olur.</string>
@@ -291,8 +270,6 @@
   <string name="pref_enable_logging_help" formatted="false">Etkinleştirilirse Battery Monitor pil durum değişikliklerini kaydeder.</string>
   <string name="pref_max_log_age_help" formatted="false">Kayıt tutma açıksa, cihaz takıldığında bu süreden eski kayıtlar silinir.</string>
   <string name="pref_notify_status_duration" formatted="false">Durum Süresini Göster</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">Kalan süre tahmini yerine durum değişiminden beri geçen süre gösterilsin mi?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">Etkinleştirildiğinde ana bildirim durum değişiminden beri geçen süreyi gösterir.</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android pil sıcaklığını Santigrat olarak bildirir; isterseniz Fahrenhayt\'a dönüştürülür.</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Cihaz açıldığında Battery Monitor başlatılsın:</string>
   <string name="pref_autostart_at_boot_help" formatted="false">Battery Monitor\'un cihaz açılışında otomatik başlatılmasını kontrol eder.</string>
@@ -303,10 +280,8 @@
   <string name="pref_cat_predictor" formatted="false">Kalan Süre Tahminleri</string>
   <string name="pref_prediction_type" formatted="false">Tahmin Türü</string>
   <string name="pref_prediction_type_help" formatted="false">Battery Monitor\'un kalan pil ömrünü / tam doluma kalan süreyi nasıl tahmin edeceğini buradan seçebilirsiniz.</string>
-  <string name="lang_system_selected" formatted="false">Sistem tarafından seçilen</string>
   <string name="pref_language_override" formatted="false">Dil Geçersiz Kılma</string>
   <string name="pref_language_override_summary" formatted="false">Dil seçin:</string>
-  <string name="pref_language_override_help" formatted="false">Dilinizdeki çeviri eksik/hatalıysa burada başka bir çeviri seçebilirsiniz.</string>
   <string name="pref_classic_color_mode" formatted="false">Klasik Renk Modunu Zorla</string>
   <string name="pref_classic_color_mode_summary" formatted="false">Bu genelde çalışmaz; lütfen yardımı okuyun</string>
   <string name="pref_classic_color_mode_help" formatted="false">Android 5.0 sonrası renkli bildirim simgeleri çoğu cihazda düzgün çalışmaz.</string>

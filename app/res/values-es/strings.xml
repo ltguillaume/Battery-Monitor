@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Ajustes</string>
   <string name="help_activity_subtitle" formatted="false">Ayuda</string>
-  <string name="log_view_activity_subtitle" formatted="false">Registro</string>
   <string name="battery_use_b" formatted="false">Ver uso de batería</string>
-  <string name="upgrade_donate_b" formatted="false">Actualizar/Donar...</string>
-  <string name="confirm_disable_hint" formatted="false">Consejo: Puede desactivar este cuadro de confirmación en los Ajustes.</string>
   <string name="yes" formatted="false">Sí</string>
   <string name="cancel" formatted="false">Cancelar</string>
   <string name="confirm_close" formatted="false">¿Está seguro de que desea cerrar la aplicación?</string>
@@ -37,13 +34,10 @@
   <string name="celsius" formatted="false">Celsius</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Cargado en:</string>
   <string name="light_usage" formatted="false">Uso ligero restante:</string>
   <string name="normal_usage" formatted="false">Uso normal restante:</string>
   <string name="heavy_usage" formatted="false">Uso intensivo restante:</string>
   <string name="constant_usage" formatted="false">Uso constante restante:</string>
-  <string name="press_back_to_leave" formatted="false">Pulse VOLVER para salir.</string>
-  <string name="press_menu_for_more" formatted="false">Pulse MENU para más opciones.</string>
   <string name="inaccessible_storage" formatted="false">No se puede acceder a la tarjeta SD.</string>
   <string name="inaccessible_w_reason" formatted="false">No se puede acceder a la tarjeta SD:</string>
   <string name="read_only_storage" formatted="false">La tarjeta SD está en modo sólo lectura.</string>
@@ -84,9 +78,6 @@
   <string name="alarm_temp_rises" formatted="false">"La Temperatura de la bateria es superior a "</string>
   <string name="alarm_text" formatted="false">Seleccionar para editar alarmas</string>
   <string name="logs_empty" formatted="false">El registro está vacío</string>
-  <string name="after_n_hours_unplugged" formatted="false">Después de %1.1f horas desenchufado</string>
-  <string name="after_n_hours_plugged_in" formatted="false">Después de %1.1f horas enchufado</string>
-  <string name="discharging_from" formatted="false">Descargando desde</string>
   <string name="charging_from" formatted="false">Cargando desde</string>
   <string name="fully_charged" formatted="false">Cargado</string>
   <string name="since" formatted="false">desde</string>
@@ -108,8 +99,6 @@
   <string name="alarm_settings" formatted="false">Alarmas</string>
   <string name="other_settings" formatted="false">Otros ajustes</string>
   <string name="other_settings_help" formatted="false">Todos los demás ajustes están en esta página, incluyendo el registro, la pantalla de bloqueo, la unidad de temperatura, el autoarranque de la aplicación, y mucho más.</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Más ajustes en la versión Pro</string>
-  <string name="pref_please_upgrade" formatted="false">La versión Pro tiene muchos más ajustes y funcionalidades, incluyendo icono en verde, ámbar y rojo para el icono de la barra de estado, temas para la ventana, registro de cambios de estado de la batería, estimaciones de tiempos restantes de carga y descarga, y mucho más.</string>
   <string name="pref_cat_logging" formatted="false">Registro</string>
   <string name="pref_enable_logging" formatted="false">Activar registro</string>
   <string name="pref_enable_logging_summary" formatted="false">¿Registrar cambios de estado de la batería?</string>
@@ -238,13 +227,9 @@
 
     \nConfiguración para activar el hack, si es posible, y controlar cómo es
     utilizados están disponibles en esta sección.</string>
-  <string formatted="false" name="alarm_settings_summary">Controlar notificaciones de batería baja/completa</string>
   <string formatted="false" name="alarm_settings_help">Puede hacer que Battery Monitor le notifique cuando su nivel de batería
     alcanza una determinada condición (por ejemplo, la batería se carga completamente,
     el nivel de la batería cae por debajo del 20%, y muchos otros).</string>
-  <string formatted="false" name="pref_enable_live_updates">Usar el chip de la barra de estado</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">Mostrar información de la batería como un chip en la barra de estado (Android 16+)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">Deshabilitado en la configuración de Android. Toque para arreglarlo.</string>
   <string formatted="false" name="live_updates_onboarding_title">Chip de batería de barra de estado</string>
   <string formatted="false" name="live_updates_onboarding_message_on">Su dispositivo admite mostrar el porcentaje de batería como un chip en la barra de estado. Esto está habilitado de forma predeterminada.\n\nSi prefiere un ícono de notificación tradicional, puede desactivar \"Actualizaciones en vivo\" en la configuración del sistema Android para esta aplicación.</string>
   <string formatted="false" name="live_updates_onboarding_message_off">Su dispositivo admite mostrar el porcentaje de batería como un chip en la barra de estado, pero actualmente está deshabilitado en la configuración del sistema. \n\nRecomendamos habilitarlo para obtener la mejor experiencia. Si prefiere un ícono de notificación tradicional, puede dejarlo deshabilitado.</string>
@@ -252,18 +237,13 @@
   <string formatted="false" name="live_updates_onboarding_positive_off">Ir a configuración</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">Despedir</string>
   <string formatted="false" name="add_alarm">Agregar alarma</string>
-  <string formatted="false" name="menu_alarm_channel">Configuración del canal de alarma</string>
-  <string formatted="false" name="pref_cat_ui_color">Color de la interfaz de usuario</string>
-  <string formatted="false" name="pref_ui_color_summary">Color primario en toda la aplicación</string>
   <string formatted="false" name="pref_cat_channel_settings">Configuración del canal de notificación</string>
   <string formatted="false" name="pref_manage_main_channel">Administrar canal principal</string>
   <string formatted="false" name="pref_cat_notification_content">Contenido</string>
   <string formatted="false" name="pref_cat_status_bar_chip">Chip de barra de estado (Android 16+)</string>
   <string formatted="false" name="pref_chip_content">Contenido del chip</string>
   <string formatted="false" name="pref_chip_content_switching">Cambiar entre batería y temperatura</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">Ciclo de la pantalla entre porcentaje de batería y temperatura</string>
   <string formatted="false" name="pref_chip_switching_interval">Intervalo de conmutación</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">Con qué frecuencia cambiar la pantalla</string>
   <string formatted="false" name="pref_chip_content_help">Elija qué valor mostrar en el chip de notificación promocionado de Android 16+.</string>
   <string formatted="false" name="pref_chip_indicate_charging">Mostrar emoji de carga</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">¿Mostrar un emoji de relámpago cuando se carga o cuando está completamente cargado?</string>
@@ -324,7 +304,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">Control principal</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">Hack de corriente (mA) no compatible</string>
   <string formatted="false" name="pref_current_hack_unsupported">Lo sentimos, el truco actual (mA) no es compatible con este dispositivo.</string>
-  <string formatted="false" name="current_hack_maybe_supported">El truco PODRÍA funcionar en este dispositivo.</string>
   <string formatted="false" name="pref_enable_current_hack">Habilitar hack</string>
   <string formatted="false" name="pref_enable_current_hack_summary">¿Intenta habilitar el truco actual (mA)?</string>
   <string formatted="false" name="pref_enable_current_hack_help">Cuando esta configuración está habilitada, las otras opciones relacionadas con el
@@ -408,11 +387,6 @@
     ejemplo mostrando un rayo debajo del número.  Desactivar
     esta configuración si prefiere que no lo haga.</string>
   <string formatted="false" name="pref_notify_status_duration">Mostrar duración del estado</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">¿Mostrar el tiempo desde que cambió el estado en lugar de una estimación del tiempo restante?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">Habilite esta configuración si prefiere que se muestre la notificación principal
-    el tiempo desde que cambió el estado (por ejemplo, \"Desconectado durante 5
-    horas\") en lugar de la estimación del tiempo restante.  ambas piezas
-    de información están disponibles desde la ventana principal.</string>
   <string formatted="false" name="predictor_sensitive">Sensible</string>
   <string formatted="false" name="predictor_conservative">Conservador</string>
   <string formatted="false" name="predictor_since_status_change">Desde el cambio de estado</string>
@@ -436,13 +410,9 @@
 
     \nFinalmente, puedes tener la predicción basada únicamente en tu
     uso promedio a largo plazo.</string>
-  <string formatted="false" name="lang_system_selected">Seleccionado por el sistema</string>
   <string formatted="false" name="pref_cat_language">Idioma</string>
   <string formatted="false" name="pref_language_override">Anulación de idioma</string>
   <string formatted="false" name="pref_language_override_summary">Seleccionar idioma:</string>
-  <string formatted="false" name="pref_language_override_help">Si la traducción a su idioma está incompleta o es inexacta
-    y prefieres otra traducción, posiblemente mejor, puedes
-    Elige hacerlo aquí.</string>
   <string formatted="false" name="pref_classic_color_mode">Forzar modo de color clásico</string>
   <string formatted="false" name="pref_classic_color_mode_summary">Por lo general, esto no funciona; por favor lee la ayuda</string>
   <string formatted="false" name="pref_classic_color_mode_help">A partir de Android 5.0 (Lollipop), íconos de notificación de colores

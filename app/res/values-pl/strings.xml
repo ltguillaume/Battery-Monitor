@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Ustawienia</string>
   <string name="help_activity_subtitle" formatted="false">Pomoc</string>
-  <string name="log_view_activity_subtitle" formatted="false">Logi</string>
   <string name="battery_use_b" formatted="false">Sprawdź zużycie baterii</string>
-  <string name="upgrade_donate_b" formatted="false">Ulepsz/Wspomóż...</string>
-  <string name="confirm_disable_hint" formatted="false">Podpowiedź: To potwierdzenie możesz wyłączyć w ustawieniach.</string>
   <string name="yes" formatted="false">Tak</string>
   <string name="cancel" formatted="false">Anuluj</string>
   <string name="confirm_close" formatted="false">Zamknąć?</string>
@@ -38,13 +35,10 @@
   <string name="celsius" formatted="false">Celcjusz</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">W pełni naładowana w:</string>
   <string name="light_usage" formatted="false">Lekkie użytk., pozostało:</string>
   <string name="normal_usage" formatted="false">Normalne użytk., pozostało:</string>
   <string name="heavy_usage" formatted="false">Mocne użytk., pozostało:</string>
   <string name="constant_usage" formatted="false">Ciągłe użytk., pozostało:</string>
-  <string name="press_back_to_leave" formatted="false">Naciśnij WSTECZ aby wyjść.</string>
-  <string name="press_menu_for_more" formatted="false">Naciśnij MENU dla więcej opcji.</string>
   <string name="inaccessible_storage" formatted="false">Karta SD jest niedostępna.</string>
   <string name="inaccessible_w_reason" formatted="false">Karta SD jest niedostępna:</string>
   <string name="read_only_storage" formatted="false">Karta SD jest w trybie tylko do odczytu.</string>
@@ -92,9 +86,6 @@
   <string name="alarm_health_failure" formatted="false">"Stan zdrowia baterii: "</string>
   <string name="alarm_text" formatted="false">Edytuj alarmy.</string>
   <string name="logs_empty" formatted="false">Brak logów</string>
-  <string name="after_n_hours_unplugged" formatted="false">Po %1.1f godzinach odłączono</string>
-  <string name="after_n_hours_plugged_in" formatted="false">Po %1.1f godzinach podłączono</string>
-  <string name="discharging_from" formatted="false">Rozładowywanie od</string>
   <string name="charging_from" formatted="false">Ładowanie od</string>
   <string name="fully_charged" formatted="false">W pełni naładowana</string>
   <string name="since" formatted="false">Od</string>
@@ -120,12 +111,9 @@
   <string name="status_bar_icon_settings_help" formatted="false">Możesz wybrać, który zestaw ikon chcesz używać i zmieniać ustawienia dla danego zestawu ikon (np. kolorów).</string>
   <string name="alarm_settings_subtitle" formatted="false">Ustawienia alarmów</string>
   <string name="alarm_settings" formatted="false">Alarmy</string>
-  <string name="alarm_settings_summary" formatted="false">Ustaw powiadomienia o niskim/pełnym poziomie baterii</string>
   <string name="alarm_settings_help" formatted="false">Możesz ustawić powiadomienia kiedy poziom baterii osiągnie określony punkt (np. gdy bateria będzie w pełni naładowana, poziom baterii spadnie poniżej 20%, itp).</string>
   <string name="other_settings" formatted="false">Inne ustawienia</string>
   <string name="other_settings_help" formatted="false">Wszystkie inne ustawienia, jak logowanie, blok. ekranu czy autostart aplikacji.</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Więcej ustawień w wersji Pro</string>
-  <string name="pref_please_upgrade" formatted="false">Wersja Pro ma wiele innych ustawień, włączając w to kolorowe ikony, wtyczki z ikonami, alarmy, tematy, zapisywanie stanu baterii w logach, auto/ ręczne wyłączenie blokady ekranu, przybliżone czasy ładowania/rozładowania i wiele więcej.</string>
   <string name="add_alarm" formatted="false">Dodaj alarm</string>
   <string name="pref_cat_notification_content" formatted="false">Treść</string>
   <string name="pref_top_line_content" formatted="false">Zawartość górnego wiersza</string>
@@ -163,8 +151,6 @@
   <string name="pref_max_log_age_summary" formatted="false">Usuń logi starsze niż:</string>
   <string name="pref_max_log_age_help" formatted="false">Jeżeli zapisywanie logów jest aktywne, za każdym razem gdy podpinasz urządzenie, logi starsze od tego będą usuwane.</string>
   <string name="pref_notify_status_duration" formatted="false">Pokaż czas stanu</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">Pokaż czas od kiedy status się zmienił zamiast prognozy pozostałego czasu?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">Włącz to ustawienie, jeśli wolisz główne powiadomienie pokazujące czas od zmiany statusu (np. \"Odłączony przez 5 godzin\"), a nie szacunku czasu pozostałego. Obie informacje są dostępne z głównego okna.</string>
   <string name="pref_cat_temperature_unit" formatted="false">Jednostka temperatury</string>
   <string name="pref_convert_to_fahrenheit" formatted="false">Konwertuj na Fahrenheita</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android raportuje temperaturę baterii w stopniach Celcjusza. Jeżeli wolisz stopnie Fahrenheita, to zaznacz tą opcję a aplikacja wykona konwersję.</string>
@@ -172,11 +158,9 @@
   <string name="pref_autostart_at_boot" formatted="false">Startuj razem z telefonem</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Startuj aplikację gdy telefon zostanie uruchomiony:</string>
   <string name="pref_autostart_at_boot_help" formatted="false">Kontroluje, kiedy Battery Monitor startuje automatycznie przy uruchomieniu urządzenia.\n\nOpcja \"Przed wyłączeniem\" działa jeżeli ostatnio włączałeś/wyłączałeś ręcznie Battery Monitor. Więc jeżeli wyłączyłeś Battery Monitor przez np. menedżer procesów, Battery Monitor nie wie czy zatrzymałeś go i czy nadal ma startować przy uruchomieniu urządzenia.</string>
-  <string name="lang_system_selected" formatted="false">Wybrane systemowo</string>
   <string name="pref_cat_language" formatted="false">Język</string>
   <string name="pref_language_override" formatted="false">Wymuś język</string>
   <string name="pref_language_override_summary" formatted="false">Wybierz język</string>
-  <string name="pref_language_override_help" formatted="false">Jeżeli tłumaczenie w twoim języku jest nieskończone lub niedokładne i chciałbyś zmienić na prawdopodobnie lepsze, możesz to zrobić tutaj.</string>
   <string name="pref_cat_device_specific" formatted="false">Ustawienia specyficzne dla urządzenia</string>
   <string name="alarms_overview" formatted="false">Alarmy</string>
   <string name="alarms_overview_help" formatted="false">Tutaj możesz dodawać nowe alarmy, szybko włączać lub wyłączać już istniejące albo je usuwać.\n\nAby dodać alarm wciśnij \"Dodaj alarm\" — to utworzy nowy alarm i zabierze do ustawień, gdzie możesz kontrolować ustawienia dla nowego alarmu. Zobacz pomoc dla tej strony po więcej szczegółow.\n\nPoniżej przycisku \"Dodaj alarm\" jest lista wszystkich alarmów, które już stworzyłeś.\n\n• Aby edytować istniejący alarm, kliknij na niego.\n• Aby usunąć alarm, naciśnij i przytrzymaj go, a następnie wybierz \"Usuń alarm\".\n• Aby włączyć/wyłączyć alarm, naciśnij ikonę budzika po lewej obok tekstu alarmu.</string>
@@ -252,26 +236,18 @@
   <string name="current_hack_settings" formatted="false">Hack prądu (mA)</string>
   <string name="current_hack_settings_summary" formatted="false">Zaawansowane ustawienia włączania informacji mA</string>
   <string name="current_hack_settings_help" formatted="false">Android nie udostępnia aplikacjom oficjalnego sposobu dostępu do informacji o natężeniu prądu baterii. Dostępny jest jednak hack, który na wielu urządzeniach może potencjalnie umożliwić odczyt tych danych.\n\nNie ma gwarancji, że to zadziała. Może nie działać wcale albo wyglądać na działające, ale zwracać bezsensowne wartości.\n\nW tej sekcji są dostępne ustawienia włączania hacka (jeśli to możliwe) oraz kontrolowania sposobu jego działania.</string>
-  <string name="pref_enable_live_updates" formatted="false">Używaj chipa paska stanu</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">Pokaż informacje o baterii jako chip w pasku stanu (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">Wyłączone w ustawieniach Androida. Dotknij, aby naprawić.</string>
   <string name="live_updates_onboarding_title" formatted="false">Chip baterii w pasku stanu</string>
   <string name="live_updates_onboarding_message_on" formatted="false">Twoje urządzenie obsługuje pokazywanie procentu baterii jako chipa w pasku stanu. Ta opcja jest domyślnie włączona.\n\nJeśli wolisz tradycyjną ikonę powiadomienia, możesz wyłączyć „Live Updates” w ustawieniach systemowych Androida dla tej aplikacji.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">Twoje urządzenie obsługuje pokazywanie procentu baterii jako chipa w pasku stanu, ale obecnie jest to wyłączone w ustawieniach systemowych.\n\nDla najlepszego działania zalecamy włączenie tej opcji. Jeśli wolisz tradycyjną ikonę powiadomienia, możesz pozostawić ją wyłączoną.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Rozumiem</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Przejdź do ustawień</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Odrzuć</string>
-  <string name="menu_alarm_channel" formatted="false">Ustawienia kanału alarmów</string>
-  <string name="pref_cat_ui_color" formatted="false">Kolor interfejsu</string>
-  <string name="pref_ui_color_summary" formatted="false">Główny kolor w całej aplikacji</string>
   <string name="pref_cat_channel_settings" formatted="false">Ustawienia kanałów powiadomień</string>
   <string name="pref_manage_main_channel" formatted="false">Zarządzaj kanałem głównym</string>
   <string name="pref_cat_status_bar_chip" formatted="false">Chip paska stanu (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">Zawartość chipa</string>
   <string name="pref_chip_content_switching" formatted="false">Przełączaj między baterią a temperaturą</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">Naprzemienne wyświetlanie procentu baterii i temperatury</string>
   <string name="pref_chip_switching_interval" formatted="false">Interwał przełączania</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">Jak często przełączać wyświetlanie</string>
   <string name="pref_chip_content_help" formatted="false">Wybierz wartość wyświetlaną w chipie promowanego powiadomienia na Androidzie 16+.</string>
   <string name="pref_chip_indicate_charging" formatted="false">Pokaż emoji ładowania</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">Pokazywać emoji błyskawicy podczas ładowania lub pełnego naładowania?</string>
@@ -281,7 +257,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">Sterowanie główne</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">Hack prądu (mA) nieobsługiwany</string>
   <string name="pref_current_hack_unsupported" formatted="false">Niestety, hack prądu (mA) nie jest obsługiwany na tym urządzeniu.</string>
-  <string name="current_hack_maybe_supported" formatted="false">Hack MOŻE działać na tym urządzeniu.</string>
   <string name="pref_enable_current_hack" formatted="false">Włącz hack</string>
   <string name="pref_enable_current_hack_summary" formatted="false">Spróbować włączyć hack prądu (mA)?</string>
   <string name="pref_enable_current_hack_help" formatted="false">Po włączeniu tej opcji pozostałe ustawienia dotyczące hacka staną się dostępne.</string>

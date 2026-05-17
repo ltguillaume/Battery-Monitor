@@ -3,12 +3,9 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">הגדרות</string>
   <string name="help_activity_subtitle" formatted="false">עזרה</string>
-  <string name="log_view_activity_subtitle" formatted="false">יומן-רישום</string>
   <string name="battery_use_b" formatted="false">הצגת השימוש בסוללה</string>
-  <string name="upgrade_donate_b" formatted="false">שדרוג/תרומה</string>
   <string name="circle_widget" formatted="false">עיגול Battery Monitor</string>
   <string name="full_widget" formatted="false">Battery Monitor מלא</string>
-  <string name="confirm_disable_hint" formatted="false">טיפ: ניתן לבטל את הודעת האישור בהגדרות</string>
   <string name="yes" formatted="false">כן</string>
   <string name="cancel" formatted="false">ביטול</string>
   <string name="confirm_close" formatted="false">לסגור באמת?</string>
@@ -34,13 +31,10 @@
   <string name="percent_symbol" formatted="false">%</string>
   <string name="fahrenheit" formatted="false">פארנהייט</string>
   <string name="celsius" formatted="false">צלזיוס</string>
-  <string name="fully_charged_in" formatted="false">טעינה מלאה תוך:</string>
   <string name="light_usage" formatted="false">שימוש קל שנותר:</string>
   <string name="normal_usage" formatted="false">שימוש רגיל שנותר:</string>
   <string name="heavy_usage" formatted="false">שימוש רב שנותר:</string>
   <string name="constant_usage" formatted="false">שימוש רצוף שנותר:</string>
-  <string name="press_back_to_leave" formatted="false">לחצו על \'חזרה\' ליציאה.</string>
-  <string name="press_menu_for_more" formatted="false">לחצו על \'תפריט\' לפריטים נוספים</string>
   <string name="date" formatted="false">תאריך</string>
   <string name="time" formatted="false">שעה</string>
   <string name="status" formatted="false">מצב</string>
@@ -79,9 +73,6 @@
   <string name="alarm_health_failure" formatted="false">"בריאות הסוללה היא:"</string>
   <string name="alarm_text" formatted="false">ביחרו לעריכת התראות</string>
   <string name="logs_empty" formatted="false">יומני הרישום ריקים</string>
-  <string name="after_n_hours_unplugged" formatted="false">כעבור %1.1f שעות ללא טעינה</string>
-  <string name="after_n_hours_plugged_in" formatted="false">כעבור %1.1f שעות בטעינה</string>
-  <string name="discharging_from" formatted="false">בפריקה מ</string>
   <string name="charging_from" formatted="false">בטעינה מ</string>
   <string name="fully_charged" formatted="false">טעונה במלואה</string>
   <string name="since" formatted="false">מ</string>
@@ -216,38 +207,23 @@
 
     \nSettings כדי להפעיל את הפריצה, אם אפשר, ולשלוט איך זה
     בשימוש זמינים בסעיף זה.</string>
-  <string formatted="false" name="alarm_settings_summary">שליטה בהודעות על סוללה חלשה/מלאה</string>
   <string formatted="false" name="alarm_settings_help">אתה יכול לגרום ל-Battery Monitor להודיע לך מתי רמת הסוללה שלך
     מגיע למצב מסוים (למשל, הסוללה נטועה במלואה,
     רמת הסוללה יורדת מתחת ל-20%, ועוד רבים אחרים).</string>
   <string formatted="false" name="other_settings_help">כל שאר ההגדרות נמצאות בדף זה, כולל רישום, נעילה
     מסך, יחידת טמפרטורה, הפעלה אוטומטית ועוד.</string>
-  <string formatted="false" name="pref_cat_more_settings_in_pro">הגדרות נוספות ב-Pro</string>
-  <string formatted="false" name="pref_please_upgrade">לגרסת ה-Pro יש הרבה יותר הגדרות ותכונות, כולל
-    מידע נוכחי (mA),
-    אזעקות,
-    רישום מצב הסוללה,
-    ועוד.</string>
-  <string formatted="false" name="pref_enable_live_updates">השתמש בשבב סרגל המצב</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">הצג מידע סוללה כשבב בשורת המצב (Android 16+)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">מושבת בהגדרות אנדרואיד. הקש כדי לתקן.</string>
   <string formatted="false" name="live_updates_onboarding_title">שבב סוללה בשורת המצב</string>
   <string formatted="false" name="live_updates_onboarding_message_on">המכשיר שלך תומך בהצגת אחוז הסוללה כשבב בשורת המצב. זה מופעל כברירת מחדל.\n\nאם אתה מעדיף סמל התראה מסורתי, אתה יכול לכבות את \"עדכונים חיים\" בהגדרות המערכת של אנדרואיד עבור אפליקציה זו.</string>
   <string formatted="false" name="live_updates_onboarding_message_off">המכשיר שלך תומך בהצגת אחוז הסוללה כשבב בשורת המצב, אך הוא מושבת כעת בהגדרות המערכת.\n\nאנו ממליצים להפעיל אותו לקבלת החוויה הטובה ביותר. אם אתה מעדיף סמל התראה מסורתי, אתה יכול להשאיר אותו מושבת.</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">הבנתי</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">עבור אל הגדרות</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">לְפַטֵר</string>
-  <string formatted="false" name="menu_alarm_channel">הגדרות ערוץ אזעקה</string>
-  <string formatted="false" name="pref_cat_ui_color">צבע ממשק משתמש</string>
-  <string formatted="false" name="pref_ui_color_summary">צבע ראשי בכל האפליקציה</string>
   <string formatted="false" name="pref_cat_channel_settings">הגדרות ערוץ הודעות</string>
   <string formatted="false" name="pref_manage_main_channel">ניהול הערוץ הראשי</string>
   <string formatted="false" name="pref_cat_status_bar_chip">שבב שורת המצב (אנדרואיד 16+)</string>
   <string formatted="false" name="pref_chip_content">תוכן שבב</string>
   <string formatted="false" name="pref_chip_content_switching">מעבר בין סוללה לטמפרטורה</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">העבר את התצוגה בין אחוז הסוללה לטמפרטורה</string>
   <string formatted="false" name="pref_chip_switching_interval">מרווח החלפה</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">באיזו תדירות להחליף את התצוגה</string>
   <string formatted="false" name="pref_chip_content_help">בחר איזה ערך להציג בשבב ההודעות המקודם של Android 16+.</string>
   <string formatted="false" name="pref_chip_indicate_charging">הצג סימון טעינה</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">להציג סימון בזמן טעינה או טעינה מלאה?</string>
@@ -293,7 +269,6 @@
     נראים גדולים באופן קומי במכשירים אלה.</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">פריצה נוכחית (mA) אינה נתמכת</string>
   <string formatted="false" name="pref_current_hack_unsupported">מצטערים, הפריצה הנוכחית (mA) אינה נתמכת במכשיר זה.</string>
-  <string formatted="false" name="current_hack_maybe_supported">ייתכן שהפריצה תעבוד במכשיר הזה.</string>
   <string formatted="false" name="pref_enable_current_hack">אפשר פריצה</string>
   <string formatted="false" name="pref_enable_current_hack_summary">ניסיון להפעיל את הפריצה הנוכחית (mA)?</string>
   <string formatted="false" name="pref_enable_current_hack_help">כאשר הגדרה זו מופעלת, האפשרויות האחרות לגבי ה
@@ -385,11 +360,6 @@
   <string formatted="false" name="pref_max_log_age_help">אם רישום מופעל, אז בכל פעם שאתה מחבר את המכשיר שלך, יומן
     ישן מזה יימחק.</string>
   <string formatted="false" name="pref_notify_status_duration">הצג משך מצב</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">האם להציג את הזמן מאז שהסטטוס השתנה במקום אומדן הזמן שנותר?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">הפעל הגדרה זו אם אתה מעדיף שההודעה הראשית תוצג
-    הזמן מאז שהסטטוס השתנה (לדוגמה, \"Unplugged for 5
-    שעות\") במקום אומדן הזמן שנותר.  שני החלקים
-    מידע זמין מהחלון הראשי.</string>
   <string formatted="false" name="pref_cat_temperature_unit">יחידת טמפרטורה</string>
   <string formatted="false" name="pref_convert_to_fahrenheit">המר לפרנהייט</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">אנדרואיד מדווחת על טמפרטורת הסוללה במעלות צלזיוס.  אם
@@ -422,13 +392,9 @@
 
     \n לבסוף, אתה יכול לקבל את התחזית מבוססת אך ורק על שלך
     שימוש ממוצע לטווח ארוך.</string>
-  <string formatted="false" name="lang_system_selected">נבחר מערכת</string>
   <string formatted="false" name="pref_cat_language">שָׂפָה</string>
   <string formatted="false" name="pref_language_override">ביטול שפה</string>
   <string formatted="false" name="pref_language_override_summary">בחר שפה:</string>
-  <string formatted="false" name="pref_language_override_help">אם התרגום לשפה שלך אינו שלם או לא מדויק
-    והיית מעדיף תרגום אחר, אולי טוב יותר, אולי
-    לבחור לעשות זאת כאן.</string>
   <string formatted="false" name="pref_classic_color_mode">כפה על מצב צבע קלאסי</string>
   <string formatted="false" name="pref_classic_color_mode_summary">זה בדרך כלל לא עובד; אנא קרא את העזרה</string>
   <string formatted="false" name="pref_classic_color_mode_help">החל מאנדרואיד 5.0 (Lollipop), סמלי התראות צבעוניות

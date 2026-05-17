@@ -4,15 +4,10 @@
   <string formatted="false" name="app_launcher_name">Battery Monitor</string>
   <string formatted="false" name="settings_activity_subtitle">Settings</string>
   <string formatted="false" name="help_activity_subtitle">Battery Monitor Help</string>
-  <string formatted="false" name="log_view_activity_subtitle">Logs</string>
 
   <string formatted="false" name="battery_use_b">View Battery Use</string>
-  <string formatted="false" name="upgrade_donate_b">Upgrade/Donate...</string>
   <string formatted="false" name="circle_widget">Battery Monitor Circle</string>
   <string formatted="false" name="full_widget">Battery Monitor Full</string>
-  <string formatted="false" name="confirm_disable_hint">
-    Hint: Disable this confirmation dialog in the settings...
-  </string>
   <string formatted="false" name="yes">Yes</string>
   <string formatted="false" name="cancel">Cancel</string>
 
@@ -96,14 +91,10 @@
   <string formatted="false" name="celsius_symbol">C</string>
   <string formatted="false" name="volt_symbol">V</string>
 
-  <string formatted="false" name="fully_charged_in">Fully Charged in:</string>
   <string formatted="false" name="light_usage">Light Usage Left:</string>
   <string formatted="false" name="normal_usage">Normal Usage Left:</string>
   <string formatted="false" name="heavy_usage">Heavy Usage Left:</string>
   <string formatted="false" name="constant_usage">Constant Usage Left:</string>
-
-  <string formatted="false" name="press_back_to_leave">Press BACK to leave.</string>
-  <string formatted="false" name="press_menu_for_more">Press MENU for more items.</string>
 
   <string formatted="false" name="inaccessible_storage">SD Card is inaccessible.</string>
   <string formatted="false" name="inaccessible_w_reason">SD Card inaccessible: </string>
@@ -165,11 +156,6 @@
   <string formatted="false" name="alarm_health_failure">"Battery health is: "</string>
   <string formatted="false" name="alarm_text">Select to edit alarms.</string>
 
-  <!--string formatted="false" name="alarm_audio_stream_notification">Notification</string>
-  <string formatted="false" name="alarm_audio_stream_alarm">Alarm</string>
-  <string formatted="false" name="pref_alarm_audio_stream">Audio Stream</string>
-  <string formatted="false" name="pref_alarm_audio_stream_summary">Use audio stream:</string-->
-
   <string formatted="false" name="logs_empty">Logs Are Empty</string>
   <plurals name="n_log_items">
     <item quantity="one">%d Log Item</item>
@@ -177,8 +163,6 @@
   </plurals>
 
   <!-- Keeping these in for now to satisfy linter with default language of unused strings. -->
-  <string formatted="true" name="after_n_hours_unplugged">After %1.1f hours unplugged</string>
-  <string formatted="true" name="after_n_hours_plugged_in">After %1.1f hours plugged in</string>
 
   <string formatted="true" name="after_nh_mm_unplugged">After %1$dh %2$dm unplugged</string>
   <string formatted="true" name="after_nh_mm_plugged_in">After %1$dh %2$dm plugged in</string>
@@ -223,7 +207,6 @@
     <item quantity="other">%d hours</item>
   </plurals>
 
-  <string formatted="false" name="discharging_from">Discharging from</string>
   <string formatted="false" name="charging_from">Charging from</string>
   <string formatted="false" name="fully_charged">Fully Charged</string>
 
@@ -323,7 +306,6 @@
 
   <string formatted="false" name="alarm_settings_subtitle">Alarm Settings</string>
   <string formatted="false" name="alarm_settings">Alarms</string>
-  <string formatted="false" name="alarm_settings_summary">Control notifications for low/full battery</string>
   <string formatted="false" name="alarm_settings_help">
     You can have Battery Monitor notify you when your battery level
     reaches a certain condition (e.g., the battery becomes fully charged,
@@ -335,19 +317,6 @@
     screen, temperature unit, autostart, and more.
   </string>
 
-  <string formatted="false" name="pref_cat_more_settings_in_pro">More Settings in Pro</string>
-  <string formatted="false" name="pref_please_upgrade">
-    The Pro version has many more settings and features, including
-    current (mA) information,
-    alarms,
-    battery state logging,
-    and more.
-  </string>
-
-  <string name="pref_enable_live_updates">Use Status Bar Chip</string>
-  <string name="pref_enable_live_updates_summary">Show battery info as a chip in the status bar (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled">Disabled in Android settings. Tap to fix.</string>
-
   <string name="live_updates_onboarding_title">Status Bar Battery Chip</string>
   <string name="live_updates_onboarding_message_on">Your device supports showing the battery percentage as a chip in the status bar. This is enabled by default.\n\nIf you prefer a traditional notification icon, you can turn off \"Live Updates\" in Android\'s system settings for this app.</string>
   <string name="live_updates_onboarding_message_off">Your device supports showing the battery percentage as a chip in the status bar, but it is currently disabled in system settings.\n\nWe recommend enabling it for the best experience. If you prefer a traditional notification icon, you can leave it disabled.</string>
@@ -356,10 +325,6 @@
   <string name="live_updates_onboarding_negative_off">Dismiss</string>
 
   <string formatted="false" name="add_alarm">Add alarm</string>
-  <string formatted="false" name="menu_alarm_channel">Alarm Channel Settings</string>
-
-  <string formatted="false" name="pref_cat_ui_color">UI Color</string>
-  <string formatted="false" name="pref_ui_color_summary">Primary Color Throughout App</string>
 
   <string formatted="false" name="pref_cat_channel_settings">Notification Channel Settings</string>
   <string formatted="false" name="pref_manage_main_channel">Manage Main Channel</string>
@@ -368,9 +333,7 @@
   <string formatted="false" name="pref_cat_status_bar_chip">Status Bar Chip (Android 16+)</string>
   <string formatted="false" name="pref_chip_content">Chip Content</string>
   <string formatted="false" name="pref_chip_content_switching">Switch between battery and temperature</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">Cycle the display between battery percentage and temperature</string>
   <string formatted="false" name="pref_chip_switching_interval">Switching interval</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">How often to switch the display</string>
   <string formatted="false" name="pref_chip_content_help">
     Choose what value to show in the Android 16+ promoted-notification chip.
   </string>
@@ -455,7 +418,6 @@
   <string formatted="false" name="pref_cat_current_hack_unsupported">Current (mA) Hack Unsupported</string>
 
   <string formatted="false" name="pref_current_hack_unsupported">Sorry, the current (mA) hack is not supported on this device.</string>
-  <string formatted="false" name="current_hack_maybe_supported">The hack MIGHT work on this device.</string>
 
   <string formatted="false" name="pref_enable_current_hack">Enable hack</string>
   <string formatted="false" name="pref_enable_current_hack_summary">
@@ -591,13 +553,6 @@
     older than this will be deleted.
   </string>
   <string formatted="false" name="pref_notify_status_duration">Show Status Duration</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">Show time since status changed rather than estimate of time remaining?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">
-    Enable this setting if you\'d prefer the main notification to show
-    the time since the status changed (e.g., \"Unplugged for 5
-    hours\") rather than the estimate of time remaining.  Both pieces
-    of information are available from the main window.
-  </string>
 
   <string formatted="false" name="pref_cat_temperature_unit">Temperature Unit</string>
   <string formatted="false" name="pref_convert_to_fahrenheit">Convert to Fahrenheit</string>
@@ -652,15 +607,10 @@
     long-term average usage.
   </string>
 
-  <string formatted="false" name="lang_system_selected">System-selected</string>
   <string formatted="false" name="pref_cat_language">Language</string>
   <string formatted="false" name="pref_language_override">Language Override</string>
   <string formatted="false" name="pref_language_override_summary">Select language:</string>
-  <string formatted="false" name="pref_language_override_help">
-    If the translation to your language is incomplete or inaccurate
-    and you would prefer another, possibly better translation, you may
-    choose to do so here.
-  </string>x
+  x
 
   <string formatted="false" name="pref_classic_color_mode">Force Classic Color Mode</string>
   <string formatted="false" name="pref_classic_color_mode_summary">
@@ -680,7 +630,6 @@
   </string>
 
   <string formatted="false" name="pref_cat_device_specific">Device Specific Settings</string>
-  <!--string name="pref_cat_device_specific_help"></string-->
 
   <string formatted="false" name="alarms_overview">Alarms Overview</string>
   <string formatted="false" name="alarms_overview_help">
@@ -705,7 +654,6 @@
   </string>
 
   <string formatted="false" name="pref_alarm_enabled">Enable Alarm</string>
-  <!--string name="pref_alarm_enabled_summary"></string-->
   <string formatted="false" name="pref_alarm_enabled_help">If you want to temporarily
   disable an alarm without having to recreate it when you want it
   again, you can turn it off and on either here or on the main alarms

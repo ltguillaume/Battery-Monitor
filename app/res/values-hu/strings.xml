@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Beállítások</string>
   <string name="help_activity_subtitle" formatted="false">Segítség</string>
-  <string name="log_view_activity_subtitle" formatted="false">Naplók</string>
   <string name="battery_use_b" formatted="false">Akku használat</string>
-  <string name="upgrade_donate_b" formatted="false">Vásárlás/Adományozás</string>
-  <string name="confirm_disable_hint" formatted="false">Tipp: A beállítások között a megerősítés kérése letiltható...</string>
   <string name="yes" formatted="false">Igen</string>
   <string name="cancel" formatted="false">Mégsem</string>
   <string name="confirm_close" formatted="false">Biztosan bezárja?</string>
@@ -30,13 +27,10 @@
   <string name="celsius" formatted="false">Celsius</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Teljes feltöltésig:</string>
   <string name="light_usage" formatted="false">Könnyű használat még:</string>
   <string name="normal_usage" formatted="false">Normál használat még:</string>
   <string name="heavy_usage" formatted="false">Gyakori használat még:</string>
   <string name="constant_usage" formatted="false">Állandó használat még:</string>
-  <string name="press_back_to_leave" formatted="false">Kilépés: VISSZA gomb.</string>
-  <string name="press_menu_for_more" formatted="false">További opciók: MENÜ gomb.</string>
   <string name="inaccessible_storage" formatted="false">Az SD kártya nem elérhető.</string>
   <string name="inaccessible_w_reason" formatted="false">Elérhetetlen SD kártya:</string>
   <string name="read_only_storage" formatted="false">Az SD kártya csak írható.</string>
@@ -83,7 +77,6 @@
   <string name="alarm_health_failure" formatted="false">"Akku állapota: "</string>
   <string name="alarm_text" formatted="false">Riasztások módosítása.</string>
   <string name="logs_empty" formatted="false">A naplók üresek.</string>
-  <string name="discharging_from" formatted="false">Merítés innen:</string>
   <string name="charging_from" formatted="false">Töltés innen:</string>
   <string name="fully_charged" formatted="false">Teljesen feltöltve</string>
   <string name="since" formatted="false">óta</string>
@@ -107,12 +100,9 @@
   <string name="settings_overview_help" formatted="false">A beállításokat három oldalra összegyűtve találja az alábbiak szerint. Minden oldal saját súgóval rendelkezik az ott található beállítások leírásával. Ezeket a MENÜ gomb - Súgó opcióval érheti el..</string>
   <string name="alarm_settings_subtitle" formatted="false">Riasztás beállítások</string>
   <string name="alarm_settings" formatted="false">Riasztások</string>
-  <string name="alarm_settings_summary" formatted="false">Az akku alacsony vagy teljes töltésére vonatkozó értesítések</string>
   <string name="alarm_settings_help" formatted="false">Beállíthatja, hogy a Battery Monitor értesítse, amikor az akku töltése elér egy bizonyos szintet (pl. ha teljesen feltöltődik, vagy mondjuk 20% alá csökken.)</string>
   <string name="other_settings" formatted="false">Egyéb beállítások</string>
   <string name="other_settings_help" formatted="false">Miden további beállítás ezen az oldalon található: naplózás, képernyőzár, hőmérséklet mértékegysége, automatikus indulás, stb.</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">További beállítások a Pro verzióban</string>
-  <string name="pref_please_upgrade" formatted="false">A Pro verzió számos további beállítással és funkcióval rendelkezik. Pl. zöld, sárga és vörös ikon, riasztások, ablak témák, akku állapot naplózása, képernyőzár kézi és automatikus tiltása, becslés a hátralévő töltési vagy használati időre, stb.</string>
   <string name="add_alarm" formatted="false">Riasztás hozzáadása</string>
   <string name="time_remaining" formatted="false">Hátralévő idő</string>
   <string name="system_default" formatted="false">Alapértelmezett</string>
@@ -145,7 +135,6 @@
   <string name="pref_cat_language" formatted="false">Nyelv</string>
   <string name="pref_language_override" formatted="false">Nyelv megváltoztatása</string>
   <string name="pref_language_override_summary" formatted="false">Válasszon nyelvet:</string>
-  <string name="pref_language_override_help" formatted="false">Ha az ön nyelvre fordítás hiányos vagy pontatlan, és jobban szeretne másikat, itt választhat egyet.</string>
   <string name="pref_cat_device_specific" formatted="false">Eszközre jellemző beállítások</string>
   <string name="alarms_overview" formatted="false">Riasztások áttekintése</string>
   <string name="pref_alarm_enabled" formatted="false">Riasztás enegedélyezése</string>
@@ -202,8 +191,6 @@
   <string name="alarm_type_temperature_drops" formatted="false">Hőmérséklet ez alá csökken</string>
   <string name="alarm_type_entry_temperature_drops" formatted="false">Hőmérséklet ez alá csökken...</string>
   <string name="alarm_temp_drops" formatted="false">"Akku hőfoka legfeljebb "</string>
-  <string name="after_n_hours_unplugged" formatted="false">%1.1f órája lecsatlakoztatva</string>
-  <string name="after_n_hours_plugged_in" formatted="false">%1.1f órája csatlakoztatva</string>
   <string name="after_nh_mm_unplugged" formatted="false">%1$dó %2$dp óta lecsatlakoztatva</string>
   <string name="after_nh_mm_plugged_in" formatted="false">%1$dó %2$dp óta csatlakoztatva</string>
   <string name="after_nm_ms_unplugged" formatted="false">%1$dp %2$dm óta lecsatlakoztatva</string>
@@ -233,27 +220,19 @@
   <string name="current_hack_settings" formatted="false">Áram (mA) hack</string>
   <string name="current_hack_settings_summary" formatted="false">Speciális beállítások az mA információ engedélyezéséhez</string>
   <string name="current_hack_settings_help" formatted="false">Az Android nem biztosít hivatalos módot az alkalmazásoknak a pillanatnyi akkumulátoráram elérésére. Viszont létezik egy hack, amely sok készüléken potenciálisan lehetővé teszi ezt.</string>
-  <string name="pref_enable_live_updates" formatted="false">Állapotsor chip használata</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">Akkumulátoradatok megjelenítése chipként az állapotsorban (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">Az Android beállításokban letiltva. Érintsd meg a javításhoz.</string>
   <string name="live_updates_onboarding_title" formatted="false">Állapotsor akkumulátor chip</string>
   <string name="live_updates_onboarding_message_on" formatted="false">A készülék támogatja az akkumulátor százalék chipként való megjelenítését az állapotsorban.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">A készülék támogatja az akkumulátor százalék chipként való megjelenítését az állapotsorban, de ez jelenleg ki van kapcsolva.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Értem</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Ugrás a beállításokhoz</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Bezárás</string>
-  <string name="menu_alarm_channel" formatted="false">Riasztási csatorna beállításai</string>
-  <string name="pref_cat_ui_color" formatted="false">UI szín</string>
-  <string name="pref_ui_color_summary" formatted="false">Elsődleges szín az alkalmazásban</string>
   <string name="pref_cat_channel_settings" formatted="false">Értesítési csatorna beállítások</string>
   <string name="pref_manage_main_channel" formatted="false">Fő csatorna kezelése</string>
   <string name="pref_cat_notification_content" formatted="false">Tartalom</string>
   <string name="pref_cat_status_bar_chip" formatted="false">Állapotsor chip (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">Chip tartalma</string>
   <string name="pref_chip_content_switching" formatted="false">Váltás akku és hőmérséklet között</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">Felváltva jeleníti meg a töltöttséget és a hőmérsékletet</string>
   <string name="pref_chip_switching_interval" formatted="false">Váltási időköz</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">Milyen gyakran váltson a megjelenítés</string>
   <string name="pref_chip_content_help" formatted="false">Válaszd ki, mit jelenítsen meg az Android 16+ promoted-notification chip.</string>
   <string name="pref_chip_indicate_charging" formatted="false">Töltés emoji megjelenítése</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">Villám emoji megjelenítése töltéskor vagy teljes töltöttségnél?</string>
@@ -278,7 +257,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">Fő vezérlés</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">Áram (mA) hack nem támogatott</string>
   <string name="pref_current_hack_unsupported" formatted="false">Sajnáljuk, az áram (mA) hack nem támogatott ezen a készüléken.</string>
-  <string name="current_hack_maybe_supported" formatted="false">A hack LEHETSÉGES, hogy működik ezen a készüléken.</string>
   <string name="pref_enable_current_hack" formatted="false">Hack engedélyezése</string>
   <string name="pref_enable_current_hack_summary" formatted="false">Megpróbálod engedélyezni az áram (mA) hack-et?</string>
   <string name="pref_enable_current_hack_help" formatted="false">Ha ez engedélyezve van, a hackkel kapcsolatos többi opció is használható lesz.</string>
@@ -304,14 +282,11 @@
   <string name="pref_auto_refresh_current_in_main_window_summary" formatted="false">Automatikusan frissítse az mA értéket két másodpercenként?</string>
   <string name="pref_auto_refresh_current_in_main_window_help" formatted="false">Engedélyezve a főablakban az mA érték 2 másodpercenként frissül.</string>
   <string name="pref_notify_status_duration" formatted="false">Állapot időtartam megjelenítése</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">Az állapotváltás óta eltelt időt mutassa a hátralévő idő becslés helyett?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">Bekapcsolva a fő értesítés az állapotváltozás óta eltelt időt mutatja.</string>
   <string name="predictor_sensitive" formatted="false">Érzékeny</string>
   <string name="predictor_conservative" formatted="false">Konzervatív</string>
   <string name="predictor_since_status_change" formatted="false">Állapotváltozás óta</string>
   <string name="predictor_long_term_ave" formatted="false">Hosszú távú átlag</string>
   <string name="pref_prediction_type_help" formatted="false">Itt kiválaszthatod, hogyan becsülje a Battery Monitor a hátralévő akkuidőt.</string>
-  <string name="lang_system_selected" formatted="false">Rendszer által kiválasztott</string>
   <string name="pref_classic_color_mode" formatted="false">Klasszikus színmód kényszerítése</string>
   <string name="pref_classic_color_mode_summary" formatted="false">Ez általában nem működik; kérlek olvasd el a súgót</string>
   <string name="pref_classic_color_mode_help" formatted="false">Android 5.0 óta a színes értesítési ikonok hivatalosan nem támogatottak mindenhol.</string>

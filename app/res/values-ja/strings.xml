@@ -4,12 +4,9 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">設定</string>
   <string name="help_activity_subtitle" formatted="false">ヘルプ</string>
-  <string name="log_view_activity_subtitle" formatted="false">ログ</string>
   <string name="battery_use_b" formatted="false">バッテリーの使用を表示する</string>
-  <string name="upgrade_donate_b" formatted="false">アップグレード/寄付...</string>
   <string name="circle_widget" formatted="false">Battery Monitor サークル</string>
   <string name="full_widget" formatted="false">Battery Monitor フル</string>
-  <string name="confirm_disable_hint" formatted="false">ヒント: 設定でこの確認ダイアログを無効にできます...</string>
   <string name="yes" formatted="false">はい</string>
   <string name="cancel" formatted="false">キャンセル</string>
   <string name="confirm_close" formatted="false">閉じてもよろしいですか?</string>
@@ -41,13 +38,10 @@
   <string name="celsius" formatted="false">セ氏</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">フル充電まで:</string>
   <string name="light_usage" formatted="false">低負荷使用残:</string>
   <string name="normal_usage" formatted="false">通常使用残:</string>
   <string name="heavy_usage" formatted="false">高負荷使用残:</string>
   <string name="constant_usage" formatted="false">連続使用残:</string>
-  <string name="press_back_to_leave" formatted="false">戻る を押すと離れます。</string>
-  <string name="press_menu_for_more" formatted="false">メニュー を押すと追加の項目があります。</string>
   <string name="inaccessible_storage" formatted="false">SD カードにアクセスできません。</string>
   <string name="inaccessible_w_reason" formatted="false">SD カードにアクセスできません:</string>
   <string name="read_only_storage" formatted="false">SD カードは読み取り専用です。</string>
@@ -101,13 +95,10 @@
   <string name="alarm_health_failure" formatted="false">"バッテリーのステータス: "</string>
   <string name="alarm_text" formatted="false">編集するアラームを選択してください。</string>
   <string name="logs_empty" formatted="false">ログは空です</string>
-  <string name="after_n_hours_unplugged" formatted="false">%1.1f 時間前プラグを抜きました</string>
-  <string name="after_n_hours_plugged_in" formatted="false">%1.1f 時間前プラグを挿しました</string>
   <string name="after_nh_mm_unplugged" formatted="false">プラグを抜いてから %1$d時間%2$d分</string>
   <string name="after_nh_mm_plugged_in" formatted="false">プラグを挿してから %1$d時間%2$d分</string>
   <string name="after_nm_ms_unplugged" formatted="false">プラグを抜いてから %1$d分%2$d秒</string>
   <string name="after_nm_ms_plugged_in" formatted="false">プラグを挿してから %1$d分%2$d秒</string>
-  <string name="discharging_from" formatted="false">放電開始</string>
   <string name="charging_from" formatted="false">充電開始</string>
   <string name="fully_charged" formatted="false">フル充電</string>
   <string name="since" formatted="false">から</string>
@@ -159,18 +150,12 @@
   <string name="current_hack_settings_help" formatted="false">Android は、バッテリー電流に関する情報にアクセスするための手段をアプリに提供していません。しかし、ハックは、多くのデバイスでこの情報を取得することができるようになります。\n\nこの動作は保証されません。全く動作しない可能性もあります。または動作しても全く意味のない値になることもあります。\n\n設定が可能な場合は、ハックをオンにして、このセクションで使用する方法を制御します。</string>
   <string name="alarm_settings_subtitle" formatted="false">アラーム設定</string>
   <string name="alarm_settings" formatted="false">アラーム</string>
-  <string name="alarm_settings_summary" formatted="false">低残量/フル充電の通知をコントロール</string>
   <string name="alarm_settings_help" formatted="false">お使いのバッテリー残量が一定のレベルに達したときに、 Battery Monitor があなたに通知することができます (例、バッテリーがフル充電された、 バッテリー残量が 20% を下回った)。</string>
   <string name="other_settings" formatted="false">その他の設定</string>
   <string name="other_settings_help" formatted="false">ロギング、ロック画面、温度の単位、自動開始、およびその他を含め、 その他のすべての設定はこのページにあります。</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">プロバージョンの追加設定</string>
-  <string name="pref_please_upgrade" formatted="false">プロバージョンには、 カラフルなアイコン、アラーム、 バッテリーステータスのロギング、自動/手動のロック画面無効化、 充電/放電残の見積など、多くの追加設定や機能があります。</string>
   <string name="status_bar_chip_settings" formatted="false">ステータスバーチップ</string>
   <string name="status_bar_chip_settings_summary" formatted="false">ライブ更新チップの表示内容を設定</string>
   <string name="status_bar_chip_settings_help" formatted="false">Android 16 以降でライブ更新を使用している場合、ステータスバーチップに表示する内容や充電絵文字の表示有無を設定できます。</string>
-  <string name="pref_enable_live_updates" formatted="false">ステータスバーチップを使用</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">ステータスバーにバッテリー情報をチップ表示します（Android 16+）</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">Android 設定で無効です。タップして修正。</string>
   <string name="live_updates_onboarding_title" formatted="false">ステータスバーのバッテリーチップ</string>
   <string name="live_updates_onboarding_message_on" formatted="false">お使いの端末は、ステータスバーにバッテリー残量をチップとして表示できます。これはデフォルトで有効です。\n\n従来の通知アイコンを使いたい場合は、このアプリの Android システム設定で「ライブ更新」をオフにできます。</string>
   <string name="live_updates_onboarding_message_off" formatted="false">お使いの端末は、ステータスバーにバッテリー残量をチップとして表示できますが、現在はシステム設定で無効になっています。\n\n最良の体験のため有効化をおすすめします。従来の通知アイコンを使いたい場合は、無効のままでも構いません。</string>
@@ -178,18 +163,13 @@
   <string name="live_updates_onboarding_positive_off" formatted="false">設定へ移動</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">閉じる</string>
   <string name="add_alarm" formatted="false">アラームを追加</string>
-  <string name="menu_alarm_channel" formatted="false">アラームチャンネル設定</string>
-  <string name="pref_cat_ui_color" formatted="false">UIカラー</string>
-  <string name="pref_ui_color_summary" formatted="false">アプリ全体のメインカラー</string>
   <string name="pref_cat_channel_settings" formatted="false">通知チャンネル設定</string>
   <string name="pref_manage_main_channel" formatted="false">メインチャンネルを管理</string>
   <string name="pref_cat_notification_content" formatted="false">コンテンツ</string>
   <string name="pref_cat_status_bar_chip" formatted="false">ステータスバーチップ（Android 16+）</string>
   <string name="pref_chip_content" formatted="false">チップ内容</string>
   <string name="pref_chip_content_switching" formatted="false">バッテリー残量と温度を切り替える</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">表示をバッテリー残量と温度で順番に切り替える</string>
   <string name="pref_chip_switching_interval" formatted="false">切り替え間隔</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">表示を切り替える頻度</string>
   <string name="pref_chip_content_help" formatted="false">Android 16 以降の昇格通知チップに表示する値を選択します。</string>
   <string name="pref_chip_indicate_charging" formatted="false">充電絵文字を表示</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">充電中または満充電時に稲妻絵文字を表示しますか？</string>
@@ -222,7 +202,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">メイン コントロール</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">電流 (mA) ハックはサポートされていません</string>
   <string name="pref_current_hack_unsupported" formatted="false">申し訳ありません、このデバイスで電流 (mA) ハックはサポートされていません。</string>
-  <string name="current_hack_maybe_supported" formatted="false">ハックはこのデバイスで動作する可能性があります。</string>
   <string name="pref_enable_current_hack" formatted="false">ハックを有効にする</string>
   <string name="pref_enable_current_hack_summary" formatted="false">電流 (mA) ハックを有効にしてみますか?</string>
   <string name="pref_enable_current_hack_help" formatted="false">この設定を有効にすると、ハックに関する他のオプションが使用可能になります。</string>
@@ -259,8 +238,6 @@
   <string name="pref_max_log_age_summary" formatted="false">次より古いログを削除します:</string>
   <string name="pref_max_log_age_help" formatted="false">ロギングが有効になっている場合、あなたのデバイスを接続するたびに、 ここで指定した値よりも古いログを削除します。</string>
   <string name="pref_notify_status_duration" formatted="false">ステータス時間を表示</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">見積残り時間ではなく、ステータスが変わってからの時間を表示しますか?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">メイン通知で、見積残り時間ではなく、ステータスが変わってからの時間 (\"プラグを抜いてから 5 時間\" など) の表示をお好みの場合は、 この設定を有効にしてください。メインウインドウで両方の情報が入手できます。</string>
   <string name="pref_cat_temperature_unit" formatted="false">温度の単位</string>
   <string name="pref_convert_to_fahrenheit" formatted="false">華氏に変換する</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android はセ氏でバッテリ温度を報告します。バッテリー温度を華氏で 確認したい場合は、このオプションをチェックすると、アプリが変換します。</string>
@@ -275,11 +252,9 @@
   <string name="pref_cat_predictor" formatted="false">残時間の見積</string>
   <string name="pref_prediction_type" formatted="false">見積の種類</string>
   <string name="pref_prediction_type_help" formatted="false">ここでは、バッテリーのフル充電からの残量/残時間を Battery Monitor が予測する方法を選択することができます。\n\n\"高感度\" アルゴリズムは、厳密に直近の5分間の使用量に基づいて求めます。 主に \"あとどのくらい今の操作を続けることができるか?\" に関心がある場合は、このアルゴリズムをご利用ください。\n\"保守的\" なアルゴリズムがデフォルトです。最近の使用状況に 基づいていますが、長期的な平均の使用状況から あまり大きく変化しないようにします\n\n厳密に現在のセッションに基づいて予測するには、 \"ステータスが変わってから\" を選択してください。\n\n最終的に、長期的な平均の使用状況のみに基づいて、 予測することができます。</string>
-  <string name="lang_system_selected" formatted="false">システムで選択</string>
   <string name="pref_cat_language" formatted="false">言語</string>
   <string name="pref_language_override" formatted="false">言語の上書き</string>
   <string name="pref_language_override_summary" formatted="false">言語を選択:</string>
-  <string name="pref_language_override_help" formatted="false">ご利用の言語の翻訳が不完全または不正確で、別の言語での ご利用をお好みの場合、ここで選択することができます。</string>
   <string name="pref_classic_color_mode" formatted="false">強制的にクラシックカラーモードにする</string>
   <string name="pref_classic_color_mode_summary" formatted="false">これは通常動作しません。ヘルプをお読みください</string>
   <string name="pref_classic_color_mode_help" formatted="false">Android 5.0 (Lollipop) から、着色された通知アイコンはもはや公式には Android 上で動作しません。クラシックアイコンは白い四角としてを表示されます。そのためデフォルトでは、これらのデバイス上で、アプリは白い番号と白いアウトラインを使用します。\n\nしかし、すべてのデバイスが仕様に従っているわけではないので、これは必要ではなく、すべてにおいて正常に動作するわけではありません。このオプションをオンにすることによって、クラシックな方法で、クラシックアイコンセットを動作させてみることができます。覚えておいてほしいのは、ほとんどのデバイスでこれはアイコンがただの白い四角になります、。</string>

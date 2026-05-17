@@ -4,12 +4,9 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">الخيارات</string>
   <string name="help_activity_subtitle" formatted="false">المساعدة</string>
-  <string name="log_view_activity_subtitle" formatted="false">السجلات</string>
   <string name="battery_use_b" formatted="false">عرض استخدام البطارية</string>
-  <string name="upgrade_donate_b" formatted="false">ترقية/تبرع</string>
   <string name="circle_widget" formatted="false">دائرةالمؤشر</string>
   <string name="full_widget" formatted="false">البطاية كاملة الشحن</string>
-  <string name="confirm_disable_hint" formatted="false">تلميح: تعطيل هذا الخيار من الاعدادات</string>
   <string name="yes" formatted="false">نعم</string>
   <string name="cancel" formatted="false">لا</string>
   <string name="confirm_close" formatted="false">تأكيد الغلق؟</string>
@@ -39,13 +36,10 @@
   <string name="celsius" formatted="false">سلسيوسي</string>
   <string name="celsius_symbol" formatted="false">س</string>
   <string name="volt_symbol" formatted="false">ف</string>
-  <string name="fully_charged_in" formatted="false">سوف يتم الشحن بالكامل عند</string>
   <string name="light_usage" formatted="false">بقى من زمن استعمال الضوء:</string>
   <string name="normal_usage" formatted="false">بقى من حالة الاستعمال العادي:</string>
   <string name="heavy_usage" formatted="false">بقى من حالة الاستعمال الكبير:</string>
   <string name="constant_usage" formatted="false">بقى من الاستعمال المنتظم :</string>
-  <string name="press_back_to_leave" formatted="false">اضغط رجوع للمغادرة</string>
-  <string name="press_menu_for_more" formatted="false">اضغط على خيارات لعناصر اكثر</string>
   <string name="inaccessible_storage" formatted="false">بطاقة اس دي غير قابلة للوصول</string>
   <string name="inaccessible_w_reason" formatted="false">بطاقة اس دي يتعذر الوصول اليها:</string>
   <string name="read_only_storage" formatted="false">بطاقة اس دي للقراءة فقط</string>
@@ -93,9 +87,6 @@
   <string name="alarm_health_failure" formatted="false">"حالة البطارية "</string>
   <string name="alarm_text" formatted="false">اختر لتعديل المنبهات</string>
   <string name="logs_empty" formatted="false">السجلات فارغة</string>
-  <string name="after_n_hours_unplugged" formatted="false">%1.1f بعد غير موصول</string>
-  <string name="after_n_hours_plugged_in" formatted="false">%1.1f بعد موصول</string>
-  <string name="discharging_from" formatted="false">غير مشحون من</string>
   <string name="charging_from" formatted="false">شحن من</string>
   <string name="fully_charged" formatted="false">الشحن كامل</string>
   <string name="since" formatted="false">منذ</string>
@@ -125,12 +116,9 @@
   <string name="status_bar_icon_settings_help" formatted="false">يمكنك الاختيار من الايقونات لجعلها المستخدمة وتغير اعدادات الايقونة المستخدمة</string>
   <string name="alarm_settings_subtitle" formatted="false">اعدادات المنبه</string>
   <string name="alarm_settings" formatted="false">المنبهات</string>
-  <string name="alarm_settings_summary" formatted="false">اعداد الاشعارات للاسفل\كامل البطارية</string>
   <string name="alarm_settings_help" formatted="false">يمكن للمؤشر بإعلامك عند مستوى البطارية تصل إلى نقطة معينة (على سبيل المثال، يصبح البطارية مشحونة بالكامل، وانخفاض مستوى البطارية أقل من 20٪)</string>
   <string name="other_settings" formatted="false">اعدادات اخرى</string>
   <string name="other_settings_help" formatted="false">جميع الاعدادات في هذه الصفحة السجلات والقفل ودرجة الحرارة والتشغيل التلقائيواعدادات اخرى</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">اعدادات اكثر في النسخة الكاملة</string>
-  <string name="pref_please_upgrade" formatted="false">اصدار النسخة الكاملة يحتوي على اعدادات ومميزات اكثر ايقونات منبهات وسجلات حالة البطارية والتعطيل الاوتوماتيكي والعادي لقفل الشاشة والشحن المنقضي والمتبقي والمزيد</string>
   <string name="add_alarm" formatted="false">اضافة تنبيه</string>
   <string name="pref_cat_notification_content" formatted="false">المحتوى</string>
   <string name="pref_top_line_content" formatted="false">محتوى الشريط العلوي</string>
@@ -168,8 +156,6 @@
   <string name="pref_max_log_age_summary" formatted="false">حذف السجلات القديمة بعد:</string>
   <string name="pref_max_log_age_help" formatted="false">اذا تم تمكين السجلات سوف يتم حذف السجلات القديمة من فترة لاخرى وسوف يتم التبديل بالسجلات الجديدة</string>
   <string name="pref_notify_status_duration" formatted="false">مدة عرض الحالة</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">تظهر منذ متى تم تغيير الوضع بدلا من تقدير الوقت المتبقي؟</string>
-  <string name="pref_notify_status_duration_help" formatted="false">تمكين هذا الإعداد إذا كنت تفضل الإخطار الرئيسي لعرض الوقت منذ تغيير حالة (على سبيل المثال، \"موصول لمدة 5 ساعات\") بدلا من تقدير الوقت المتبقي. كل قطعة من المعلومات المتاحة من النافذة الرئيسية.</string>
   <string name="pref_cat_temperature_unit" formatted="false">وحدة درجة الحرارة</string>
   <string name="pref_convert_to_fahrenheit" formatted="false">تحويل إلى فهرنهايت</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">الاندرويد وحدة قياس حرارته هي الدرجة السليزية اذا كنت تفضل رؤية درجة الحرارة بالفهرنهايت تحقق من هذا الخيار وسوف يحول لتطبيق درجة الحرارة لك</string>
@@ -184,11 +170,9 @@
   <string name="pref_cat_predictor" formatted="false">تقديرات الوقت المتبقي</string>
   <string name="pref_prediction_type" formatted="false">نوع التقدير</string>
   <string name="pref_prediction_type_help" formatted="false">هنا يمكنك الاختيار بالمؤشر الاحترافي من البطارية المتبقية الى مشحونة بالكامل\n\nوضع الحساس ويعتمد على الخوارزمية في عمله حيث هو يعتمد على الوقت المتبقي للبطارية و عندما تفعله الان ن تستمر به الى الشحن الكامل\n\nوضع المحافظ ويعتمد ايضا على الخورارزمية لكنه يحاول على الحصول على التقدير الصحيح دوما\n\nوضع منذ تم التغيير وهو يعتمد بشكل اساسي على الاوضاع التي سبقته\n\nواخيرا يمكن التنبؤ على استخدان عادي بشكل طويل المدا</string>
-  <string name="lang_system_selected" formatted="false">مختارة النظام</string>
   <string name="pref_cat_language" formatted="false">اللغة</string>
   <string name="pref_language_override" formatted="false">تجاوز اللغة</string>
   <string name="pref_language_override_summary" formatted="false">اختر اللغة:</string>
-  <string name="pref_language_override_help" formatted="false">إذا كانت الترجمة إلى لغتك غير مكتملة أو غير دقيقة وكنت تفضل آخرى، ربما أفضل ترجمة، قد تختار القيام بذلك هنا.</string>
   <string name="pref_cat_device_specific" formatted="false">اعدادات النظام المعينة</string>
   <string name="alarms_overview" formatted="false">النظرة العامة على المنبهات</string>
   <string name="alarms_overview_help" formatted="false">هذه الصفحة تؤدي الى اعدادات المنبهات للتمكين والتعطيل السريع او حذف المنبه\n\nلاضافة منبه جديد اضغط على كلمة اضافة منبه وهذا سوف يؤديك الى اعدادات المنبه لاختيار المنبه الجديد راجع قسم مساعده للحصول على التفاصيل\n\nاسفل كلمة اضافة منبه هذه قائمة تحتوي على المنبهات التي قمت بأنشاها\n\nلتعديل على منبه اضغط عليه فقط\nلحذف منبه ضغطة طويلة عليه واختر حذف المنبه ويمكنك حذفها من قائمة الاعدادات الرئيسية واختيار خذف المنبه\nللتبديل بسرعة ما إذا تم تمكين التنبيه، اضغط على أيقونة المنبه على يسار النص التنبيه يمكنك أيضا تمكين أو تعطيل التنبيه من صفحة إعدادات التنبيه الفردية</string>
@@ -259,26 +243,18 @@
   <string name="current_hack_settings" formatted="false">حيلة التيار (mA)</string>
   <string name="current_hack_settings_summary" formatted="false">إعدادات متقدمة لتمكين معلومات mA</string>
   <string name="current_hack_settings_help" formatted="false">لا يوفر Android طريقة رسمية للتطبيقات للوصول إلى معلومات تيار البطارية. ولكن توجد حيلة قد تتيح هذا على كثير من الأجهزة.\n\nلا يوجد ضمان بأن هذا سيعمل. قد لا يعمل إطلاقًا أو قد يبدو أنه يعمل لكنه يعطي قيماً غير منطقية.\n\nإعدادات تشغيل هذه الحيلة والتحكم بطريقة استخدامها متاحة في هذا القسم إذا كان ذلك ممكنًا.</string>
-  <string name="pref_enable_live_updates" formatted="false">استخدام شريحة شريط الحالة</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">إظهار معلومات البطارية كشريحة في شريط الحالة (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">معطل في إعدادات Android. اضغط للإصلاح.</string>
   <string name="live_updates_onboarding_title" formatted="false">شريحة بطارية شريط الحالة</string>
   <string name="live_updates_onboarding_message_on" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة. هذا الخيار مفعّل افتراضيًا.\n\nإذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك إيقاف «Live Updates» من إعدادات Android لهذا التطبيق.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">جهازك يدعم عرض نسبة البطارية كشريحة في شريط الحالة، لكنه معطّل حاليًا في إعدادات النظام.\n\nنوصي بتمكينه للحصول على أفضل تجربة. إذا كنت تفضّل أيقونة إشعار تقليدية، يمكنك تركه معطّلًا.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">حسنًا</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">الانتقال إلى الإعدادات</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">تجاهل</string>
-  <string name="menu_alarm_channel" formatted="false">إعدادات قناة الإنذارات</string>
-  <string name="pref_cat_ui_color" formatted="false">لون الواجهة</string>
-  <string name="pref_ui_color_summary" formatted="false">اللون الأساسي في كامل التطبيق</string>
   <string name="pref_cat_channel_settings" formatted="false">إعدادات قنوات الإشعارات</string>
   <string name="pref_manage_main_channel" formatted="false">إدارة القناة الرئيسية</string>
   <string name="pref_cat_status_bar_chip" formatted="false">شريحة شريط الحالة (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">محتوى الشريحة</string>
   <string name="pref_chip_content_switching" formatted="false">التبديل بين البطارية والحرارة</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">التناوب بين نسبة البطارية ودرجة الحرارة</string>
   <string name="pref_chip_switching_interval" formatted="false">فاصل التبديل</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">عدد مرات تبديل العرض</string>
   <string name="pref_chip_content_help" formatted="false">اختر القيمة التي ستُعرض في شريحة الإشعار المروّج على Android 16+.</string>
   <string name="pref_chip_indicate_charging" formatted="false">إظهار رمز الشحن</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">إظهار رمز البرق أثناء الشحن أو عند الامتلاء الكامل؟</string>
@@ -288,7 +264,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">التحكم الرئيسي</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">حيلة التيار (mA) غير مدعومة</string>
   <string name="pref_current_hack_unsupported" formatted="false">عذرًا، حيلة التيار (mA) غير مدعومة على هذا الجهاز.</string>
-  <string name="current_hack_maybe_supported" formatted="false">قد تعمل الحيلة على هذا الجهاز.</string>
   <string name="pref_enable_current_hack" formatted="false">تمكين الحيلة</string>
   <string name="pref_enable_current_hack_summary" formatted="false">محاولة تمكين حيلة التيار (mA)؟</string>
   <string name="pref_enable_current_hack_help" formatted="false">عند تمكين هذا الإعداد ستصبح الخيارات الأخرى الخاصة بالحيلة قابلة للاستخدام.</string>

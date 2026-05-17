@@ -4,10 +4,7 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Nustatymai</string>
   <string name="help_activity_subtitle" formatted="false">Pagalba</string>
-  <string name="log_view_activity_subtitle" formatted="false">Įrašai</string>
   <string name="battery_use_b" formatted="false">Baterijos naudojimas</string>
-  <string name="upgrade_donate_b" formatted="false">Patobulinti/Paremti...</string>
-  <string name="confirm_disable_hint" formatted="false">Patarimas: Išjunkite ši patvirtinimą nustatymuose...</string>
   <string name="yes" formatted="false">Taip</string>
   <string name="cancel" formatted="false">Nutraukti</string>
   <string name="confirm_close" formatted="false">Tikrai Uždaryti?</string>
@@ -29,13 +26,10 @@
   <string name="celsius" formatted="false">Celsijus</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Bus įkrauta po:</string>
   <string name="light_usage" formatted="false">Mažai Naudojant Liko:</string>
   <string name="normal_usage" formatted="false">Normaliai Naudojant Liko:</string>
   <string name="heavy_usage" formatted="false">Daug Naudojant Liko:</string>
   <string name="constant_usage" formatted="false">Nepertraukiamai Naudojant Liko:</string>
-  <string name="press_back_to_leave" formatted="false">Spauskite Grįžti, kad išeitumėte</string>
-  <string name="press_menu_for_more" formatted="false">Spauskite MENU daugiau pasirinkimų</string>
   <string name="inaccessible_storage" formatted="false">SD kortelė nepasiekiama.</string>
   <string name="inaccessible_w_reason" formatted="false">SD kortelė nepasiekiama:</string>
   <string name="read_only_storage" formatted="false">SD kortele yra \"read-only\"</string>
@@ -82,7 +76,6 @@
   <string name="alarm_health_failure" formatted="false">"Baterijos būklė yra: "</string>
   <string name="alarm_text" formatted="false">Koreguoti aliarmus.</string>
   <string name="logs_empty" formatted="false">Įrašai tušti</string>
-  <string name="discharging_from" formatted="false">Įkraunama nuo</string>
   <string name="charging_from" formatted="false">Iškraunama nuo</string>
   <string name="fully_charged" formatted="false">Pilnai įkrauta</string>
   <string name="since" formatted="false">Nuo</string>
@@ -101,12 +94,9 @@
   <string name="settings_overview_help" formatted="false">Nustatymai yra sugrupuoti į keturis atskirus puslapius, aprašytus žemiau. Kiekvienas puslapis turi savo pagalbos puslapį, kuriame aprašyti galimi nustatymai ir jų reikšmės. Paprasčiausiai spauskite MENU mygtuką, tada \"Pagalba\" (planšetiniuose kompiuteriuose, MENU nėra būtinas), kad gautumėte informaciją apie kiekvieną puslapyje esantį nustatymą.</string>
   <string name="alarm_settings_subtitle" formatted="false">Aliarmo Nustatymai</string>
   <string name="alarm_settings" formatted="false">Aliarmai</string>
-  <string name="alarm_settings_summary" formatted="false">Valdyti tuščios/pilnos baterijos pranešimus</string>
   <string name="alarm_settings_help" formatted="false">Jūs galite nusistatyti Baterijos Indikatoriaus perspėjimą, kai baterijos lygis pasiekia tam tikrą tašką (pvz.: baterija pilnai įkraunama, baterijos lygtis nukrenta žemiau 20% ir pan.).</string>
   <string name="other_settings" formatted="false">Kiti nustatymai</string>
   <string name="other_settings_help" formatted="false">Visi kiti nustatymai yra šiame puslapyje: įrašų sudarymas, ekrano užraktas, temperatūros vienetas, auto-paleidimas ir kitą.</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Daugiau nustatytmų Pro versijoje</string>
-  <string name="pref_please_upgrade" formatted="false">Pro versija turi daug daugiau nustatymų ir funkcijų: spalvotos ikonos, atsisiunčiami ikonų papildiniai, aliarmai, lango temos, baterijos statuso įrašų sudarymas, auto/rankinis ekrano užrakto išjungimas, įkrovimo/iškrovimo likęs laikas ir daugiau.</string>
   <string name="add_alarm" formatted="false">Pridėti aliarmą</string>
   <string name="pref_cat_logging" formatted="false">Įrašų sudarymas</string>
   <string name="pref_enable_logging" formatted="false">Įjungti įrašų sudarymą</string>
@@ -118,7 +108,6 @@
   <string name="pref_cat_autostart" formatted="false">Auto-Paleidimas</string>
   <string name="pref_autostart_at_boot" formatted="false">Auto-Paleidimas įjungus telefoną</string>
   <string name="pref_autostart_at_boot_summary" formatted="false">Paleisti Programą kai prietaisas įjungia:</string>
-  <string name="lang_system_selected" formatted="false">Parinktas sistemos</string>
   <string name="pref_cat_language" formatted="false">Kalba</string>
   <string name="pref_language_override" formatted="false">Kalbos Nepaisymas</string>
   <string name="pref_language_override_summary" formatted="false">Pasirinkti kalbą:</string>
@@ -207,8 +196,6 @@
   <string formatted="false" name="alarm_type_temperature_drops">Temperatūra nukrenta žemiau</string>
   <string formatted="false" name="alarm_type_entry_temperature_drops">Temperatūra nukrenta žemiau...</string>
   <string formatted="false" name="alarm_temp_drops">„Akumuliatoriaus temp. žemesnė“</string>
-  <string formatted="false" name="after_n_hours_unplugged">Po %1.1f valandų atjungtas</string>
-  <string formatted="false" name="after_n_hours_plugged_in">Po %1.1f valandų prijungtas</string>
   <string formatted="false" name="after_nh_mm_unplugged">Atjungus %1$dh %2$dm</string>
   <string formatted="false" name="after_nh_mm_plugged_in">Įjungus %1$dh %2$dm</string>
   <string formatted="false" name="after_nm_ms_unplugged">Atjungus %1$dm %2$ds</string>
@@ -252,27 +239,19 @@
 
     \nNustatymai, norėdami įjungti įsilaužimą, jei įmanoma, ir valdyti, kaip tai vyksta
     naudojami yra šiame skyriuje.</string>
-  <string formatted="false" name="pref_enable_live_updates">Naudokite būsenos juostos lustą</string>
-  <string formatted="false" name="pref_enable_live_updates_summary">Rodyti akumuliatoriaus informaciją kaip lustą būsenos juostoje (Android 16+)</string>
-  <string formatted="false" name="pref_live_updates_system_disabled">Išjungta „Android“ nustatymuose. Palieskite, kad pataisytumėte.</string>
   <string formatted="false" name="live_updates_onboarding_title">Būsenos juostos akumuliatoriaus lustas</string>
   <string formatted="false" name="live_updates_onboarding_message_on">Įrenginys palaiko akumuliatoriaus procento rodymą kaip lustą būsenos juostoje. Tai įgalinta pagal numatytuosius nustatymus.\n\nJei pageidaujate tradicinės pranešimo piktogramos, šios programos „Android“ sistemos nustatymuose galite išjungti \"Tiesioginius atnaujinimus\".</string>
   <string formatted="false" name="live_updates_onboarding_message_off">Įrenginys palaiko akumuliatoriaus energijos procento rodymą kaip lustą būsenos juostoje, bet šiuo metu jis išjungtas sistemos nustatymuose.\n\nRekomenduojame įjungti, kad patirtis būtų geriausia. Jei pageidaujate tradicinės pranešimo piktogramos, galite palikti ją išjungtą.</string>
   <string formatted="false" name="live_updates_onboarding_positive_on">Supratau</string>
   <string formatted="false" name="live_updates_onboarding_positive_off">Eikite į nustatymus</string>
   <string formatted="false" name="live_updates_onboarding_negative_off">Atsisakyti</string>
-  <string formatted="false" name="menu_alarm_channel">Signalizacijos kanalo nustatymai</string>
-  <string formatted="false" name="pref_cat_ui_color">UI spalva</string>
-  <string formatted="false" name="pref_ui_color_summary">Pagrindinė spalva visoje programoje</string>
   <string formatted="false" name="pref_cat_channel_settings">Pranešimų kanalo nustatymai</string>
   <string formatted="false" name="pref_manage_main_channel">Valdykite pagrindinį kanalą</string>
   <string formatted="false" name="pref_cat_notification_content">Turinys</string>
   <string formatted="false" name="pref_cat_status_bar_chip">Būsenos juostos lustas (16 ir naujesnės versijos „Android“)</string>
   <string formatted="false" name="pref_chip_content">Lusto turinys</string>
   <string formatted="false" name="pref_chip_content_switching">Perjunkite tarp akumuliatoriaus ir temperatūros</string>
-  <string formatted="false" name="pref_chip_content_switching_summary">Perjunkite ekraną tarp akumuliatoriaus procento ir temperatūros</string>
   <string formatted="false" name="pref_chip_switching_interval">Perjungimo intervalas</string>
-  <string formatted="false" name="pref_chip_switching_interval_summary">Kaip dažnai perjungti ekraną</string>
   <string formatted="false" name="pref_chip_content_help">Pasirinkite, kokią reikšmę rodyti „Android 16+“ reklamuojamų pranešimų luste.</string>
   <string formatted="false" name="pref_chip_indicate_charging">Rodyti įkrovimo jaustukus</string>
   <string formatted="false" name="pref_chip_indicate_charging_summary">Rodyti žaibišką jaustuką įkraunant ar visiškai įkraunant?</string>
@@ -333,7 +312,6 @@
   <string formatted="false" name="pref_cat_current_hack_main">Pagrindinis valdymas</string>
   <string formatted="false" name="pref_cat_current_hack_unsupported">Srovės (mA) įsilaužimas nepalaikomas</string>
   <string formatted="false" name="pref_current_hack_unsupported">Atsiprašome, dabartinis (mA) įsilaužimas šiame įrenginyje nepalaikomas.</string>
-  <string formatted="false" name="current_hack_maybe_supported">Įsilaužimas GALI veikti šiame įrenginyje.</string>
   <string formatted="false" name="pref_enable_current_hack">Įgalinti įsilaužimą</string>
   <string formatted="false" name="pref_enable_current_hack_summary">Bandote įjungti srovės (mA) įsilaužimą?</string>
   <string formatted="false" name="pref_enable_current_hack_help">Kai šis nustatymas įjungtas, kitos parinktys, susijusios su
@@ -420,11 +398,6 @@
   <string formatted="false" name="pref_max_log_age_help">Jei registravimas įjungtas, tada, kai prijungiate įrenginį, registruojami
     bus ištrintas senesnis nei šis.</string>
   <string formatted="false" name="pref_notify_status_duration">Rodyti būsenos trukmę</string>
-  <string formatted="false" name="pref_notify_status_duration_summary">Rodyti laiką nuo būsenos pasikeitimo, o ne apskaičiuotą likusį laiką?</string>
-  <string formatted="false" name="pref_notify_status_duration_help">Įgalinkite šį nustatymą, jei norite, kad būtų rodomas pagrindinis pranešimas
-    laikas nuo būsenos pasikeitimo (pvz., \"Atjungtas 5
-    valandos\"), o ne apskaičiuotas likęs laikas.  Abu gabaliukai
-    Informacija pateikiama pagrindiniame lange.</string>
   <string formatted="false" name="pref_convert_to_fahrenheit_help">„Android“ praneša apie akumuliatoriaus temperatūrą Celsijaus laipsniais.  Jeigu
     norite matyti akumuliatoriaus temperatūrą Farenheito laipsniais,
     pažymėkite šią parinktį ir programa konvertuos už jus.</string>
@@ -463,9 +436,6 @@
 
     \nGaliausiai galite turėti prognozę, pagrįstą tik jūsų
     ilgalaikis vidutinis naudojimas.</string>
-  <string formatted="false" name="pref_language_override_help">Jei vertimas į jūsų kalbą yra neišsamus arba netikslus
-    ir jūs norėtumėte kito, galbūt geresnio vertimo, galite
-    pasirinkite tai padaryti čia.</string>
   <string formatted="false" name="pref_classic_color_mode">Priverskite klasikinį spalvų režimą</string>
   <string formatted="false" name="pref_classic_color_mode_summary">Paprastai tai neveikia; prašau perskaityti pagalbą</string>
   <string formatted="false" name="pref_classic_color_mode_help">Pradedant nuo Android 5.0 (Lollipop), spalvotos pranešimų piktogramos

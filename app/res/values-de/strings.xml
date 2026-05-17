@@ -4,12 +4,9 @@
   <string name="app_launcher_name" formatted="false">Battery Monitor</string>
   <string name="settings_activity_subtitle" formatted="false">Einstellungen</string>
   <string name="help_activity_subtitle" formatted="false">Hilfe</string>
-  <string name="log_view_activity_subtitle" formatted="false">Protokoll</string>
   <string name="battery_use_b" formatted="false">Akkuverbrauch anzeigen</string>
-  <string name="upgrade_donate_b" formatted="false">Upgrade/Spenden...</string>
   <string name="circle_widget" formatted="false">Battery Monitor Kreis</string>
   <string name="full_widget" formatted="false">Battery Monitor Voll</string>
-  <string name="confirm_disable_hint" formatted="false">Tipp: Sie können den Bestätigung Dialog in den Einstellungen ausschalten...</string>
   <string name="yes" formatted="false">Ja</string>
   <string name="cancel" formatted="false">Abbrechen</string>
   <string name="confirm_close" formatted="false">Wirklich schließen?</string>
@@ -39,13 +36,10 @@
   <string name="celsius" formatted="false">Celsius</string>
   <string name="celsius_symbol" formatted="false">C</string>
   <string name="volt_symbol" formatted="false">V</string>
-  <string name="fully_charged_in" formatted="false">Akku voll in:</string>
   <string name="light_usage" formatted="false">Übrig bei geringer Benutzung:</string>
   <string name="normal_usage" formatted="false">Übrig bei normaler Benutzung:</string>
   <string name="heavy_usage" formatted="false">Übrig bei starker Benutzung:</string>
   <string name="constant_usage" formatted="false">Übrig bei durchgehender Benutzung:</string>
-  <string name="press_back_to_leave" formatted="false">ZURÜCK drücken zum Beenden.</string>
-  <string name="press_menu_for_more" formatted="false">MENÜ drücken für mehr Möglichkeiten.</string>
   <string name="inaccessible_storage" formatted="false">SD-Karte ist nicht verfügbar.</string>
   <string name="inaccessible_w_reason" formatted="false">SD-Karte nicht verfügbar:</string>
   <string name="read_only_storage" formatted="false">SD-Karte ist schreibgeschützt.</string>
@@ -93,7 +87,6 @@
   <string name="alarm_health_failure" formatted="false">"Batteriezustand ist: "</string>
   <string name="alarm_text" formatted="false">Auswählen um Alarme zu bearbeiten.</string>
   <string name="logs_empty" formatted="false">Protokoll ist leer</string>
-  <string name="discharging_from" formatted="false">Entlädt von</string>
   <string name="charging_from" formatted="false">Lädt von</string>
   <string name="fully_charged" formatted="false">Voll geladen</string>
   <string name="since" formatted="false">Seit</string>
@@ -119,10 +112,7 @@
   <string name="status_bar_icon_settings" formatted="false">Statusleistensymbol</string>
   <string name="alarm_settings_subtitle" formatted="false">Alarm Einstellungen</string>
   <string name="alarm_settings" formatted="false">Alarme</string>
-  <string name="alarm_settings_summary" formatted="false">Einstellung für Benachrichtigungen bei niedriger/voller Batterie.</string>
   <string name="other_settings" formatted="false">Andere Einstellungen</string>
-  <string name="pref_cat_more_settings_in_pro" formatted="false">Mehr Einstellungen in der Pro-Version</string>
-  <string name="pref_please_upgrade" formatted="false">Die Pro-Version hat mehr Einstellungen und Funktionen, wie grüne, gelbe und rote Icons, Alarme, Window-Themes, Batteriestatus-Protokollierung, automatische/manuelle Bildschirmsperre Abschaltung, Lade-/Entladezeit-Schätzung und mehr.</string>
   <string name="add_alarm" formatted="false">Alarm hinzufügen</string>
   <string name="time_remaining" formatted="false">Verbleibende Restlaufzeit</string>
   <string name="time_since_status_change" formatted="false">Vergangene Zeit seit Statusänderung</string>
@@ -177,8 +167,6 @@
   <string name="alarm_type_temperature_drops" formatted="false">Temperatur fällt unter</string>
   <string name="alarm_type_entry_temperature_drops" formatted="false">Temperatur fällt unter...</string>
   <string name="alarm_temp_drops" formatted="false">"Akkutemperatur ist unter "</string>
-  <string name="after_n_hours_unplugged" formatted="false">Nach %1.1f Stunden ausgesteckt</string>
-  <string name="after_n_hours_plugged_in" formatted="false">Nach %1.1f Stunden eingesteckt</string>
   <string name="after_nh_mm_unplugged" formatted="false">Nach %1$dh %2$dm ausgesteckt</string>
   <string name="after_nh_mm_plugged_in" formatted="false">Nach %1$dh %2$dm eingesteckt</string>
   <string name="after_nm_ms_unplugged" formatted="false">Nach %1$dm %2$ds ausgesteckt</string>
@@ -208,27 +196,19 @@
   <string name="current_hack_settings_help" formatted="false">Android bietet Apps keinen offiziellen Zugriff auf Informationen zur Batteriestromstärke. Es gibt jedoch einen Hack, der dies auf vielen Geräten eventuell ermöglicht.</string>
   <string name="alarm_settings_help" formatted="false">Battery Monitor kann Sie benachrichtigen, wenn ein bestimmter Akkuzustand erreicht wird (z. B. vollständig geladen, unter 20% usw.).</string>
   <string name="other_settings_help" formatted="false">Alle weiteren Einstellungen befinden sich auf dieser Seite, einschließlich Protokollierung, Sperrbildschirm, Temperatureinheit, Autostart und mehr.</string>
-  <string name="pref_enable_live_updates" formatted="false">Statusleisten-Chip verwenden</string>
-  <string name="pref_enable_live_updates_summary" formatted="false">Akkudaten als Chip in der Statusleiste anzeigen (Android 16+)</string>
-  <string name="pref_live_updates_system_disabled" formatted="false">In Android-Einstellungen deaktiviert. Tippen zum Beheben.</string>
   <string name="live_updates_onboarding_title" formatted="false">Akku-Chip in der Statusleiste</string>
   <string name="live_updates_onboarding_message_on" formatted="false">Ihr Gerät unterstützt die Anzeige des Akkustands als Chip in der Statusleiste. Diese Option ist standardmäßig aktiviert.</string>
   <string name="live_updates_onboarding_message_off" formatted="false">Ihr Gerät unterstützt die Anzeige des Akkustands als Chip in der Statusleiste, aber sie ist derzeit in den Systemeinstellungen deaktiviert.</string>
   <string name="live_updates_onboarding_positive_on" formatted="false">Verstanden</string>
   <string name="live_updates_onboarding_positive_off" formatted="false">Zu den Einstellungen</string>
   <string name="live_updates_onboarding_negative_off" formatted="false">Schließen</string>
-  <string name="menu_alarm_channel" formatted="false">Alarmkanal-Einstellungen</string>
-  <string name="pref_cat_ui_color" formatted="false">UI-Farbe</string>
-  <string name="pref_ui_color_summary" formatted="false">Primärfarbe in der gesamten App</string>
   <string name="pref_cat_channel_settings" formatted="false">Benachrichtigungskanal-Einstellungen</string>
   <string name="pref_manage_main_channel" formatted="false">Hauptkanal verwalten</string>
   <string name="pref_cat_notification_content" formatted="false">Inhalt</string>
   <string name="pref_cat_status_bar_chip" formatted="false">Statusleisten-Chip (Android 16+)</string>
   <string name="pref_chip_content" formatted="false">Chip-Inhalt</string>
   <string name="pref_chip_content_switching" formatted="false">Zwischen Akku und Temperatur wechseln</string>
-  <string name="pref_chip_content_switching_summary" formatted="false">Anzeige zwischen Akkustand und Temperatur wechseln</string>
   <string name="pref_chip_switching_interval" formatted="false">Wechselintervall</string>
-  <string name="pref_chip_switching_interval_summary" formatted="false">Wie oft die Anzeige wechseln soll</string>
   <string name="pref_chip_content_help" formatted="false">Wählen Sie, welcher Wert im Android-16+-Benachrichtigungs-Chip angezeigt wird.</string>
   <string name="pref_chip_indicate_charging" formatted="false">Lade-Emoji anzeigen</string>
   <string name="pref_chip_indicate_charging_summary" formatted="false">Blitz-Emoji beim Laden oder bei vollem Akku anzeigen?</string>
@@ -258,7 +238,6 @@
   <string name="pref_cat_current_hack_main" formatted="false">Hauptsteuerung</string>
   <string name="pref_cat_current_hack_unsupported" formatted="false">Stromstärke-(mA)-Hack nicht unterstützt</string>
   <string name="pref_current_hack_unsupported" formatted="false">Der Stromstärke-(mA)-Hack wird auf diesem Gerät leider nicht unterstützt.</string>
-  <string name="current_hack_maybe_supported" formatted="false">Der Hack KÖNNTE auf diesem Gerät funktionieren.</string>
   <string name="pref_enable_current_hack" formatted="false">Hack aktivieren</string>
   <string name="pref_enable_current_hack_summary" formatted="false">Versuchen, den Stromstärke-(mA)-Hack zu aktivieren?</string>
   <string name="pref_enable_current_hack_help" formatted="false">Wenn diese Einstellung aktiviert ist, sind die übrigen Hack-Optionen nutzbar.</string>
@@ -290,8 +269,6 @@
   <string name="pref_enable_logging_help" formatted="false">Wenn aktiviert, protokolliert Battery Monitor Akku-Statusänderungen.</string>
   <string name="pref_max_log_age_help" formatted="false">Wenn die Protokollierung aktiv ist, werden beim Anschließen des Geräts ältere Protokolle gelöscht.</string>
   <string name="pref_notify_status_duration" formatted="false">Statusdauer anzeigen</string>
-  <string name="pref_notify_status_duration_summary" formatted="false">Zeit seit Statusänderung statt Restzeit anzeigen?</string>
-  <string name="pref_notify_status_duration_help" formatted="false">Aktivieren Sie dies, wenn die Hauptbenachrichtigung die Zeit seit Statusänderung zeigen soll.</string>
   <string name="pref_convert_to_fahrenheit_help" formatted="false">Android meldet die Akkutemperatur in Celsius. Aktivieren Sie diese Option, wenn Sie Fahrenheit bevorzugen.</string>
   <string name="pref_autostart_at_boot_help" formatted="false">Steuert, ob Battery Monitor beim Gerätestart automatisch gestartet werden soll.</string>
   <string name="predictor_sensitive" formatted="false">Sensitiv</string>
@@ -301,11 +278,9 @@
   <string name="pref_cat_predictor" formatted="false">Restzeit-Schätzungen</string>
   <string name="pref_prediction_type" formatted="false">Schätztyp</string>
   <string name="pref_prediction_type_help" formatted="false">Hier können Sie auswählen, wie Battery Monitor die verbleibende Akkulaufzeit bzw. die Zeit bis zur vollständigen Ladung schätzt.</string>
-  <string name="lang_system_selected" formatted="false">Vom System ausgewählt</string>
   <string name="pref_cat_language" formatted="false">Sprache</string>
   <string name="pref_language_override" formatted="false">Sprache überschreiben</string>
   <string name="pref_language_override_summary" formatted="false">Sprache auswählen:</string>
-  <string name="pref_language_override_help" formatted="false">Wenn die Übersetzung in Ihrer Sprache unvollständig oder ungenau ist, können Sie hier eine andere wählen.</string>
   <string name="pref_classic_color_mode" formatted="false">Klassischen Farbmodus erzwingen</string>
   <string name="pref_classic_color_mode_summary" formatted="false">Dies funktioniert meist nicht; bitte Hilfe lesen</string>
   <string name="pref_classic_color_mode_help" formatted="false">Seit Android 5.0 funktionieren farbige Benachrichtigungs-Icons offiziell nicht mehr überall.</string>
