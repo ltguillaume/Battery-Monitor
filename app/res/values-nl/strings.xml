@@ -122,11 +122,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">Tijd van status</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">Laat tijd sinds wijziging zien in de onderste regel van de melding?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">Stel dit in om de tijd sinds de laatste statuswijziging te laten zien in de onderste regel.</string>
-  <string name="system_default" formatted="false">Standaard</string>
-  <string name="black" formatted="false">Zwart</string>
-  <string name="white" formatted="false">Wit</string>
-  <string name="ics_blue" formatted="false">Blauw</string>
-  <string name="custom" formatted="false">Aangepast...</string>
   <string name="pref_cat_icon_set" formatted="false">Iconen</string>
   <string name="pref_icon_set" formatted="false">Iconen</string>
   <string name="pref_icon_set_help" formatted="false">Android bestaat in veel varianten, dus er is niet één perfecte iconenset die op elk apparaat goed werkt. Er zijn drie ingebouwde iconensets die voor vrijwel elk apparaat minstens één goede optie zouden moeten bieden.\n\n\"Klassiek\" is de oorspronkelijke iconenset uit 2009. Deze is nog steeds het beste op oudere apparaten, maar nieuwere Android-versies (vanaf Android 3.0, Honeycomb) verkleinen en dimmen meldingsiconen, waardoor deze set erg moeilijk leesbaar wordt.\n\n\"Gewoon nummer\" is de standaard op nieuwere Android-apparaten. Dit is een zeer groot wit cijfer dat ook na verkleinen en dimmen goed zichtbaar blijft. Tijdens het opladen verschijnt er een bliksemsymbool onder het cijfer.\n\n\"Kleiner nummer\" is zoals \"Gewoon nummer\", maar kleiner, omdat sommige nieuwere apparaten het icoon niet echt verkleinen zoals standaard Android dat doet. Daardoor kan het grote cijfer in \"Gewoon nummer\" op die apparaten komisch groot lijken.</string>
@@ -167,12 +162,6 @@
   <string name="boot_pref_always" formatted="false">Altijd</string>
   <string name="boot_pref_never" formatted="false">Nooit</string>
   <string name="boot_pref_if_running" formatted="false">Wanneer ingeschakeld bij afsluiten</string>
-  <string name="status_dur_always" formatted="false">Altijd</string>
-  <string name="status_dur_after_1h" formatted="false">Na 1 uur</string>
-  <string name="status_dur_after_2h" formatted="false">Na 2 uur</string>
-  <string name="status_dur_after_3h" formatted="false">Na 3 uur</string>
-  <string name="status_dur_after_6h" formatted="false">Na 6 uur</string>
-  <string name="status_dur_after_12h" formatted="false">Na 12 uur</string>
   <string name="age_1_day" formatted="false">1 dag</string>
   <string name="age_2_days" formatted="false">2 dagen</string>
   <string name="age_4_days" formatted="false">4 dagen</string>

@@ -116,12 +116,6 @@
   <string name="boot_pref_always" formatted="false">Visada</string>
   <string name="boot_pref_never" formatted="false">Niekada</string>
   <string name="boot_pref_if_running" formatted="false">Jei veikia išjungiant</string>
-  <string name="status_dur_always" formatted="false">Visada</string>
-  <string name="status_dur_after_1h" formatted="false">Po valandos</string>
-  <string name="status_dur_after_2h" formatted="false">Po 2-jų valandų</string>
-  <string name="status_dur_after_3h" formatted="false">Po 3-jų valandų</string>
-  <string name="status_dur_after_6h" formatted="false">Po 6-jų valandų</string>
-  <string name="status_dur_after_12h" formatted="false">Po 12-os valandų</string>
   <string name="age_1_day" formatted="false">1 diena</string>
   <string name="age_2_days" formatted="false">2 dienos</string>
   <string name="age_4_days" formatted="false">4 dienos</string>
@@ -270,11 +264,6 @@
   <string formatted="false" name="pref_status_duration_in_vital_signs_summary">Įtraukti laiką nuo būsenos pasikeitimo į gyvybinius požymius?</string>
   <string formatted="false" name="pref_status_duration_in_vital_signs_help">Jei nustatyta, gyvybinių požymių eilutėje taip pat bus nurodytas valandų skaičius
     nuo tada, kai įrenginys buvo atjungtas, prijungtas arba visiškai įkrautas.</string>
-  <string formatted="false" name="system_default">Numatytoji sistema</string>
-  <string formatted="false" name="black">Juoda</string>
-  <string formatted="false" name="white">Baltas</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">Pasirinktinis...</string>
   <string formatted="false" name="pref_cat_icon_set">Piktogramų rinkinys</string>
   <string formatted="false" name="pref_icon_set">Piktogramų rinkinys</string>
   <string formatted="false" name="pref_icon_content">Piktogramos turinys</string>

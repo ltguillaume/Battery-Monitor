@@ -121,11 +121,6 @@
   <string name="pref_bottom_line_content_help" formatted="false">Na raspolaganju su vam iste opcije i za donju i za gornju traku</string>
   <string name="time_remaining" formatted="false">Preostalo vreme</string>
   <string name="normal" formatted="false">Normalno</string>
-  <string name="system_default" formatted="false">Sistemska podešavanja</string>
-  <string name="black" formatted="false">Crno</string>
-  <string name="white" formatted="false">Belo</string>
-  <string name="ics_blue" formatted="false">Plavi android ICS</string>
-  <string name="custom" formatted="false">Personalizovano...</string>
   <string name="pref_cat_icon_set" formatted="false">Set ikonica</string>
   <string name="pref_icon_set" formatted="false">Set ikonica</string>
   <string name="pref_cat_current_hack_main" formatted="false">Glavna komanda</string>
@@ -187,12 +182,6 @@
   <string name="boot_pref_always" formatted="false">Uvek</string>
   <string name="boot_pref_never" formatted="false">Nikad</string>
   <string name="boot_pref_if_running" formatted="false">Ukoliko radi u trenutku gašenja</string>
-  <string name="status_dur_always" formatted="false">Uvek</string>
-  <string name="status_dur_after_1h" formatted="false">Nakon sat vremena</string>
-  <string name="status_dur_after_2h" formatted="false">Nakon 2 sata</string>
-  <string name="status_dur_after_3h" formatted="false">Nakon 3 sata</string>
-  <string name="status_dur_after_6h" formatted="false">Nakon 6 sati</string>
-  <string name="status_dur_after_12h" formatted="false">Nakon 12 sati</string>
   <string name="age_1_day" formatted="false">1 dan</string>
   <string name="age_2_days" formatted="false">2 dana</string>
   <string name="age_4_days" formatted="false">4 dana</string>

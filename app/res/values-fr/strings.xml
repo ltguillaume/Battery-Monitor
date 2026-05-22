@@ -123,12 +123,6 @@
   <string name="boot_pref_always" formatted="false">Toujours</string>
   <string name="boot_pref_never" formatted="false">Jamais</string>
   <string name="boot_pref_if_running" formatted="false">Si fonctionne lors de l\'arrêt</string>
-  <string name="status_dur_always" formatted="false">Toujours</string>
-  <string name="status_dur_after_1h" formatted="false">Après 1 heure</string>
-  <string name="status_dur_after_2h" formatted="false">Après 2 heures</string>
-  <string name="status_dur_after_3h" formatted="false">Après 3 heures</string>
-  <string name="status_dur_after_6h" formatted="false">Après 6 heures</string>
-  <string name="status_dur_after_12h" formatted="false">Après 12 heures</string>
   <string name="age_1_day" formatted="false">1 jour</string>
   <string name="age_2_days" formatted="false">2 jours</string>
   <string name="age_4_days" formatted="false">4 jours</string>
@@ -224,11 +218,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">Durée d’état dans les signes vitaux</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">Inclure le temps depuis changement d’état dans les signes vitaux ?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">Si activé, la ligne des signes vitaux inclura le temps depuis débranchement, branchement ou charge complète.</string>
-  <string name="system_default" formatted="false">Par défaut système</string>
-  <string name="black" formatted="false">Noir</string>
-  <string name="white" formatted="false">Blanc</string>
-  <string name="ics_blue" formatted="false">Bleu Android ICS</string>
-  <string name="custom" formatted="false">Personnalisé…</string>
   <string name="pref_cat_icon_set" formatted="false">Jeu d’icônes</string>
   <string name="pref_icon_set" formatted="false">Jeu d’icônes</string>
   <string name="pref_icon_content" formatted="false">Contenu de l’icône</string>

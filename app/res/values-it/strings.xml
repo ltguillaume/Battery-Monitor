@@ -137,12 +137,6 @@
   <string name="boot_pref_always" formatted="false">Sempre</string>
   <string name="boot_pref_never" formatted="false">Mai</string>
   <string name="boot_pref_if_running" formatted="false">Se è in esecuzione allo spegnimento</string>
-  <string name="status_dur_always" formatted="false">Sempre</string>
-  <string name="status_dur_after_1h" formatted="false">Dopo 1 ora</string>
-  <string name="status_dur_after_2h" formatted="false">Dopo 2 ore</string>
-  <string name="status_dur_after_3h" formatted="false">Dopo 3 ore</string>
-  <string name="status_dur_after_6h" formatted="false">Dopo 6 ore</string>
-  <string name="status_dur_after_12h" formatted="false">Dopo 12 ore</string>
   <string name="age_1_day" formatted="false">1 giorno</string>
   <string name="age_2_days" formatted="false">2 giorni</string>
   <string name="age_4_days" formatted="false">4 giorni</string>
@@ -226,11 +220,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">Durata stato nei segni vitali</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">Includere il tempo dal cambio stato nei segni vitali?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">Se impostato, la riga dei segni vitali includerà anche il numero di ore da quando il dispositivo è stato scollegato, collegato o completamente carico.</string>
-  <string name="system_default" formatted="false">Predefinito di sistema</string>
-  <string name="black" formatted="false">Nero</string>
-  <string name="white" formatted="false">Bianco</string>
-  <string name="ics_blue" formatted="false">Android ICS Blu</string>
-  <string name="custom" formatted="false">Personalizzato...</string>
   <string name="pref_cat_icon_set" formatted="false">Set icone</string>
   <string name="pref_icon_set" formatted="false">Set icone</string>
   <string name="pref_icon_content" formatted="false">Contenuto icona</string>

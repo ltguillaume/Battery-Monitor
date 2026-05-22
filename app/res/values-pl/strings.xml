@@ -123,11 +123,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">Czas trwania w stanie zdrowia</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">Uwzględnić czas od zmiany stanu w stanie zdrowia?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">Jeśli ustawisz, linia stanu zdrowia będzie zawierała również kiedy urządzenie zostało odłączone, podłączone lub w pełni naładowane.</string>
-  <string name="system_default" formatted="false">Ustawienia domyślne</string>
-  <string name="black" formatted="false">Czarny</string>
-  <string name="white" formatted="false">Biały</string>
-  <string name="ics_blue" formatted="false">Android ICS Niebieski</string>
-  <string name="custom" formatted="false">Własny...</string>
   <string name="pref_cat_icon_set" formatted="false">Zestaw ikon</string>
   <string name="pref_icon_set" formatted="false">Zestaw ikon</string>
   <string name="pref_icon_set_help" formatted="false">Android występuje w wielu odmianach, więc nie ma jednego idealnego zestawu ikon, który dobrze działa na każdym urządzeniu. Są trzy wbudowane zestawy ikon, które powinny zapewnić co najmniej jedną dobrą opcję dla praktycznie każdego urządzenia.\n\n\"Klasyczny\" to oryginalny zestaw ikon z 2009 roku. Nadal jest najlepszy na starszych urządzeniach, ale nowsze wersje Androida (od Androida 3.0, Honeycomb) zmniejszają i przyciemniają ikony powiadomień, przez co ten zestaw jest bardzo trudny do odczytania.\n\n\"Zwykły numer\" to domyślny wybór dla wszystkich nowszych urządzeń z Androidem. To bardzo duży biały numer, który pozostaje dobrze widoczny nawet po zmniejszeniu i przyciemnieniu. Podczas ładowania pod numerem pojawia się błyskawica.\n\n\"Mniejszy numer\" jest jak \"Zwykły numer\", tylko mniejszy, ponieważ niektóre nowsze urządzenia nie zmniejszają ikony tak jak czysty Android i bardzo duży numer w \"Zwykłym numerze\" może wyglądać na nich komicznie duży.</string>
@@ -168,12 +163,6 @@
   <string name="boot_pref_always" formatted="false">Zawsze</string>
   <string name="boot_pref_never" formatted="false">Nigdy</string>
   <string name="boot_pref_if_running" formatted="false">Jeżeli uruchomiona przy wyłączaniu</string>
-  <string name="status_dur_always" formatted="false">Zawsze</string>
-  <string name="status_dur_after_1h" formatted="false">Po 1 godzinie</string>
-  <string name="status_dur_after_2h" formatted="false">Po 2 godzinach</string>
-  <string name="status_dur_after_3h" formatted="false">Po 3 godzinach</string>
-  <string name="status_dur_after_6h" formatted="false">Po 6 godzinach</string>
-  <string name="status_dur_after_12h" formatted="false">Po 12 godzinach</string>
   <string name="age_1_day" formatted="false">1 dzień</string>
   <string name="age_2_days" formatted="false">2 dni</string>
   <string name="age_4_days" formatted="false">4 dni</string>

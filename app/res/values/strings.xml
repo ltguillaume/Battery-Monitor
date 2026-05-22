@@ -369,12 +369,6 @@
     since the device became unplugged, plugged in, or fully charged.
   </string>
 
-  <string formatted="false" name="system_default">System Default</string>
-  <string formatted="false" name="black">Black</string>
-  <string formatted="false" name="white">White</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">Custom...</string>
-
   <string formatted="false" name="pref_cat_icon_set">Icon Set</string>
   <string formatted="false" name="pref_icon_set">Icon Set</string>
   <string formatted="false" name="pref_icon_content">Icon Content</string>
@@ -680,13 +674,6 @@
   <string formatted="false" name="boot_pref_always">Always</string>
   <string formatted="false" name="boot_pref_never">Never</string>
   <string formatted="false" name="boot_pref_if_running">If running on shutdown</string>
-
-  <string formatted="false" name="status_dur_always">Always</string>
-  <string formatted="false" name="status_dur_after_1h">After 1 hour</string>
-  <string formatted="false" name="status_dur_after_2h">After 2 hours</string>
-  <string formatted="false" name="status_dur_after_3h">After 3 hours</string>
-  <string formatted="false" name="status_dur_after_6h">After 6 hours</string>
-  <string formatted="false" name="status_dur_after_12h">After 12 hours</string>
 
   <string formatted="false" name="age_1_day">1 day</string>
   <string formatted="false" name="age_2_days">2 days</string>

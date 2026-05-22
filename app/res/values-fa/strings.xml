@@ -238,11 +238,6 @@
   <string formatted="false" name="pref_status_duration_in_vital_signs_summary">شامل زمان از تغییر وضعیت در علائم حیاتی می شود؟</string>
   <string formatted="false" name="pref_status_duration_in_vital_signs_help">در صورت تنظیم، خط علائم حیاتی شامل تعداد ساعات نیز می شود
     از زمانی که دستگاه از برق جدا شده، وصل شده یا کاملاً شارژ شده است.</string>
-  <string formatted="false" name="system_default">پیش فرض سیستم</string>
-  <string formatted="false" name="black">مشکی</string>
-  <string formatted="false" name="white">سفید</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">سفارشی...</string>
   <string formatted="false" name="pref_cat_icon_set">مجموعه آیکون</string>
   <string formatted="false" name="pref_icon_set">مجموعه آیکون</string>
   <string formatted="false" name="pref_icon_content">محتوای آیکون</string>
@@ -469,12 +464,6 @@
   <string formatted="false" name="boot_pref_always">همیشه</string>
   <string formatted="false" name="boot_pref_never">هرگز</string>
   <string formatted="false" name="boot_pref_if_running">اگر در حالت خاموش شدن اجرا می شود</string>
-  <string formatted="false" name="status_dur_always">همیشه</string>
-  <string formatted="false" name="status_dur_after_1h">بعد از 1 ساعت</string>
-  <string formatted="false" name="status_dur_after_2h">بعد از 2 ساعت</string>
-  <string formatted="false" name="status_dur_after_3h">بعد از 3 ساعت</string>
-  <string formatted="false" name="status_dur_after_6h">بعد از 6 ساعت</string>
-  <string formatted="false" name="status_dur_after_12h">بعد از 12 ساعت</string>
   <string formatted="false" name="age_1_day">1 روز</string>
   <string formatted="false" name="age_2_days">2 روز</string>
   <string formatted="false" name="age_4_days">4 روز</string>

@@ -230,11 +230,6 @@
   <string formatted="false" name="pref_status_duration_in_vital_signs_summary">Incluir o tempo desde a mudança de status nos sinais vitais?</string>
   <string formatted="false" name="pref_status_duration_in_vital_signs_help">Se definida, a linha de sinais vitais também incluirá o número de horas
     desde que o dispositivo foi desconectado, conectado ou totalmente carregado.</string>
-  <string formatted="false" name="system_default">Padrão do sistema</string>
-  <string formatted="false" name="black">Preto</string>
-  <string formatted="false" name="white">Branco</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">Personalizado...</string>
   <string formatted="false" name="pref_cat_icon_set">Conjunto de ícones</string>
   <string formatted="false" name="pref_icon_set">Conjunto de ícones</string>
   <string formatted="false" name="pref_icon_content">Conteúdo do ícone</string>
@@ -461,12 +456,6 @@
   <string formatted="false" name="boot_pref_always">Sempre</string>
   <string formatted="false" name="boot_pref_never">Nunca</string>
   <string formatted="false" name="boot_pref_if_running">Se estiver executando no desligamento</string>
-  <string formatted="false" name="status_dur_always">Sempre</string>
-  <string formatted="false" name="status_dur_after_1h">Depois de 1 hora</string>
-  <string formatted="false" name="status_dur_after_2h">Depois de 2 horas</string>
-  <string formatted="false" name="status_dur_after_3h">Depois de 3 horas</string>
-  <string formatted="false" name="status_dur_after_6h">Depois de 6 horas</string>
-  <string formatted="false" name="status_dur_after_12h">Depois de 12 horas</string>
   <string formatted="false" name="age_1_day">1 dia</string>
   <string formatted="false" name="age_2_days">2 dias</string>
   <string formatted="false" name="age_4_days">4 dias</string>

@@ -130,12 +130,6 @@
   <string name="boot_pref_always" formatted="false">Immer</string>
   <string name="boot_pref_never" formatted="false">Nie</string>
   <string name="boot_pref_if_running" formatted="false">Wenn es beim Herunterfahren läuft</string>
-  <string name="status_dur_always" formatted="false">Immer</string>
-  <string name="status_dur_after_1h" formatted="false">Nach 1 Stunde</string>
-  <string name="status_dur_after_2h" formatted="false">Nach 2 Stunden</string>
-  <string name="status_dur_after_3h" formatted="false">Nach 3 Stunden</string>
-  <string name="status_dur_after_6h" formatted="false">Nach 6 Stunden</string>
-  <string name="status_dur_after_12h" formatted="false">Nach 12 Stunden</string>
   <string name="age_1_day" formatted="false">1 Tag</string>
   <string name="age_2_days" formatted="false">2 Tage</string>
   <string name="age_4_days" formatted="false">4 Tage</string>
@@ -215,11 +209,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">Statusdauer in Vitalzeichen</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">Zeit seit Statusänderung in Vitalzeichen einbeziehen?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">Wenn aktiviert, zeigt die Vitalzeichenzeile auch die Zeit seit Ausstecken, Einstecken oder Vollladung.</string>
-  <string name="system_default" formatted="false">Systemstandard</string>
-  <string name="black" formatted="false">Schwarz</string>
-  <string name="white" formatted="false">Weiß</string>
-  <string name="ics_blue" formatted="false">Android ICS Blau</string>
-  <string name="custom" formatted="false">Benutzerdefiniert...</string>
   <string name="pref_cat_icon_set" formatted="false">Icon-Set</string>
   <string name="pref_icon_set" formatted="false">Icon-Set</string>
   <string name="pref_icon_content" formatted="false">Icon-Inhalt</string>

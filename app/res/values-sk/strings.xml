@@ -114,12 +114,6 @@
   <string name="boot_pref_always" formatted="false">Vždy</string>
   <string name="boot_pref_never" formatted="false">Nikdy</string>
   <string name="boot_pref_if_running" formatted="false">Ak je spustený pri vypínaní</string>
-  <string name="status_dur_always" formatted="false">Vždy</string>
-  <string name="status_dur_after_1h" formatted="false">Po 1 hodine</string>
-  <string name="status_dur_after_2h" formatted="false">Po 2 hodinách</string>
-  <string name="status_dur_after_3h" formatted="false">Po 3 hodinách</string>
-  <string name="status_dur_after_6h" formatted="false">Po 6 hodinách</string>
-  <string name="status_dur_after_12h" formatted="false">Po 12 hodinách</string>
   <string name="age_1_day" formatted="false">1 deň</string>
   <string name="age_2_days" formatted="false">2 dni</string>
   <string name="age_4_days" formatted="false">4 dni</string>
@@ -275,11 +269,6 @@
   <string formatted="false" name="pref_status_duration_in_vital_signs_summary">Zahrnúť čas od zmeny stavu do vitálnych funkcií?</string>
   <string formatted="false" name="pref_status_duration_in_vital_signs_help">Ak je nastavené, riadok vitálnych funkcií bude obsahovať aj počet hodín
     odkedy sa zariadenie odpojilo, zapojilo alebo úplne nabilo.</string>
-  <string formatted="false" name="system_default">Predvolené nastavenie systému</string>
-  <string formatted="false" name="black">Čierna</string>
-  <string formatted="false" name="white">Biela</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">Vlastné...</string>
   <string formatted="false" name="pref_cat_icon_set">Sada ikon</string>
   <string formatted="false" name="pref_icon_set">Sada ikon</string>
   <string formatted="false" name="pref_icon_content">Obsah ikony</string>

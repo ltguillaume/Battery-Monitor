@@ -26,3 +26,4 @@
 
 - Updated target SDK to 37 and upgraded SDK/Gradle toolchain.
 - Added release GitHub Action.
+- Cleaned up unused resources.

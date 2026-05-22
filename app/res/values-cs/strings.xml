@@ -234,12 +234,7 @@
     Pokud je nastaveno, řádek vitálních funkcí bude obsahovat také počet hodin
         protože se zařízení odpojilo, zapojilo nebo plně nabilo.
   </string>
-  <string formatted="false" name="system_default">Výchozí nastavení systému</string>
-  <string formatted="false" name="black">Černý</string>
-  <string formatted="false" name="white">Bílý</string>
-  <string formatted="false" name="ics_blue">Android ICS Modrá</string>
-  <string formatted="false" name="custom">Zvyk...</string>
-  <string formatted="false" name="pref_cat_icon_set">Sada ikon</string>
+    <string formatted="false" name="pref_cat_icon_set">Sada ikon</string>
   <string formatted="false" name="pref_icon_set">Sada ikon</string>
   <string formatted="false" name="pref_icon_content">Obsah ikony</string>
   <string formatted="false" name="pref_icon_content_help">
@@ -476,13 +471,7 @@
   <string formatted="false" name="boot_pref_always">Vždy</string>
   <string formatted="false" name="boot_pref_never">Nikdy</string>
   <string formatted="false" name="boot_pref_if_running">Ručně</string>
-  <string formatted="false" name="status_dur_always">Vždy</string>
-  <string formatted="false" name="status_dur_after_1h">Po 1 hodině</string>
-  <string formatted="false" name="status_dur_after_2h">Po 2 hodinách</string>
-  <string formatted="false" name="status_dur_after_3h">Po 3 hodinách</string>
-  <string formatted="false" name="status_dur_after_6h">Po 6 hodinách</string>
-  <string formatted="false" name="status_dur_after_12h">Po 12 hodinách</string>
-  <string formatted="false" name="age_1_day">1 den</string>
+    <string formatted="false" name="age_1_day">1 den</string>
   <string formatted="false" name="age_2_days">2 dny</string>
   <string formatted="false" name="age_4_days">4 dny</string>
   <string formatted="false" name="age_1_week">1 týden</string>

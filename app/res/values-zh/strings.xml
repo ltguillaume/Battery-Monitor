@@ -96,12 +96,6 @@
   <string name="boot_pref_always" formatted="false">始終</string>
   <string name="boot_pref_never" formatted="false">從不</string>
   <string name="boot_pref_if_running" formatted="false">關機時運行</string>
-  <string name="status_dur_always" formatted="false">始終</string>
-  <string name="status_dur_after_1h" formatted="false">一小時後</string>
-  <string name="status_dur_after_2h" formatted="false">兩小時後</string>
-  <string name="status_dur_after_3h" formatted="false">三小時後</string>
-  <string name="status_dur_after_6h" formatted="false">六小時後</string>
-  <string name="status_dur_after_12h" formatted="false">十二小時後</string>
   <string name="age_1_day" formatted="false">一天</string>
   <string name="age_2_days" formatted="false">兩天</string>
   <string name="age_4_days" formatted="false">四天</string>
@@ -294,11 +288,6 @@
   <string formatted="false" name="pref_status_duration_in_vital_signs_summary">包括生命徵象狀態變化後的時間？</string>
   <string formatted="false" name="pref_status_duration_in_vital_signs_help">如果設置，生命體徵行還將包括小時數
     設備被拔出、插入或充滿電後。</string>
-  <string formatted="false" name="system_default">系統預設值</string>
-  <string formatted="false" name="black">黑色的</string>
-  <string formatted="false" name="white">白色的</string>
-  <string formatted="false" name="ics_blue">Android ICS 藍色</string>
-  <string formatted="false" name="custom">風俗...</string>
   <string formatted="false" name="pref_icon_content">圖示內容</string>
   <string formatted="false" name="pref_icon_content_help">選擇狀態列圖示是否顯示電池百分比或
     電池溫度。溫度遵循您選擇的單位。</string>

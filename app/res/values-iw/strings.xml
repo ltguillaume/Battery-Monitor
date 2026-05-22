@@ -85,11 +85,6 @@
   <string name="condensed" formatted="false">דחוס</string>
   <string name="normal" formatted="false">רגיל</string>
   <string name="verbose" formatted="false">מילולי</string>
-  <string name="system_default" formatted="false">ברירת-המחדל של המערכת</string>
-  <string name="black" formatted="false">שחור</string>
-  <string name="white" formatted="false">לבן</string>
-  <string name="ics_blue" formatted="false">כחול של אנדרואיד ICS</string>
-  <string name="custom" formatted="false">מותאם...</string>
   <string name="pref_cat_icon_set" formatted="false">ערכת סמלים</string>
   <string name="pref_icon_set" formatted="false">ערכת סמלים</string>
   <string name="pref_cat_current_hack_main" formatted="false">בקרה ראשית</string>
@@ -448,12 +443,6 @@
   <string formatted="false" name="boot_pref_always">תָמִיד</string>
   <string formatted="false" name="boot_pref_never">לְעוֹלָם לֹא</string>
   <string formatted="false" name="boot_pref_if_running">אם פועל בכיבוי</string>
-  <string formatted="false" name="status_dur_always">תָמִיד</string>
-  <string formatted="false" name="status_dur_after_1h">לאחר שעה</string>
-  <string formatted="false" name="status_dur_after_2h">לאחר שעתיים</string>
-  <string formatted="false" name="status_dur_after_3h">לאחר 3 שעות</string>
-  <string formatted="false" name="status_dur_after_6h">לאחר 6 שעות</string>
-  <string formatted="false" name="status_dur_after_12h">לאחר 12 שעות</string>
   <string formatted="false" name="age_1_day">יום אחד</string>
   <string formatted="false" name="age_2_days">2 ימים</string>
   <string formatted="false" name="age_4_days">4 ימים</string>

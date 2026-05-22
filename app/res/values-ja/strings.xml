@@ -180,11 +180,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">バイタルサインにステータスの期間を含める</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">バイタルサインにステータスが変わってからの時間を含めますか?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">設定した場合は、デバイスのプラグを抜いた、挿した、またはフル充電 されてからの時間が、バイタルサインの行に含まれます。</string>
-  <string name="system_default" formatted="false">システムデフォルト</string>
-  <string name="black" formatted="false">黒</string>
-  <string name="white" formatted="false">白</string>
-  <string name="ics_blue" formatted="false">Android ICS 青</string>
-  <string name="custom" formatted="false">カスタマイズ...</string>
   <string name="pref_cat_icon_set" formatted="false">アイコンセット</string>
   <string name="pref_icon_set" formatted="false">アイコンセット</string>
   <string name="pref_icon_content" formatted="false">アイコン内容</string>
@@ -264,12 +259,6 @@
   <string name="boot_pref_always" formatted="false">常に</string>
   <string name="boot_pref_never" formatted="false">なし</string>
   <string name="boot_pref_if_running" formatted="false">シャットダウン時に実行中の場合</string>
-  <string name="status_dur_always" formatted="false">常に</string>
-  <string name="status_dur_after_1h" formatted="false">1 時間後</string>
-  <string name="status_dur_after_2h" formatted="false">2 時間後</string>
-  <string name="status_dur_after_3h" formatted="false">3 時間後</string>
-  <string name="status_dur_after_6h" formatted="false">6 時間後</string>
-  <string name="status_dur_after_12h" formatted="false">12 時間後</string>
   <string name="age_1_day" formatted="false">1 日</string>
   <string name="age_2_days" formatted="false">2 日</string>
   <string name="age_4_days" formatted="false">4 日</string>

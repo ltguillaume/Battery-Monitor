@@ -230,11 +230,6 @@
   <string formatted="false" name="pref_status_duration_in_vital_signs_summary">Includeți timpul de la schimbarea stării în semnele vitale?</string>
   <string formatted="false" name="pref_status_duration_in_vital_signs_help">Dacă este setată, linia semnelor vitale va include și numărul de ore
     deoarece dispozitivul a fost deconectat, conectat sau încărcat complet.</string>
-  <string formatted="false" name="system_default">Implicit sistem</string>
-  <string formatted="false" name="black">Negru</string>
-  <string formatted="false" name="white">Alb</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">Personalizat...</string>
   <string formatted="false" name="pref_cat_icon_set">Set de pictograme</string>
   <string formatted="false" name="pref_icon_set">Set de pictograme</string>
   <string formatted="false" name="pref_icon_content">Conținutul pictogramei</string>
@@ -461,12 +456,6 @@
   <string formatted="false" name="boot_pref_always">Întotdeauna</string>
   <string formatted="false" name="boot_pref_never">Nu</string>
   <string formatted="false" name="boot_pref_if_running">Dacă rulează la oprire</string>
-  <string formatted="false" name="status_dur_always">Întotdeauna</string>
-  <string formatted="false" name="status_dur_after_1h">După 1 oră</string>
-  <string formatted="false" name="status_dur_after_2h">După 2 ore</string>
-  <string formatted="false" name="status_dur_after_3h">După 3 ore</string>
-  <string formatted="false" name="status_dur_after_6h">După 6 ore</string>
-  <string formatted="false" name="status_dur_after_12h">După 12 ore</string>
   <string formatted="false" name="age_1_day">1 zi</string>
   <string formatted="false" name="age_2_days">2 zile</string>
   <string formatted="false" name="age_4_days">4 zile</string>

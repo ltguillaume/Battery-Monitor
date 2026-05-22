@@ -234,12 +234,7 @@
     Εάν οριστεί, η γραμμή ζωτικών σημείων θα περιλαμβάνει επίσης τον αριθμό των ωρών
         αφού η συσκευή αποσυνδέθηκε, συνδέθηκε ή φορτίστηκε πλήρως.
   </string>
-  <string formatted="false" name="system_default">Προεπιλογή συστήματος</string>
-  <string formatted="false" name="black">Μαύρος</string>
-  <string formatted="false" name="white">Λευκό</string>
-  <string formatted="false" name="ics_blue">Android ICS Blue</string>
-  <string formatted="false" name="custom">Εθιμο...</string>
-  <string formatted="false" name="pref_cat_icon_set">Σύνολο εικονιδίων</string>
+    <string formatted="false" name="pref_cat_icon_set">Σύνολο εικονιδίων</string>
   <string formatted="false" name="pref_icon_set">Σύνολο εικονιδίων</string>
   <string formatted="false" name="pref_icon_content">Περιεχόμενο εικονιδίου</string>
   <string formatted="false" name="pref_icon_content_help">
@@ -440,13 +435,7 @@
   <string formatted="false" name="boot_pref_always">Πάντα</string>
   <string formatted="false" name="boot_pref_never">Ποτέ</string>
   <string formatted="false" name="boot_pref_if_running">Αν ήταν ενεργό στην απενεργοποίηση</string>
-  <string formatted="false" name="status_dur_always">Πάντα</string>
-  <string formatted="false" name="status_dur_after_1h">Μετά από 1 ώρα</string>
-  <string formatted="false" name="status_dur_after_2h">Μετά από 2 ώρες</string>
-  <string formatted="false" name="status_dur_after_3h">Μετά από 3 ώρες</string>
-  <string formatted="false" name="status_dur_after_6h">Μετά από 6 ώρες</string>
-  <string formatted="false" name="status_dur_after_12h">Μετά από 12 ώρες</string>
-  <string formatted="false" name="age_1_day">1 μέρα</string>
+    <string formatted="false" name="age_1_day">1 μέρα</string>
   <string formatted="false" name="age_2_days">2 μέρες</string>
   <string formatted="false" name="age_4_days">4 μέρες</string>
   <string formatted="false" name="age_1_week">1 εβδομάδα</string>

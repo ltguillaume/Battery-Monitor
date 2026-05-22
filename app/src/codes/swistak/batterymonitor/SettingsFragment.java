@@ -63,9 +63,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_CLASSIC_COLOR_MODE = "classic_color_mode";
     public static final String KEY_STATUS_DUR_EST = "status_dur_est";
     public static final String KEY_CAT_CLASSIC_COLOR_MODE = "category_classic_color_mode";
-    public static final String KEY_CAT_COLOR = "category_color";
     public static final String KEY_CAT_CHARGING_INDICATOR = "category_charging_indicator";
-    public static final String KEY_CAT_PLUGIN_SETTINGS = "category_plugin_settings";
     public static final String KEY_PLUGIN_SETTINGS = "plugin_settings";
     public static final String KEY_INDICATE_CHARGING = "indicate_charging";
     public static final String KEY_CAT_STATUS_BAR_CHIP = "category_status_bar_chip";
@@ -78,7 +76,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements OnShar
     public static final String KEY_AMBER_THRESH = "amber_threshold";
     public static final String KEY_GREEN = "use_green";
     public static final String KEY_GREEN_THRESH = "green_threshold";
-    public static final String KEY_COLOR_PREVIEW = "color_preview";
     public static final String KEY_TOP_LINE = "top_line";
     public static final String KEY_BOTTOM_LINE = "bottom_line";
     public static final String KEY_TIME_REMAINING_VERBOSITY = "time_remaining_verbosity";

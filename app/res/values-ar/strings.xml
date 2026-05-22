@@ -128,11 +128,6 @@
   <string name="pref_status_duration_in_vital_signs" formatted="false">مدة الوضع في العلامات الحيوية</string>
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">الوقت الماضي منذ تغيير الحالة</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">اذا تم ضبط العلامات الحيوية سوف بيلغك ان الجهاز كم من الزمن مضى من الشحن والتفريغ</string>
-  <string name="system_default" formatted="false">النظام الافتراضي</string>
-  <string name="black" formatted="false">اسود</string>
-  <string name="white" formatted="false">ابيض</string>
-  <string name="ics_blue" formatted="false">نظام الاندرويد ايس كريم ساندويش ازرق</string>
-  <string name="custom" formatted="false">مخصص</string>
   <string name="pref_cat_icon_set" formatted="false">ضبط ايقونة</string>
   <string name="pref_icon_set" formatted="false">ضبط الايقونة</string>
   <string name="pref_icon_set_help" formatted="false">يتوفر Android في أشكال كثيرة، لذلك لا توجد مجموعة أيقونات واحدة مثالية تعمل جيدًا على كل جهاز. توجد ثلاث مجموعات أيقونات مدمجة يفترض أن توفر على الأقل خيارًا جيدًا واحدًا لمعظم الأجهزة.\n\n\"الكلاسيكي\" هو مجموعة الأيقونات الأصلية منذ عام 2009. وما يزال الأفضل على الأجهزة الأقدم، لكن الإصدارات الأحدث من Android (ابتداءً من Android 3.0 Honeycomb) تصغّر أيقونات الإشعارات وتخفّض سطوعها، مما يجعل قراءة هذه المجموعة صعبة جدًا.\n\n\"الرقم العادي\" هو الخيار الافتراضي في أجهزة Android الأحدث. وهو رقم أبيض كبير جدًا يبقى واضحًا حتى بعد التصغير والتعتيم. ويظهر رمز البرق أسفل الرقم أثناء الشحن.\n\n\"رقم أصغر\" يشبه \"الرقم العادي\" لكنه أصغر حجمًا، لأن بعض الأجهزة الأحدث لا تصغّر الأيقونة فعليًا كما يفعل Android القياسي، وعندها قد يبدو الرقم الكبير جدًا في \"الرقم العادي\" كبيرًا بشكل مبالغ فيه.</string>
@@ -180,12 +175,6 @@
   <string name="boot_pref_always" formatted="false">دائما</string>
   <string name="boot_pref_never" formatted="false">ابدا</string>
   <string name="boot_pref_if_running" formatted="false">اذا كان مغلق</string>
-  <string name="status_dur_always" formatted="false">دائما</string>
-  <string name="status_dur_after_1h" formatted="false">بعد ساعة واحد</string>
-  <string name="status_dur_after_2h" formatted="false">بعد ساعتين</string>
-  <string name="status_dur_after_3h" formatted="false">بعد ثلاث ساعات</string>
-  <string name="status_dur_after_6h" formatted="false">بعد ست ساعات</string>
-  <string name="status_dur_after_12h" formatted="false">بعد 12 ساعة</string>
   <string name="age_1_day" formatted="false">يوم واحد</string>
   <string name="age_2_days" formatted="false">يومان</string>
   <string name="age_4_days" formatted="false">اربعة ايام</string>
