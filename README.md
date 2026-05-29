@@ -4,6 +4,12 @@
 
 <h1 align="center">Battery Monitor</h1>
 
+<p align="center">
+  <a href="https://github.com/tswistak/Battery-Monitor/releases/latest">
+    <img src="docs/assets/badge_github.png" alt="Download on GitHub" height="80" />
+  </a>
+</p>
+
 Battery Monitor is a classic, no-nonsense Android battery app focused on clarity, reliability, and control.
 
 See battery status at a glance, get meaningful notifications, and track battery behavior over time.
