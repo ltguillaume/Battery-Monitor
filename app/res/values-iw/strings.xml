@@ -88,8 +88,6 @@
   <string name="pref_cat_icon_set" formatted="false">ערכת סמלים</string>
   <string name="pref_icon_set" formatted="false">ערכת סמלים</string>
   <string name="pref_cat_current_hack_main" formatted="false">בקרה ראשית</string>
-
-  <string formatted="false" name="app_full_name">Battery Monitor</string>
   <string formatted="false" name="confirm_close_hint">אישור סגירה של האפליקציה.</string>
   <string formatted="false" name="notifications_disabled_message">חסמת את כל ההתראות עבור Battery Monitor.  צוואה זו
     למנוע מBattery Monitor להציג הודעות כלשהן: הראשי

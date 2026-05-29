@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string formatted="false" name="app_full_name">Battery Monitor</string>
+  <string formatted="false" name="app_full_name" translatable="false">Battery Monitor</string>
   <string formatted="false" name="app_launcher_name">Battery Monitor</string>
   <string formatted="false" name="settings_activity_subtitle">Settings</string>
   <string formatted="false" name="help_activity_subtitle">Battery Monitor Help</string>
