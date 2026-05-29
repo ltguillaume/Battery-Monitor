@@ -274,6 +274,7 @@
     <item quantity="one">%d Saat için</item>
     <item quantity="other">%d Saat için</item>
   </plurals>
+  <string formatted="false" name="custom">Özel...</string>
   <string formatted="false" name="alarm_custom_temp_message">Sıcaklığı %s derece cinsinden girin</string>
   <string formatted="false" name="alarm_custom_charge_message">Ücret yüzdesini girin (0-100)</string>
 </resources>

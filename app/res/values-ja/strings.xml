@@ -310,6 +310,7 @@
     <item quantity="one">%d 時間</item>
     <item quantity="other">%d 時間</item>
   </plurals>
+  <string formatted="false" name="custom">カスタム...</string>
   <string formatted="false" name="alarm_custom_temp_message">温度を%s度で入力してください</string>
   <string formatted="false" name="alarm_custom_charge_message">充電率を入力してください (0 ～ 100)</string>
 </resources>

@@ -322,6 +322,7 @@
     <item quantity="few">Za %d sata</item>
     <item quantity="other">Za %d sati</item>
   </plurals>
+  <string formatted="false" name="custom">Прилагођено...</string>
   <string formatted="false" name="alarm_custom_temp_message">Унесите температуру у ЗЗПХ0ЗЗ степенима</string>
   <string formatted="false" name="alarm_custom_charge_message">Унесите проценат наплате (0-100)</string>
 </resources>

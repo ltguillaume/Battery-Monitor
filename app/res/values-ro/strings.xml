@@ -469,6 +469,7 @@
   <string formatted="false" name="pref_content_percent">Procentul bateriei</string>
   <string formatted="false" name="pref_content_temperature">Temperatura bateriei</string>
   <string formatted="false" name="pref_content_switching">Comutați între ambele</string>
-  <string formatted="false" name="alarm_custom_temp_message">Introduceți temperatura în grade %s</string>
+  <string formatted="false" name="custom">Personalizat...</string>
+  <string formatted="false" name="alarm_custom_temp_message">Introduceți temperatura n grade %s</string>
   <string formatted="false" name="alarm_custom_charge_message">Introduceți procentajul de taxare (0-100)</string>
 </resources>

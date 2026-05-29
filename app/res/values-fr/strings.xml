@@ -280,6 +280,7 @@
     <item quantity="one">depuis %d heure</item>
     <item quantity="other">depuis %d heures</item>
   </plurals>
-  <string formatted="false" name="alarm_custom_temp_message">Entrez la température en degrés %s</string>
+  <string formatted="false" name="custom">Personnalisé...</string>
+  <string formatted="false" name="alarm_custom_temp_message">Entrez la temprature en degrs %s</string>
   <string formatted="false" name="alarm_custom_charge_message">Entrez le pourcentage de frais (0-100)</string>
 </resources>

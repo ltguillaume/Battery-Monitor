@@ -477,6 +477,7 @@
   <string formatted="false" name="pref_content_percent">درصد باتری</string>
   <string formatted="false" name="pref_content_temperature">دمای باتری</string>
   <string formatted="false" name="pref_content_switching">بین هر دو جابجا شوید</string>
+  <string formatted="false" name="custom">سفارشی...</string>
   <string formatted="false" name="alarm_custom_temp_message">دما را بر حسب %s درجه وارد کنید</string>
   <string formatted="false" name="alarm_custom_charge_message">درصد شارژ را وارد کنید (0-100)</string>
 </resources>

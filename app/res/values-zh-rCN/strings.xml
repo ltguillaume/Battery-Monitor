@@ -435,6 +435,7 @@
   <string formatted="false" name="pref_content_percent">电池电量百分比</string>
   <string formatted="false" name="pref_content_temperature">电池温度</string>
   <string formatted="false" name="pref_content_switching">两者之间切换</string>
+  <string formatted="false" name="custom">自定义...</string>
   <string formatted="false" name="alarm_custom_temp_message">输入 %s 度的温度</string>
   <string formatted="false" name="alarm_custom_charge_message">输入费用百分比（0-100）</string>
 </resources>

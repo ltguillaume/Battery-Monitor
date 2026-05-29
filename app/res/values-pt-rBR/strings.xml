@@ -469,6 +469,7 @@
   <string formatted="false" name="pref_content_percent">Porcentagem de bateria</string>
   <string formatted="false" name="pref_content_temperature">Temperatura da bateria</string>
   <string formatted="false" name="pref_content_switching">Alternar entre ambos</string>
+  <string formatted="false" name="custom">Personalizado...</string>
   <string formatted="false" name="alarm_custom_temp_message">Insira a temperatura em graus %s</string>
   <string formatted="false" name="alarm_custom_charge_message">Insira a porcentagem de cobrança (0-100)</string>
 </resources>

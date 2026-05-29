@@ -303,6 +303,8 @@
   <string name="pref_status_duration_in_vital_signs_summary" formatted="false">Czy uwzględnić czas od zmiany stanu w parametrach?</string>
   <string name="pref_status_duration_in_vital_signs_help" formatted="false">Jeśli ustawione, wiersz z parametrami będzie również uwzględniać liczbę godzin od momentu odłączenia, podłączenia lub w pełni naładowania urządzenia.</string>
 
+  <string formatted="false" name="custom">Niestandardowe...</string>
+
   <string name="pref_cat_icon_set" formatted="false">Zestaw ikon</string>
   <string name="pref_icon_set" formatted="false">Zestaw ikon</string>
   <string name="pref_icon_content" formatted="false">Zawartość ikony</string>

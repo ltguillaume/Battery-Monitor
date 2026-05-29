@@ -326,6 +326,7 @@
     <item quantity="many">В течение %d часов</item>
     <item quantity="other">В течение %d часа</item>
   </plurals>
+  <string formatted="false" name="custom">Настраиваемый...</string>
   <string formatted="false" name="alarm_custom_temp_message">Введите температуру в градусах %s.</string>
   <string formatted="false" name="alarm_custom_charge_message">Введите процент заряда (0-100)</string>
 </resources>

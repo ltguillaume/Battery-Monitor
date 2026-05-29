@@ -484,6 +484,7 @@
   <string formatted="false" name="pref_content_percent">Procento baterie</string>
   <string formatted="false" name="pref_content_temperature">Teplota baterie</string>
   <string formatted="false" name="pref_content_switching">Přepínejte mezi oběma</string>
-  <string formatted="false" name="alarm_custom_temp_message">Zadejte teplotu ve stupních %s</string>
+  <string formatted="false" name="custom">Vlastní...</string>
+  <string formatted="false" name="alarm_custom_temp_message">Zadejte teplotu ve stupnch %s</string>
   <string formatted="false" name="alarm_custom_charge_message">Zadejte procento poplatku (0–100)</string>
 </resources>

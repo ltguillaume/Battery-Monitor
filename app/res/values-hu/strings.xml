@@ -291,6 +291,7 @@
     <item quantity="one">%d órája</item>
     <item quantity="other">%d órája</item>
   </plurals>
-  <string formatted="false" name="alarm_custom_temp_message">Adja meg a hőmérsékletet %s fokban</string>
+  <string formatted="false" name="custom">Egyéni...</string>
+  <string formatted="false" name="alarm_custom_temp_message">Adja meg a hőmrskletet %s fokban</string>
   <string formatted="false" name="alarm_custom_charge_message">Adja meg a terhelési százalékot (0-100)</string>
 </resources>
