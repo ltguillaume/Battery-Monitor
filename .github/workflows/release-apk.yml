@@ -73,6 +73,34 @@ jobs:
             echo "prerelease=false" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Build release notes from CHANGELOG
+        id: changelog_notes
+        shell: bash
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          BASE_VERSION="${TAG%%[-+]*}"
+          NOTES_FILE="dist/release-notes.md"
+
+          if [[ ! -f CHANGELOG.md ]]; then
+            echo "CHANGELOG.md not found"
+            exit 1
+          fi
+
+          awk -v version="$BASE_VERSION" '
+            BEGIN { in_section=0; found=0 }
+            $0 ~ "^## " version "$" { in_section=1; found=1; next }
+            in_section && $0 ~ "^## " { exit }
+            in_section { print }
+            END { if (!found) exit 2 }
+          ' CHANGELOG.md > "$NOTES_FILE"
+
+          if [[ ! -s "$NOTES_FILE" ]]; then
+            echo "No release notes content found for version $BASE_VERSION in CHANGELOG.md"
+            exit 1
+          fi
+
+          echo "notes_path=$NOTES_FILE" >> "$GITHUB_OUTPUT"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
@@ -80,5 +108,6 @@ jobs:
           name: ${{ github.ref_name }}
           prerelease: ${{ steps.release_channel.outputs.prerelease }}
           generate_release_notes: false
+          body_path: ${{ steps.changelog_notes.outputs.notes_path }}
           files: |
             dist/battery-monitor-${{ github.ref_name }}.apk
