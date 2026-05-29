@@ -81,6 +81,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+
         release {
             if (isReleaseBuildRequested && (!releaseStoreFileProp || !releaseStorePasswordProp || !releaseKeyAliasProp || !releaseKeyPasswordProp)) {
                 throw new GradleException(
