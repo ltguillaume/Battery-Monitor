@@ -6,15 +6,15 @@
   <string formatted="false" name="help_activity_subtitle">Battery Monitor Help</string>
 
   <string formatted="false" name="battery_use_b">View Battery Use</string>
-  <string formatted="false" name="circle_widget">Battery Monitor Circle</string>
-  <string formatted="false" name="full_widget">Battery Monitor Full</string>
+  <string formatted="false" name="circle_widget">Circle</string>
+  <string formatted="false" name="full_widget">Full</string>
   <string formatted="false" name="yes">Yes</string>
   <string formatted="false" name="cancel">Cancel</string>
 
   <string formatted="false" name="confirm_close">Really Close?</string>
   <string formatted="false" name="confirm_close_hint">
     Battery Monitor will be completely closed, and you won\'t see it
-    in your status bar anymore.  Any desktop widgets will be useless.\n
+    in your status bar anymore. Any home screen widgets will be useless.\n
 
     \nIf you just want to leave the main window and keep the service
     running, press Cancel and then just press your device\'s BACK
@@ -26,14 +26,14 @@
 
   <string formatted="false" name="notifications_disabled">Notifications are disabled!</string>
   <string formatted="false" name="notifications_disabled_message">
-    You have blocked all notifications for Battery Monitor.  This will
-    prevent Battery Monitor from showing any notifications: the main
+    You have turned off all notifications for Battery Monitor. This will
+    prevent the app from showing any notifications: the main
     notification and any alarms you have set will all be blocked.\n
 
     \nSince Battery Monitor allows you to turn the main notification on or off
     separately, as well as temporarily disable any alarms
-    you\'ve created, it is stongly recommended that you unblock the
-    Battery Monitor notifications.  While they are blocked, it will appear
+    you\'ve created, it is strongly recommended that you unblock the
+    app notifications. While they are blocked, it will appear
     that Battery Monitor is broken.\n
 
     \nPlease press OK to be taken to the system settings where you can
@@ -63,7 +63,7 @@
 
   <string formatted="false" name="okay">Okay</string>
 
-  <string formatted="false" name="tab_current_info">Current Info</string>
+  <string formatted="false" name="tab_current_info">Current state</string>
   <string formatted="false" name="tab_history">History</string>
 
   <string formatted="false" name="notification_until_charged">" until charged"</string>
@@ -90,11 +90,11 @@
   <string formatted="false" name="celsius_symbol">C</string>
   <string formatted="false" name="volt_symbol">V</string>
 
-  <string formatted="false" name="inaccessible_storage">SD Card is inaccessible.</string>
+  <string formatted="false" name="inaccessible_storage">SD Card is inaccessible</string>
   <string formatted="false" name="inaccessible_w_reason">SD Card inaccessible: </string>
-  <string formatted="false" name="read_only_storage">SD Card is read only.</string>
+  <string formatted="false" name="read_only_storage">SD Card is read only</string>
   <string formatted="false" name="no_storage_permission">Storage permission not granted.</string>
-  <string formatted="false" name="file_written">File successfully written to selected location.</string>
+  <string formatted="false" name="file_written">File successfully written to selected location</string>
 
   <!-- These are used for the CSV export. -->
   <string formatted="false" name="date">date</string>
@@ -117,7 +117,7 @@
 
   <string formatted="false" name="health_unknown">Unknown</string>
   <string formatted="false" name="health_good">Good Health</string>
-  <string formatted="false" name="health_overheat">Overheat</string>
+  <string formatted="false" name="health_overheat">Overheated</string>
   <string formatted="false" name="health_dead">Dead</string>
   <string formatted="false" name="health_overvoltage">Overvoltage</string>
   <string formatted="false" name="health_failure">Failure</string>
@@ -302,13 +302,12 @@
   </string>
   <string formatted="false" name="other_settings">Other Settings</string>
   <string formatted="false" name="other_settings_help">
-    All other settings are on this page, including logging, lock
-    screen, temperature unit, autostart, and more.
+    All other settings are on this page, including logging, temperature unit, autostart, and more.
   </string>
 
   <string name="live_updates_onboarding_title">Status Bar Battery Chip</string>
   <string name="live_updates_onboarding_message_on">Your device supports showing the battery percentage as a chip in the status bar. This is enabled by default.\n\nIf you prefer a traditional notification icon, you can turn off \"Live Updates\" in Android\'s system settings for this app.\n\nNote: Granting this permission may occasionally cause the app to close. If it does, please simply reopen it.</string>
-  <string name="live_updates_onboarding_message_off">Your device supports showing the battery percentage as a chip in the status bar, but it is currently disabled in system settings.\n\nWe recommend enabling it for the best experience. If you prefer a traditional notification icon, you can leave it disabled.\n\nNote: Granting this permission may occasionally cause the app to close. If it does, please simply reopen it.</string>
+  <string name="live_updates_onboarding_message_off">Your device supports showing the battery percentage as a chip in the status bar, but it is currently disabled in system settings.\n\nEnabling it is recommended for the best experience. If you prefer a traditional notification icon, you can leave it disabled.\n\nNote: Granting this permission may occasionally cause the app to close. If it does, please simply reopen it.</string>
   <string name="live_updates_onboarding_positive_on">Got it</string>
   <string name="live_updates_onboarding_positive_off">Go to Settings</string>
   <string name="live_updates_onboarding_negative_off">Dismiss</string>
@@ -593,7 +592,7 @@
   </string>
 
   <string formatted="false" name="pref_cat_language">Language</string>
-  <string formatted="false" name="pref_language_override">Language Override</string>
+  <string formatted="false" name="pref_language_override">App language</string>
   <string formatted="false" name="pref_language_override_summary">Select language:</string>
 
   <string formatted="false" name="pref_classic_color_mode">Force Classic Color Mode</string>
