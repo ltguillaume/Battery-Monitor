@@ -62,11 +62,23 @@ jobs:
           APK_PATH="$(ls app/build/outputs/apk/release/*.apk | head -n 1)"
           cp "$APK_PATH" "dist/battery-monitor-${GITHUB_REF_NAME}.apk"
 
+      - name: Determine release channel
+        id: release_channel
+        shell: bash
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          if [[ "$TAG" == *-* ]]; then
+            echo "prerelease=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "prerelease=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
-          generate_release_notes: true
+          prerelease: ${{ steps.release_channel.outputs.prerelease }}
+          generate_release_notes: false
           files: |
             dist/battery-monitor-${{ github.ref_name }}.apk
