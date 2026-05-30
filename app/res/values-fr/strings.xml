@@ -289,4 +289,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Conserver la notification principale avec la mise a jour en direct</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Afficher la notification principale complete lorsque la mise a jour en direct est active ?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Si active, la notification principale classique reste visible en plus de la puce de la barre d etat.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 secondes</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 secondes</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 secondes</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 secondes</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 secondes</string>
 </resources>

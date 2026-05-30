@@ -476,4 +476,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Obdrzi glavno obvestilo s sprotno posodobitvijo</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Ali naj se prikaze celotno glavno obvestilo, ko je sprotna posodobitev aktivna?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Ce je vklopljeno, navadno glavno obvestilo ostane vidno poleg cipa v vrstici stanja.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 sekundi</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 sekund</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 sekund</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 sekund</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 sekund</string>
 </resources>

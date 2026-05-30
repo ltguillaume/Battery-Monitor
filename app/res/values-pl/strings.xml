@@ -484,4 +484,9 @@
   <string name="pref_content_percent" formatted="false">Procent baterii</string>
   <string name="pref_content_temperature" formatted="false">Temperatura baterii</string>
   <string name="pref_content_switching" formatted="false">Przełączaj między obiema</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 sekundy</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 sekund</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 sekund</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 sekund</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 sekund</string>
 </resources>

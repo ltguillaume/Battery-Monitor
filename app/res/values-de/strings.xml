@@ -289,4 +289,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Hauptbenachrichtigung bei Live-Update beibehalten</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Vollständige Hauptbenachrichtigung anzeigen, während Live-Update aktiv ist?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Wenn aktiviert, bleibt die normale Hauptbenachrichtigung zusätzlich zum Statusleisten-Chip sichtbar.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 Sekunden</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 Sekunden</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 Sekunden</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 Sekunden</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 Sekunden</string>
 </resources>

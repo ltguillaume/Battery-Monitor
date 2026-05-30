@@ -473,4 +473,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">लाइव अपडेट के साथ मुख्य सूचना बनाए रखें</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">क्या लाइव अपडेट सक्रिय होने पर पूरी मुख्य सूचना भी दिखाई जाए?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">यदि यह चालू है, तो स्टेटस बार चिप के साथ सामान्य मुख्य सूचना भी दिखाई देगी।</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 सेकंड</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 सेकंड</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 सेकंड</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 सेकंड</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 सेकंड</string>
 </resources>

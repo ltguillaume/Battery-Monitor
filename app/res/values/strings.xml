@@ -701,4 +701,10 @@
   <string formatted="false" name="pref_content_percent">Battery Percentage</string>
   <string formatted="false" name="pref_content_temperature">Battery Temperature</string>
   <string formatted="false" name="pref_content_switching">Switch between both</string>
+
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 seconds</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 seconds</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 seconds</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 seconds</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 seconds</string>
 </resources>

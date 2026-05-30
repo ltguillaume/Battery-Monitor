@@ -493,4 +493,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Ponechat hlavní oznámení při živé aktualizaci</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Zobrazovat celé hlavní oznámení, když je živá aktualizace aktivní?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Je-li zapnuto, běžné hlavní oznámení zůstane viditelné spolu s čipem ve stavovém řádku.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 sekundy</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 sekund</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 sekund</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 sekund</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 sekund</string>
 </resources>

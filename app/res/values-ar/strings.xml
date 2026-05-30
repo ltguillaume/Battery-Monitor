@@ -353,4 +353,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">الاحتفاظ بالإشعار الرئيسي مع التحديث المباشر</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">إظهار الإشعار الرئيسي الكامل أثناء تفعيل التحديث المباشر؟</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">إذا كان مفعلاً، سيظل الإشعار الرئيسي العادي مرئيًا بالإضافة إلى شريحة شريط الحالة.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">ثانيتان</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 ثوانٍ</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 ثوانٍ</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 ثانية</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 ثانية</string>
 </resources>

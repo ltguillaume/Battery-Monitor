@@ -331,4 +331,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Zadrži glavno obaveštenje uz Live Update</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Prikazivati celo glavno obaveštenje dok je Live Update aktivan?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Ako je uključeno, normalno glavno obaveštenje ostaje vidljivo pored čipa u statusnoj traci.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 sekunde</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 sekundi</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 sekundi</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 sekundi</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 sekundi</string>
 </resources>

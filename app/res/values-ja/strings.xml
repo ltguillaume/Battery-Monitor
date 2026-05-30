@@ -319,4 +319,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">ライブアップデート中もメイン通知を表示</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">ライブアップデートが有効な間も、メイン通知を完全表示しますか？</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">有効にすると、ステータスバーのチップに加えて通常のメイン通知も表示されます。</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2秒</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5秒</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10秒</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15秒</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30秒</string>
 </resources>

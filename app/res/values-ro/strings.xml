@@ -478,4 +478,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Pastreaza notificarea principala cu actualizarea live</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Sa fie afisata notificarea principala completa cat timp actualizarea live este activa?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Daca este activat, notificarea principala obisnuita ramane vizibila pe langa chipul din bara de stare.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 secunde</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 secunde</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 secunde</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 secunde</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 secunde</string>
 </resources>

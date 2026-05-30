@@ -464,4 +464,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">השאר התראה ראשית עם עדכון חי</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">להציג את ההתראה הראשית המלאה בזמן שהעדכון החי פעיל?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">אם מופעל, ההתראה הראשית הרגילה תישאר גלויה בנוסף לשבב בשורת המצב.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 שניות</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 שניות</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 שניות</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 שניות</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 שניות</string>
 </resources>

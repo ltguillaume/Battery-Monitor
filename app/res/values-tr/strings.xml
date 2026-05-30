@@ -283,4 +283,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Canli Guncelleme ile ana bildirimi koru</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Canli Guncelleme etkinken tam ana bildirim de gosterilsin mi?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Etkinse, normal ana bildirim durum cubugu rozetine ek olarak gorunur kalir.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 saniye</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 saniye</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 saniye</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 saniye</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 saniye</string>
 </resources>

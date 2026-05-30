@@ -457,4 +457,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Διατήρηση κύριας ειδοποίησης με το Live Update</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Να εμφανίζεται η πλήρης κύρια ειδοποίηση όσο το Live Update είναι ενεργό;</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Αν είναι ενεργό, η κανονική κύρια ειδοποίηση παραμένει ορατή μαζί με το chip στη γραμμή κατάστασης.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 δευτερόλεπτα</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 δευτερόλεπτα</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 δευτερόλεπτα</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 δευτερόλεπτα</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 δευτερόλεπτα</string>
 </resources>

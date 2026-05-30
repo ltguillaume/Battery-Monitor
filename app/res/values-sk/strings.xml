@@ -479,4 +479,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Ponechat hlavne upozornenie pri Live Update</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Zobrazovat cele hlavne upozornenie, ked je Live Update aktivny?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Ak je zapnute, bezne hlavne upozornenie zostane viditelne spolu s cipom v stavovom riadku.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 sekundy</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 sekúnd</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 sekúnd</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 sekúnd</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 sekúnd</string>
 </resources>

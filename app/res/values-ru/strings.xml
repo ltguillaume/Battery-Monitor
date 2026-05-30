@@ -335,4 +335,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Сохранять основное уведомление при Live Update</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">Показывать полное основное уведомление, пока Live Update активен?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Если включено, обычное основное уведомление остается видимым вместе с чипом в строке состояния.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 секунды</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 секунд</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 секунд</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 секунд</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 секунд</string>
 </resources>

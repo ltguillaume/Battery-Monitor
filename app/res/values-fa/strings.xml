@@ -486,4 +486,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">نگه داشتن اعلان اصلی همراه با به‌روزرسانی زنده</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">وقتی به‌روزرسانی زنده فعال است، اعلان اصلی کامل نمایش داده شود؟</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">اگر فعال باشد، اعلان اصلی معمولی علاوه بر تراشهٔ نوار وضعیت قابل مشاهده می‌ماند.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 ثانیه</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 ثانیه</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 ثانیه</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 ثانیه</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 ثانیه</string>
 </resources>

@@ -300,4 +300,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">Fő értesítés megtartása élő frissítés mellett</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">A teljes fő értesítés is megjelenjen, amikor az élő frissítés aktív?</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">Ha be van kapcsolva, a normál fő értesítés az állapotsáv chip mellett is látható marad.</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 masodperc</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 masodperc</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 masodperc</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 masodperc</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 masodperc</string>
 </resources>

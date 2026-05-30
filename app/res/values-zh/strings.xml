@@ -492,4 +492,9 @@
   <string formatted="false" name="pref_live_update_keep_main_notification">实时更新时保留主通知</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_summary">实时更新激活时是否仍显示完整主通知？</string>
   <string formatted="false" name="pref_live_update_keep_main_notification_help">启用后，除状态栏胶囊外，常规主通知也会保持可见。</string>
+  <string formatted="false" name="chip_switching_interval_2_seconds">2 秒</string>
+  <string formatted="false" name="chip_switching_interval_5_seconds">5 秒</string>
+  <string formatted="false" name="chip_switching_interval_10_seconds">10 秒</string>
+  <string formatted="false" name="chip_switching_interval_15_seconds">15 秒</string>
+  <string formatted="false" name="chip_switching_interval_30_seconds">30 秒</string>
 </resources>
