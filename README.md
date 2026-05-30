@@ -16,6 +16,7 @@ See battery status at a glance, get meaningful notifications, and track battery 
 
 <p align="center">
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" alt="Battery Monitor screenshot 1" width="24%" />
+  <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" alt="Battery Monitor screenshot 2" width="24%" />
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/5.png" alt="Battery Monitor screenshot 5" width="24%" />
   <img src="fastlane/metadata/android/en-US/images/phoneScreenshots/6.png" alt="Battery Monitor screenshot 6" width="24%" />
 </p>
