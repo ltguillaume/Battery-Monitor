@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="codes.swistak.batterymonitor"
+    android:sharedUserMaxSdkVersion="32"
 >
 
   <!-- Permissions now considered "normal", automatically granted on API 23+ -->

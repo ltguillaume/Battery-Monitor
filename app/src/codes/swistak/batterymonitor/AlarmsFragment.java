@@ -277,10 +277,10 @@ public class AlarmsFragment extends Fragment {
         final      View summary_box =                  view.findViewById(R.id.alarm_summary_box);
         final CompoundButton toggle = (CompoundButton) view.findViewById(R.id.toggle);
 
-        final int     id = mCursor.getInt   (mCursor.getColumnIndex(AlarmDatabase.KEY_ID));
-        String      type = mCursor.getString(mCursor.getColumnIndex(AlarmDatabase.KEY_TYPE));
-        String threshold = mCursor.getString(mCursor.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
-        Boolean  enabled = (mCursor.getInt(mCursor.getColumnIndex(AlarmDatabase.KEY_ENABLED)) == 1);
+        final int id = mCursor.getInt(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_ID));
+        String type = mCursor.getString(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_TYPE));
+        String threshold = mCursor.getString(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_THRESHOLD));
+        Boolean enabled = (mCursor.getInt(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_ENABLED)) == 1);
 
         String s = Str.alarm_types_display[Str.indexOf(Str.alarm_type_values, type)];
         if (type.equals("temp_drops") || type.equals("temp_rises")) {

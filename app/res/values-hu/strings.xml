@@ -284,6 +284,7 @@
     <item quantity="other">"%d nap, "</item>
   </plurals>
   <plurals name="n_hours">
+    <item quantity="one">%d óra</item>
     <item quantity="other">%d óra</item>
   </plurals>
   <plurals name="for_n_hours">

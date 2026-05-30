@@ -1013,11 +1013,11 @@ public class BatteryInfoService extends Service {
             }
         }
 
-        c = alarms.activeAlarmChargeDrops(info.percent, previous_charge);
+            c = alarms.activeAlarmChargeDrops(info.percent, previous_charge);
         if (c != null) {
             sps_editor.putInt(KEY_PREVIOUS_CHARGE, info.percent);
             nb = parseAlarmCursor(c);
-            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            String threshold = c.getString(c.getColumnIndexOrThrow(AlarmDatabase.KEY_THRESHOLD));
             nb.setContentTitle(Str.alarm_charge_drops + threshold + Str.percent_symbol)
                 .setChannelId(CHAN_ID_A_CDROP);
 
@@ -1031,7 +1031,7 @@ public class BatteryInfoService extends Service {
         if (c != null && info.status != BatteryInfo.STATUS_UNPLUGGED) {
             sps_editor.putInt(KEY_PREVIOUS_CHARGE, info.percent);
             nb = parseAlarmCursor(c);
-            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            String threshold = c.getString(c.getColumnIndexOrThrow(AlarmDatabase.KEY_THRESHOLD));
             nb.setContentTitle(Str.alarm_charge_rises + threshold + Str.percent_symbol)
                 .setChannelId(CHAN_ID_A_CRISE);
 
@@ -1048,7 +1048,7 @@ public class BatteryInfoService extends Service {
 
             sps_editor.putInt(KEY_PREVIOUS_TEMP, info.temperature);
             nb = parseAlarmCursor(c);
-            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            String threshold = c.getString(c.getColumnIndexOrThrow(AlarmDatabase.KEY_THRESHOLD));
             nb.setContentTitle(Str.alarm_temp_rises + Str.formatTemp(Integer.valueOf(threshold), convertF, false))
                 .setChannelId(CHAN_ID_A_TRISE);
 
@@ -1065,7 +1065,7 @@ public class BatteryInfoService extends Service {
 
             sps_editor.putInt(KEY_PREVIOUS_TEMP, info.temperature);
             nb = parseAlarmCursor(c);
-            String threshold = c.getString(c.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
+            String threshold = c.getString(c.getColumnIndexOrThrow(AlarmDatabase.KEY_THRESHOLD));
             nb.setContentTitle(Str.alarm_temp_drops + Str.formatTemp(Integer.valueOf(threshold), convertF, false))
                 .setChannelId(CHAN_ID_A_TDROP);
 

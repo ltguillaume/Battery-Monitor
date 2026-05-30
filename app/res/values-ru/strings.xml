@@ -302,9 +302,15 @@
     <item quantity="other">%d мин.</item>
   </plurals>
   <plurals name="n_hours_short">
+    <item quantity="one">"%dч "</item>
+    <item quantity="few">"%dч "</item>
+    <item quantity="many">"%dч "</item>
     <item quantity="other">"%dч "</item>
   </plurals>
   <plurals name="n_minutes_short">
+    <item quantity="one">%dм</item>
+    <item quantity="few">%dм</item>
+    <item quantity="many">%dм</item>
     <item quantity="other">%dм</item>
   </plurals>
   <plurals name="n_days">

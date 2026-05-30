@@ -6,10 +6,19 @@ if (securePropertiesFile.exists()) {
     securePropertiesFile.withInputStream { secureProperties.load(it) }
 }
 
-def ciVersionName = (project.findProperty("ciVersionName") ?: System.getenv("CI_VERSION_NAME"))?.toString()
-def baseVersionName = ciVersionName ?: "0.0.1-test"
+def fdroidVersionProperties = new Properties()
+def fdroidVersionPropertiesFile = rootProject.file("fdroid-version.properties")
+if (fdroidVersionPropertiesFile.exists()) {
+    fdroidVersionPropertiesFile.withInputStream { fdroidVersionProperties.load(it) }
+}
 
-def computedVersionCode = 26017
+def defaultVersionName = (fdroidVersionProperties['versionName'] ?: "1.0.0").toString()
+def defaultVersionCode = (fdroidVersionProperties['versionCode'] ?: "1000000").toString().toInteger()
+
+def ciVersionName = (project.findProperty("ciVersionName") ?: System.getenv("CI_VERSION_NAME"))?.toString()
+def baseVersionName = ciVersionName ?: defaultVersionName
+
+def computedVersionCode = defaultVersionCode
 if (ciVersionName) {
     def matcher = (ciVersionName =~ /^(\d+)\.(\d+)\.(\d+)(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?$/)
     if (!matcher.matches()) {
@@ -31,8 +40,6 @@ def releaseStoreFileProp = project.findProperty("releaseStoreFile") ?: System.ge
 def releaseStorePasswordProp = project.findProperty("releaseStorePassword") ?: System.getenv("RELEASE_STORE_PASSWORD") ?: secureProperties['key.store.password']
 def releaseKeyAliasProp = project.findProperty("releaseKeyAlias") ?: System.getenv("RELEASE_KEY_ALIAS") ?: "alias_name"
 def releaseKeyPasswordProp = project.findProperty("releaseKeyPassword") ?: System.getenv("RELEASE_KEY_PASSWORD") ?: secureProperties['key.alias.password']
-def requestedTasks = gradle.startParameter.taskNames.collect { it.toLowerCase() }
-def isReleaseBuildRequested = requestedTasks.any { it.contains("release") }
 
 def hasReleaseSigning =
         releaseStoreFileProp &&

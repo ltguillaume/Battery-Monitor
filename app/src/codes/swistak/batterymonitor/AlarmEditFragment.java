@@ -191,8 +191,11 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
 
         String message;
         if (mAdapter.type.contains("temp")) {
-            message = getString(R.string.alarm_custom_temp_message,
-                    convertF ? getString(R.string.fahrenheit) : getString(R.string.celsius));
+            String unit = convertF ? getString(R.string.fahrenheit) : getString(R.string.celsius);
+            String template = getString(R.string.alarm_custom_temp_message);
+            message = template.contains("%s")
+                    ? template.replace("%s", unit)
+                    : (template + " (" + unit + ")");
             try {
                 int tenthsC = Integer.parseInt(currentVal);
                 if (convertF) {
@@ -407,10 +410,10 @@ public class AlarmEditFragment extends PreferenceFragmentCompat {
         }
 
         void requery() {
-                      id = mCursor.getInt   (mCursor.getColumnIndex(AlarmDatabase.KEY_ID));
-                    type = mCursor.getString(mCursor.getColumnIndex(AlarmDatabase.KEY_TYPE));
-               threshold = mCursor.getString(mCursor.getColumnIndex(AlarmDatabase.KEY_THRESHOLD));
-                 enabled = (mCursor.getInt(mCursor.getColumnIndex(AlarmDatabase.KEY_ENABLED)) == 1);
+                      id = mCursor.getInt(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_ID));
+                    type = mCursor.getString(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_TYPE));
+               threshold = mCursor.getString(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_THRESHOLD));
+                 enabled = (mCursor.getInt(mCursor.getColumnIndexOrThrow(AlarmDatabase.KEY_ENABLED)) == 1);
 
             chanDisabled = isChannelDisabled(type);
          }

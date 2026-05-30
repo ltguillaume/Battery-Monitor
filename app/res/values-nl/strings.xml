@@ -276,6 +276,7 @@
     <item quantity="other">%d logboekitems</item>
   </plurals>
   <plurals name="n_hours_long">
+    <item quantity="one">"%d uur, "</item>
     <item quantity="other">"%d uur, "</item>
   </plurals>
   <plurals name="n_minutes_long">
@@ -283,15 +284,19 @@
     <item quantity="other">%d minuten</item>
   </plurals>
   <plurals name="n_hours_medium">
+    <item quantity="one">"%d uur, "</item>
     <item quantity="other">"%d uur, "</item>
   </plurals>
   <plurals name="n_minutes_medium">
+    <item quantity="one">%d min.</item>
     <item quantity="other">%d min.</item>
   </plurals>
   <plurals name="n_hours_short">
+    <item quantity="one">"%du "</item>
     <item quantity="other">"%du "</item>
   </plurals>
   <plurals name="n_minutes_short">
+    <item quantity="one">%dm</item>
     <item quantity="other">%dm</item>
   </plurals>
   <plurals name="n_days">
@@ -299,9 +304,11 @@
     <item quantity="other">"%d dagen, "</item>
   </plurals>
   <plurals name="n_hours">
+    <item quantity="one">%d uur</item>
     <item quantity="other">%d uur</item>
   </plurals>
   <plurals name="for_n_hours">
+    <item quantity="one">(%d uur)</item>
     <item quantity="other">(%d uur)</item>
   </plurals>
   <string formatted="false" name="custom">Aangepast...</string>
