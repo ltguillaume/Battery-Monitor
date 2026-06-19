@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 1.0.2
+
+### Fixed
+
+- Added missing metadata required for F-Droid release.
+
 ## 1.0.1
 
 ### Fixed
