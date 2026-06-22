@@ -1,0 +1,62 @@
+name: Bug report
+description: Report a single bug in the app
+labels:
+  - bug
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I've checked existing issues and haven't found any that already cover this bug.
+          required: true
+        - label: This issue contains only one bug report.
+          required: true
+        - label: The title is only a short summary, and the full details are written in the description below.
+          required: true
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug description
+      description: Required. Describe the bug in as much detail as possible. Do not write things like "As in title". If you can, include steps to reproduce, expected behavior, actual behavior and logs (in case of crash).
+      placeholder: |
+        Required. Do not write "As in title".
+
+        What happened?
+
+        Steps to reproduce:
+        1. ...
+        2. ...
+        3. ...
+
+        Expected behavior:
+
+        Actual behavior:
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Required. Fill in all bullets below and add any other device or ROM details that may matter.
+      value: |
+        - App version:
+        - Android version: (say whether it is stock Android or a custom ROM)
+        - Device:
+        - Other relevant details:
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots_videos
+    attributes:
+      label: Screenshots / videos
+      description: Optional. If you include screenshots or videos, keep them inside the expandable block below so the report stays compact.
+      value: |
+        <details>
+        <summary>Screenshot 1</summary>
+
+        <!-- Drag and drop your screenshot or a video here. If you have more, please copy-paste this section. --> 
+
+        </details>
+    validations:
+      required: false
