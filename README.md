@@ -8,7 +8,7 @@
   <a href="https://github.com/tswistak/Battery-Monitor/releases/latest">
     <img src="docs/assets/badge_github.png" alt="Download on GitHub" height="80" />
   </a>
-  <a href="https://f-droid.org/pl/packages/codes.swistak.batterymonitor/">
+  <a href="https://f-droid.org/packages/codes.swistak.batterymonitor/">
     <img src="https://f-droid.org/badge/get-it-on.png" alt="Download from F-Droid" height="80" />
   </a>
 </p>
